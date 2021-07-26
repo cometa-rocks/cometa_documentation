@@ -14,6 +14,18 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 1. [Other actions](#OTHER_AC)
 
 # Selectors table of contents
+
+Co.meta uses "{selectors}" to navigate around a page. Whenever Co.meta references to "{selector}", this can either be a CSS-selector or xpath selector. This makes the usage of Co.meta really nice.
+
+XPath selectors are very powerful as one can use simple calculations as well as Contains or Substr operations.
+
+Here are the most frequently used xpath selectors:
+
+* //*[contains(.,"FooBar")] ... selects anything that contains FooBar as innerHtml
+* //*[contains(@class,"FooBar")] ... selects anything that contains a class name FooBar 
+
+If you are familiar with xpath and want to see details, go directly to the xpath topic you are looking for or read through the introduction of HTML and CSS before.
+
 1. [How is an HTML page structured?](#HTML_SE)
 2. [What are CSS selectors?](#CSS_SE)
 3. [What is XPath](#XPATH_SE)
@@ -41,8 +53,17 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 
 <br/>
 
-# <span class="gold">Co.</span>meta actions
+# <span class="gold">Co.</span>meta steps / actions
 
+Actions or steps are the build blocks from where your tell Co.meta what you want to automate. You have actions for clicking, browsing, screen sizing, downloading, can send keys and so on and so on.
+
+We have grouped the different actions and the first one is "Browser actions". 
+
+The first steps in your testplan will probably be *Goto "{URL}"* - make sure to leave the quotes and replace anything else. Do not worry about escapeing your quotes. Co.meta does that for you.
+
+A very versatile step is *Run Javascript function "{function}"* - function can be anything you can execute as Javscript inside a browser. It can be just one command or a complete snipplet. This brings you low-code.
+
+If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.  
 
 ### Browser actions<a name="BROWSER_AC"></a>
 
