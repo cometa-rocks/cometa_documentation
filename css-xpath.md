@@ -1,14 +1,17 @@
 <img src="img/cometa.png" width="600px"/>
 
-# Co.meta actions table of contents
-1. [QueryStudio actions](#QUERYSTUDIO_AC)
-2. [Browser actions](#BROWSER_AC)
-3. [CSS selectors actions](#CSS_AC)
-4. [Feature actions](#FEATURE_AC)
-5. [Mouse actions](#MOUSE_AC)
-6. [Keyboard actions](#KEYBOARD_AC)
-7. [IBM actions](#IBM_AC)
-8. [Other actions](#OTHER_AC)
+# Co.meta steps table of contents
+
+Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic. 
+
+1. [Browser actions](#BROWSER_AC)
+1. [CSS selectors actions](#CSS_AC)
+1. [Feature actions](#FEATURE_AC)
+1. [Mouse actions](#MOUSE_AC)
+1. [Keyboard actions](#KEYBOARD_AC)
+1. [IBM actions](#IBM_AC)
+1. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
+1. [Other actions](#OTHER_AC)
 
 # Selectors table of contents
 1. [How is an HTML page structured?](#HTML_SE)
@@ -40,57 +43,8 @@
 
 # <span class="gold">Co.</span>meta actions
 
-### 1. QueryStudio actions<a name="QUERYSTUDIO_AC"></a>
 
-<table>
-    <tr>
-        <th>Action</th>
-        <th>Description</th>
-        <th>Example</th>
-    </tr>
-    <tr>
-        <td>I can sort QueryStudio table column with "{column_name}"</td>
-        <td>Sort a QueryStudio table by a given column name</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can add an column with "{column_name}" to QueryStudio table </td>
-        <td>Add a column name in a QueryStudio table</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can add an filter with "{filter_name}" to QueryStudio table</td>
-        <td>Add a filter name to a QueryStudio table</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can add an filter to column "{column_name}" with "{filter_value}" to QueryStudio table</td>
-        <td>Add a filter name with a value to a QueryStudio table</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can set not to the filter "{filter_text}"</td>
-        <td>Negate a filter name</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can remove the filter "{filter_text}" </td>
-        <td>Remove a filter name from a QueryStudio table</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can delete QueryStudio table column with "{column_name}" </td>
-        <td>Remove a column name from a QueryStudio table</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>I can cut QueryStudio table column with "{column_name}" and paste it before column with "{column_name_2}"</td>
-        <td>Moves a column name before another column name</td>
-        <td></td>
-    </tr>
-</table>
-
-### 2. Browser actions<a name="BROWSER_AC"></a>
+### Browser actions<a name="BROWSER_AC"></a>
 
 <table>
     <tr>
@@ -167,7 +121,7 @@
     </tr>
 </table>
 
-### 3. CSS selectors actions<a name="CSS_AC"></a>
+### CSS selectors actions<a name="CSS_AC"></a>
 
 <table>
     <tr>
@@ -264,7 +218,7 @@ click</td>
     </tr>
 </table>
 
-### 4. Feature actions<a name="FEATURE_AC"></a>
+### Feature actions<a name="FEATURE_AC"></a>
 
 <table>
     <tr>
@@ -294,7 +248,7 @@ click</td>
     </tr>
 </table>
 
-### 5. Mouse actions<a name="MOUSE_AC"></a>
+### Mouse actions<a name="MOUSE_AC"></a>
 
 <table>
     <tr>
@@ -349,7 +303,7 @@ click</td>
     </tr>
 </table>
 
-### 6. Keyboard actions<a name="KEYBOARD_AC"></a>
+### Keyboard actions<a name="KEYBOARD_AC"></a>
 
 <table>
     <tr>
@@ -374,7 +328,7 @@ click</td>
     </tr>
 </table>
 
-### 7. IBM actions<a name="IBM_AC"></a>
+### IBM actions<a name="IBM_AC"></a>
 
 <table>
     <tr>
@@ -391,22 +345,72 @@ click</td>
     <tr>
         <td>I can test current IBM Cognos folder</td>
         <td>Tests the folder the user is currently in</td>
-        <td></td>
+        <td>Runs a test on anything in the current folder.</td>
     </tr>
     <tr>
         <td>I can go to IBM Cognos folder "{folder_name}"</td>
         <td>Goes to the inputted folder</td>
-        <td>I can go to IBM Cognos folder "IBIS Basic;
-        Business Reports;02 FS Reports"</td>
+        <td>I can go to IBM Cognos folder "Enterprise Basic;
+        Business Reports;02 Monthly Reports"</td>
     </tr>
     <tr>
         <td>I can test current IBM Cognos folder using parameters "{parameters}"</td>
-        <td>Tests the folder the user is currently in with the inputted parameters</td>
+        <td>Tests the folder the user is currently in with the inputted parameters. Paraters is a pair of "key1|key2|key3:values;", where each key is the name a prompt parameters and the correspondig value. Multiple keys can be tied to one value like this: p_PERIOD|p_REPORTINGPERIOD|p_PER:2025-01</td>
         <td></td>
     </tr>
 </table>
 
-### 8. Other actions<a name="OTHER_AC"></a>
+### IBM Cognos QueryStudio actions<a name="QUERYSTUDIO_AC"></a>
+
+<table>
+    <tr>
+        <th>Action</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>I can sort QueryStudio table column with "{column_name}"</td>
+        <td>Sort a QueryStudio table by a given column name</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can add an column with "{column_name}" to QueryStudio table </td>
+        <td>Add a column name in a QueryStudio table</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can add an filter with "{filter_name}" to QueryStudio table</td>
+        <td>Add a filter name to a QueryStudio table</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can add an filter to column "{column_name}" with "{filter_value}" to QueryStudio table</td>
+        <td>Add a filter name with a value to a QueryStudio table</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can set not to the filter "{filter_text}"</td>
+        <td>Negate a filter name</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can remove the filter "{filter_text}" </td>
+        <td>Remove a filter name from a QueryStudio table</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can delete QueryStudio table column with "{column_name}" </td>
+        <td>Remove a column name from a QueryStudio table</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>I can cut QueryStudio table column with "{column_name}" and paste it before column with "{column_name_2}"</td>
+        <td>Moves a column name before another column name</td>
+        <td></td>
+    </tr>
+</table>
+
+### Other actions<a name="OTHER_AC"></a>
 
 <table>
     <tr>
