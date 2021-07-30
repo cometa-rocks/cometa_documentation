@@ -6,6 +6,12 @@ Co.meta stands for **co**mplete **me**ta **t**est **a**utomation. Meta (from the
 
 Co.meta uses a now-code / low-code approach to define test steps. 
 
+
+# Table of Content
+* auto-gen TOC:
+{:toc}
+
+
 ## What is a Testplan / Feature
 
 A testplan or feature consists of general information, browser selection, and the steps / actions that should be executed one after the other. 
@@ -46,6 +52,12 @@ Is this still a feature or a testplan? It is complex, where anything depends on 
 
 The first Chapter provides information on steps / actions to be used in your testplan.
 
-It is a veery good starting point to [learn about selectors like CSS and xpath](css-xpath.md). 
+It is a good starting point to [learn about selectors like CSS and xpath](css-xpath.md). 
 
-We will commit documentation as soon as possible. Come back soon. Watch the repo to be notified as soon as we are done.
+
+## Integration with Webhooks
+
+Integration is usefull to get feedback on test results via Webhooks. Any application supporting webhooks can be notified by co.meta at the end of a test execution either on error or always.
+
+The integration is user and department dependent. Each user can have different notifications. If two users use the same webhook, then for each user the webhook will be executed.
+
