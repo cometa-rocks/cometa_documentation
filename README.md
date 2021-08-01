@@ -1,8 +1,10 @@
 # Documentation
 
-This is the starting point of Co.meta documentation. 
+Co.meta stands for **co**mplete **me**ta **t**est **a**utomation. 
 
-Co.meta stands for **co**mplete **me**ta **t**est **a**utomation. Meta (from the Greek μετα-, meta-, meaning "after" or "beyond") is a prefix meaning more comprehensive or transcending. [source Wikipedia](https://en.wikipedia.org/wiki/Meta). With Co.meta you can test over systemboundaries, you can go to one application, fetch data and save it in variables. Then go to another application and use the data to test against content or use it as search input ...
+Meta (from the Greek μετα-, meta-, meaning "after" or "beyond") is a prefix meaning more comprehensive or transcending. [source Wikipedia](https://en.wikipedia.org/wiki/Meta). 
+
+With Co.meta you can test over system boundaries, you can go to one application, fetch data and save it in variables. Then go to another application and use the data to test against content or use it as search input ...
 
 Co.meta uses a now-code / low-code approach to define test steps. 
 
