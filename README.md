@@ -123,6 +123,15 @@ Another use case is: Order validation
 
 <a name="wanttohelp"></a>
 
+# Create a sub-features
+
+... tbd.
+
+# Housekeeping
+
+... tbd.
+
+
 # You want to help with the development of cometa?
 
 A good starting point is the documentation. When ever you see something that you would describe better or where information is just not there yet. Clone the repo, change or add whatever is needed and send us a pull request.
