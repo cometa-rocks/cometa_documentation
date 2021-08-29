@@ -19,6 +19,7 @@ Co.meta uses a now-code / low-code approach to define test steps.
 - [All about selectors](#selectors) 
 - [Integration](#integration) 
 - [Data Driven Testing](#datadriventesting) 
+- [Want to help?](#wanttohelp) 
 
 
 <a name="whatis_a_testplan"></a>
@@ -99,16 +100,29 @@ Save selector "//h3[1]" value to environment variable "SEARCHRESULTS"
 Save list values in selector "{css_selector}" and save them to variable "{variable_name}"
 ```
 
-The variables can the be used in any other step like
+Variables can then be used in any other step just like this:
 
 ```
 Send keys "$SEARCHTERM"
 ```
 
+Variables depend on the environment set in your feature. So you can store different variables for your DEV, INTEGRATION, STAGE and PROD environment. 
+
+
 Another use case for illustration could be:
 * goto google and search for `cometa rocks`
-* save the value from the first search result to variable `VARIABLE_SEARCHRESULT`
-* goto bing and search for $VARIABLE_SEARCHRESULT
+* save the value from the first search result to variable `VARIABLE_SEARCHRESULT` (note: this is without the $-sign!!)
+* goto bing and search for `$VARIABLE_SEARCHRESULT` (note: here we use the variable with the $-sign)
 
 See this [JSON File](feature_example_your_first_testcase.json) as a starting point.
+
+<a name="wanttohelp"></a>
+
+## You want to help with the development of cometa?
+
+A good starting point is the documentation. When ever you see something that you would describe better or where information is just not there yet. Clone the repo, change or add whatever is needed and send us a pull request.
+
+We will then review and update the master branch.
+
+The cometa community thanks you for you help.
 
