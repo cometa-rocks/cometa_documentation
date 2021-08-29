@@ -1,4 +1,4 @@
-# Documentation
+# cometa - Complete Meta Test Automation
 
 Co.meta stands for **co**mplete **me**ta **t**est **a**utomation. 
 
@@ -109,12 +109,17 @@ Send keys "$SEARCHTERM"
 Variables depend on the environment set in your feature. So you can store different variables for your DEV, INTEGRATION, STAGE and PROD environment. 
 
 
-Another use case for illustration could be:
+Another use case for illustration could be: Search result validation
 * goto google and search for `cometa rocks`
 * save the value from the first search result to variable `VARIABLE_SEARCHRESULT` (note: this is without the $-sign!!)
 * goto bing and search for `$VARIABLE_SEARCHRESULT` (note: here we use the variable with the $-sign)
 
 See this [JSON File](feature_example_your_first_testcase.json) as a starting point.
+
+Another use case is: Order validation
+* Goto application A, order a product, save the order confirmation number to variable XYZ
+* Goto application Backend, select new orders list and search for order number XYZ 
+
 
 <a name="wanttohelp"></a>
 
