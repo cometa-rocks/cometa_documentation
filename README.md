@@ -8,11 +8,11 @@ With Co.meta you can test over system boundaries, you can go to one application,
 
 Co.meta uses a now-code / low-code approach to define test steps. 
 
+Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 
 
 
-
-## Table of Contents 
+# Table of Contents 
 
 - [What is a Testplan / Feature](#whatis_a_testplan)  
 - [Your first test](#general) 
@@ -24,7 +24,7 @@ Co.meta uses a now-code / low-code approach to define test steps.
 
 <a name="whatis_a_testplan"></a>
 
-## What is a Testplan versus Feature
+# What is a Testplan versus Feature
 
 A testplan or feature consists of general information, browser selection, and the steps / actions that should be executed one after the other. 
 
@@ -61,7 +61,7 @@ Is this still a feature or a testplan? It is complex, where anything depends on 
 
 <a name="general"></a>
 
-## Your first test 
+# Your first test 
 
 The first Chapter provides information on steps / actions to be used in your testplan.
 
@@ -70,7 +70,7 @@ A good way to start is, to just [grab our example](feature_example_your_first_te
 
 <a name="selectors"></a>
 
-## All about selectors 
+# All about selectors 
 
 In cometa you can use selectors. Cometa automatically tests for ID, tagname, classname, inner HTML, xpath.
 
@@ -80,7 +80,7 @@ We have put together a huge summary about selectors and differences between CSS 
 
 <a name="integration"></a>
 
-## Integration with Webhooks
+# Integration with Webhooks
 
 Integration is usefull to get feedback on test results via Webhooks. Any application supporting webhooks can be notified by co.meta at the end of a test execution either on error or always.
 
@@ -88,7 +88,7 @@ The integration is user and department dependent. Each user can have different n
 
 <a name="datadriventesting"></a>
 
-## Data Driven Testing (DDT)
+# Data Driven Testing (DDT)
 
 Cometa can store content from selectors in variables, which then can be use in any other step ... to compare, send keys, wait for ... .
 
@@ -123,7 +123,7 @@ Another use case is: Order validation
 
 <a name="wanttohelp"></a>
 
-## You want to help with the development of cometa?
+# You want to help with the development of cometa?
 
 A good starting point is the documentation. When ever you see something that you would describe better or where information is just not there yet. Clone the repo, change or add whatever is needed and send us a pull request.
 
