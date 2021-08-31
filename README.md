@@ -19,6 +19,7 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 - [All about selectors](#selectors) 
 - [Integration](#integration) 
 - [Data Driven Testing](#datadriventesting) 
+- [Housekeeping](#housekeeping)
 - [Want to help?](#wanttohelp) 
 
 
@@ -127,9 +128,17 @@ Another use case is: Order validation
 
 ... tbd.
 
+<a name="housekeeping"></a>
+
 # Housekeeping
 
-... tbd.
+Cometa produces a lot of videos and images. Cometa does housekeeping every night and removes all images and videos from executions older than 60 days (default).
+
+The housekeeping time frame can be set per department.
+
+To save a cometa execution result for legal documentation reason, just select "save this run". This will mark the result as save and it disappear from the standard view. Select "view saved runs" to view your saved results.
+
+Saved results will not be touched by the housekeeping.
 
 
 # You want to help with the development of cometa?
