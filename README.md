@@ -19,6 +19,8 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 - [All about selectors](#selectors) 
 - [Integration](#integration) 
 - [Data Driven Testing](#datadriventesting) 
+- [Execute](#execute-javascript)
+- [Create sub-feature](#create-sub-feature)
 - [Housekeeping](#housekeeping)
 - [Want to help?](#wanttohelp) 
 
@@ -122,11 +124,34 @@ Another use case is: Order validation
 * Goto application Backend, select new orders list and search for order number XYZ 
 
 
-<a name="wanttohelp"></a>
+<a name="execute-javascript"></a>
+
+# Execute your own Javascript
+
+You want to compare two selectors to match between System A and System B.
+
+List A: Featured;Price: Low to High;Price: High to Low;Avg. Customer Review;Newest Arrivals
+List B: Featured;Price> Low to High;Price> High to Low;Avg. Customer Review;Newest Arrivals
+
+This is rare, but could happen. The ":" and ">" in the middle cannot be handled by the Prefix/Suffix from cometa.
+You might use the "Execute Java-Script". 
+
+Get the value from the selector via Javascript.
+In the same function, split it and write it to the DOM.
+Use a next step in cometa to fetch your updated selector to a variable.
+And then compare.
+
+<a name="create-sub-feature"></a>
 
 # Create a sub-features
 
-... tbd.
+Sub-features are cool for include repeating tasks in other steps.
+
+So, for example let's assume you will always have to log-on to your System before testing.
+
+The you would create a feature "Logon System XYZ" and include this feature in all you other features using the step `Run Javascript function "{function}"`
+
+Replace "{function}" with "alert('foo')" to get a first understanding. Inside the "" you can place anything you'd like and that is valid JavaScript. You do not have to care about escaping a _"_ ... cometa does that for you. 
 
 <a name="housekeeping"></a>
 
@@ -140,6 +165,7 @@ To save a cometa execution result for legal documentation reason, just select "s
 
 Saved results will not be touched by the housekeeping.
 
+<a name="wanttohelp"></a>
 
 # You want to help with the development of cometa?
 
