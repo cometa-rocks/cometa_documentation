@@ -14,6 +14,7 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 
 # Table of Contents 
 
+- [Cometa Overview - 5W1H](#cometamindmap)
 - [What is a Testplan / Feature](#whatis_a_testplan)  
 - [Your first test](#general) 
 - [All about selectors](#selectors) 
@@ -24,6 +25,11 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 - [Housekeeping](#housekeeping)
 - [Want to help?](#wanttohelp) 
 
+<a name="cometamindmap"></a>
+
+# Cometa Overview - 5W1H
+
+You can find the What, When, Where, Why, Who, & How about Cometa [Here](https://www.xmind.net/m/U8BJXc).
 
 <a name="whatis_a_testplan"></a>
 
