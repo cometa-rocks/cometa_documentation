@@ -79,6 +79,10 @@ In cometa you can use selectors. Cometa automatically tests for ID, tagname, cla
 
 Therefor in most cases you do not have to worry about seperating xpath or css selectors. Just use them and cometa will understand what you are looking for.
 
+Q: How do I select a button? 
+A: Use the step `"I move mouse to {selector} and click"`. Replace "{selector}" with a xpath selector "//button[.='Text seen on button']" or using css e.g. button:nth-of-type(1)
+A: Use the step `I can click on button "{button_name}"`. Where button name translates into the text of the button or any attribut with that text.
+
 We have put together a huge summary about selectors and differences between CSS and X-Path. [learn about selectors like CSS and xpath](css-xpath.md). 
 
 <a name="integration"></a>
