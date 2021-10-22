@@ -17,6 +17,7 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 - [Cometa Overview - 5W1H](#cometamindmap)
 - [What is a Testplan / Feature](#whatis_a_testplan)  
 - [Your first test](#general) 
+- [All about cometa steps](#allaboutsteps)
 - [All about selectors](#selectors) 
 - [Integration](#integration) 
 - [Data Driven Testing](#datadriventesting) 
@@ -24,6 +25,7 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 - [Create sub-feature](#create-sub-feature)
 - [Housekeeping](#housekeeping)
 - [Want to help?](#wanttohelp) 
+- [Need support/help?](#needhelp) 
 
 <a name="cometamindmap"></a>
 
@@ -76,6 +78,15 @@ The first Chapter provides information on steps / actions to be used in your tes
 
 A good way to start is, to just [grab our example](feature_example_your_first_testcase.json) and paste it into the cometa using the ``Import Json`` button in the feature editor.
 
+
+<a name="allaboutsteps">
+
+Cometa comes with over 70 predefined steps like "Goto {URL}", "Wait until I can see {something} on page". 
+
+See the detailed documentation on every possible steps group by mouse-actions, keyboard actions, selector option ...  
+[documentation of steps](cometa_actions.md). 
+
+You want to see the code running below? See [actions.py](https://github.com/cometa-rocks/cometa/blob/master/behave/cometa_itself/steps/actions.py)
 
 <a name="selectors"></a>
 
@@ -185,3 +196,8 @@ We will then review and update the master branch.
 
 The cometa community thanks you for you help.
 
+<a name="needhelp"></a>
+
+# You are stuck and need some help?
+
+We are here to help you. Please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5  
