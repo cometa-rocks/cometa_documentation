@@ -81,6 +81,8 @@ A good way to start is, to just [grab our example](feature_example_your_first_te
 
 <a name="allaboutsteps">
 
+# All about Cometa steps
+
 Cometa comes with over 70 predefined steps like "Goto {URL}", "Wait until I can see {something} on page". 
 
 See the detailed documentation on every possible steps group by mouse-actions, keyboard actions, selector option ...  
