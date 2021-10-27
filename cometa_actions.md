@@ -310,6 +310,11 @@ click</td>
         <td>Do a login using Basic Auth credentials, please use variables to mask sensitive values like passwords</td>
         <td></td>
     </tr>
+    <tr>
+        <td>Press the following set of keys "{keySet}"</td>
+        <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneosly. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...), </td>
+        <td>Press the following set of keys "shift+alt+f+shift+alt+a"</td>
+    </tr>
 </table>
 
 ### IBM actions<a name="IBM_AC"></a>
