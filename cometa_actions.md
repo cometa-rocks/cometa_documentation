@@ -142,7 +142,7 @@ click</td>
     <tr>
         <td>Check if "{css_selector}" contains "{value}" in "{css_property}"</td>
         <td>Checks if an element contains a given text inside a css-property like background-image, fontSize, etc.</td>
-        <td></td>
+        <td>Check if "[id="navbar"]" contains "#f00" in "background-color"</td>
     </tr>
     <tr>
         <td>Check if "{css_selector}" contains "{value}" in JS property "{js_property}"</td>
