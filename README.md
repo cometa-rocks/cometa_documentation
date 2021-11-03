@@ -31,7 +31,7 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 
 # Cometa Overview - 5W1H
 
-You can find the What, When, Where, Why, Who, & How about Cometa [Here](https://www.xmind.net/m/U8BJXc).
+You can find the [What, When, Where, Why, Who, & How about Cometa - here](https://www.xmind.net/m/U8BJXc).
 
 <a name="whatis_a_testplan"></a>
 
