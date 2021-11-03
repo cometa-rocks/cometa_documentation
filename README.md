@@ -203,3 +203,7 @@ The cometa community thanks you for you help.
 # You are stuck and need some help?
 
 We are here to help you. Please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5  
+   
+# Todos
+   
+* Copy documentation of REST API Services from redmine-wiki here
