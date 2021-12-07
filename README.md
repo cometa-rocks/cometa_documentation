@@ -207,3 +207,7 @@ We are here to help you. Please contact us at our email <tec_dev@cometa.rocks> o
 # Todos
    
 * Copy documentation of REST API Services from redmine-wiki here
+
+# License
+   
+Cometa.Rocks is licensed under AGPLv3 - see details in `LICENSE`(https://github.com/cometa-rocks/cometa_documentation/blob/main/LICENSE)
