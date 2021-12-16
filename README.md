@@ -32,7 +32,7 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 
 # Cometa Overview - 5W1H
 
-You can find the What, When, Where, Why, Who, & How about Cometa [Here](https://www.xmind.net/m/U8BJXc).
+You can find the [What, When, Where, Why, Who, & How about Cometa - here](https://www.xmind.net/m/U8BJXc).
 
 <a name="whatis_a_testplan"></a>
 
@@ -160,6 +160,10 @@ Another use case is: Order validation
 
 # Execute your own Javascript
 
+Use the step: `Run Javascript function "{function}"`
+   
+Replace "{function}" with "alert('foo')" to get a first understanding. Inside the "" you can place anything you'd like and that is valid JavaScript. You do not have to care about escaping a _"_ ... cometa does that for you. 
+
 You want to compare two selectors to match between System A and System B.
 
 List A: Featured;Price: Low to High;Price: High to Low;Avg. Customer Review;Newest Arrivals
@@ -181,9 +185,7 @@ Sub-features are cool for include repeating tasks in other steps.
 
 So, for example let's assume you will always have to log-on to your System before testing.
 
-The you would create a feature "Logon System XYZ" and include this feature in all you other features using the step `Run Javascript function "{function}"`
-
-Replace "{function}" with "alert('foo')" to get a first understanding. Inside the "" you can place anything you'd like and that is valid JavaScript. You do not have to care about escaping a _"_ ... cometa does that for you. 
+Then you would create a feature "Logon System XYZ" and include this feature in all you other features using the step `"Run feature with {name or id} before continue"`
 
 <a name="housekeeping"></a>
 
@@ -212,3 +214,11 @@ The cometa community thanks you for you help.
 # You are stuck and need some help?
 
 We are here to help you. Please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5  
+   
+# Todos
+   
+* Copy documentation of REST API Services from redmine-wiki here
+
+# License
+   
+Cometa.Rocks is licensed under AGPLv3 - see details in `LICENSE`(https://github.com/cometa-rocks/cometa_documentation/blob/main/LICENSE)
