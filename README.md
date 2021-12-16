@@ -19,7 +19,8 @@ Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
 - [Your first test](#general) 
 - [All about cometa steps](#allaboutsteps)
 - [All about selectors](#selectors) 
-- [Integration](#integration) 
+- [Integration with Webhooks](#integration) 
+- [Integration with Git](#integrationgit) 
 - [Data Driven Testing](#datadriventesting) 
 - [Execute](#execute-javascript)
 - [Create sub-feature](#create-sub-feature)
@@ -111,6 +112,14 @@ We have put together a huge summary about selectors and differences between CSS 
 Integration is usefull to get feedback on test results via Webhooks. Any application supporting webhooks can be notified by co.meta at the end of a test execution either on error or always.
 
 The integration is user and department dependent. Each user can have different notifications. If two users use the same webhook, then for each user the webhook will be executed.
+
+<a name="integrationgit"></a>
+
+# Integration with Gitlab / Github
+
+To integerate cometa into you CI/CD pipeline the REST API is your friend. You can trigger anything that you would do from the UI via REST API. It is easy and straight forward.
+
+See [`integration with gitlab`](https://github.com/cometa-rocks/cometa/blob/master/scripts/integration-with-gitlab.sh) as an example. Depending on your authentication provider and URL endpoints, you have to adapt the variables and URL endpoints in the script.
 
 <a name="datadriventesting"></a>
 
