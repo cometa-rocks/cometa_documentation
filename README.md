@@ -1,6 +1,6 @@
 
 
-<img alt="# cometa - Complete Meta Test Automation" src="img/logos/COMETA_Logo_Y_W.png">
+<div style="vertical-align:center; width:100%;"><img alt="# cometa - Complete Meta Test Automation" src="img/logos/COMETAROCKS_LogoEslog_Y_W.png"></div>
 
 Cometa was developed to help QA, Developers and Administrators to easily repeat testing with a no-code/low-code approach using an on-prem or cloud platform.  
 
@@ -23,6 +23,8 @@ You are looking at the Cometa Community Edition (CE) [licensed](#license) under 
 
 - [Cometa Overview - 5W1H](#cometamindmap)
 - [Cometa Versions](#cometaversions)
+
+All about testing
 - [What is a Testplan / Feature](#whatis_a_testplan)  
 - [Your first test](#general) 
 - [All about cometa steps](#allaboutsteps)
@@ -30,11 +32,15 @@ You are looking at the Cometa Community Edition (CE) [licensed](#license) under 
 - [Data Driven Testing](#datadriventesting) 
 - [Execute](#execute-javascript)
 - [Create sub-feature](#create-sub-feature)
+
+All about integration
 - [Integration with Webhooks](#integration) 
 - [Integration with Git](#integrationgit) 
 - [REST API](#restapi) 
-- [Housekeeping](#housekeeping)
 - [Security](#security) 
+- [Housekeeping](#housekeeping)
+
+Last but not least
 - [Want to help?](#wanttohelp) 
 - [Need support/help?](#needhelp) 
 - [Design and Logos](#design) 
@@ -234,7 +240,7 @@ See [`integration with gitlab`](https://github.com/cometa-rocks/cometa/blob/mast
 
 # REST API
    
-Cometa RESTA API is Django based. See the [REST API](/REST-API.md) for details.
+Cometa REST API is Django based. See the [REST API](/REST-API.md) for details.
 
 
 <a name="housekeeping"></a>
