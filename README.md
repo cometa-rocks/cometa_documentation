@@ -4,7 +4,6 @@
 
 Cometa was developed to help QA, Developers and Administrators to easily repeat testing with a no-code/low-code approach using an on-prem or cloud platform.  
 
-
 Cometa stands for **co**mplete **me**ta **t**est **a**utomation. 
 
 Meta (from the Greek μετα-, meta-, meaning "after" or "beyond") is a prefix meaning more comprehensive or transcending. [source Wikipedia](https://en.wikipedia.org/wiki/Meta). 
@@ -23,6 +22,7 @@ You are looking at the Cometa Community Edition (CE) [licensed](#license) under 
 
 - [Cometa Overview - 5W1H](#cometamindmap)
 - [Cometa Versions](#cometaversions)
+- [Cometa History](#cometahistory)
 
 All about testing
 - [What is a Testplan / Feature](#whatis_a_testplan)  
@@ -31,6 +31,7 @@ All about testing
 - [All about selectors](#selectors) 
 - [Data Driven Testing](#datadriventesting) 
 - [Execute](#execute-javascript)
+- [Compare values](#compare-selector-values)
 - [Create sub-feature](#create-sub-feature)
 
 All about integration
@@ -80,6 +81,23 @@ The freemium plan can be updated to a paid plan any time. The paid plan starts a
 **Cloud Edition Enterprise**
 
 You don't want to bind human resources on servers setup and maintenance? We can plan, build and run your enterprise cloud version on completly separated machines on premises or on cloud.  
+
+<a name="cometahistory"></a>
+
+# Cometa History
+
+Development started around 2014-2015, when Daimler AG, Germany asked for an agile process of testing financial enterprise reporting web applications. Since then cometa has come a long way. 
+
+| Year | What was done |
+| :---: | :--- |
+| 2014 | First Proof-of-Concept (Poc) |
+| 2016 | Starting Development of Version 0.1 of Cometa |
+| 2018 | Cometa goes into Production |
+| 2019 | Second PoC |
+| 2020 | Development + Enhancement of pre-built steps to be more inteligent and robust |
+| 2021 | Chaining of Execution via automated scheduling, development of New Landing (beta), starting promotion in Testing Communities, Cometa Rocks S.L. established to backup the further development and promotion, Inauguration of public repo on github |
+| 2022 | New customers signup for Enterprise Grade testing |
+
 
 
 <a name="whatis_a_testplan"></a>
@@ -197,18 +215,29 @@ Use the step: `Run Javascript function "{function}"`
    
 Replace "{function}" with "alert('foo')" to get a first understanding. Inside the "" you can place anything you'd like and that is valid JavaScript. You do not have to care about escaping a _"_ ... cometa does that for you. 
 
+<a name="compare-selector-values"></a>
+
+# Compare the values of two selectors over system boundaries
+
 You want to compare two selectors to match between System A and System B.
 
+This steps does the magic for you:
+`Test list of "{css_selector}" elements to contain "{all_or_partial}" values from list variable "{variable_names}" use prefix "{prefix}" and suffix "{suffix}"`
+
+```
 List A: Featured;Price: Low to High;Price: High to Low;Avg. Customer Review;Newest Arrivals
 List B: Featured;Price> Low to High;Price> High to Low;Avg. Customer Review;Newest Arrivals
+```
 
-This is rare, but could happen. The ":" and ">" in the middle cannot be handled by the Prefix/Suffix from cometa.
-You might use the "Execute Java-Script". 
+The ":" and ">" in the middle cannot be handled by the Prefix/Suffix from cometa.
 
-Get the value from the selector via Javascript.
-In the same function, split it and write it to the DOM.
-Use a next step in cometa to fetch your updated selector to a variable.
-And then compare.
+Solution:
+Use the `"Execute Java-Script"` beforehand and get the formatting right. 
+
+* Get the value from the selector via Javascript.
+* In the same function, split it and write it to the DOM.
+* Use a next step in cometa to fetch your updated selector to a variable.
+* And then compare.
 
 <a name="create-sub-feature"></a>
 
