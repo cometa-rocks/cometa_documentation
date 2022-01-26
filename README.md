@@ -20,11 +20,11 @@ You are looking at the Cometa Community Edition (CE) [licensed](#license) under 
 
 # Table of Contents 
 
-- [Cometa Overview - 5W1H](#cometamindmap)
 - [Cometa Versions](#cometaversions)
 - [Cometa History](#cometahistory)
 
 All about testing
+- [Cometa Overview - 5W1H](#cometamindmap)
 - [What is a Testplan / Feature](#whatis_a_testplan)  
 - [Your first test](#general) 
 - [All about cometa steps](#allaboutsteps)
@@ -46,12 +46,6 @@ Last but not least
 - [Need support/help?](#needhelp) 
 - [Design and Logos](#design) 
 - [License](#license) 
-
-<a name="cometamindmap"></a>
-
-# Cometa Overview - 5W1H
-
-To get a highlevel overview in mindmap format - find the "5W's" and "1H" ... [What, When, Where, Why, Who, & How about Cometa - here](https://www.xmind.net/m/U8BJXc).
 
 <a name="cometaversions"></a>
 
@@ -98,6 +92,12 @@ Development started around 2014-2015, when Daimler AG, Germany asked for an agil
 | 2021 | Chaining of Execution via automated scheduling, development of New Landing (beta), starting promotion in Testing Communities, Cometa Rocks S.L. established to backup the further development and promotion, Inauguration of public repo on github |
 | 2022 | New customers signup for Enterprise Grade testing |
 
+
+<a name="cometamindmap"></a>
+
+# Cometa Overview - 5W1H
+
+To get a highlevel overview in mindmap format - find the "5W's" and "1H" ... [What, When, Where, Why, Who, & How about Cometa - here](https://www.xmind.net/m/U8BJXc).
 
 
 <a name="whatis_a_testplan"></a>
