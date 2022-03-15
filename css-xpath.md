@@ -610,8 +610,8 @@ Example:
         <td>Concatenates and returns 2 specified strings</td>
     </tr>
     <tr>
-        <td>substring(str, start, len)</td>
-        <td>Returns a part of the given string. Str is the string to evaluate, start the position within string where the substring begins and the length is the length of the substring itself. If omitted, it will return the substring from the start position to the end of string</td>
+        <td>//*[contains(lower-case(@name),'ear')]</td>
+        <td>This DOES NOT work with the selenium x-path implementation (yet). You can use translate to achieve lower-case or upper-case. Example: `//*[translate(.,'HOME','home')='home']`. This example matches any kind auf "HoMe" with "home". This is very powerfull, when you see text on your screen, where you do not know, if it has been transformed with CSS rules. So, if you are looking at text to match, you might always want to make sure that it is matched case insensitive.</td>
     </tr>
     <tr>
         <td>substring-before(str, sub)</td>

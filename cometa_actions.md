@@ -312,7 +312,75 @@ click</td>
     </tr>
     <tr>
         <td>Press the following set of keys "{keySet}"</td>
-        <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneosly. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...), </td>
+        <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneosly. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...).
+        <br><p>
+        Here is the complete list of Special Keys that can be used in Cometa via Selenium Webdriver: 
+        <table>
+        <tr>
+            <td>ADD</td>	<td>ALT</td>	<td>ARROW_DOWN</td>
+        </tr>
+        <tr>
+            <td>ARROW_LEFT</td>	<td>	ARROW_RIGHT</td>	<td>	ARROW_UP</td>
+        </tr>
+        <tr>
+            <td>BACKSPACE</td>	<td>	BACK_SPACE</td>	<td>	CANCEL</td>
+        </tr>
+        <tr>
+            <td>CLEAR</td>	<td>	COMMAND</td>	<td>	CONTROL</td>
+        </tr>
+        <tr>
+            <td>DECIMAL</td>	<td>	DELETE</td>	<td>	DIVIDE</td>
+        </tr>
+        <tr>
+            <td>DOWN</td>	<td>	END</td>	<td>	ENTER</td>
+        </tr>
+        <tr>
+            <td>EQUALS</td>	<td>	ESCAPE</td>	<td>	F1</td>
+        </tr>
+        <tr>
+            <td>F10</td>	<td>	F11</td>	<td>	F12</td>
+        </tr>
+        <tr>
+            <td>F2</td>	<td>	F3</td>	<td>	F4</td>
+        </tr>
+        <tr>
+            <td>F5</td>	<td>	F6</td>	<td>	F7</td>
+        </tr>
+        <tr>
+            <td>F8</td>	<td>	F9</td>	<td>	HELP</td>
+        </tr>
+        <tr>
+            <td>HOME</td>	<td>	INSERT</td>	<td>	LEFT</td>
+        </tr>
+        <tr>
+            <td>LEFT_ALT</td>	<td>	LEFT_CONTROL</td>	<td>	LEFT_SHIFT</td>
+        </tr>
+        <tr>
+            <td>META</td>	<td>	MULTIPLY</td>	<td>	NULL</td>
+        </tr>
+        <tr>
+            <td>NUMPAD0</td>	<td>	NUMPAD1</td>	<td>	NUMPAD2</td>
+        </tr>
+        <tr>
+            <td>NUMPAD3</td>	<td>	NUMPAD4</td>	<td>	NUMPAD5</td>
+        </tr>
+        <tr>
+            <td>NUMPAD6</td>	<td>	NUMPAD7</td>	<td>	NUMPAD8</td>
+        </tr>
+        <tr>
+            <td>NUMPAD9</td>	<td>	PAGE_DOWN</td>	<td>	PAGE_UP</td>
+        </tr>
+        <tr>
+            <td>PAUSE</td>	<td>	RETURN</td>	<td>	RIGHT</td>
+        </tr>
+        <tr>
+            <td>SEMICOLON</td>	<td>	SEPARATOR</td>	<td>	SHIFT</td>
+        </tr>
+        <tr>
+            <td>SPACE</td>	<td>	SUBTRACT</td>	<td>	TAB</td>
+        </tr>
+        </table>
+        </td>
         <td>Press the following set of keys "shift+alt+f+shift+alt+a"</td>
     </tr>
 </table>
