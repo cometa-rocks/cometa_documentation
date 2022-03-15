@@ -311,8 +311,9 @@ click</td>
         <td></td>
     </tr>
     <tr>
-        <td>Press the following set of keys "{keySet}"</td>
+        <td style="vertical-align:top">Press the following set of keys "{keySet}"</td>
         <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneosly. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...).
+        <br><p>
         <br><p>
         Here is the complete list of Special Keys that can be used in Cometa via Selenium Webdriver: 
         <table>
@@ -381,7 +382,7 @@ click</td>
         </tr>
         </table>
         </td>
-        <td>Press the following set of keys "shift+alt+f+shift+alt+a"</td>
+        <td style="vertical-align:top">Press the following set of keys "shift+alt+f;shift+alt+a"</td>
     </tr>
 </table>
 
