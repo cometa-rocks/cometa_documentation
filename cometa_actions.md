@@ -407,7 +407,7 @@ click</td>
     </tr>
     <tr>
         <td>I can go to IBM Cognos folder "{folder_name}"</td>
-        <td>Navigates to the selected folder folder. If folders are nesteduse ";" to separate items.</td>
+        <td>Navigates to the selected folder. If folders are nested use ";" to separate items.</td>
         <td>I can go to IBM Cognos folder "Enterprise Basic;
         Business Reports;02 Monthly Reports"</td>
     </tr>
