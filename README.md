@@ -155,7 +155,7 @@ Cometa comes with over 70 predefined steps like "Goto {URL}", "Wait until I can 
 See the detailed documentation on every possible steps group by mouse-actions, keyboard actions, selector option ...  
 [documentation of steps](cometa_actions.md). 
 
-You want to see the code running below? See [actions.py](https://github.com/cometa-rocks/cometa/blob/master/behave/cometa_itself/steps/actions.py)
+You want to see the code running below? See [actions.py](https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/actions.py)
 
 <a name="selectors"></a>
 
