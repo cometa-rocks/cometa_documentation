@@ -1,4 +1,6 @@
-<img src="img/cometa.png" width="600px"/>
+<img src="img/logos/COMETA_Logo_Y_W.png" width="600px"/>
+
+<br />
 
 # Co.meta steps table of contents
 
@@ -37,7 +39,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
         <th>Example</th>
     </tr>
     <tr>
-        <td>StartBrowser and call URL "(url)"</td>
+        <td>StartBrowser and call URL "{url}"</td>
         <td>Browse to an URL</td>
         <td></td>
     </tr>

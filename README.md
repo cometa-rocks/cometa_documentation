@@ -33,6 +33,7 @@ All about testing
 - [Execute](#execute-javascript)
 - [Compare values](#compare-selector-values)
 - [Create sub-feature](#create-sub-feature)
+- [Questions](questions.md)
 
 All about integration
 - [Integration with Webhooks](#integration) 
