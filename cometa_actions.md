@@ -206,20 +206,14 @@ click</td>
         <td>Loop "{x}" times starting at "{index}" and do  /  End loop</td>
         <td>Starts a loop cycle, repeating inside defined actions as many times as indicated in "x" starting from as indicated in "index"</td>
         <td>
-            1: Will write in google search input : index 1 : : index 2 : : index 3 : : index 4 : : index 5 :
-             - StartBrowser and call URL "https://google.com/"
-             - I move mouse to "//div/button[2]" and click
-             - I move mouse to "//input" and click
-             - Loop "5" times starting at "1" and do
-             - Send keys " : Index %index : "
-             - End Loop
-            2: Will loop over first 5 <tr> elements that have class name "even" or "odd" clicking for each of them the first occurence of <td>
-            ___________________________________________________
+            Will loop over first 5 <tr> elements that have class name "even" or "odd" clicking for each of them the first occurence of <td>
+            ______________________________________________________
              - StartBrowser and call URL "https://datatables.net/"
              - Loop "5" times starting at "1" and do
              - click on element with xpath "//tr[contains(@class, "even") or contains(@class, "odd")][%index]/td[1]"
              - I sleep "1" seconds
              - End Loop
+            ______________________________________________________
         </td>
     </tr>
 </table>
