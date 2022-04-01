@@ -207,15 +207,12 @@ click</td>
         <td>Starts a loop cycle, repeating inside defined actions as many times as indicated in "x" starting from as indicated in "index"</td>
         <td>
             1: Will write in google search input : index 1 : : index 2 : : index 3 : : index 4 : : index 5 :
-            ___________________________________________________
              - StartBrowser and call URL "https://google.com/"
              - I move mouse to "//div/button[2]" and click
              - I move mouse to "//input" and click
              - Loop "5" times starting at "1" and do
              - Send keys " : Index %index : "
              - End Loop
-            ___________________________________________________
-            
             2: Will loop over first 5 <tr> elements that have class name "even" or "odd" clicking for each of them the first occurence of <td>
             ___________________________________________________
              - StartBrowser and call URL "https://datatables.net/"
