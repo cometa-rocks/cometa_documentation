@@ -202,20 +202,6 @@ click</td>
         <td>1 list:<br/> Test list of "{css selector}" elements to contain all or partial values from list variable "IBIS_MEC" use prefix " " and suffix " "<br/>
         2 lists: <br/>Test list of "table[class="ls"]>tbody>tr:nth-child(n+3)>td [cid="11"]>span" elements to contain all or partial values from list variable "ENL_VINs|RIT_VINs" use prefix " " and suffix " "</td>
     </tr>
-    <tr>
-        <td>Loop "{x}" times starting at "{index}" and do  /  End loop</td>
-        <td>Starts a loop cycle, repeating inside defined actions as many times as indicated in "x" starting from as indicated in "index"</td>
-        <td>
-            Will loop over first 5 <tr> elements that have class name "even" or "odd" clicking for each of them the first occurence of <td>
-            ______________________________________________________
-             - StartBrowser and call URL "https://datatables.net/"
-             - Loop "5" times starting at "1" and do
-             - click on element with xpath "//tr[contains(@class, "even") or contains(@class, "odd")][%index]/td[1]"
-             - I sleep "1" seconds
-             - End Loop
-            ______________________________________________________
-        </td>
-    </tr>
 </table>
 
 ### Feature actions<a name="FEATURE_AC"></a>
