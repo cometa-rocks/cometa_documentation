@@ -33,6 +33,7 @@ All about testing
 - [Execute](#execute-javascript)
 - [Compare values](#compare-selector-values)
 - [Create sub-feature](#create-sub-feature)
+- [Up- and Downloading Files](#up-and-download)
 - [Questions](questions.md)
 
 All about integration
@@ -250,7 +251,34 @@ So, for example let's assume you will always have to log-on to your System befor
 
 Then you would create a feature "Logon System XYZ" and include this feature in all you other features using the step `"Run feature with {name or id} before continue"`
 
+<a name="up-and-download"></a>
+# Upload and Download Files
+
+For **Uploading** use the step `Upload a file by clicking on "{selector}" using file "{filename}"`.
+
+`selector` is the xpath, id or css selector of the input field to be used.
+
+`filename` is the path of the upload file in the headless browsers home-directory. 
+
+Inside the homedirectory are two folders "Downloads" and "uploads". In Downloads all downloaded files from any testcase can be found in a subfolder with the feature-ID. Files in the uploads folder can only be provided by sys administration. The files must be copied to `<cometainstallation>/backend/behave/uploads/`
+
+In general Selenium is not able to use or control the upload window which normal pops up, when we click on "Upload something". 
+
+Question: So how do we upload something, if we cannot control the window which is responsible for this? 
+
+Answer: We select the `input field` in HTML where the file should be stored and send the upload filename via send_keys() into that item. 
+
+Question: My input field is hidden. So I cannot select it. What now?
+
+Answer: Make it visible with javascript by setting the correct attributes.
+
+For **Downloading** use the step `Download a file by clicking on "{linktext}"` ... downloads a file, watch which file is downloaded and assign them to feature_result and step_result, linktext can be a text, css_selector or even xpath
+
+The Downloaded file be re-used for uploading somewhere else.
+
+
 <a name="integration"></a>
+
 
 # Integration with Webhooks
 
