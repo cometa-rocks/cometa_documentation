@@ -1,4 +1,6 @@
-<img src="img/cometa.png" width="600px"/>
+<img src="img/logos/COMETA_Logo_Y_W.png" width="600px"/>
+
+<br />
 
 # Selectors table of contents
 

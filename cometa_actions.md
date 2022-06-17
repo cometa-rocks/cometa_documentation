@@ -1,4 +1,6 @@
-<img src="img/cometa.png" width="600px"/>
+<img src="img/logos/COMETA_Logo_Y_W.png" width="600px"/>
+
+<br />
 
 # Co.meta steps table of contents
 
@@ -37,7 +39,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
         <th>Example</th>
     </tr>
     <tr>
-        <td>StartBrowser and call URL "(url)"</td>
+        <td>StartBrowser and call URL "{url}"</td>
         <td>Browse to an URL</td>
         <td></td>
     </tr>
@@ -199,6 +201,31 @@ click</td>
         <td>Compares any content of a css selector (e.g. table, dropdown options) to a list saved in variable. <br/>Several variable lists can be combined, separated by "|" (pipe). <br/>Note: Cannot test content like < span >< /span > (empty). Or list like " ;a;b;c; ;e;f"</td>
         <td>1 list:<br/> Test list of "{css selector}" elements to contain all or partial values from list variable "IBIS_MEC" use prefix " " and suffix " "<br/>
         2 lists: <br/>Test list of "table[class="ls"]>tbody>tr:nth-child(n+3)>td [cid="11"]>span" elements to contain all or partial values from list variable "ENL_VINs|RIT_VINs" use prefix " " and suffix " "</td>
+    </tr>
+    <tr>
+        <td>Loop "{x}" times starting at "{index}" and do  /  End loop</td>
+        <td>Starts a loop cycle, repeating inside defined actions as many times as indicated in "x" starting from as indicated in "index"</td>
+        <td>
+            <br><strong>Step 1:</strong> StartBrowser and call URL "https://datatables.net/"
+            <br><strong>Step 2:</strong> Loop "5" times starting at "1" and do
+		    <br><strong>Step 3:</strong> click on element with xpath "//tr[contains(@class, "even") or contains(@class, "odd")][%index]/td[1]"
+            <br><strong>Step 4:</strong> I sleep "1" seconds
+            <br><strong>Step 5:</strong> End Loop
+            <br>
+            <br>Will loop over first 5 <strong>tr</strong> elements with class <strong>"even"</strong> or <strong>"odd"</strong> and click first occurence of <strong>td</strong> for each of them
+            <br>_________________________________________________________
+            <br>
+            <br>
+            <br><strong>Step 1:</strong> StartBrowser and call URL "https://google.com/"
+            <br><strong>Step 2:</strong> I move mouse to "//div/button[2]" and click
+		    <br><strong>Step 3:</strong> I move mouse to "//input" and click
+            <br><strong>Step 4:</strong> Loop "5" times starting at "1" and do
+            <br><strong>Step 5:</strong> Send keys " : Index %index : "
+            <br><strong>Step 6:</strong> End Loop
+            <br>
+            <br>Will open google and introduce in search input <strong>: index 1 :  : index 2 :  : index 3 :  : index 4 :  : index 5 :</strong>
+            <br>_________________________________________________________
+        <td>
     </tr>
 </table>
 
