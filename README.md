@@ -155,7 +155,7 @@ Cometa comes with over 70 predefined steps like "Goto {URL}", "Wait until I can 
 See the detailed documentation on every possible steps group by mouse-actions, keyboard actions, selector option ...  
 [documentation of steps](cometa_actions.md). 
 
-You want to see the code running below? See [actions.py](https://github.com/cometa-rocks/cometa/blob/master/behave/cometa_itself/steps/actions.py)
+You want to see the code running below? See [actions.py](https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/actions.py)
 
 <a name="selectors"></a>
 
@@ -248,6 +248,30 @@ Sub-features are cool for include repeating tasks in other steps.
 So, for example let's assume you will always have to log-on to your System before testing.
 
 Then you would create a feature "Logon System XYZ" and include this feature in all you other features using the step `"Run feature with {name or id} before continue"`
+
+# Upload and Download Files
+
+For **Uploading** use the step `Upload a file by clicking on "{selector}" using file "{filename}"`.
+
+`selector` is the xpath, id or css selector of the input field to be used.
+
+`filename` is the path of the upload file in the headless browsers home-directory. 
+
+Inside the homedirectory are two folders "Downloads" and "uploads". In Downloads all downloaded files from any testcase can be found in a subfolder with the feature-ID. Files in the uploads folder can only be provided by sys administration. The files must be copied to `<cometainstallation>/backend/behave/uploads/`
+
+In general Selenium is not able to use or control the upload window which normal pops up, when we click on "Upload something". 
+
+Question: So how do we upload something, if we cannot control the window which is responsible for this? 
+
+Answer: We select the `input field` in HTML where the file should be stored and send the upload filename via send_keys() into that item. 
+
+Question: My input field is hidden. So I cannot select it. What now?
+
+Answer: Make it visible with javascript by setting the correct attributes.
+
+For **Downloading** use the step `Download a file by clicking on "{linktext}"` ... downloads a file, watch which file is downloaded and assign them to feature_result and step_result, linktext can be a text, css_selector or even xpath
+
+The Downloaded file be re-used for uploading somewhere else.
 
 <a name="integration"></a>
 
