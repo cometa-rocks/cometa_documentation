@@ -260,7 +260,11 @@ For **Uploading** use the step `Upload a file by clicking on "{selector}" using 
 
 `filename` is the path of the upload file in the headless browsers home-directory. 
 
-Inside the homedirectory are two folders "Downloads" and "uploads". In Downloads all downloaded files from any testcase can be found in a subfolder with the feature-ID. Files in the uploads folder can only be provided by sys administration. The files must be copied to `<cometainstallation>/backend/behave/uploads/`
+Inside the home directory of the virtual browsers there are two folders "Downloads" and "uploads". In Downloads all downloaded files from any testcase can be found in a subfolder with the feature-ID. 
+
+Files in the uploads folder can only be provided by sys administration. The files must be copied to `<cometainstallation>/backend/behave/uploads/`. 
+
+The following dummy files are located in the uploads folder: dummy.mp4, dummy.pdf, dummy.png, dummy.txt and dummy.xlsx 
 
 In general Selenium is not able to use or control the upload window which normal pops up, when we click on "Upload something". 
 
@@ -270,11 +274,11 @@ Answer: We select the `input field` in HTML where the file should be stored and 
 
 Question: My input field is hidden. So I cannot select it. What now?
 
-Answer: Make it visible with javascript by setting the correct attributes.
+Answer: Make it visible with javascript by setting the correct attributes like `display:inline`.
 
 For **Downloading** use the step `Download a file by clicking on "{linktext}"` ... downloads a file, watch which file is downloaded and assign them to feature_result and step_result, linktext can be a text, css_selector or even xpath
 
-The Downloaded file be re-used for uploading somewhere else.
+The downloaded file can be re-used for uploading somewhere else.
 
 
 <a name="integration"></a>
