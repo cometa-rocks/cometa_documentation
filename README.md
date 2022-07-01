@@ -241,6 +241,11 @@ Use the `"Execute Java-Script"` beforehand and get the formatting right.
 * Use a next step in cometa to fetch your updated selector to a variable.
 * And then compare.
 
+Another Example: "Assert for a string to have a certain format, e.g. the string is longer then 5 characters"
+
+Use `Run Javascript "{function}"` as step and assert with javascript on the format, e.g. the following code checks that the string is longer then 5 characters: `Run Javascript function "
+if ( !"$MYORDERNUMBER".length>5 ) throw "Found an Error: Order Number is not greater than zero""` 
+
 <a name="create-sub-feature"></a>
 
 # Create a sub-features
