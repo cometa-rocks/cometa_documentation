@@ -243,8 +243,13 @@ Use the `"Execute Java-Script"` beforehand and get the formatting right.
 
 Another Example: "Assert for a string to have a certain format, e.g. the string is longer then 5 characters"
 
-Use `Run Javascript "{function}"` as step and assert with javascript on the format, e.g. the following code checks that the string is longer then 5 characters: `Run Javascript function "
-if ( !"$MYORDERNUMBER".length>5 ) throw "Found an Error: Order Number is not greater than zero""` 
+To acomplish this, save the string you want to assert in an environment variable. You can do this manually or let cometa do this using the step `Save selector "{css_selector}" value to environment variable "{variable_name}"`. This step looks for a value-tag or innerHTML, creates the variable specified and saves the value into that. A typical usecase is a data entry system with values that shall be checked on a reporting system or a summary list. So, first grab the value from a selector, e.g. `//input[@id='ordernumber']` save it into a variable MYORDERNUMBER.
+
+Then use `Run Javascript "{function}"` as step and assert with javascript on the format, e.g. the following code checks that the string is longer then 5 characters: `Run Javascript function " if ( !"$MYORDERNUMBER".length>5 ) throw "Found an Error: Order Number is not greater than zero" "`.
+
+Other examples:
+* Assert that ordernumber starts with "X-": `Run Javascript function " if ( !"$MYORDERNUMBER".substring(0,2)=='X-' ) throw "Found an Error: Order Number is not greater than zero" "`
+* Assert that ordernumber is exactly 10 chracters and ends with "-0": `Run Javascript function " if ( !"$MYORDERNUMBER".substring("$MYORDERNUMBER".length-2)=='-0' || !"$MYORDERNUMBER".length==10  ) throw "Found an Error: Order Number is not greater than zero" "`
 
 <a name="create-sub-feature"></a>
 
