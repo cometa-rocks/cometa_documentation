@@ -44,6 +44,7 @@ All about integration
 - [Housekeeping](#housekeeping)
 
 Last but not least
+- [Sponsors](#sponsors) 
 - [Want to help?](#wanttohelp) 
 - [Need support/help?](#needhelp) 
 - [Design and Logos](#design) 
@@ -336,6 +337,13 @@ Cometa is secured via [OIDC](https://en.wikipedia.org/wiki/OpenID). OIDC is stat
 The Freemium and Cloud Version of cometa uses google-oAuth and gitlab oAuth as option to select from.
 
 If you would like to integrate with other authentication providers, please let us know or contribute. We would be happy to accept your pull request.
+
+<a name="sponsors"></a>
+
+# Sponsors
+
+* Mercedes-Benz AG and Daimler Trucks AG, Stuttgart
+
 
 <a name="wanttohelp"></a>
 
