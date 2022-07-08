@@ -13,6 +13,7 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 1. [Keyboard actions](#KEYBOARD_AC)
 1. [IBM actions](#IBM_AC)
 1. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
+1. [Editing Excel Files](#EDITEXCEL_AC)
 1. [Other actions](#OTHER_AC)
 1. [Support](#SUPPORT)
 
@@ -495,7 +496,7 @@ click</td>
     </tr>
 </table>
 
-### Editing Excel Files
+### Editing Excel Files<a name="EDITEXCEL_AC"></a>
 
 Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerfull, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
 
