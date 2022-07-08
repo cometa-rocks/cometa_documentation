@@ -613,6 +613,20 @@ Here is a test example for further demonstration: [{"enabled":true,"screenshot":
         <td>Insert custom comments in testplans </td>
         <td>given #"here the comment starts"</td>
     </tr>
+    <tr>
+        <td>Edit "{excelfile}" and set "{value}" to "{cell}"</td>
+        <td>Updates excel file cell with new value.</td>
+        <td>
+            <br><strong>Step 1:</strong> StartBrowser and call URL "https://file-examples.com/index.php/sample-documents-download/sample-xls-download/"
+            <br><strong>Step 2:</strong> Download a file by clicking on "(//td[text()="1000 rows"]/parent::tr//a)[2]"
+		    <br><strong>Step 3:</strong> Edit "Downloads/file_example_XLSX_1000.xlsx" and set "50" to "F2"
+            <br><strong>Step 4:</strong> Goto URL "https://products.aspose.app/cells/es/viewer"
+            <br><strong>Step 5:</strong> Upload a file by clicking on ".uploadFileInput" using file "uploads/file_example_XLSX_1000.xlsx"
+            <br>
+            <br> This will download an excel file with dummy data. Dummy file will be downloaded to <code>Downloads/</code>, we will edit the file inside <code>Downloads/</code> and update it's content. Once excel file is updated it will be save to <code>uploads/</code> folder (for now, it might change in the future). Finally we view the edited file in an online excel viewer.
+            <br>
+        </td>
+    </tr>
 </table>
 
 ### Support<a name="SUPPORT"></a>
