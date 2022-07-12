@@ -544,6 +544,11 @@ Here is a test example for further demonstration: [{"enabled":true,"screenshot":
         <th>This will download the file in the linktext to the Downloads folders of the headless browser.</th>
         <th>If you are downloading a generic file, you can use `last_downloaded_file.<same suffix>` to access files that have ID's automatically generated.</th>
     </tr>
+    <tr>
+        <th>Attach the "{filename}" from Downloads folder to the current execution results</th>
+        <th>This will attach the file found in Downloads-folder to the current exectuion.</th>
+        <th>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</th>
+    </tr>
     
 </table>
 
