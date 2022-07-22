@@ -102,6 +102,8 @@ Development started around 2014-2015, when Daimler AG, Germany asked for an agil
 
 To get a highlevel overview in mindmap format - find the "5W's" and "1H" ... [What, When, Where, Why, Who, & How about Cometa - here](https://www.xmind.net/m/U8BJXc).
 
+You can also watch this [video](https://www.youtube.com/watch?v=8uv-QAJkOLY) to understand the "5W's" and "1H" of Cometa with practical demonstration.
+
 
 <a name="whatis_a_testplan"></a>
 
