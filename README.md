@@ -94,6 +94,7 @@ Development started around 2014-2015, when Daimler AG, Germany asked for an agil
 | 2020 | Development + Enhancement of pre-built steps to be more inteligent and robust |
 | 2021 | Chaining of Execution via automated scheduling, development of New Landing (beta), starting promotion in Testing Communities, Cometa Rocks S.L. established to backup the further development and promotion, Inauguration of public repo on github |
 | 2022 | New customers signup for Enterprise Grade testing |
+|      | Presentation of FOST - the future craye in Bangalore, India |
 
 
 <a name="cometamindmap"></a>
