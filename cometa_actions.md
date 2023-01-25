@@ -32,7 +32,7 @@ A very versatile step is *Run Javascript function "{function}"* - function can b
 
 If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.
 
-### Browser actions<a name="BROWSER_AC"></a>
+### Browser actions<a id="BROWSER_AC"></a>
 
 <table>
     <tr>
@@ -109,7 +109,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
     </tr>
 </table>
 
-### CSS selectors actions<a name="CSS_AC"></a>
+### CSS selectors actions<a id="CSS_AC"></a>
 
 <table>
     <tr>
@@ -231,7 +231,7 @@ click</td>
     </tr>
 </table>
 
-### Feature actions<a name="FEATURE_AC"></a>
+### Feature actions<a id="FEATURE_AC"></a>
 
 <table>
     <tr>
@@ -261,7 +261,7 @@ click</td>
     </tr>
 </table>
 
-### Mouse actions<a name="MOUSE_AC"></a>
+### Mouse actions<a id="MOUSE_AC"></a>
 
 <table>
     <tr>
@@ -316,7 +316,7 @@ click</td>
     </tr>
 </table>
 
-### Keyboard actions<a name="KEYBOARD_AC"></a>
+### Keyboard actions<a id="KEYBOARD_AC"></a>
 
 <table>
     <tr>
@@ -415,7 +415,7 @@ click</td>
     </tr>
 </table>
 
-### IBM actions<a name="IBM_AC"></a>
+### IBM actions<a id="IBM_AC"></a>
 
 <table>
     <tr>
@@ -447,7 +447,7 @@ click</td>
     </tr>
 </table>
 
-### IBM Cognos QueryStudio actions<a name="QUERYSTUDIO_AC"></a>
+### IBM Cognos QueryStudio actions<a id="QUERYSTUDIO_AC"></a>
 
 <table>
     <tr>
@@ -497,7 +497,7 @@ click</td>
     </tr>
 </table>
 
-### Editing Excel Files<a name="EDITEXCEL_AC"></a>
+### Editing Excel Files<a id="EDITEXCEL_AC"></a>
 
 Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerfull, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
 
@@ -510,23 +510,55 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     <tr>
         <td>Edit "{excelfile}" and set "{value}" to "{cell}"</td>
         <td>Opens the excel file and sets a value to a cell. </td>
-        <td>Example: `Edit "Downloads/myexcel.xlsx" and set "Cometa was here" to "C3"`</td>
+        <td>Example: <code>Edit "Downloads/myexcel.xlsx" and set "Cometa was here" to "C3"</code></td>
     </tr>
     <tr>
         <td>Open "{excelfile}" and assert "{value}" is in cell "{cell}"</td>
         <td>Opens the excel file and asserts that value is found in cell. </td>
-        <td>Example: `Open "Downloads/file_example_XLSX_1000.xlsx" and assert "COMETA" is in cell "A2"`</td>
+        <td>Example: <code>Open "Downloads/file_example_XLSX_1000.xlsx" and assert "COMETA" is in cell "A2"</code></td>
     </tr>
     <tr>
         <td>Open "{excelfile}" and set environment variable "{variable_name}" with value from cell "{cell}"</td>
         <td>Opens the excel file reads value found in cell and saves that value to a Cometa environment variable. </td>
-        <td>Example: `Open "Downloads/file_example_XLSX_1000.xlsx" and set environment variable "EXCEL" with value from cell "E2"`. This will result in the environment variable EXCEL to contain the value "United States".</td>
+        <td>Example: <code>Open "Downloads/file_example_XLSX_1000.xlsx" and set environment variable "EXCEL" with value from cell "E2"</code>. This will result in the environment variable EXCEL to contain the value "United States".</td>
+    </tr>
+    <tr>
+        <td>Open Excel from "{file}" and test that cells "{excel_range}" contain "{values}" options "{match_type}"</td>
+        <td>
+            Opens Excel or CSV file and asserts the values in the cell range specified.
+            <br><br>
+            Cell range can be any number of range as long as it cell lenght is not grater than the values lenght. If we don't know how many items there are in the values we can use a range like <code>A12:A</code> this will take <code>A12</code> as a starting cell and calculate the rows based on the items in values. This only works vertically (rows) so range like <code>A12:C</code> won't work. Other possible ranges can be: <code>A12:500</code> or even <code>A12:C13</code>, this last one will assert the value in the following order: <code>A12 => B12 => C12 => A13 => B13 => C13</code>.
+            <br><br>
+            Values are content that will be asserted and should be separated by semicolons (;).
+            <br><br>
+            Match type can be one of the followings:
+            <li><code>match exact</code>: Will fail the step if any of the assertions are failed. For e.g.: A12 should contain "Hi!" but contains "Hello!".</li>
+            <li><code>match partial</code>: Will pass the step if any of the assertions are passed. For e.g.: A12 should contain "Hi!", contains "Hello!" but A13 should contain "Bye" and matches to cell value "Bye". Overall step passes.</li> 
+            <li><code>match any</code>: WIP</li> 
+            <li><code>match x number of times</code>: WIP</li>
+            <br><br>
+            Generates an CSV file containing all the details about the assertions and why if might have failed.
+        </td>
+        <td>
+            Examples:
+            <br><br>
+            <code>Open Excel from "Downloads/last_downloaded_file.xlsx" and test that cells "A1:A" contain "Arslan;Ralf;Tornike" options "match exact"</code>
+            <br><br>
+            <code>Open Excel from "Downloads/last_downloaded_file.csv" and test that cells "A20" contain "500" options "match exact"</code>
+            <br><br>
+            <code>Open Excel from "Downloads/last_downloaded_file.csv" and test that cells "A20:C20" contain "2019;2020;2021" options "match partial"</code>
+        </td>
     </tr>
 </table>
 
-Here is a test example for further demonstration: [{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# download an excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://file-examples.com/index.php/sample-documents-download/sample-xls-download/\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ download file from given link in HTML ################","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Download a file by clicking on \"(//a[contains(@href,'_1000.xls')])[2]\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# open that excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"Downloads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# edit the excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"COMETA\" to \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"was\" to \"B2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"here\" to \"C2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Reopen the excel file to see the changes","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"uploads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Assert that a certain cell has a certain value","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and assert \"COMETA\" is in cell \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and set environment variable \"EXCEL\" with value from cell \"E2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60}]
+<details>
+    <summary>Here is a test example for further demonstration: </summary>
 
-### Uploading and Downloading files<a name="FILES"></a>
+    [{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# download an excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://file-examples.com/index.php/sample-documents-download/sample-xls-download/\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ download file from given link in HTML ################","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Download a file by clicking on \"(//a[contains(@href,'_1000.xls')])[2]\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# open that excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"Downloads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# edit the excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"COMETA\" to \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"was\" to \"B2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"here\" to \"C2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Reopen the excel file to see the changes","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"uploads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Assert that a certain cell has a certain value","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and assert \"COMETA\" is in cell \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and set environment variable \"EXCEL\" with value from cell \"E2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60}]
+</details>
+
+<br>
+### Uploading and Downloading files<a id="FILES"></a>
 
 <table>
     <tr>
@@ -552,7 +584,7 @@ Here is a test example for further demonstration: [{"enabled":true,"screenshot":
     
 </table>
 
-### Other actions<a name="OTHER_AC"></a>
+### Other actions<a id="OTHER_AC"></a>
 
 <table>
     <tr>
@@ -655,5 +687,5 @@ Here is a test example for further demonstration: [{"enabled":true,"screenshot":
     </tr>
 </table>
 
-### Support<a name="SUPPORT"></a>
+### Support<a id="SUPPORT"></a>
 For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5
