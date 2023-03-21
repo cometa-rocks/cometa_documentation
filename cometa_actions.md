@@ -164,6 +164,35 @@ click</td>
         <td></td>
     </tr>
     <tr>
+        <td>Save "{value}" to environment variable "{variable_name}"</td>
+        <td>save string value to environment variable, environment variable value has a maximum value of 255 characters</td>
+        <td>
+        This step has multiple use cases, like setting static value or save parsed data from other steps like Javascript function.</br>
+        Examples:</br>
+        <ol>
+            <li>
+            Settings static value</br>
+            <code>Save "my_email_address@cometa.rocks" to environment variable "myEmail"</code></br>
+            or</br>
+            <code>
+            Save "my_email_address@cometa.rocks" to environment variable "UserName"</br>
+            Run feature with name "FindByUserName" (which uses variable $UserName)</br>
+            Save "my_second_email_address@cometa.rocks" to environment variable "UserName"</br>
+            Run feature with name "FindByUserName" (which uses variable $UserName)
+            </code>
+            </li>
+            <li>
+            Parsing value from Javascript function</br>
+            <code>
+            Run Javascript function "return "$totalScore".replace(/[^0-9]+/, '');"</br>
+            Save "%js_return" to environment variable "totalScoreWithOutText"</br>
+            Assert "$expectedTotalScore" to be same as "$totalScoreWithOutText"
+            </code>
+            </li>
+        </ol> 
+        </td>
+    </tr>
+    <tr>
         <td>Save selector "{css_selector}" value to environment variable "{variable_name}"</td>
         <td>save css-selector's property value if available else gets selector's innerText and saves it as an environment variable, environment variable value has a maximum value of 255 characters</td>
         <td>Save selector "#ibis-fhn:ibis-center-id_label" value to environment variable "center"</td>
