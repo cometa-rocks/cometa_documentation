@@ -687,8 +687,13 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Run Javascript function "{function}"</td>
-        <td>Run a JavaScript function in the current browser context</td>
-        <td></td>
+        <td>Run a JavaScript function in the current browser context, if some value is retuned from the function it will be saved as %js_return which can later be used in co.meta.</td>
+        <td>
+        <code>
+        Run Javascript function "return "$myCometaVariable".replace(/[^0-9]+/, "");" <br />
+        Assert "$expectedTotalScore" to be same as "%js_return"
+        </code>
+        </td>
     </tr>
     <tr>
         <td>Throw an error with "{message}" and leave</td>
