@@ -198,6 +198,19 @@ Variables can then be used in any other step just like this:
 Send keys "$SEARCHTERM"
 ```
 
+Variables can be based on `Environment`, `Department` or `Feature`, which user is able to specify in the process of it's creation.
+* If user specifies that variable must be based on `Feature`, it will be private to the feature that is currently being edited, meaning that it will not be accessible from other features, independently of department or environment these belongs to.
+* If variables is based on department or environment, it will be accessible from any feature that belongs to same department or environment.
+
+
+Since quantity of variables tends to gradually increase, at certain point it can becomes somewhat time consuming to track the desired variable. For this reason we developed a popup that you can make use of to eficiently search and insert variables directly into steps. With this new implementation, user has no need to first search for desired variable and then maually write it's name in step.
+
+* For popup to open, write `$` character in step's predetermined slot for variable insertion - `"{$variable_name}" > "$"`, this will display all the accessible variables.
+* To filter variables, folow up `$` character with desired key word.  Ex: `"$foo"`.
+* Variables are filtered `inclusively`, meaning that provided keyword does not have to be exact name of variable, if variable's name contains provided keyword, it will be displayed.
+* By clicking any of the variables in the popup, you will be able to insert it into step automatically.
+* If match can not be found for provided key word, popup will display a message, informing user that no variable can be found based on current key word.
+
 Variables depend on the environment set in your feature. So you can store different variables for your DEV, INTEGRATION, STAGE and PROD environment. 
 
 
