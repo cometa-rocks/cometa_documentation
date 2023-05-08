@@ -307,6 +307,12 @@ For **Downloading** use the step `Download a file by clicking on "{linktext}"` .
 
 The downloaded file can be re-used for uploading somewhere else.
 
+<a name="step-timeouts"></a>
+# Step timeouts
+Timeouts are important part of feature's steps, since depending on step's description, execution time may vary. We provide 3 mechanisms to work with timeouts. 
+* User can set timeouts manually on each step.
+* User can edit certain department, and set global timeout for that exact department. By default every department has timeout of 60 seconds. Changing department's default step timeout, will only affect steps that have been created after the change. All the steps that were already created before default timeout change took place, will maintain their timeout.
+* User can modify step's timeout based on it's current timeout value. We provide mechanism that allow to modify step's timeout from `{x} seconds` to `{y} seconds`. This will affect all the steps in department.
 
 <a name="integration"></a>
 
