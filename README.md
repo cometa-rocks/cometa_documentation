@@ -200,10 +200,10 @@ Send keys "$SEARCHTERM"
 
 Variables can be based on `Environment`, `Department` or `Feature`, which user is able to specify in the process of it's creation.
 * If user specifies that variable must be based on `Feature`, it will be private to the feature that is currently being edited, meaning that it will not be accessible from other features, independently of department or environment these belongs to.
-* If variables is based on department or environment, it will be accessible from any feature that belongs to same department or environment.
+* If variable is based on department or environment, it will be accessible from any feature that belongs to same department or environment.
 
 
-Since quantity of variables tends to gradually increase, at certain point it can becomes somewhat time consuming to track the desired variable. For this reason we developed a popup that you can make use of to eficiently search and insert variables directly into steps. With this new implementation, user has no need to first search for desired variable and then maually write it's name in step.
+Since quantity of variables tends to gradually increase, at certain point it can becomes somewhat time consuming to track the desired variable. For this reason we developed a popup that you can make use of to efficiently search and insert variables directly into steps. With this new implementation, user has no need to first search for desired variable and then manually write it's name in step.
 
 * For popup to open, write `$` character in step's predetermined slot for variable insertion - `"{$variable_name}" > "$"`, this will display all the accessible variables.
 * To filter variables, folow up `$` character with desired key word.  Ex: `"$foo"`.
