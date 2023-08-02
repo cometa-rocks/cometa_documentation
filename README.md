@@ -234,6 +234,8 @@ Use the step: `Run Javascript function "{function}"`
    
 Replace "{function}" with "alert('foo')" to get a first understanding. Inside the "" you can place anything you'd like and that is valid JavaScript. You do not have to care about escaping a _"_ ... cometa does that for you. 
 
+If you want to use  x-path selectors in Javascript, use document.evalute() function. See details at: https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate
+
 <a name="compare-selector-values"></a>
 
 # Compare the values of two selectors over system boundaries
