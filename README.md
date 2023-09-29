@@ -2,21 +2,22 @@
 
 <div style="vertical-align:center; width:100%;"><img alt="# cometa - Complete Meta Test Automation" src="img/logos/COMETAROCKS_LogoEslog_Y_W.png"></div>
 
-Cometa was developed to help QA, Developers and Administrators to easily repeat testing with a no-code/low-code approach using an on-prem or cloud platform.  
+Co.Meta was developed to help QA engineers, SDETs, Software Developers, and Business Teams easily repeat testing with a no-code/low-code approach using an on-prem or a cloud platform. 
 
 Cometa stands for **co**mplete **me**ta **t**est **a**utomation. 
 
 Meta (from the Greek μετα-, meta-, meaning "after" or "beyond") is a prefix meaning more comprehensive or transcending. [source Wikipedia](https://en.wikipedia.org/wiki/Meta). 
 
-With Cometa you can test over system boundaries, you can go to one application, fetch data and save it in variables. Then go to another application and use the data to test against content or use it as search input ...
+With Co.Meta you can test over system boundaries, you can go to one application, fetch data, and save it in variables. Then go to another application and use the data to test against content or use it as search input. This is just a glimpse of the versatility and flexibility of the tool. As the product is being improved and upgraded, its versatility and flexibility will only be enhanced for the sake of user satisfaction and usefulness.
 
-Cometa uses a now-code / low-code approach to define test steps and executes them using behave (in a behaviour driven way) against selenium webdriver which grabs virtual or real browsers from selenium hub. The results from the execution (timing, steps execution logs, screenshots, video) are stored in the filesystem and referenced in database. The results can be consumed via REST API or easily in your browsers with Cometa's User Interface build with Angular. 
+
+Co.Meta uses a no-code/low-code approach to define test steps and executes them using behave (BDD approach) against selenium web-driver, which grabs virtual or real browsers from Selenium Hub. The results from the execution (timing, steps execution logs, screenshots, video etc.) are stored in the filesystem and referenced in the database. The results can be consumed via REST API or easily in your browsers with Co.Meta's User Interface build with Angular. 
 
 Cometa is available on-cloud and on-prem.
 
-Find the offical cometa.rocks homepage [here](https://cometa.rocks/)
+Find the offical homepage cometa.rocks [here](https://cometa.rocks/). The website is undergoing major changes in the background.
 
-You are looking at the Cometa Community Edition (CE) [licensed](#license) under AGPLv3. See [Cometa Versions](#cometaversions) to understand the difference from the Enterprise Edition (EE).
+You are looking at the Cometa Community Edition (CE) [licensed](#license) under AGPLv3. See [Cometa Versions](#cometaversions) to understand the difference from Cloud Edition (CEE) the Enterprise Edition (EE).
 
 # Table of Contents 
 
@@ -58,43 +59,37 @@ Cometa comes in various flavours:
 
 **Community Edition** 
 
-The public github repo is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/). The community Edition does not include enterprise features and in general lags behind the leading enterprise repo. 
+The public github repo is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
 
-Cometa Community edition is licensed under AGPLv3. See the [license details](#license).
+Co.Meta Community edition is licensed under AGPLv3. See the license details. See the [license details](#license).
 
+
+**Cloud Edition Enterprise**
+
+A hosted-by-us version is ready for you to use. There are 3 plans: Standard, Gold, and Premium for you to choose from. The details of these plans are subject to official interactions. 
+
+<a name="cometahistory"></a>
 
 **Enterprise Edition**
 
 The internal repo is on our [gitlab server](https://git.amvara.de/amvara/cometa). Please let [us know](mailto:enterpriseaccess@cometa.rocks), if you want access there. 
 
-To use the Enterprise Edition you need an Enterprise License. The Enterprise Edition will be patched and updated continously. It integerates into our CI/CD process. It contains features like `run on kubernetes` and `execute special teststeps for commercial products like IBM Cognos, SAP, Service-Now, Hubspot, .. ` 
-
-
-**Cloud Edition Freemium**
-
-A hosted by us version is ready for you to use. You get 90 minutes per month of free usage. Execution is limited to one browser emulator  per testcase.
-The freemium plan can be updated to a paid plan any time. The paid plan starts at 7€/month, which include 5€ subscription and 2€ for an extra of 60 minutes testing. The paid plans include parallel browser testing. 
-
-**Cloud Edition Enterprise**
-
-You don't want to bind human resources on servers setup and maintenance? We can plan, build and run your enterprise cloud version on completly separated machines on premises or on cloud.  
-
-<a name="cometahistory"></a>
+To use the Enterprise (On-premise) Edition you need an Enterprise License. It has all the features of the Premium Plan under Cloud Edition and comes with exciting perks such as onboarding support for the QA team, unlimited projects, unlimited users, all web browsers, priority support, and many more exciting advantages.
 
 # Cometa History
 
-Development started around 2014-2015, when Daimler AG, Germany asked for an agile process of testing financial enterprise reporting web applications. Since then cometa has come a long way. 
+Development started around 2014-2015, when Daimler AG, Germany asked for an agile process of testing financial enterprise reporting web applications. Since then Co.Meta has come a long way.
 
 | Year | What was done |
 | :---: | :--- |
-| 2014 | First Proof-of-Concept (Poc) |
-| 2016 | Starting Development of Version 0.1 of Cometa |
-| 2018 | Cometa goes into Production |
-| 2019 | Second PoC |
-| 2020 | Development + Enhancement of pre-built steps to be more inteligent and robust |
-| 2021 | Chaining of Execution via automated scheduling, development of New Landing (beta), starting promotion in Testing Communities, Cometa Rocks S.L. established to backup the further development and promotion, Inauguration of public repo on github |
-| 2022 | New customers signup for Enterprise Grade testing |
-|      | Presentation of FOST - the future craye in Bangalore, India |
+| 2014 | First Proof-of-Concept (PoC) with Daimler |
+| 2016 | Starting Development of Version 0.1 of Co.Meta |
+| 2018 | Co.Meta goes into Production |
+| 2019 | Second major PoC with Daimler |
+| 2020 | Development + Enhancement of pre-built steps to be more intelligent and robust |
+| 2021 | Chaining of execution via automated scheduling, development of new landing (beta). Inauguration of public repo on GitHub |
+| 2022 | New customers signup for Enterprise-Grade Testing. Pilot promotional activities begin within a select community of software engineers for feedback |
+| 2023 | With the confidence established in Co.Meta, a global legal entity is formed to promote the product for we firmly believe that the future is open source with enterprise grade architecture and security. With our 1st of its kind concept in the world, we are on the way to make a difference in the world |
 
 
 <a name="cometamindmap"></a>
