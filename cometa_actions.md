@@ -648,7 +648,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>I can switch to iFrame with id "{iframe_id}"</td>
-        <td>Switches to a iframe tag inside the document within the specified ID</td>
+        <td>Switches to a iframe tag inside the document within the specified ID. It is also possible to switch to an iframe based on its index, e.g., 1 or 2 ...</td>
         <td></td>
     </tr>
     <tr>
