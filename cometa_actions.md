@@ -685,16 +685,17 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>Do a login using OIDC Authentication, please use variables to mask sensitive values like passwords</td>
         <td>
          <br>
-            <h4>Option 1</h4> 
-            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username {username} and 
-            {password}
-            <br><strong>Step 2:</strong> Enter -> {username}
-            <br><strong>Step 3:</strong> Enter -> {password}
-            <h4>Option 2 : Save password with encryption</h4> 
-            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username {username} and {password}
-            <br><strong>Step 2:</strong> Enter -> username
+            <h4>Example 1</h4> 
+            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and 
+            "{password}"
+            <br><strong>Step 2:</strong> Enter -> "Test_User"
+            <br><strong>Step 3:</strong> Enter -> "Test_Password"
+            <h4>Example 2: Save password with encryption </h4> 
+            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and "{password}"
+            <br><strong>Step 2:</strong> Enter -> "Test_User"
             <br><strong>Step 3:</strong> Save your password into Environment Variable's with encryption
-            <br><strong>Step 4:</strong> Enter {password_variable_name}
+            <br><strong>Step 4:</strong> Enter "$myPasswordVariableName"
+            <h4>Note: Using "unencrypted" password is a security risk and should not be used. Suggested to use Option 2</h4>
         </td>
     </tr>
     <tr>
