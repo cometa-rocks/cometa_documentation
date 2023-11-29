@@ -695,7 +695,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <br><strong>Step 2:</strong> Enter -> "Test_User"
             <br><strong>Step 3:</strong> Save your password into Environment Variable's with encryption
             <br><strong>Step 4:</strong> Enter "$myPasswordVariableName"
-            <h4>Note: Using "unencrypted" password is a security risk and should not be used. Suggested to use Option 2</h4>
+            <h4>Note: Using "unencrypted" password is a security risk and should not be used. Suggested to use Example 2</h4>
         </td>
     </tr>
     <tr>
