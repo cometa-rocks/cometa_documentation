@@ -683,7 +683,19 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     <tr>
         <td>I can do a OIDC auth with username "{username}" and "{password}"</td>
         <td>Do a login using OIDC Authentication, please use variables to mask sensitive values like passwords</td>
-        <td></td>
+        <td>
+         <br>
+            <h4>Option 1</h4> 
+            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username {username} and 
+            {password}
+            <br><strong>Step 2:</strong> Enter -> {username}
+            <br><strong>Step 3:</strong> Enter -> {password}
+            <h4>Option 2 : Save password with encryption</h4> 
+            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username {username} and {password}
+            <br><strong>Step 2:</strong> Enter -> username
+            <br><strong>Step 3:</strong> Save your password into Environment Variable's with encryption
+            <br><strong>Step 4:</strong> Enter {password_variable_name}
+        </td>
     </tr>
     <tr>
         <td>Run Javascript function "{function}"</td>
