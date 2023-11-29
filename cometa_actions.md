@@ -737,7 +737,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>
             <h4>Example</h4> 
             <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
-            <br><strong>Step 2:</strong> Enter -> "6" <i>Length of OTP Default is : 6 </i>
+            <br><strong>Step 2:</strong> Enter -> "6" <i>Length of OTP Default is : 6 Option [6, 7, 8]</i>
             <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
             <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
             <h4>Note: Stored OTP value will be encrypted</h4>
