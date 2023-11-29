@@ -736,7 +736,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>Generates OTP for Muti Factor Authentication and stores in a provided variable name </td>
         <td>
             <h4>Example</h4> 
-            <strong>Step 1:</strong> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
+            <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
             <br><strong>Step 2:</strong> Enter -> "6" <i>Length of OTP Default is : 6 </i>
             <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
             <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
