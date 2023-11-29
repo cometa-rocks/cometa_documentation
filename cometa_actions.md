@@ -684,7 +684,6 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>I can do a OIDC auth with username "{username}" and "{password}"</td>
         <td>Do a login using OIDC Authentication, please use variables to mask sensitive values like passwords</td>
         <td>
-         <br>
             <h4>Example 1</h4> 
             <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and 
             "{password}"
@@ -730,6 +729,18 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <br>
             <br> This will download an excel file with dummy data. Dummy file will be downloaded to <code>Downloads/</code>, we will edit the file inside <code>Downloads/</code> and update it's content. Once excel file is updated it will be save to <code>uploads/</code> folder (for now, it might change in the future). Finally we view the edited file in an online excel viewer.
             <br>
+        </td>
+    </tr>
+    <tr>
+        <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
+        <td>Generates OTP for Muti Factor Authentication and stores in a provided variable name </td>
+        <td>
+            <h4>Example</h4> 
+            <strong>Step 1:</strong> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
+            <br><strong>Step 2:</strong> Enter -> "6" <i>Length of OTP Default is : 6 </i>
+            <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
+            <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
+            <h4>Note: Stored OTP value will be encrypted</h4>
         </td>
     </tr>
 </table>
