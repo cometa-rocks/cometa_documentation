@@ -618,9 +618,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     
 </table>
-
 ### Other actions<a id="OTHER_AC"></a>
-
 <table>
     <tr>
         <th>Action</th>
