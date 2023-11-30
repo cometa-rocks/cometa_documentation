@@ -110,7 +110,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
     <tr>
         <td>Fetch Console.log from Browser and attach it to the feature result.</td>
         <td>Fetches Browser console logs andaAttaches with feature results<br>
-        Note : This step dose not works with Browser Firefox. If used will give an error.  
+         (Note : This step dose not works with Browser Firefox. If used will give an error.)
         </td>
         <td></td>
     </tr>
