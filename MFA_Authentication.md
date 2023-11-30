@@ -15,7 +15,7 @@
 >><br> 
 >><b>Source: Wikipedia</b>
 
-### Prepair MFA with GitLab
+### Prepare MFA with GitLab
 > 
 >><strong>Step 1:</strong> Login to your Gitlab Account
 >
