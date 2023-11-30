@@ -8,12 +8,12 @@
 
 >### OTP (One Time Password)
 >> A one-time password (OTP), also known as a one-time PIN, one-time authorization code (OTAC) or dynamic password, is a password that is valid for only one login session or transaction, on a computer system or other digital device.
-<br>
-<br>
+>><br>
+>><br>
 >> OTP generation algorithms make use of pseudorandomness to generate a shared key.
-<br> 
-<br> 
-<b>Source: Wikipedia</b>
+>><br> 
+>><br> 
+>><b>Source: Wikipedia</b>
 
 > ### Prepair MFA with GitLab
 > 
@@ -53,7 +53,8 @@
     This will complete your MFA successfully<br>
 >><br><img src="img/mfa_screens/CodesScreen.jpg" width="700px"/><br>
 
-> ### Go to your Co.meta login page <br>
+
+### Go to your Co.meta login page <br>
 >
 >><br><strong>Step 1:</strong> Enter Capcha <br>
 >><br><strong>Step 2:</strong> Select Login with Gitlab <br>
