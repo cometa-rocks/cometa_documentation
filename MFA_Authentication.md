@@ -7,13 +7,13 @@
 ## 1. MFA with OTP (One Time Password)
 
 ### OTP (One Time Password)
->> A one-time password (OTP), also known as a one-time PIN, one-time authorization code (OTAC) or dynamic password, is a password that is valid for only one login session or transaction, on a computer system or other digital device.
->><br>
->><br>
->> OTP generation algorithms make use of pseudorandomness to generate a shared key.
->><br> 
->><br> 
->><b>Source: Wikipedia</b>
+> A one-time password (OTP), also known as a one-time PIN, one-time authorization code (OTAC) or dynamic password, is a password that is valid for only one login session or transaction, on a computer system or other digital device.
+><br>
+><br>
+> OTP generation algorithms make use of pseudorandomness to generate a shared key.
+><br> 
+><br> 
+><b>Source: [Wikipedia](https://en.wikipedia.org/wiki/One-time_password) </b>
 
 ### Prepare MFA with GitLab
 > 

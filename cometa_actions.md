@@ -1,4 +1,4 @@
-<img src="img/logos/COMETA_Logo_Y_W.png" width="600px"/>
+<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
 <br />
 
