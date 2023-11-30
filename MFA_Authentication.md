@@ -6,7 +6,7 @@
 
 ## 1. MFA with OTP (One Time Password)
 
->### OTP (One Time Password)
+### OTP (One Time Password)
 >> A one-time password (OTP), also known as a one-time PIN, one-time authorization code (OTAC) or dynamic password, is a password that is valid for only one login session or transaction, on a computer system or other digital device.
 >><br>
 >><br>
@@ -15,7 +15,7 @@
 >><br> 
 >><b>Source: Wikipedia</b>
 
-> ### Prepair MFA with GitLab
+### Prepair MFA with GitLab
 > 
 >><strong>Step 1:</strong>Login to your Gitlab Account<br><br>
 >
