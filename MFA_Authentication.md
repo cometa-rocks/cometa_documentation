@@ -30,7 +30,7 @@
 >
 >><strong>Step 5:</strong> Enter "YOUR_Current_PASSWORD" and "Varification Code", Then Click "Register with two-factor app"  <br>
 >><br><img src="img/mfa_screens/CodeSetup.jpg" width="800px"/><br>
->><strong>1<sup>st</sup> Way: To Get Verfication Code</strong>
+>><br><strong>1<sup>st</sup> Way: To Get Verfication Code</strong>
 >>> 1. Scan a QR Code in any authenticator app i.e [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) etc<br>
 >>> 2. You will see you Gitlab account listed in Authenticator app,<br>
 >>> 3. Now, In the authenticator app go in your account and get the OTP <br><br><i>Note: OTP will be valid for 60 seconds</i>
@@ -49,19 +49,25 @@
 >>>> print("OTP : ", otp)</pre>
 >>>> 3. You will get the OTP
 >
->><br><strong>Step 6:</strong> Click "Download Codes" and have it in some secured place" <br>
+>><strong>Step 6:</strong> Click "Download Codes" and have it in some secured place" <br>
     This will complete your MFA successfully<br>
 >><br><img src="img/mfa_screens/CodesScreen.jpg" width="700px"/><br>
 
 
-### Go to your Co.meta login page <br>
+### Go to your Co.meta login page
 >
->><br><strong>Step 1:</strong> Enter Capcha <br>
->><br><strong>Step 2:</strong> Select Login with Gitlab <br>
->><br><strong>Step 3:</strong> Enter Gitlab UserID<br>
->><br><strong>Step 4:</strong> Enter Gitlab Password<br>
->><br><strong>Step 5:</strong> Click SignIn<br>
->><br><strong>Step 6:</strong> Get Varificaion Code 
+>><strong>Step 1:</strong> Enter Capcha
+>
+>><strong>Step 2:</strong> Select Login with Gitlab
+>
+>><strong>Step 3:</strong> Enter Gitlab UserID
+>
+>><strong>Step 4:</strong> Enter Gitlab Password
+>
+>><strong>Step 5:</strong> Click SignIn
+>
+>><strong>Step 6:</strong> Get Varificaion Code 
+>
 >>> 1. From your Authenticator App <br>
 >>> Or<br>
 >>> 2. From your pyotp library (python Script): Perform same step as [5.2 Get Verfication Code : Manually](#MANUAL_OTP)
