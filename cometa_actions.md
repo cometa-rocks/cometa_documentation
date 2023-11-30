@@ -1,6 +1,5 @@
 <img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
-<br />
 
 # Co.meta steps table of contents
 

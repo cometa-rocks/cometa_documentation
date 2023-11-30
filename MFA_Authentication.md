@@ -1,7 +1,5 @@
 <img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
-<br />
-
 # Setting up Co.meta login with MFA (Muti Factor Authentication) 
 
 ## 1. MFA with OTP (One Time Password)
