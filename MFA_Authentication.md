@@ -17,7 +17,7 @@
 
 ### Prepair MFA with GitLab
 > 
->><strong>Step 1:</strong>Login to your Gitlab Account
+>><strong>Step 1:</strong> Login to your Gitlab Account
 >
 >><strong>Step 2:</strong> Click Profile Icon > "Preferences" <br>
 >><br><img src="img/mfa_screens/preferences.jpg" width="200px"/> <br>
