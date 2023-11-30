@@ -72,8 +72,9 @@
 >>> Or<br>
 >>> 2. From your pyotp library (python Script): Perform same step as [5.2 Get Verfication Code : Manually](#MANUAL_OTP)
 >>
->><br><strong>Step 7:</strong> Enter OTP
->><br><strong>Step 8:</strong> Your will be logged in with MFA
+>><strong>Step 7:</strong> Enter OTP
+>
+>><strong>Step 8:</strong> Your will be logged in with MFA
 
 
 
