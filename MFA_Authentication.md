@@ -17,18 +17,18 @@
 
 ### Prepair MFA with GitLab
 > 
->><strong>Step 1:</strong>Login to your Gitlab Account<br><br>
+>><strong>Step 1:</strong>Login to your Gitlab Account
 >
 >><strong>Step 2:</strong> Click Profile Icon > "Preferences" <br>
 >><br><img src="img/mfa_screens/preferences.jpg" width="200px"/> <br>
 >
->><br><strong>Step 3:</strong> Click "Account" <br>
+>><strong>Step 3:</strong> Click "Account" <br>
 >><br><img src="img/mfa_screens/AccountButton.jpg" width="200px"/><br>
 >
->><br><strong>Step 4:</strong> Click "Enable Two Factor Authentication" <br>
+>><strong>Step 4:</strong> Click "Enable Two Factor Authentication" <br>
 >><br><img src="img/mfa_screens/EnableMFA.jpg" width="700px"/><br>
 >
->><br><strong>Step 5:</strong> Enter "YOUR_Current_PASSWORD" and "Varification Code", Then Click "Register with two-factor app"  <br>
+>><strong>Step 5:</strong> Enter "YOUR_Current_PASSWORD" and "Varification Code", Then Click "Register with two-factor app"  <br>
 >><br><img src="img/mfa_screens/CodeSetup.jpg" width="800px"/><br>
 >><strong>1<sup>st</sup> Way: To Get Verfication Code</strong>
 >>> 1. Scan a QR Code in any authenticator app i.e [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) etc<br>
@@ -49,7 +49,7 @@
 >>>> print("OTP : ", otp)</pre>
 >>>> 3. You will get the OTP
 >
->><br><strong>Step 5:</strong> Click "Download Codes" and have it in some secured place" <br>
+>><br><strong>Step 6:</strong> Click "Download Codes" and have it in some secured place" <br>
     This will complete your MFA successfully<br>
 >><br><img src="img/mfa_screens/CodesScreen.jpg" width="700px"/><br>
 
