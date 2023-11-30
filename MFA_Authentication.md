@@ -56,17 +56,17 @@
 
 ### Go to your Co.meta login page
 >
->><strong>Step 1:</strong> Enter Capcha
+>><strong>Step 1:</strong> Fill Capcha
 >
 >><strong>Step 2:</strong> Select Login with Gitlab
 >
->><strong>Step 3:</strong> Enter Gitlab UserID
+>><strong>Step 3:</strong> Enter "Gitlab_UserID"
 >
->><strong>Step 4:</strong> Enter Gitlab Password
+>><strong>Step 4:</strong> Enter "Gitlab_Password"
 >
 >><strong>Step 5:</strong> Click SignIn
 >
->><strong>Step 6:</strong> Get Varificaion Code 
+>><strong>Step 6:</strong> Get OTP(Varification Code)  
 >
 >>> 1. From your Authenticator App <br>
 >>> Or<br>
@@ -74,7 +74,7 @@
 >>
 >><strong>Step 7:</strong> Enter OTP
 >
->><strong>Step 8:</strong> Your will be logged in with MFA
+>><strong>Step 8:</strong> Your will be logged to Co.meta in with MFA
 
 
 
