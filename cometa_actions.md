@@ -346,7 +346,8 @@ click</td>
     </tr>
     <tr>
         <td>Download a file by clicking on "{linktext}"</td>
-        <td>Downloads a file, the downloaded file is assigned to feature_result and step_result (linktext can be a text, css_selector or xpath). The downloaded file is saved in the filesytems at behave/Downloads/<feature-run-id>/remove-filename.suffix. To be able to test on generic filenames, that get random generated Id's, Cometa saves a copy of the file to last_downoaded_file.suffix maintaining the suffix of the original filename.</td>
+        <td>Downloads a file, the downloaded file is assigned to feature_result and step_result (linktext can be a text, css_selector or xpath). The downloaded file is saved in the filesytems at behave/Downloads/{feature-run-id}/remove-filename.suffix. To be able to test on generic filenames, that get random generated Id's, Cometa saves a copy of the file to last_downoaded_file.suffix maintaining the suffix of the original filename.
+        </td>
         <td></td>
     </tr>
 </table>
@@ -609,14 +610,13 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     <tr>
         <th>Download a file by clicking on "{linktext}"</th>
         <th>This will download the file in the linktext to the Downloads folders of the headless browser.</th>
-        <th>If you are downloading a generic file, you can use `last_downloaded_file.<same suffix>` to access files that have ID's automatically generated.</th>
+        <th>If you are downloading a generic file, you can use `last_downloaded_file.{same suffix}` to access files that have ID's automatically generated.</th>
     </tr>
     <tr>
         <th>Attach the "{filename}" from Downloads folder to the current execution results</th>
         <th>This will attach the file found in Downloads-folder to the current exectuion.</th>
         <th>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</th>
-    </tr>
-    
+    </tr>    
 </table>
 
 ### Other actions<a id="OTHER_AC"></a>
@@ -738,14 +738,14 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
-        <td>Generates OTP for Muti Factor Authentication and stores in a provided variable name </td>
+        <td>Generates OTP for Multi-Factor Authentication and stores it in the provided <i>variable_name</i> </td>
         <td>
             <h4>Example</h4> 
             <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
-            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP Default is : 6, Options [6, 7, 8]</i>    
+            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>    
             <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
             <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
-            <h4>Note: Stored OTP value will be encrypted, The OTP expires in less than 30 seconds</h4>
+            <h4>Note: The stored OTP value will be encrypted, and it expires in 30 seconds.</h4>
         </td>
     </tr>
 </table>
