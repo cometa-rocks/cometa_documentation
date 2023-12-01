@@ -6,16 +6,16 @@
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
 1. [Browser actions](#BROWSERAC)
-1. [CSS selectors actions](#CSS_AC)
-1. [Feature actions](#FEATURE_AC)
-1. [Mouse actions](#MOUSE_AC)
-1. [Keyboard actions](#KEYBOARD_AC)
-1. [IBM actions](#IBM_AC)
-1. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
-1. [Editing Excel Files](#EDITEXCEL_AC)
-1. [Uploading and Downloading files](#FILES)
-1. [Other actions](#OTHER_AC)
-1. [Support](#SUPPORT)
+2. [CSS selectors actions](#CSS_AC)
+3. [Feature actions](#FEATURE_AC)
+4. [Mouse actions](#MOUSE_AC)
+5. [Keyboard actions](#KEYBOARD_AC)
+6. [IBM actions](#IBM_AC)
+7. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
+8. [Editing Excel Files](#EDITEXCEL_AC)
+9. [Uploading and Downloading files](#FILES)
+10. [Other actions](#SUPPORT)
+11. [Support](#SUPPORT)
 
 <br/>
 
