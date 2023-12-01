@@ -14,7 +14,7 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 7. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
 8. [Editing Excel Files](#EDITEXCEL_AC)
 9. [Uploading and Downloading files](#FILES)
-10. [Other actions](#SUPPORT)
+10. [Other actions](#OTHER_AC)
 11. [Support](#SUPPORT)
 
 <br/>
@@ -621,7 +621,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>    
 </table>
 
-### Other actions<a id="OTHER_AC"></a>
+### Other actions<a id=#OTHER_AC></a>
 <table>
     <tr>
         <th>Action</th>
