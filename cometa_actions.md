@@ -5,7 +5,7 @@
 
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
-1. [Browser actions](#browser-ac)
+1. [Browser actions](#BROWSER-AC)
 2. [CSS selectors actions](#CSS_AC)
 3. [Feature actions](#FEATURE_AC)
 4. [Mouse actions](#MOUSE_AC)
