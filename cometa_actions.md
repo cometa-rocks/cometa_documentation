@@ -31,7 +31,7 @@ A very versatile step is *Run Javascript function "{function}"* - function can b
 
 If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.
 
-### Browser actions<a id="browser-ac"></a>
+### Browser actions<a id="BROWSER-AC"></a>
 
 <table>
     <tr>
