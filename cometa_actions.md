@@ -5,17 +5,17 @@
 
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
-1. [Browser actions](#BROWSER-AC)
-2. [CSS selectors actions](#CSS_AC)
-3. [Feature actions](#FEATURE_AC)
-4. [Mouse actions](#MOUSE_AC)
-5. [Keyboard actions](#KEYBOARD_AC)
-6. [IBM actions](#IBM_AC)
-7. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
-8. [Editing Excel Files](#EDITEXCEL_AC)
-9. [Uploading and Downloading files](#FILES)
-10. [Other actions](#OTHER_AC)
-11. [Support](#SUPPORT)
+1. [Browser actions](#browser-actions)
+2. [CSS selectors actions](#css-selectors-actions)
+3. [Feature actions](#feature-actions)
+4. [Mouse actions](#mouse-actions)
+5. [Keyboard actions](#keyboard-actions)
+6. [IBM actions](#ibm-actions)
+7. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+8. [Editing Excel Files](#editing-excel-files)
+9. [Uploading and Downloading files](#uploading-and-downloading-files)
+10. [Other actions](#other-actions)
+11. [Support](#support)
 
 <br/>
 
@@ -31,7 +31,7 @@ A very versatile step is *Run Javascript function "{function}"* - function can b
 
 If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.
 
-### Browser actions<a id="BROWSER-AC"></a>
+### Browser actions
 
 <table>
     <tr>
