@@ -5,7 +5,7 @@
 
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
-1. [Browser actions](#browser-actions)
+1. [Browser actions](#browser-ac)
 2. [CSS selectors actions](#CSS_AC)
 3. [Feature actions](#FEATURE_AC)
 4. [Mouse actions](#MOUSE_AC)
@@ -31,7 +31,7 @@ A very versatile step is *Run Javascript function "{function}"* - function can b
 
 If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.
 
-### Browser actions<a id="browser-actions"></a>
+### Browser actions<a id="browser-ac"></a>
 
 <table>
     <tr>
