@@ -620,7 +620,6 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <th>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</th>
     </tr>    
 </table>
-
 ### Other actions<a id="OTHER_AC"></a>
 <table>
     <tr>
