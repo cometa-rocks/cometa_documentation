@@ -63,7 +63,7 @@ GitLab Link -> https://git.amvara.de/
 
 ><strong>Step 5:</strong> Click Sign In
 
-><strong>Step 6:</strong> Get OTP(Verification Code)  
+><strong>Step 6:</strong> Get OTP(Verification Code)
 >
 >> 1. Get OTP (Verification Code) from your Authenticator App" <br>
 >> Or<br>
@@ -72,3 +72,18 @@ GitLab Link -> https://git.amvara.de/
 ><strong>Step 7:</strong> Enter OTP
 
 ><strong>Step 8:</strong> Your will be logged into Co.meta in with MFA.
+
+### Automation of MFA using Cometa
+> You can test Multi-Factor Authentication (MFA) with Cometa by following the steps below to automate the MFA.
+
+#### For example, the automation of Cometa login is demonstrated here.
+
+><strong>Step 1:</strong> Create a feature in Cometa <br>
+
+><strong>Step 2:</strong> Provide a feature name <br>
+
+><strong>Step 3:</strong> Please follow the steps, as shown in the screenshot below
+><br><br><img src="img/mfa_screens/MFA_login_test.png" width="700px"/><br>
+
+
+
