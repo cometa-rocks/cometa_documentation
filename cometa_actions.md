@@ -1,22 +1,21 @@
-<img src="img/logos/COMETA_Logo_Y_W.png" width="600px"/>
+<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
-<br />
 
 # Co.meta steps table of contents
 
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
-1. [Browser actions](#BROWSER_AC)
-1. [CSS selectors actions](#CSS_AC)
-1. [Feature actions](#FEATURE_AC)
-1. [Mouse actions](#MOUSE_AC)
-1. [Keyboard actions](#KEYBOARD_AC)
-1. [IBM actions](#IBM_AC)
-1. [IBM Cognos QueryStudio actions](#QUERYSTUDIO_AC)
-1. [Editing Excel Files](#EDITEXCEL_AC)
-1. [Uploading and Downloading files](#FILES)
-1. [Other actions](#OTHER_AC)
-1. [Support](#SUPPORT)
+1. [Browser actions](#browser-actions)
+2. [CSS selectors actions](#css-selectors-actions)
+3. [Feature actions](#feature-actions)
+4. [Mouse actions](#mouse-actions)
+5. [Keyboard actions](#keyboard-actions)
+6. [IBM actions](#ibm-actions)
+7. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+8. [Editing Excel Files](#editing-excel-files)
+9. [Uploading and Downloading files](#uploading-and-downloading-files)
+10. [Other actions](#other-actions)
+11. [Support](#support)
 
 <br/>
 
@@ -32,7 +31,7 @@ A very versatile step is *Run Javascript function "{function}"* - function can b
 
 If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.
 
-### Browser actions<a id="BROWSER_AC"></a>
+### Browser actions
 
 <table>
     <tr>
@@ -105,6 +104,13 @@ If you have suggestions or needs for a step / actions that you would rather impl
         <td>Reload page </td>
         <td>Reloads the current page<br/>
         Useful to reset to default settings (e.g. if elements are marked in a different color)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fetch Console.log from Browser and attach it to the feature result.</td>
+        <td>Fetches browser console logs and attaches them to the feature results.<br>
+         (Note : This step does not work with the Firefox browser. If used, it will result in an error.)
+        </td>
         <td></td>
     </tr>
 </table>
@@ -340,7 +346,8 @@ click</td>
     </tr>
     <tr>
         <td>Download a file by clicking on "{linktext}"</td>
-        <td>Downloads a file, the downloaded file is assigned to feature_result and step_result (linktext can be a text, css_selector or xpath). The downloaded file is saved in the filesytems at behave/Downloads/<feature-run-id>/remove-filename.suffix. To be able to test on generic filenames, that get random generated Id's, Cometa saves a copy of the file to last_downoaded_file.suffix maintaining the suffix of the original filename.</td>
+        <td>Downloads a file, the downloaded file is assigned to feature_result and step_result (linktext can be a text, css_selector or xpath). The downloaded file is saved in the filesytems at behave/Downloads/{feature-run-id}/remove-filename.suffix. To be able to test on generic filenames, that get random generated Id's, Cometa saves a copy of the file to last_downoaded_file.suffix maintaining the suffix of the original filename.
+        </td>
         <td></td>
     </tr>
 </table>
@@ -583,10 +590,12 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
 <details>
     <summary>Here is a test example for further demonstration: </summary>
 
-    [{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# download an excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://file-examples.com/index.php/sample-documents-download/sample-xls-download/\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ download file from given link in HTML ################","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Download a file by clicking on \"(//a[contains(@href,'_1000.xls')])[2]\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# open that excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"Downloads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# edit the excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"COMETA\" to \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"was\" to \"B2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"here\" to \"C2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Reopen the excel file to see the changes","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"uploads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Assert that a certain cell has a certain value","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and assert \"COMETA\" is in cell \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and set environment variable \"EXCEL\" with value from cell \"E2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60}]
+  <pre>  
+  [{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# download an excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://file-examples.com/index.php/sample-documents-download/sample-xls-download/\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ download file from given link in HTML ################","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Download a file by clicking on \"(//a[contains(@href,'_1000.xls')])[2]\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# open that excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"Downloads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# edit the excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"COMETA\" to \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"was\" to \"B2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"here\" to \"C2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Reopen the excel file to see the changes","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"uploads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Assert that a certain cell has a certain value","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and assert \"COMETA\" is in cell \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and set environment variable \"EXCEL\" with value from cell \"E2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60}]
+  </pre>
 </details>
-
 <br>
+
 ### Uploading and Downloading files<a id="FILES"></a>
 
 <table>
@@ -603,18 +612,16 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     <tr>
         <th>Download a file by clicking on "{linktext}"</th>
         <th>This will download the file in the linktext to the Downloads folders of the headless browser.</th>
-        <th>If you are downloading a generic file, you can use `last_downloaded_file.<same suffix>` to access files that have ID's automatically generated.</th>
+        <th>If you are downloading a generic file, you can use `last_downloaded_file.{same suffix}` to access files that have ID's automatically generated.</th>
     </tr>
     <tr>
         <th>Attach the "{filename}" from Downloads folder to the current execution results</th>
         <th>This will attach the file found in Downloads-folder to the current exectuion.</th>
         <th>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</th>
-    </tr>
-    
+    </tr>    
 </table>
 
-### Other actions<a id="OTHER_AC"></a>
-
+### Other actions<a id=#OTHER_AC></a>
 <table>
     <tr>
         <th>Action</th>
@@ -682,8 +689,20 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>I can do a OIDC auth with username "{username}" and "{password}"</td>
-        <td>Do a login using OIDC Authentication, please use variables to mask sensitive values like passwords</td>
-        <td></td>
+        <td>Do a login using OIDC Authentication, and please use variables to mask sensitive values like passwords.</td>
+        <td>
+            <h4>Example 1</h4> 
+            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and 
+            "{password}"
+            <br><strong>Step 2:</strong> Enter -> "Test_User"
+            <br><strong>Step 3:</strong> Enter -> "Test_Password"
+            <h4>Example 2: Save password with encryption </h4> 
+            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and "{password}"
+            <br><strong>Step 2:</strong> Enter -> "Test_User"
+            <br><strong>Step 3:</strong> "Save your password in environment variables with encryption.
+            <br><strong>Step 4:</strong> Enter "$myPasswordVariableName"
+            <h4>Using an unencrypted password poses a security risk and should be avoided. It is recommended to use Example 2.</h4>
+        </td>
     </tr>
     <tr>
         <td>Run Javascript function "{function}"</td>
@@ -717,6 +736,18 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <br>
             <br> This will download an excel file with dummy data. Dummy file will be downloaded to <code>Downloads/</code>, we will edit the file inside <code>Downloads/</code> and update it's content. Once excel file is updated it will be save to <code>uploads/</code> folder (for now, it might change in the future). Finally we view the edited file in an online excel viewer.
             <br>
+        </td>
+    </tr>
+    <tr>
+        <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
+        <td>It generates an OTP for Multi-Factor Authentication and stores it in the provided <i>variable_name</i> </td>
+        <td>
+            <h4>Example</h4> 
+            <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
+            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>    
+            <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
+            <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
+            <h4>Note: The stored OTP value will be encrypted, and it expires in 30 seconds.</h4>
         </td>
     </tr>
 </table>
