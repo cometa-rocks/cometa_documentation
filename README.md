@@ -57,7 +57,7 @@ Cometa comes in various flavours:
 
 **Community Edition** 
 
-The public github repo is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
+The public github repo containing the source code for installation is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
 
 Co.Meta Community edition is licensed under AGPLv3. See the license details. See the [license details](#license).
 
@@ -69,8 +69,6 @@ A hosted-by-us version is ready for you to use. There are 4 plans: Standard, Sil
 <a name="cometahistory"></a>
 
 **Enterprise Edition**
-
-The internal repo is on our [gitlab server](https://git.amvara.de/amvara/cometa). Please let [us know](mailto:enterpriseaccess@cometa.rocks), if you want access there. 
 
 To use the Enterprise (On-premise) Edition you need an Enterprise License. It has all the features of the Premium Plan under Cloud Edition and comes with exciting perks such as onboarding support for the QA team, unlimited projects, unlimited users, all web browsers, priority support, and many more exciting advantages.
 
@@ -88,6 +86,7 @@ Development started around 2014-2015, when Daimler AG, Germany asked for an agil
 | 2021 | Chaining of execution via automated scheduling, development of new landing (beta). Inauguration of public repo on GitHub |
 | 2022 | New customers signup for Enterprise-Grade Testing. Pilot promotional activities begin within a select community of software engineers for feedback |
 | 2023 | With the confidence established in Co.Meta, a global legal entity is formed to promote the product for we firmly believe that the future is open source with enterprise grade architecture and security. With our 1st of its kind concept in the world, we are on the way to make a difference in the world |
+| 2024 | Roadmap: Enhance Data Driven Editor, Import and Migrate Tests from other platforms, Database Testing, AI usage for finding better selectors, Load Testing, Show Network and Browser KPIs via CDP (Chrome) | 
 
 
 <a name="cometamindmap"></a>
