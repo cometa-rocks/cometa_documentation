@@ -195,7 +195,7 @@ click</td>
             Assert "$expectedTotalScore" to be same as "$totalScoreWithOutText"
             </code>
             </li>
-        </ol> 
+        </ol>
         </td>
     </tr>
     <tr>
@@ -350,6 +350,11 @@ click</td>
         </td>
         <td></td>
     </tr>
+    <tr>
+        <td>Drag "{element_selector}" and drop it in "{destination_selector}"</td>
+        <td>Drag an element and drop it to the destination element</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Keyboard actions<a id="KEYBOARD_AC"></a>
@@ -380,7 +385,7 @@ click</td>
         <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneosly. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...).
         <br><p>
         <br><p>
-        Here is the complete list of Special Keys that can be used in Cometa via Selenium Webdriver: 
+        Here is the complete list of Special Keys that can be used in Cometa via Selenium Webdriver:
         <table>
         <tr>
             <td>ADD</td>	<td>ALT</td>	<td>ARROW_DOWN</td>
@@ -535,7 +540,7 @@ click</td>
 
 ### Editing Excel Files<a id="EDITEXCEL_AC"></a>
 
-Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerfull, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
+Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerfull, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need.
 
 <table>
     <tr>
@@ -569,8 +574,8 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <br><br>
             Match type can be one of the followings:
             <li><code>match exact</code>: Will fail the step if any of the assertions are failed. For e.g.: A12 should contain "Hi!" but contains "Hello!".</li>
-            <li><code>match partial</code>: Will pass the step if any of the assertions are passed. For e.g.: A12 should contain "Hi!", contains "Hello!" but A13 should contain "Bye" and matches to cell value "Bye". Overall step passes.</li> 
-            <li><code>match any</code>: WIP</li> 
+            <li><code>match partial</code>: Will pass the step if any of the assertions are passed. For e.g.: A12 should contain "Hi!", contains "Hello!" but A13 should contain "Bye" and matches to cell value "Bye". Overall step passes.</li>
+            <li><code>match any</code>: WIP</li>
             <li><code>match x number of times</code>: WIP</li>
             <br><br>
             Generates an CSV file containing all the details about the assertions and why if might have failed.
@@ -590,7 +595,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
 <details>
     <summary>Here is a test example for further demonstration: </summary>
 
-  <pre>  
+  <pre>
   [{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# download an excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://file-examples.com/index.php/sample-documents-download/sample-xls-download/\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ download file from given link in HTML ################","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Download a file by clicking on \"(//a[contains(@href,'_1000.xls')])[2]\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# open that excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"Downloads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# edit the excel file","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Run feature with name \"WAIT-LOOP\" before continuing","step_type":"subfeature","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"COMETA\" to \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"was\" to \"B2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Edit \"Downloads/file_example_XLSX_1000.xlsx\" and set \"here\" to \"C2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Reopen the excel file to see the changes","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Goto URL \"https://products.aspose.app/cells/es/viewer\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Upload a file by clicking on \".uploadFileInput\" using file \"uploads/file_example_XLSX_1000.xlsx\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Assert that a certain cell has a certain value","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and assert \"COMETA\" is in cell \"A2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Open \"Downloads/file_example_XLSX_1000.xlsx\" and set environment variable \"EXCEL\" with value from cell \"E2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60}]
   </pre>
 </details>
@@ -615,10 +620,10 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>If you are downloading a generic file, you can use `last_downloaded_file.{same suffix}` to access files that have ID's automatically generated.</td>
     </tr>
     <tr>
-        <td>Attach the "{filename}" from Downloads folder to the current execution results</td>
-        <td>This will attach the file found in Downloads-folder to the current exectuion.</td>
-        <td>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</td>
-    </tr>    
+        <th>Attach the "{filename}" from Downloads folder to the current execution results</th>
+        <th>This will attach the file found in Downloads-folder to the current exectuion.</th>
+        <th>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</th>
+    </tr>
 </table>
 
 ### Other actions<a id=#OTHER_AC></a>
@@ -702,18 +707,24 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <br>
         <br><b>Examples 2</b>
         <br><code>Wait "22" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
+        </td></tr>
+        <tr>
+        <td>Wait until "{selector}" is loaded</td>
+        <td>Wait until (selector) is loaded on the page.<br/>
+        Useful as an alternative to the "wait until I can see something on page" step if you want to dynamically wait for an element to appear.<br/>
         </td>
+        <td>then wait until "//div[@class='div_class_name']" is loaded</td>
     </tr>
     <tr>
         <td>I can do a OIDC auth with username "{username}" and "{password}"</td>
         <td>Do a login using OIDC Authentication, and please use variables to mask sensitive values like passwords.</td>
         <td>
-            <b>Example 1</b> 
-            <strong>Step 1:</strong> Select Action -> <code>I can do a OIDC auth with username "{username}" and 
+            <b>Example 1</b>
+            <strong>Step 1:</strong> Select Action -> <code>I can do a OIDC auth with username "{username}" and
             "{password}"</code>
             <br><strong>Step 2:</strong> Enter -> "Test_User"
             <br><strong>Step 3:</strong> Enter -> "Test_Password"
-            <b>Example 2 Save password with encryption </b> 
+            <b>Example 2 Save password with encryption </b>
             <strong>Step 1:</strong> Select Action -> <code>I can do a OIDC auth with username "{username}" and "{password}"</code>
             <br><strong>Step 2:</strong> Enter -> "Test_User"
             <br><strong>Step 3:</strong> "Save your password in environment variables with encryption.
@@ -759,9 +770,9 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
         <td>It generates an OTP for Multi-Factor Authentication and stores it in the provided <i>variable_name</i> </td>
         <td>
-            <h4>Example</h4> 
+            <h4>Example</h4>
             <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
-            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>    
+            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>
             <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
             <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
             <h4>Note: The stored OTP value will be encrypted, and it expires in 30 seconds.</h4>
