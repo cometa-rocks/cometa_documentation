@@ -1,4 +1,4 @@
-### Prepare MFA in Amvara GitLab account
+# Enable MFA in Amvara GitLab account
 Amvara GitLab link -> https://git.amvara.de/ 
 <br>
 <br>
