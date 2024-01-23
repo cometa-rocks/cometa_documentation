@@ -15,7 +15,7 @@ Amvara GitLab link -> https://git.amvara.de/
 
 **Step 5:** Enter "YOUR_CURRENT_PASSWORD" and "VERIFICATION_CODE", then click "Register with two-factor app". Next get your first verification code to setup MFA <br>
     
-> Note: Do not use this step if you are going to use secret key for automation using Cometa. Rather use <a href="https://github.com/cometa-rocks/cometa_documentation/blob/test/MFA_Authentication.md#:~:text=Get%20verification%20code"> Get verification code </a>. After that complete [Step 6](#STEP-6).
+> Note: Do not use this step if you are going to use secret key for automation using Cometa. Rather use <a target="blank" href="https://github.com/cometa-rocks/cometa_documentation/blob/test/MFA_Authentication.md#:~:text=Get%20verification%20code"> Get verification code </a>. After that complete [Step 6](#STEP-6).
     
 #### Setup your authenticator app
 
