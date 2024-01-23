@@ -37,14 +37,7 @@ The automation of two-factor authentication at Cometa requires two steps.
 
       You have the option to choose any other MFA provider based on your needs
 
-    Get your first verification code to setup MFA <br>
-
-    **1<sup>st</sup> Way:** Get verfication Code using authenticator apps
-    * Scan the displayed QR code in any authenticator app, such as [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) etc<br>
-    * You will see your GitLab account listed in the authenticator app.<br>
-    * Now, in the authenticator app, navigate to your account and retrieve the OTP.<br>
-    
-    **2<sup>nd</sup> Way:** Get verification code manually ( This step is required to automate the MFA with Cometa)
+    **Get verification code** ( This step is required to automate the MFA with Cometa)
     * Use pyAuth library to generate OTPs – see: https://github.com/pyauth/pyotp
         
         **Note:** Please install pyotp to run this code using the following command, A machine with Python installed can run this code with the required library [pyotp](https://github.com/pyauth/pyotp)
@@ -67,7 +60,7 @@ The automation of two-factor authentication at Cometa requires two steps.
     <br>
     <br>
 
-* **Step 2** Create Test <br>
+* **Step 2:** Create Test <br>
     Store the <i>secret key</i> in Cometa as a <i>secret variable</i>. Once the authentication token is stored, you can proceed to generate OTP using Cometa by following the next step. 
 
       Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}
@@ -75,11 +68,11 @@ The automation of two-factor authentication at Cometa requires two steps.
     Refer <a target="_blank" href="https://github.com/Cometa-rocks/Cometa_documentation/blob/main/Cometa_actions.md#:~:text=online%20excel%20viewer.-,Create%20one%2Dtime%20password%20of%20%22%7Bx%7D%22%20digits%20using,-pairing%2Dkey%20%22%7Bvalue">Create one-time password using Cometa </a>
 
 
-        For illustration, you can automate the login process on Cometa to test the functionality of the MFA feature
+    #### For illustration, you can automate the login process on Cometa to test the functionality of the MFA feature
 
     **Steps to be automated**
 
-    #### Manual Steps of Cometa login 
+    ##### Manual Steps of Cometa login 
     * Fill Captcha
 
     * Select Login with Gitlab
@@ -97,7 +90,7 @@ The automation of two-factor authentication at Cometa requires two steps.
     * Your will be logged into Cometa with MFA.
 
 
-    #### Automation steps of MFA in Cometa.
+    #### Automation steps of MFA in Cometa of Cometa login.
 
     * Create a feature in Cometa <br>
 
