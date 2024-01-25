@@ -610,14 +610,14 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>Upload a file by clicking on "//input[@id="upload-button"]" using file "uploads/dummy.png;uploads/dummy.mp4" ... you can upload multiple file by separating them by a semicolon. The semicolon is being replaced by a carriage return in Cometa.</td>
     </tr>
     <tr>
-        <th>Download a file by clicking on "{linktext}"</th>
-        <th>This will download the file in the linktext to the Downloads folders of the headless browser.</th>
-        <th>If you are downloading a generic file, you can use `last_downloaded_file.{same suffix}` to access files that have ID's automatically generated.</th>
+        <td>Download a file by clicking on "{linktext}"</td>
+        <td>This will download the file in the linktext to the Downloads folders of the headless browser.</td>
+        <td>If you are downloading a generic file, you can use `last_downloaded_file.{same suffix}` to access files that have ID's automatically generated.</td>
     </tr>
     <tr>
-        <th>Attach the "{filename}" from Downloads folder to the current execution results</th>
-        <th>This will attach the file found in Downloads-folder to the current exectuion.</th>
-        <th>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</th>
+        <td>Attach the "{filename}" from Downloads folder to the current execution results</td>
+        <td>This will attach the file found in Downloads-folder to the current exectuion.</td>
+        <td>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</td>
     </tr>    
 </table>
 
@@ -688,19 +688,36 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>then wait until I can see "< span id="ibisscreen-id" >cm002< /span >" on page</td>
     </tr>
     <tr>
+        <td>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</td>
+        <td>Wait Wait until the given timeout (time in seconds) for the selector to appear, and then wait for it to disappear for the next 60 seconds with the specified option "do not fail if not visible" or "fail if never visible". <br/>
+        <b> If the selector does not appear within the specified timeout, and the selected option is..</b><br/>
+            <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
+            <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
+        <br/>
+        Useful when something appears within the given timeout but disappears within the next 60 seconds,<br/>
+        </td>
+        <td>
+        <b>Examples 1</b>
+        <br><code>Wait "20" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br><b>Examples 2</b>
+        <br><code>Wait "22" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
+        </td>
+    </tr>
+    <tr>
         <td>I can do a OIDC auth with username "{username}" and "{password}"</td>
         <td>Do a login using OIDC Authentication, and please use variables to mask sensitive values like passwords.</td>
         <td>
-            <h4>Example 1</h4> 
-            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and 
-            "{password}"
+            <b>Example 1</b> 
+            <strong>Step 1:</strong> Select Action -> <code>I can do a OIDC auth with username "{username}" and 
+            "{password}"</code>
             <br><strong>Step 2:</strong> Enter -> "Test_User"
             <br><strong>Step 3:</strong> Enter -> "Test_Password"
-            <h4>Example 2: Save password with encryption </h4> 
-            <strong>Step 1:</strong> Select Action -> I can do a OIDC auth with username "{username}" and "{password}"
+            <b>Example 2 Save password with encryption </b> 
+            <strong>Step 1:</strong> Select Action -> <code>I can do a OIDC auth with username "{username}" and "{password}"</code>
             <br><strong>Step 2:</strong> Enter -> "Test_User"
             <br><strong>Step 3:</strong> "Save your password in environment variables with encryption.
-            <br><strong>Step 4:</strong> Enter "$myPasswordVariableName"
+            <br><strong>Step 4:</strong> Enter <code>"$myPasswordVariableName"</code>
             <h4>Using an unencrypted password poses a security risk and should be avoided. It is recommended to use Example 2.</h4>
         </td>
     </tr>
