@@ -30,7 +30,7 @@ The automation of two-factor authentication at Cometa requires two steps.
 
 * **Step 1: (Prerequisite)** Create an account and obtain the MFA secret key. If you already have an account, you can use that. Next, follow the provided links to set up MFA and obtain the secret key from any one of the multi-factor authentication providers. (This requires at least one MFA setup), **(This requires atleast MFA)**.
             
-    **1. Gitlab** <a href="./Prepare_mfa_with_gitlab.md"> Set up Multi-Factor Authentication (MFA) for in our GitLab.</a>
+    **1. Gitlab** <a href="./MFA_Authentication_preparation.md"> Set up Multi-Factor Authentication (MFA) for in our GitLab.</a>
         
     **2. Google MFA** Create account at <a href="https://support.google.com/accounts/answer/27441?hl=en">Google</a> then <a href="https://support.kraken.com/hc/en-us/articles/360001486466-How-to-find-the-setup-key-or-backup-code-for-authenticator-app-2FA"> get a <i>secret key</i>. </a>
       Note: You have the option to choose any other MFA provider based on your needs
