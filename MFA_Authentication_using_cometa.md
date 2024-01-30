@@ -1,4 +1,4 @@
-<img src="img/logos/CometaROCKS_LogoEslog_Y_W.png" width="600px"/>
+<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
 # Automation of Muti Factor Authentication with Cometa
 Muti factor authentication which are done by One time password, those can be automated using Cometa 
