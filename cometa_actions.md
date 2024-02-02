@@ -355,6 +355,18 @@ click</td>
         <td>Drag an element and drop it to the destination element</td>
         <td></td>
     </tr>
+        <tr>
+        <td>Scroll to the last position of the desired element identified by "{xpath}" with maximum number of scrolls "{MaxScrolls}" and maximum time of "{MaxTimeOfLife}"</td>
+        <td>Scroll to element with "{xpath}" repeatedly until it finds last position. This feature is useful when searching for an element that is not initially loaded and requires multiple dynamic loads.</td>
+        <td>
+            <br/>Scroll to the last position of the desired element identified by "//ol/li[last()]" with maximum number of scrolls "50" and maximum time of "120"
+        </td>
+    </tr>
+        <tr>
+        <td>Scroll to element with "{selector}" in lazy loaded table "{scrollable_element_selector}"</td>
+        <td>This step scrolls to a selector contained in a lazy loaded table which only shows up to few elements and the rest of them are dynamically loaded. For example AG-Grid tables.</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Keyboard actions<a id="KEYBOARD_AC"></a>

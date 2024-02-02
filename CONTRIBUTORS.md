@@ -7,3 +7,5 @@ Dima Plysyuk [@dph000](https://github.com/dph000) & [dimaAmvara](https://github.
 Ruben Aguilera [@Villwulf](https://github.com/Villwulf)
 
 Arslan Sohail Bano [@ArslanSB]([https://](https://github.com/ArslanSB))
+
+Miquel Palau Navarro [@MikiPalau](https://github.com/MiquelPalau)
