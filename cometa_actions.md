@@ -689,12 +689,12 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</td>
-        <td>Wait Wait until the given timeout (time in seconds) for the selector to appear, and then wait for it to disappear for the next 60 seconds with the specified option "do not fail if not visible" or "fail if never visible". <br/>
+        <td>Wait for the selector to appear within the given timeout (time in seconds), then wait for it to disappear within the next 60 seconds, with the specified option of "do not fail if not visible" or "fail if never visible". <br/>
         <b> If the selector does not appear within the specified timeout, and the selected option is..</b><br/>
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
         <br/>
-        Useful when something appears within the given timeout but disappears within the next 60 seconds,<br/>
+        Useful when testing loading, notification pop-ups, or selector that appear within the given timeout but disappear within the next 60 seconds<br/>
         </td>
         <td>
         <b>Examples 1</b>
