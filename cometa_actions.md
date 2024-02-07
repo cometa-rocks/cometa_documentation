@@ -694,7 +694,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
         <br/>
-        Useful when testing loading, notification pop-ups, or selector that appear within the given timeout but disappear within the next 60 seconds<br/>
+        Useful when testing loading, notification pop-ups, or selector that appear and disappears within specific time<br/>
         </td>
         <td>
         <b>Examples 1:</b> #Load_in_15_Secs is a selector that appears and disappears within 15 seconds, then the step should be:
