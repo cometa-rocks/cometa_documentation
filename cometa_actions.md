@@ -689,19 +689,22 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</td>
-        <td>Wait for the selector to appear within the given timeout (time in seconds), then wait for it to disappear within the next 60 seconds, with the specified option of "do not fail if not visible" or "fail if never visible". <br/>
-        <b> If the selector does not appear within the specified timeout, and the selected option is..</b><br/>
+        <td>Wait for the selector to appear and disappear within the given timeout (time in seconds), with the specified option of "do not fail if not visible" or "fail if never visible". <br/>
+        <b> If the selector does not appear within the specified timeout, and the selected option is:</b><br/>
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
         <br/>
         Useful when testing loading, notification pop-ups, or selector that appear within the given timeout but disappear within the next 60 seconds<br/>
         </td>
         <td>
-        <b>Examples 1</b>
-        <br><code>Wait "20" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
+        <b>Examples 1:</b> #Load_in_15_Secs is a selector that appears and disappears within 15 seconds, then the step should be:
+        <br><code>Wait "31" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
+        <br> Above step will pass after checking for appearing and disappearing element
         <br>
-        <br><b>Examples 2</b>
-        <br><code>Wait "22" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
+        <br>
+        <b>Examples 2</b> If #Load_in_20_Secs is a selector that appears in 20 seconds and disappears in 30 seconds, and the step is:
+        <br><code>Wait "32" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
+        <br> Above step will fail disappearing of element was not completed due to less time. It will need 50 (20+30) seconds to complete
         </td>
     </tr>
     <tr>
