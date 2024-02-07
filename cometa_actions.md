@@ -6,16 +6,17 @@
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
 1. [Browser actions](#browser-actions)
-2. [CSS selectors actions](#css-selectors-actions)
-3. [Feature actions](#feature-actions)
-4. [Mouse actions](#mouse-actions)
-5. [Keyboard actions](#keyboard-actions)
-6. [IBM actions](#ibm-actions)
-7. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
-8. [Editing Excel Files](#editing-excel-files)
-9. [Uploading and Downloading files](#uploading-and-downloading-files)
-10. [Other actions](#other-actions)
-11. [Support](#support)
+2. [API actions](#api-actions)
+3. [CSS selectors actions](#css-selectors-actions)
+4. [Feature actions](#feature-actions)
+5. [Mouse actions](#mouse-actions)
+6. [Keyboard actions](#keyboard-actions)
+7. [IBM actions](#ibm-actions)
+8. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+9. [Editing Excel Files](#editing-excel-files)
+10. [Uploading and Downloading files](#uploading-and-downloading-files)
+11. [Other actions](#other-actions)
+12. [Support](#support)
 
 <br/>
 
@@ -114,6 +115,81 @@ If you have suggestions or needs for a step / actions that you would rather impl
         <td></td>
     </tr>
 </table>
+
+### API actions
+
+<br>You can use this JSON as an example to understand API actions. Please delete or disable the first step shown as an example and import this JSON to understand how to use API actions. 
+<br>
+```
+[{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://petstore.swagger.io/v2/pet/59462342\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://petstore.swagger.io/v2/pet/59462342\" with \"params:param1=value1;param2=value2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".request.path\" to \"match\" \"\"/v2/pet/59462342?param1=value1&param2=value2\"\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://petstore.swagger.io/v2/pet/59462342\" with \"params:param1=value1;param2=value2\" and \"headers:header1=value1;header2=value2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.tags[0].name == \"string\"\" to \"contain\" \"false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.category.id == 0\" to \"match\" \"true\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.photoUrls | length > 0\" to \"match\" \"true\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save last API Call property \".response.content.name\" to \"petName\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert \"$petName\" to be same as \"\"doggie\"\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.status_code\" to \"match\" \"200\"","step_type":"normal","continue_on_failure":false,"timeout":60}]
+```
+<br>
+<br>
+<table>
+    <tr>
+        <th>Action</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Make an API call with "{method}" to "{endpoint}" with "params:{parameters}" and "headers:{headers}"</td>
+        <td>Create API step using this action where, the <code>method</code> is HTTP method (<code>GET, POST, PUT</code> or <code>DELETE</code>, etc), the endpoint is your API to be called(i.e.<code>https://petstore.swagger.io/v2/pet/59462342</code>)
+        <br>
+        <br>
+        <b>Optinally</b> you can set query parameters and headers using the format <code>Key=Value</code>, with semicolons <code>;</code> used to separate key-value pairs (e.g., <code>Key1=value1;Key2=value2</code>)
+        <br>
+        <br>The Request and Response data from the last API call will be stored in memory, which can be accessed using the steps below
+        </td>
+        <td>
+        <br><br><b>Example 1</b>
+        <br> <code>Make an API call with "GET" to "https://petstore.swagger.io/v2/pet/59462342"</code>
+        <br><br><b>Example 2</b>
+        <br> <code>Make an API call with "GET" to "https://petstore.swagger.io/v2/pet/59462342" with "params:param1=value1;param2=value2"</code>
+        <br><br><b>Example 3</b>
+        <br> <code>Make an API call with "GET" to "https://petstore.swagger.io/v2/pet/59462342" with "params:param1=value1;param2=value2" and "headers:header1=value1;header2=value2"</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Assert last API Call property "{jq_pattern}" to "{condition}" "{value}"</td>
+        <td>
+        Assert api request and reponse data using JQ patterns.  Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) 
+        <br><br> jq_pattern is a JSON path that can also be combined with conditions to perform assertions, as shown in the given examples
+        <br><br> The <code>condition</code> parameter can take either <code>match</code>  or <code>contain</code>  as a value to assert the JSON
+        <br><br> <code>value</code> is the content with which we want to match
+        <br><br><b>Note:</b> While comparing string remember to wrap string with ""
+        </td>
+        <td>
+            <b>Example 1</b> Validate request data
+            <br><code>Assert last API Call property ".request.path" to "match" ""/v2/pet/59462342?param1=value1&param2=value2""</code>
+            <br><br><b>Example 2</b> Validate response data
+            <br><code>Assert last API Call property ".response.content.tags[0].name" to "match" ""string""</code>
+            <br><br><b>Example 3</b> Validate response data with JQ patterns
+            <br><code>Assert last API Call property ".response.content.tags[0].name == "string"" to "match" "true"</code>
+            <br><br><b>Example 4</b> Validate response data with JQ patterns
+            <br><code>Assert last API Call property ".response.content.category.id == 0" to "contain" "true"</code>
+            <br><br><b>Example 5</b> Validate response data with JQ patterns
+            <br><code>Assert last API Call property ".response.content.photoUrls | length > 0" to "match" "true"</code>
+            <br><br><b>Example 6</b> Validate response status code
+            <br><code>Assert last API Call property ".response.status_code" to "match" "200"</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Save last API Call property "{jq_pattern}" to "{environment_variable}"</td>
+        <td>
+        The last API request and response data can be saved into an environment variable using this action, which can then be used as a value for other steps or for performing assertions when required 
+        </td>
+        <td>
+        <b>Example 1</b>
+        <br> <code>Save last API Call property ".response.content.name" to "petName"</code>
+        <br>
+        <br>Then, use the saved data in other steps.
+        <br> <code>Assert "$petName" to be same as ""doggie""</code>
+        <br>
+        </td>
+    </tr>
+
+</table>
+
 
 ### CSS selectors actions<a id="CSS_AC"></a>
 
