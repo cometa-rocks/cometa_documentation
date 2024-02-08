@@ -6,16 +6,18 @@
 Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
 
 1. [Browser actions](#browser-actions)
-2. [CSS selectors actions](#css-selectors-actions)
-3. [Feature actions](#feature-actions)
-4. [Mouse actions](#mouse-actions)
-5. [Keyboard actions](#keyboard-actions)
-6. [IBM actions](#ibm-actions)
-7. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
-8. [Editing Excel Files](#editing-excel-files)
-9. [Uploading and Downloading files](#uploading-and-downloading-files)
-10. [Other actions](#other-actions)
-11. [Support](#support)
+2. [API actions](#api-actions)
+3. [CSS selectors actions](#css-selectors-actions)
+4. [Feature actions](#feature-actions)
+5. [Mouse actions](#mouse-actions)
+6. [Keyboard actions](#keyboard-actions)
+7. [IBM actions](#ibm-actions)
+8. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+9. [Editing Excel Files](#editing-excel-files)
+10. [Uploading and Downloading files](#uploading-and-downloading-files)
+11. [Other actions](#other-actions)
+12. [Action Examples](#action-examples)
+12. [Support](#support)
 
 <br/>
 
@@ -114,6 +116,81 @@ If you have suggestions or needs for a step / actions that you would rather impl
         <td></td>
     </tr>
 </table>
+
+### API actions
+
+<br>You can use this JSON as an example to understand API actions. Please delete or disable the first step shown as an example and import this JSON to understand how to use API actions. 
+<br>
+```
+[{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://petstore.swagger.io/v2/pet/59462342\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://petstore.swagger.io/v2/pet/59462342\" with \"params:param1=value1;param2=value2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".request.path\" to \"match\" \"\"/v2/pet/59462342?param1=value1&param2=value2\"\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://petstore.swagger.io/v2/pet/59462342\" with \"params:param1=value1;param2=value2\" and \"headers:header1=value1;header2=value2\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.tags[0].name == \"string\"\" to \"contain\" \"false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.category.id == 0\" to \"match\" \"true\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.photoUrls | length > 0\" to \"match\" \"true\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save last API Call property \".response.content.name\" to \"petName\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert \"$petName\" to be same as \"\"doggie\"\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.status_code\" to \"match\" \"200\"","step_type":"normal","continue_on_failure":false,"timeout":60}]
+```
+<br>
+<br>
+<table>
+    <tr>
+        <th>Action</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Make an API call with "{method}" to "{endpoint}" with "params:{parameters}" and "headers:{headers}"</td>
+        <td>Create API step using this action where, the <code>method</code> is HTTP method (<code>GET, POST, PUT</code> or <code>DELETE</code>, etc), the endpoint is your API to be called (i.e.<code>https://petstore.swagger.io/v2/pet/59462342</code>)
+        <br>
+        <br>
+        <b>Optinally</b> you can set query parameters and headers using the format <code>Key=Value</code>, with semicolons <code>;</code> used to separate key-value pairs (e.g., <code>Key1=value1;Key2=value2</code>)
+        <br>
+        <br>The Request and Response data from the last API call will be stored in memory, which can be accessed using the steps below
+        </td>
+        <td>
+        <br><br><b>Example 1</b>
+        <br> <code>Make an API call with "GET" to "https://petstore.swagger.io/v2/pet/59462342"</code>
+        <br><br><b>Example 2</b>
+        <br> <code>Make an API call with "GET" to "https://petstore.swagger.io/v2/pet/59462342" with "params:param1=value1;param2=value2"</code>
+        <br><br><b>Example 3</b>
+        <br> <code>Make an API call with "GET" to "https://petstore.swagger.io/v2/pet/59462342" with "params:param1=value1;param2=value2" and "headers:header1=value1;header2=value2"</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Assert last API Call property "{jq_pattern}" to "{condition}" "{value}"</td>
+        <td>
+        Assert api request and reponse data using JQ patterns.  Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) 
+        <br><br> jq_pattern is a JSON path that can also be combined with conditions to perform assertions, as shown in the given examples
+        <br><br> The <code>condition</code> parameter can take either <code>match</code>  or <code>contain</code>  as a value to assert the JSON
+        <br><br> <code>value</code> is the content with which we want to match
+        <br><br><b>Note:</b> While comparing string remember to wrap string with ""
+        </td>
+        <td>
+            <b>Example 1</b> Validate request data
+            <br><code>Assert last API Call property ".request.path" to "match" ""/v2/pet/59462342?param1=value1&param2=value2""</code>
+            <br><br><b>Example 2</b> Validate response data
+            <br><code>Assert last API Call property ".response.content.tags[0].name" to "match" ""string""</code>
+            <br><br><b>Example 3</b> Validate response data with JQ patterns
+            <br><code>Assert last API Call property ".response.content.tags[0].name == "string"" to "match" "true"</code>
+            <br><br><b>Example 4</b> Validate response data with JQ patterns
+            <br><code>Assert last API Call property ".response.content.category.id == 0" to "contain" "true"</code>
+            <br><br><b>Example 5</b> Validate response data with JQ patterns
+            <br><code>Assert last API Call property ".response.content.photoUrls | length > 0" to "match" "true"</code>
+            <br><br><b>Example 6</b> Validate response status code
+            <br><code>Assert last API Call property ".response.status_code" to "match" "200"</code>
+        </td>
+    </tr>
+    <tr>
+        <td>Save last API Call property "{jq_pattern}" to "{environment_variable}"</td>
+        <td>
+        The last API request and response data can be saved into an environment variable using this action, which can then be used as a value for other steps or for performing assertions when required 
+        </td>
+        <td>
+        <b>Example 1</b>
+        <br> <code>Save last API Call property ".response.content.name" to "petName"</code>
+        <br>
+        <br>Then, use the saved data in other steps.
+        <br> <code>Assert "$petName" to be same as ""doggie""</code>
+        <br>
+        </td>
+    </tr>
+
+</table>
+
 
 ### CSS selectors actions<a id="CSS_AC"></a>
 
@@ -706,24 +783,55 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</td>
-        <td>Wait for the selector to appear within the given timeout (time in seconds), then wait for it to disappear within the next 60 seconds, with the specified option of "do not fail if not visible" or "fail if never visible". <br/>
-        <b> If the selector does not appear within the specified timeout, and the selected option is..</b><br/>
+        <td>This step waits for the selector to appear within the given timeout (in seconds) and then wait the step timeout to disappear. The available options are 'do not fail if not visible' or 'fail if never visible'
+        <br><br>
+        <b> If the selector does not appear within the specified timeout, and the selected option is:</b><br/>
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
+        <br/>Useful when testing loading, notification pop-ups, or selector that appear and disappears within specific time<br/>
+        <br/><b>Note </b> This step checks for the presence and visibility of the selector on the screen. If the selector is present in the DOM but hidden due to CSS properties, the step will fail if selected option is <code>'fail if never visible'</code>
         <br/>
-        Useful when testing loading, notification pop-ups, or selector that appear within the given timeout but disappear within the next 60 seconds<br/>
+        <br/>
+        <br><a href="#example-of-wait-timeout-seconds-for-selector-to-appear-and-disappear-using-option-option">Try using this example</a>
         </td>
         <td>
-        <b>Examples 1</b>
-        <br><code>Wait "20" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
+        <b>Examples 1</b> The spinner appears within 1 second and disappears within 40 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 41 seconds with success
+        <br><code>Wait "2" seconds for ".remove-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 2</b> The spinner appears within 1 second and disappears within 13 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 14 seconds with success
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 3</b> The spinner never appears and step timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 2 seconds with success
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 4</b> The spinner appears within 10 seconds and disappears within 15 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 2 seconds with success
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 5</b> The spinner appears within 10 seconds and disappears within 15 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'fail if never visible', the step will run for 2 seconds and fail
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "fail if never visible"</code>
+        <br>        
+        <br>
+        <b>Examples 6</b> If <code>#Load_in_15_Secs</code> is a selector that appears within 15 seconds and disappears in the next 20 seconds. In this case, the step should be:
+        <br><code>Wait "15" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
+        <br> And set a 35 second or more in step timeout because to complete the execution of this step will require <code>15 + 20 = 35</code> seconds.
+        <br><b>Note:</b> Even if the above step selector does not appear the step will not fail because the selected option is <code>'do not fail if not visible'</code>
+        <br>
+        <br>
+        <b>Examples 7</b> If <code>#Load_in_20_Secs</code> is a selector that appears within 20 seconds and disappears in the next 300 seconds, In this case, the step should be:
+        <br><code>Wait "20" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
+        <br> And set a 320 second or more step timeout because to complete the execution of this step will require <code>20 + 300 = 320</code> seconds.
+        <br><b>Note </b>If the above step selector does not appear step will fail because selected option is <code>'fail if never visible'</code>
         <br>
         <br><b>Examples 2</b>
         <br><code>Wait "22" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
         </td></tr>
         <tr>
-        <td>Wait until "{selector}" is loaded</td>
-        <td>Wait until (selector) is loaded on the page.<br/>
-        Useful as an alternative to the "wait until I can see something on page" step if you want to dynamically wait for an element to appear.<br/>
+          <td><strong>Wait until "{selector}" is loaded</strong><br>
+          Useful as an alternative to the "wait until I can see something on page" step if you want to dynamically wait for an element to appear.<br/>
         </td>
         <td>then wait until "//div[@class='div_class_name']" is loaded</td>
     </tr>
@@ -780,17 +888,28 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
-        <td>It generates an OTP for Multi-Factor Authentication and stores it in the provided <i>variable_name</i> </td>
+        <td>
+            It generates an OTP for Multi-Factor authentication and stores it in the provided <i>variable_name</i> 
+            <br><br>See detailed documentation on <a href="./MFA_Authentication_using_cometa.md" target="_blank">Automation of Muti Factor Authentication with Cometa</a>
+        </td>
         <td>
             <h4>Example</h4>
             <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
-            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>
-            <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
-            <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
+            <br><strong>Step 2:</strong> Enter {x} -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>    
+            <br><strong>Step 3:</strong> Enter {value} -> "HVVH FUSO XXXX HLH7 FQKE JU2L ZZEU E2XV"
+            <br><strong>Step 4:</strong> Enter {variable_name} -> "myOTPVariableName"
             <h4>Note: The stored OTP value will be encrypted, and it expires in 30 seconds.</h4>
         </td>
     </tr>
 </table>
+
+### Action Examples
+You can import the below examples to create features and understand Cometa steps.
+
+#### Example of <code>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</code><a id="Appear_and_Disappear">
+```
+[{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=1&disappearTimeout=40&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".remove-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=1&disappearTimeout=13&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=1000&disappearTimeout=13&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=10&disappearTimeout=15&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=10&disappearTimeout=15&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"fail if never visible\"","step_type":"normal","continue_on_failure":false,"timeout":60}]
+```
 
 ### Support<a id="SUPPORT"></a>
 For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5
