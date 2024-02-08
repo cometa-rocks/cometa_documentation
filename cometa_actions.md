@@ -771,19 +771,43 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
         <br/>Useful when testing loading, notification pop-ups, or selector that appear and disappears within specific time<br/>
-        <br/><b>Note </b> This step checks for the presence and visibility of the selector on the screen. If the selector is present in the DOM but hidden due to CSS properties, the step will fail if selected option is <code>'fail if never visible'</code><br/>
+        <br/><b>Note </b> This step checks for the presence and visibility of the selector on the screen. If the selector is present in the DOM but hidden due to CSS properties, the step will fail if selected option is <code>'fail if never visible'</code>
+        <br/>
+        <br/>
+        <br><a href="Appear_and_Disappear">Try using this example</a>
         </td>
         <td>
-        <b>Examples 1</b> If <code>#Load_in_15_Secs</code> is a selector that appears within 15 seconds and disappears in the next 20 seconds. In this case, the step should be:
+        <b>Examples 1</b> The spinner appears within 1 second and disappears within 40 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 41 seconds with success
+        <br><code>Wait "2" seconds for ".remove-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 2</b> The spinner appears within 1 second and disappears within 13 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 14 seconds with success
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 3</b> The spinner never appears and step timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 2 seconds with success
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 4</b> The spinner appears within 10 seconds and disappears within 15 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 2 seconds with success
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "do not fail if not visible"</code>
+        <br>
+        <br>
+        <b>Examples 5</b> The spinner appears within 10 seconds and disappears within 15 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'fail if never visible', the step will run for 2 seconds and fail
+        <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "fail if never visible"</code>
+        <br>        
+        <br>
+        <b>Examples 6</b> If <code>#Load_in_15_Secs</code> is a selector that appears within 15 seconds and disappears in the next 20 seconds. In this case, the step should be:
         <br><code>Wait "15" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
         <br> And set a 35 second or more in step timeout because to complete the execution of this step will require <code>15 + 20 = 35</code> seconds.
         <br><b>Note:</b> Even if the above step selector does not appear the step will not fail because the selected option is <code>'do not fail if not visible'</code>
         <br>
         <br>
-        <b>Examples 2</b> If <code>#Load_in_20_Secs</code> is a selector that appears within 20 seconds and disappears in the next 300 seconds, In this case, the step should be:
+        <b>Examples 7</b> If <code>#Load_in_20_Secs</code> is a selector that appears within 20 seconds and disappears in the next 300 seconds, In this case, the step should be:
         <br><code>Wait "20" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
         <br> And set a 320 second or more step timeout because to complete the execution of this step will require <code>20 + 300 = 320</code> seconds.
         <br><b>Note </b>If the above step selector does not appear step will fail because selected option is <code>'fail if never visible'</code>
+        <br>
         </td>
     </tr>
     <tr>
@@ -853,6 +877,14 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         </td>
     </tr>
 </table>
+
+### Feature Examples
+You can import the below examples to create features and understand Cometa steps.
+
+#### Example of <code>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</code><a id="Appear_and_Disappear">
+```
+[{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=1&disappearTimeout=40&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".remove-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=1&disappearTimeout=13&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=1000&disappearTimeout=13&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=10&disappearTimeout=15&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"do not fail if not visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"StartBrowser and call URL \"https://prod.cometa.rocks/loader_testing.html?appearTimeout=10&disappearTimeout=15&startWithLoader=false\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Wait \"2\" seconds for \".hide-element .loader\" to appear and disappear using option \"fail if never visible\"","step_type":"normal","continue_on_failure":false,"timeout":60}]
+```
 
 ### Support<a id="SUPPORT"></a>
 For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5
