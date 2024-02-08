@@ -774,7 +774,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <br/><b>Note </b> This step checks for the presence and visibility of the selector on the screen. If the selector is present in the DOM but hidden due to CSS properties, the step will fail if selected option is <code>'fail if never visible'</code>
         <br/>
         <br/>
-        <br><a href="Appear_and_Disappear">Try using this example</a>
+        <br><a href="example-of-wait-timeout-seconds-for-selector-to-appear-and-disappear-using-option-option">Try using this example</a>
         </td>
         <td>
         <b>Examples 1</b> The spinner appears within 1 second and disappears within 40 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'do not fail if not visible', the step will run for 41 seconds with success
