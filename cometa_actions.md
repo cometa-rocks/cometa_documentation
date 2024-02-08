@@ -133,7 +133,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
     </tr>
     <tr>
         <td>Make an API call with "{method}" to "{endpoint}" with "params:{parameters}" and "headers:{headers}"</td>
-        <td>Create API step using this action where, the <code>method</code> is HTTP method (<code>GET, POST, PUT</code> or <code>DELETE</code>, etc), the endpoint is your API to be called(i.e.<code>https://petstore.swagger.io/v2/pet/59462342</code>)
+        <td>Create API step using this action where, the <code>method</code> is HTTP method (<code>GET, POST, PUT</code> or <code>DELETE</code>, etc), the endpoint is your API to be called (i.e.<code>https://petstore.swagger.io/v2/pet/59462342</code>)
         <br>
         <br>
         <b>Optinally</b> you can set query parameters and headers using the format <code>Key=Value</code>, with semicolons <code>;</code> used to separate key-value pairs (e.g., <code>Key1=value1;Key2=value2</code>)
@@ -765,22 +765,25 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</td>
-        <td>Wait for the selector to appear and disappear within the given timeout (time in seconds), with the specified option of "do not fail if not visible" or "fail if never visible". <br/>
+        <td>This step waits for the selector to appear within the given timeout (in seconds) and then wait the step timeout to disappear. The available options are 'do not fail if not visible' or 'fail if never visible'
+        <br><br>
         <b> If the selector does not appear within the specified timeout, and the selected option is:</b><br/>
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
-        <br/>
-        Useful when testing loading, notification pop-ups, or selector that appear and disappears within specific time<br/>
+        <br/>Useful when testing loading, notification pop-ups, or selector that appear and disappears within specific time<br/>
+        <br/><b>Note </b> This step checks for the presence and visibility of the selector on the screen. If the selector is present in the DOM but hidden due to CSS properties, the step will fail if selected option is <code>'fail if never visible'</code><br/>
         </td>
         <td>
-        <b>Examples 1:</b> #Load_in_15_Secs is a selector that appears and disappears within 15 seconds, then the step should be:
-        <br><code>Wait "31" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
-        <br> Above step will pass after checking for appearing and disappearing element
+        <b>Examples 1</b> If <code>#Load_in_15_Secs</code> is a selector that appears within 15 seconds and disappears in the next 20 seconds. In this case, the step should be:
+        <br><code>Wait "15" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
+        <br> And set a 35 second or more in step timeout because to complete the execution of this step will require <code>15 + 20 = 35</code> seconds.
+        <br><b>Note:</b> Even if the above step selector does not appear the step will not fail because the selected option is <code>'do not fail if not visible'</code>
         <br>
         <br>
-        <b>Examples 2</b> If #Load_in_20_Secs is a selector that appears in 20 seconds and disappears in 30 seconds, and the step is:
-        <br><code>Wait "32" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
-        <br> Above step will fail disappearing of element was not completed due to less time. It will need 50 (20+30) seconds to complete
+        <b>Examples 2</b> If <code>#Load_in_20_Secs</code> is a selector that appears within 20 seconds and disappears in the next 300 seconds, In this case, the step should be:
+        <br><code>Wait "20" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
+        <br> And set a 320 second or more step timeout because to complete the execution of this step will require <code>20 + 300 = 320</code> seconds.
+        <br><b>Note </b>If the above step selector does not appear step will fail because selected option is <code>'fail if never visible'</code>
         </td>
     </tr>
     <tr>
@@ -836,13 +839,16 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
-        <td>It generates an OTP for Multi-Factor Authentication and stores it in the provided <i>variable_name</i> </td>
+        <td>
+            It generates an OTP for Multi-Factor authentication and stores it in the provided <i>variable_name</i> 
+            <br><br>See detailed documentation on <a href="./MFA_Authentication_using_cometa.md" target="_blank">Automation of Muti Factor Authentication with Cometa</a>
+        </td>
         <td>
             <h4>Example</h4> 
             <strong>Step 1:</strong> Select Action -> Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"
-            <br><strong>Step 2:</strong> Enter -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>    
-            <br><strong>Step 3:</strong> Enter -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
-            <br><strong>Step 4:</strong> Enter -> "myOTPVariableName"
+            <br><strong>Step 2:</strong> Enter {x} -> "8" <i>Length of OTP, | Default : 6, Options are [6, 7, 8]</i>    
+            <br><strong>Step 3:</strong> Enter {value} -> "HVVH FUSO LJUY HLH7 FQKE JU2L ZZEU E2XV"
+            <br><strong>Step 4:</strong> Enter {variable_name} -> "myOTPVariableName"
             <h4>Note: The stored OTP value will be encrypted, and it expires in 30 seconds.</h4>
         </td>
     </tr>
