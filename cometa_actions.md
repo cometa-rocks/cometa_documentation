@@ -16,6 +16,7 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 9. [Editing Excel Files](#editing-excel-files)
 10. [Uploading and Downloading files](#uploading-and-downloading-files)
 11. [Other actions](#other-actions)
+12. [Action Examples](#action-examples)
 12. [Support](#support)
 
 <br/>
@@ -878,7 +879,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
 </table>
 
-### Feature Examples
+### Action Examples
 You can import the below examples to create features and understand Cometa steps.
 
 #### Example of <code>Wait "{timeout}" seconds for "{selector}" to appear and disappear using option "{option}"</code><a id="Appear_and_Disappear">
