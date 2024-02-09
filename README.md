@@ -23,6 +23,8 @@ You are looking at the Cometa Community Edition (CE) [licensed](#license) under 
 
 - [Cometa Versions](#cometaversions)
 - [Cometa History](#cometahistory)
+- [Cometa Features](./cometa_features.md)
+- [Cometa Actions](./cometa_actions.md)  
 
 All about testing
 - [Cometa Overview - 5W1H](#cometamindmap)
