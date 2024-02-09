@@ -38,7 +38,7 @@ The network response refers to the data returned by a server in response to an H
 
 * **Redirects** If the response is a redirection, you can get the URL to which it redirects and the type of redirection (e.g., 301 for permanent, 302 for temporary).
 
-* **Timing Information**: Details about how long it took for the server to respond (e.g., latency, time to first byte).
+* **Timing Information** Details about how long it took for the server to respond (e.g., latency, time to first byte).
 <br>
 <br>
 
@@ -50,16 +50,17 @@ When creating a feature in Cometa, the Information section includes an option to
 <img src="img\feature_screens\information_section.jpg" width="800px">
 
 #### Refer To Report
+Cometa will display a list of network responses within the step report while executing steps. This list will show which network responses were received during each step. Specifically, if an step that takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
 
 In the OPTIONS section of the Step Report, you should find the following icon.
 
 > **Note:** In case of vulnerabilities, a red indicator will be shown otherwise, the color will be gray.
 
-1. This indicates that the network header has been recorded and does not have any vulnerabilities.
+1. This indicates that the network header has been recorded and does have vulnerabilities.
 
     <img width="300px" src="img\feature_screens\vulnerability_Indicator.jpg">
     <br><br>
-1. This indicates that the network header has been recorded and does have vulnerabilities.
+1. This indicates that the network header has been recorded and does not have vulnerabilities.
 
     <img width="300px" src="img\feature_screens\logging_Indicator.jpg">
     <br><br>
