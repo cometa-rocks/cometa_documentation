@@ -68,3 +68,4 @@ In the OPTIONS section of the Step Report, you should find the following icon.
 
      <img width="800px" src="img\feature_screens\JQ_Screen.jpg">
 
+1. The JSON data can be analyzed using JQ patterns. Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) to learn about patterns 
