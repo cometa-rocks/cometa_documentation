@@ -50,7 +50,7 @@ When creating a feature in Cometa, the Information section includes an option to
 <img src="img\feature_screens\information_section.jpg" width="800px">
 
 #### Refer To Report
-Cometa will display a list of network responses within the step report while executing steps. This list will show which network responses were received during each step. Specifically, if an step that takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
+Cometa will display a list of network responses within the step report. This list will show which network responses were received during each step. Specifically, if an step that takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
 
 In the OPTIONS section of the Step Report, you should find the following icon.
 
