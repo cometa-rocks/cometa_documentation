@@ -15,7 +15,7 @@ If information about the server's application reveals the presence of vulnerabil
 For better understading of HTTP response headers vulnerabilities please refer [X-Powered-By](https://www.zaproxy.org/docs/alerts/10037/), [Server](https://www.zaproxy.org/docs/alerts/10036-2) and [HTTP response headers cheet sheets](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#server). 
 
 #### The Cometa has introduces feature
-During feature execution, Cometa records and validates network response headers, filters vulnerable ones, and displays the count in real-time. After execution, users can check the step report for details on vulnerable headers and network responses, aiding in understanding.
+During feature execution, Cometa records and validates network response headers, filters the ones exposing sensible information, and displays the count in real-time. After execution, users can check the step report for details on vulnerable headers and network responses, aiding in understanding.
 
 Network Response list item contains 2 secution
 
