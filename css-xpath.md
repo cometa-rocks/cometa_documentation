@@ -97,7 +97,7 @@ XPath stands for XML Path. It’s a query language that helps identify elements 
 
 - Queries are compact, easy to type and read and easily parsed and can return any number of results, including zero.
 
-- Queries accept multiple conditions. This is specially useful with dinamic elements like for example translated texts.
+- Queries accept multiple conditions. This is specially useful with dynamic elements like for example translated texts.
 
 - It can be used in JavaScript, Java, XML Schema, PHP, Python, C, C++, and lots of other languages.
 
@@ -613,7 +613,7 @@ Example:
     </tr>
     <tr>
         <td>//*[contains(lower-case(@name),'ear')]</td>
-        <td>This DOES NOT work with the selenium x-path implementation (yet). You can use translate to achieve lower-case or upper-case. Example: `//*[translate(.,'HOME','home')='home']`. This example matches any kind auf "HoMe" with "home". This is very powerfull, when you see text on your screen, where you do not know, if it has been transformed with CSS rules. So, if you are looking at text to match, you might always want to make sure that it is matched case insensitive.</td>
+        <td>This DOES NOT work with the selenium x-path implementation (yet). You can use translate to achieve lower-case or upper-case. Example: `//*[translate(.,'HOME','home')='home']`. This example matches any kind auf "HoMe" with "home". This is very powerful, when you see text on your screen, where you do not know, if it has been transformed with CSS rules. So, if you are looking at text to match, you might always want to make sure that it is matched case insensitive.</td>
     </tr>
     <tr>
         <td>substring-before(str, sub)</td>
@@ -625,12 +625,12 @@ Example:
     </tr>
     <tr>
         <td>translate(str, abc, XYZ)</td>
-        <td>Evaluates a string and a set of characters to translate and return the translated string. str is the string to evaluate, abc is the string of characters that will be replaced, XYZ is the string of characters used for replacement; the first character in XYZ will replace every occurence of the first character in abc that appears in str.<br/>
+        <td>Evaluates a string and a set of characters to translate and return the translated string. str is the string to evaluate, abc is the string of characters that will be replaced, XYZ is the string of characters used for replacement; the first character in XYZ will replace every occurrence of the first character in abc that appears in str.<br/>
         < xsl:value-of select="translate('The quick brown fox.', 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')" / > will return 'THE QUICK BROWN FOX.' <br/> < xsl:value-of select="translate('The quick brown fox.', 'brown', 'red')" / > will return 'The quick red fdx.'</td>
     </tr>
     <tr>
         <td>normalize-space(string)</td>
-        <td>Remove leading and trailing white-spaces from a string, replaces sequiences of whitespace characters by a single space and returns the result string</td>
+        <td>Remove leading and trailing white-spaces from a string, replaces sequences of whitespace characters by a single space and returns the result string</td>
     </tr>
     <tr>
         <td>string-length(string)</td>
@@ -660,7 +660,7 @@ Example:
 
 <br/>
 
-As you can see, aside from the already existing CSS selectors XPath offers a greater amount of selection options vastly expanding the querying posibilities. Furthermore, as XPath can be used in many different programming languages, it can become a very useful, flexible and powerful tool in software developing and testing.
+As you can see, aside from the already existing CSS selectors XPath offers a greater amount of selection options vastly expanding the querying possibilities. Furthermore, as XPath can be used in many different programming languages, it can become a very useful, flexible and powerful tool in software developing and testing.
 
 ### 5. Support<a name="SUPPORT_SE"></a>
 For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5

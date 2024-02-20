@@ -27,9 +27,9 @@ Actions or steps are the build blocks from where your tell Co.meta what you want
 
 We have grouped the different actions and the first one is "Browser actions".
 
-The first steps in your testplan will probably be *Goto "{URL}"* - make sure to leave the quotes and replace anything else. Do not worry about escapeing your quotes. Co.meta does that for you.
+The first steps in your testplan will probably be *Goto "{URL}"* - make sure to leave the quotes and replace anything else. Do not worry about escaping your quotes. Co.meta does that for you.
 
-A very versatile step is *Run Javascript function "{function}"* - function can be anything you can execute as Javscript inside a browser. It can be just one command or a complete snipplet. This brings you low-code.
+A very versatile step is *Run Javascript function "{function}"* - function can be anything you can execute as Javscript inside a browser. It can be just one command or a complete snippet. This brings you low-code.
 
 If you have suggestions or needs for a step / actions that you would rather implement in python, then please download the Co.meta repo and have a look actions.py for the code of any step that was implemented here.
 
@@ -137,7 +137,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
         <td>Create API step using this action where, the <code>method</code> is HTTP method (<code>GET, POST, PUT</code> or <code>DELETE</code>, etc), the endpoint is your API to be called (i.e.<code>https://petstore.swagger.io/v2/pet/59462342</code>)
         <br>
         <br>
-        <b>Optinally</b> you can set query parameters and headers using the format <code>Key=Value</code>, with semicolons <code>;</code> used to separate key-value pairs (e.g., <code>Key1=value1;Key2=value2</code>)
+        <b>Optionally</b> you can set query parameters and headers using the format <code>Key=Value</code>, with semicolons <code>;</code> used to separate key-value pairs (e.g., <code>Key1=value1;Key2=value2</code>)
         <br>
         <br>The Request and Response data from the last API call will be stored in memory, which can be accessed using the steps below
         </td>
@@ -153,7 +153,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
     <tr>
         <td>Assert last API Call property "{jq_pattern}" to "{condition}" "{value}"</td>
         <td>
-        Assert api request and reponse data using JQ patterns.  Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) 
+        Assert api request and response data using JQ patterns.  Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) 
         <br><br> jq_pattern is a JSON path that can also be combined with conditions to perform assertions, as shown in the given examples
         <br><br> The <code>condition</code> parameter can take either <code>match</code>  or <code>contain</code>  as a value to assert the JSON
         <br><br> <code>value</code> is the content with which we want to match
@@ -296,7 +296,7 @@ click</td>
         <td></td>
     </tr>
     <tr>
-        <td>I use selector "{number}" and select option "{index}" for Cognos promptpage</td>
+        <td>I use selector "{number}" and select option "{index}" for Cognos prompt page</td>
         <td>Selects an option defined with index from selector index defined with number.<br/>Index and number start from 0 for first element.</td>
         <td></td>
     </tr>
@@ -326,7 +326,7 @@ click</td>
             <br><strong>Step 4:</strong> I sleep "1" seconds
             <br><strong>Step 5:</strong> End Loop
             <br>
-            <br>Will loop over first 5 <strong>tr</strong> elements with class <strong>"even"</strong> or <strong>"odd"</strong> and click first occurence of <strong>td</strong> for each of them
+            <br>Will loop over first 5 <strong>tr</strong> elements with class <strong>"even"</strong> or <strong>"odd"</strong> and click first occurrence of <strong>td</strong> for each of them
             <br>_________________________________________________________
             <br>
             <br>
@@ -423,7 +423,7 @@ click</td>
     </tr>
     <tr>
         <td>Download a file by clicking on "{linktext}"</td>
-        <td>Downloads a file, the downloaded file is assigned to feature_result and step_result (linktext can be a text, css_selector or xpath). The downloaded file is saved in the filesytems at behave/Downloads/{feature-run-id}/remove-filename.suffix. To be able to test on generic filenames, that get random generated Id's, Cometa saves a copy of the file to last_downoaded_file.suffix maintaining the suffix of the original filename.
+        <td>Downloads a file, the downloaded file is assigned to feature_result and step_result (linktext can be a text, css_selector or xpath). The downloaded file is saved in the file systems at behave/Downloads/{feature-run-id}/remove-filename.suffix. To be able to test on generic filenames, that get random generated Id's, Cometa saves a copy of the file to last_downloaded_file.suffix maintaining the suffix of the original filename.
         </td>
         <td></td>
     </tr>
@@ -454,7 +454,7 @@ click</td>
     </tr>
     <tr>
         <td style="vertical-align:top">Press the following set of keys "{keySet}"</td>
-        <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneosly. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...).
+        <td>Presses a set of key sent by the user as a parameter. If the keys are separated by '+', press them simultaneously. If they are separated by ';', start pressing the keys once the previous set is released. The key combination won't work if the browser state is modified (create new tab, close browser...).
         <br><p>
         <br><p>
         Here is the complete list of Special Keys that can be used in Cometa via Selenium Webdriver: 
@@ -538,7 +538,7 @@ click</td>
     </tr>
     <tr>
         <td>Test IBM Cognos Cube Dimension to contain all values from list variable "{variable_name}" use prefix "{prefix}" and suffix "{suffix}"</td>
-        <td>Compares a Report Cube's content to a listsaved in variable.<br/>
+        <td>Compares a Report Cube's content to a list saved in variable.<br/>
         Works for dimension with > 50 members (members can be searched)</td>
         <td>Test IBM Cognos Cube Dimension to contain all values from list variable "IBIS_CenterList" use prefix "IBIS-" and suffix " "</td>
     </tr>
@@ -555,7 +555,7 @@ click</td>
     </tr>
     <tr>
         <td>I can test current IBM Cognos folder using parameters "{parameters}"</td>
-        <td>Tests the folder the user is currently in with the inputted parameters. Paraters is a pair of "key1|key2|key3:values;", where each key is the name a prompt parameters and the correspondig value. Multiple keys can be tied to one value like this: p_PERIOD|p_REPORTINGPERIOD|p_PER:2025-01</td>
+        <td>Tests the folder the user is currently in with the inputted parameters. Parameters is a pair of "key1|key2|key3:values;", where each key is the name a prompt parameters and the corresponding value. Multiple keys can be tied to one value like this: p_PERIOD|p_REPORTINGPERIOD|p_PER:2025-01</td>
         <td></td>
     </tr>
 </table>
@@ -612,7 +612,7 @@ click</td>
 
 ### Editing Excel Files<a id="EDITEXCEL_AC"></a>
 
-Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerfull, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
+Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerful, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
 
 <table>
     <tr>
@@ -640,7 +640,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>
             Opens Excel or CSV file and asserts the values in the cell range specified.
             <br><br>
-            Cell range can be any number of range as long as it cell lenght is not grater than the values lenght. If we don't know how many items there are in the values we can use a range like <code>A12:A</code> this will take <code>A12</code> as a starting cell and calculate the rows based on the items in values. This only works vertically (rows) so range like <code>A12:C</code> won't work. Other possible ranges can be: <code>A12:500</code> or even <code>A12:C13</code>, this last one will assert the value in the following order: <code>A12 => B12 => C12 => A13 => B13 => C13</code>.
+            Cell range can be any number of range as long as it cell length is not grater than the values length. If we don't know how many items there are in the values we can use a range like <code>A12:A</code> this will take <code>A12</code> as a starting cell and calculate the rows based on the items in values. This only works vertically (rows) so range like <code>A12:C</code> won't work. Other possible ranges can be: <code>A12:500</code> or even <code>A12:C13</code>, this last one will assert the value in the following order: <code>A12 => B12 => C12 => A13 => B13 => C13</code>.
             <br><br>
             Values are content that will be asserted and should be separated by semicolons (;).
             <br><br>
@@ -693,8 +693,8 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Attach the "{filename}" from Downloads folder to the current execution results</td>
-        <td>This will attach the file found in Downloads-folder to the current exectuion.</td>
-        <td>This is usefull, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</td>
+        <td>This will attach the file found in Downloads-folder to the current execution.</td>
+        <td>This is useful, if you want to examine the file in your test execution instead of your application. The filename should just be the filename. Cometa will automatically at the correct folder to the file to be downloaded from your feature results, as this is depending on the result execution number, which also goes directly into the download link.</td>
     </tr>    
 </table>
 
@@ -771,7 +771,9 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <b> If the selector does not appear within the specified timeout, and the selected option is:</b><br/>
             <b>1.</b> <code>"do not fail if not visible"</code> then the step will not fail, and it will skip the wait for it to disappear<br/>
             <b>2.</b> <code>"fail if never visible"</code> then step will fail<br/>
-        <br/>Useful when testing loading, notification pop-ups, or selector that appear and disappears within specific time<br/>
+            <b>3.</b> <code>"reload page after appearing"</code> then the page is reloaded 0.5 seconds after the selector appear<br/>
+            <b>4.</b> <code>"reload page while waiting to disappear"</code> then the page is reloaded every minute while waiting to disappear.<br/>
+        <br/>Useful when testing loading, notification pop-ups, selector that appears and disappears after reloading or selector that appear and disappears within specific time<br/>
         <br/><b>Note </b> This step checks for the presence and visibility of the selector on the screen. If the selector is present in the DOM but hidden due to CSS properties, the step will fail if selected option is <code>'fail if never visible'</code>
         <br/>
         <br/>
@@ -797,14 +799,24 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <b>Examples 5</b> The spinner appears within 10 seconds and disappears within 15 seconds. Create step with a timeout of 2 seconds and a step timeout of 60 seconds, using the option 'fail if never visible', the step will run for 2 seconds and fail
         <br><code>Wait "2" seconds for ".hide-element .loader" to appear and disappear using option "fail if never visible"</code>
         <br>        
+        <br> 
+        <b>Examples 6</b> The selector appears within 20 seconds and disappears after 10 minute and to check if disappeared page reloading is required, Create step with a timeout of 21 seconds and a step timeout of 605 seconds (10*60 + 5 sec extra), using options 'reload page while waiting to disappear;fail if never visible', the step will run for around 605 seconds and it will pass.
+        <br> <b>Note : </b> we have combined the two options <code>reload page while waiting to disappear</code> and <code>fail if never visible</code>, You can also combine it with <code>do not fail if not visible</code>.<br>
+        <br><code>Wait "21" seconds for ".selector" to appear and disappear using option "reload page while waiting to disappear;fail if never visible"</code>
+        <br>        
         <br>
-        <b>Examples 6</b> If <code>#Load_in_15_Secs</code> is a selector that appears within 15 seconds and disappears in the next 20 seconds. In this case, the step should be:
+        <b>Examples 7</b> The selector appears within 20 seconds and disappears when page reloaded, Create step with a timeout of 21 seconds and a step timeout of 25 seconds (20 + 5 sec extra), using options 'reload page after appearing;do not fail if not visible', the step will run for around 25 seconds and it will pass.
+        <br> <b>Note : </b> we have combined the two options <code>reload page after appearing</code> and <code>do not fail if not visible</code>, You can also combine it with <code>fail if never visible</code><br>
+        <br><code>Wait "21" seconds for ".selector" to appear and disappear using option "reload page after appearing;do not fail if not visible"</code>
+        <br>        
+        <br>
+        <b>Examples 8</b> If <code>#Load_in_15_Secs</code> is a selector that appears within 15 seconds and disappears in the next 20 seconds. In this case, the step should be:
         <br><code>Wait "15" seconds for "#Load_in_15_Secs" to appear and disappear using option "do not fail if not visible"</code>
         <br> And set a 35 second or more in step timeout because to complete the execution of this step will require <code>15 + 20 = 35</code> seconds.
         <br><b>Note:</b> Even if the above step selector does not appear the step will not fail because the selected option is <code>'do not fail if not visible'</code>
         <br>
         <br>
-        <b>Examples 7</b> If <code>#Load_in_20_Secs</code> is a selector that appears within 20 seconds and disappears in the next 300 seconds, In this case, the step should be:
+        <b>Examples 9</b> If <code>#Load_in_20_Secs</code> is a selector that appears within 20 seconds and disappears in the next 300 seconds, In this case, the step should be:
         <br><code>Wait "20" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
         <br> And set a 320 second or more step timeout because to complete the execution of this step will require <code>20 + 300 = 320</code> seconds.
         <br><b>Note </b>If the above step selector does not appear step will fail because selected option is <code>'fail if never visible'</code>
@@ -830,7 +842,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     </tr>
     <tr>
         <td>Run Javascript function "{function}"</td>
-        <td>Run a JavaScript function in the current browser context, if some value is retuned from the function it will be saved as %js_return which can later be used in co.meta.</td>
+        <td>Run a JavaScript function in the current browser context, if some value is returned from the function it will be saved as %js_return which can later be used in co.meta.</td>
         <td>
         <code>
         Run Javascript function "return "$myCometaVariable".replace(/[^0-9]+/, "");" <br />
@@ -866,7 +878,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
         <td>
             It generates an OTP for Multi-Factor authentication and stores it in the provided <i>variable_name</i> 
-            <br><br>See detailed documentation on <a href="./MFA_Authentication_using_cometa.md" target="_blank">Automation of Muti Factor Authentication with Cometa</a>
+            <br><br>See detailed documentation on <a href="./MFA_Authentication_using_cometa.md" target="_blank">Automation of Multi Factor Authentication with Cometa</a>
         </td>
         <td>
             <h4>Example</h4> 
