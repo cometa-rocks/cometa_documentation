@@ -12,12 +12,12 @@ Exposing detailed information about the server, backend technologies, or other c
 
 If information about the server's application reveals the presence of vulnerabilities such as XSS, CSRF, DDoS, or others, it increases the risk of malicious activities. Attackers armed with this knowledge could exploit the identified vulnerabilities, potentially leading to harmful consequences.
 
-For better understading of HTTP response headers vulnerabilities please refer [X-Powered-By](https://www.zaproxy.org/docs/alerts/10037/), [Server](https://www.zaproxy.org/docs/alerts/10036-2) and [HTTP response headers cheet sheets](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#server). 
+For better understanding of HTTP response headers vulnerabilities please refer [X-Powered-By](https://www.zaproxy.org/docs/alerts/10037/), [Server](https://www.zaproxy.org/docs/alerts/10036-2) and [HTTP response headers cheet sheets](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#server). 
 
 #### The Cometa has introduces feature
 During feature execution, Cometa records and validates network response headers, filters the ones exposing sensible information, and displays the count in real-time. After execution, users can check the step report for details on vulnerable headers and network responses, aiding in understanding.
 
-Network Response list item contains 2 secution
+Network Response list item contains 2 section
 
 1. [Vulnerable Headers List](#vulnerable-headers-list)
 1. [Network Response](#network-reponse)
@@ -25,7 +25,7 @@ Network Response list item contains 2 secution
 #### Vulnerable Headers List
 The list presents vulnerable headers and their values in a JSON key-value pair format.
 
-#### Network Reponse
+#### Network Response
 The network response refers to the data returned by a server in response to an HTTP request made by a client. It includes various pieces of information, which can be analyzed by referring to network responses.
 
 * **URL** Indicates the endpoint that was requested, providing information about the resource accessed.

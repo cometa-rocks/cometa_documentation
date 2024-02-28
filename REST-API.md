@@ -433,7 +433,7 @@ Create a new feature result (actually only used for behave).
 
 ###  <code>GET /backend/api/features/</code>
 
-Retrieve feature informations.
+Retrieve feature information's.
 
 ##### Request Examples
 

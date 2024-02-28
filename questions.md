@@ -4,7 +4,7 @@
 
 # Questions
 
-Here are some of the questions that we have recieved on how to test something inside co.meta.
+Here are some of the questions that we have received on how to test something inside co.meta.
 
 ## Table of Contents 
 
