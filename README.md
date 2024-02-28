@@ -2,20 +2,18 @@
 
 <div style="vertical-align:center; width:100%;"><img alt="# cometa - Complete Meta Test Automation" src="img/logos/COMETAROCKS_LogoEslog_Y_W.png"></div>
 
-Co.Meta was developed to help QA engineers, SDETs, Software Developers, and Business Teams easily repeat testing with a no-code/low-code approach using an on-prem or a cloud platform. 
+Co.Meta was created to help DevOps, SDETs, QA Engineers, Software Developers, and Business Teams easily repeat testing with a codeless and coding-based approach be it on-premise or on cloud.
 
-Cometa stands for **co**mplete **me**ta **t**est **a**utomation. 
+Cometa stands for complete meta test platform.
 
 Meta (from the Greek μετα-, meta-, meaning "after" or "beyond") is a prefix meaning more comprehensive or transcending. [source Wikipedia](https://en.wikipedia.org/wiki/Meta). 
 
 With Co.Meta you can test over system boundaries, you can go to one application, fetch data, and save it in variables. Then go to another application and use the data to test against content or use it as search input. This is just a glimpse of the versatility and flexibility of the tool. As the product is being improved and upgraded, its versatility and flexibility will only be enhanced for the sake of user satisfaction and usefulness.
 
 
-Co.Meta uses a no-code/low-code approach to define test steps and executes them using behave (BDD approach) against selenium web-driver, which grabs virtual or real browsers from Selenium Hub. The results from the execution (timing, steps execution logs, screenshots, video etc.) are stored in the filesystem and referenced in the database. The results can be consumed via REST API or easily in your browsers with Co.Meta's User Interface build with Angular. 
+Co.Meta uses both codeless and code based approach to define test steps and executes them using behave (BDD approach) against selenium web-driver, which grabs virtual or real browsers from Selenium Hub. The results from the execution (timing, steps execution logs, screenshots, video etc.) are stored in the filesystem and referenced in the database. The results can be consumed via REST API or easily in your browsers with Co.Meta's User Interface is build with Angular. 
 
-Cometa is available on-cloud and on-prem.
-
-Find the offical homepage cometa.rocks [here](https://cometa.rocks/). The website is undergoing major changes in the background.
+Co.meta is available on cloud and on-prem.
 
 You are looking at the Cometa Community Edition (CE) [licensed](#license) under AGPLv3. See [Cometa Versions](#cometaversions) to understand the difference from Cloud Edition (CEE) the Enterprise Edition (EE).
 
@@ -61,20 +59,18 @@ Cometa comes in various flavours:
 
 **Community Edition** 
 
-The public github repo is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
+The public github repo containing the source code for installation is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
 
 Co.Meta Community edition is licensed under AGPLv3. See the license details. See the [license details](#license).
 
 
 **Cloud Edition Enterprise**
 
-A hosted-by-us version is ready for you to use. There are 3 plans: Standard, Gold, and Premium for you to choose from. The details of these plans are subject to official interactions. 
+A hosted-by-us version is ready for you to use. There are 4 plans: Standard, Silver, Gold, and Enterprise Cloud for you to choose from. The details of these plans are subject to official interactions. 
 
 <a name="cometahistory"></a>
 
 **Enterprise Edition**
-
-The internal repo is on our [gitlab server](https://git.amvara.de/amvara/cometa). Please let [us know](mailto:enterpriseaccess@cometa.rocks), if you want access there. 
 
 To use the Enterprise (On-premise) Edition you need an Enterprise License. It has all the features of the Premium Plan under Cloud Edition and comes with exciting perks such as onboarding support for the QA team, unlimited projects, unlimited users, all web browsers, priority support, and many more exciting advantages.
 
@@ -92,6 +88,7 @@ Development started around 2014-2015, when Daimler AG, Germany asked for an agil
 | 2021 | Chaining of execution via automated scheduling, development of new landing (beta). Inauguration of public repo on GitHub |
 | 2022 | New customers signup for Enterprise-Grade Testing. Pilot promotional activities begin within a select community of software engineers for feedback |
 | 2023 | With the confidence established in Co.Meta, a global legal entity is formed to promote the product for we firmly believe that the future is open source with enterprise grade architecture and security. With our 1st of its kind concept in the world, we are on the way to make a difference in the world |
+| 2024 | Roadmap: Enhance Data Driven Editor, Import and Migrate Tests from other platforms, Database Testing, AI usage for finding better selectors, Load Testing, Show Network and Browser KPIs via CDP (Chrome) | 
 
 
 <a name="cometamindmap"></a>
