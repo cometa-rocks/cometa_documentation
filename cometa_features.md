@@ -14,10 +14,10 @@ If information about the server's application reveals the presence of vulnerabil
 
 For better understanding of HTTP response headers vulnerabilities please refer [X-Powered-By](https://www.zaproxy.org/docs/alerts/10037/), [Server](https://www.zaproxy.org/docs/alerts/10036-2) and [HTTP response headers cheet sheets](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#server). 
 
-#### The Cometa has introduces feature
-During feature execution, Cometa records and validates network response headers, filters the ones exposing sensible information, and displays the count in real-time. After execution, users can check the step report for details on vulnerable headers and network responses, aiding in understanding.
+#### The Cometa has introduced the feature
+During feature execution, Cometa records and validates network response headers filters the ones exposing sensitive information, and displays the count in real time. After execution, users can check the step report for details on vulnerable headers and network responses, aiding in understanding.
 
-Network Response list item contains 2 section
+The network Response list item contains 2 section
 
 1. [Vulnerable Headers List](#vulnerable-headers-list)
 1. [Network Response](#network-reponse)
@@ -50,7 +50,7 @@ When creating a feature in Cometa, the Information section includes an option to
 <img src="img\feature_screens\information_section.jpg" width="800px">
 
 #### Refer To Report
-Cometa will display a list of network responses within the step report. This list will show which network responses were received during each step. Specifically, if an step that takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
+Cometa will display a list of network responses within the step report. This list will show which network responses were received during each step. Specifically, if a step takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
 
 In the OPTIONS section of the Step Report, you should find the following icon.
 
