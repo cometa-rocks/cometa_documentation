@@ -76,7 +76,7 @@ In the OPTIONS section of the Step Report, you should find the following icon.
 
 ## Email Feature
 
-This README provides instructions on how to configure and use the email feature to send notifications upon completion or failure of a Feature/Test execution. Additionally, it covers how to create a custom email body using an HTML template and include screenshots from the steps.
+This provides instructions on how to configure and use the email feature to send notifications upon completion or failure of a Feature/Test execution. Additionally, it covers how to create a custom email body using an HTML template and include screenshots from the steps.
 
 ### Steps to Configure the Email Feature
 
@@ -102,21 +102,21 @@ This README provides instructions on how to configure and use the email feature 
     <br>
     Please find attached Screenshots for details
     <br>
-    $SCREENSHOT[1]
+    $screenshot[1]
     <br>
     <br> Screen shot for second screen
     <br>
-    $SCREENSHOT[2]
+    $screenshot[2]
     <br>
     <br>
-    $SCREENSHOT[3]
+    $screenshot[3]
     <br>
     <br>
     <br>Thanks, 
     <br><b>Feature Name</b>
     <br><b>Co.meta</b>
     ```
-    - Screenshots will be included in the email body in the sequence they are enabled in the steps. The placeholders `$SCREENSHOT[1]`, `$SCREENSHOT[2]`, etc., correspond to the screenshots of the steps that have the screenshot option enabled.
+    - Screenshots will be included in the email body in the sequence they are enabled in the steps. The placeholders `$screenshot[1]`, `$screenshot[2]`, etc., correspond to the screenshots of the steps that have the screenshot option enabled.
     - When an email is received, you will see that the screenshots are attached as images in the same sequence as they are mentioned in the mail body template above.
 
 5. **Email Sending Conditions**: Choose when to send the email:
