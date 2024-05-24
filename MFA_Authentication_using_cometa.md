@@ -1,11 +1,11 @@
 <img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
 # Automation of Muti Factor Authentication with Cometa
-Muti factor authentication which are done by One time password, those can be automated using Cometa 
+Multi factor authentication which are done by One time password, those can be automated using Cometa 
 
 ## 1. MFA and OTP
 
-* **MFA (Muti Factor Authentication)**
+* **MFA (Multi Factor Authentication)**
     Multi-factor authentication (**MFA**, **two-factor authentication**, or **2FA**, along with similar terms) is an electronic authentication method in which a user is granted access to a website or application only after successfully presenting two or more pieces of evidence (or factors) to an authentication mechanism. 
     <br>
     <br>
@@ -28,7 +28,7 @@ Muti factor authentication which are done by One time password, those can be aut
 The automation of two-factor authentication at Cometa requires two steps.
 
 
-* **Step 1: (Prerequisite)** Create an account and obtain the MFA secret key. If you already have an account, you can use that. Next, follow the provided links to set up MFA and obtain the secret key from any one of the multi-factor authentication providers. (This requires at least one MFA setup), **(This requires atleast MFA)**.
+* **Step 1: (Prerequisite)** Create an account and obtain the MFA secret key. If you already have an account, you can use that. Next, follow the provided links to set up MFA and obtain the secret key from any one of the multi-factor authentication providers. (This requires at least one MFA setup), **(This requires at least one MFA)**.
             
     **1. Gitlab** <a href="./MFA_Authentication_preparation.md"> Set up Multi-Factor Authentication (MFA) for in our GitLab.</a>
         
@@ -95,7 +95,7 @@ The automation of two-factor authentication at Cometa requires two steps.
 
     * Create a feature in Cometa <br>
 
-    * Provide a feature name and discription<br>
+    * Provide a feature name and description<br>
 
     * Please follow the steps, as shown in the screenshot below
     <br>

@@ -2,20 +2,18 @@
 
 <div style="vertical-align:center; width:100%;"><img alt="# cometa - Complete Meta Test Automation" src="img/logos/COMETAROCKS_LogoEslog_Y_W.png"></div>
 
-Co.Meta was developed to help QA engineers, SDETs, Software Developers, and Business Teams easily repeat testing with a no-code/low-code approach using an on-prem or a cloud platform. 
+Co.Meta was created to help DevOps, SDETs, QA Engineers, Software Developers, and Business Teams easily repeat testing with a codeless and coding-based approach be it on-premise or on cloud.
 
-Cometa stands for **co**mplete **me**ta **t**est **a**utomation. 
+Cometa stands for complete meta test platform.
 
 Meta (from the Greek μετα-, meta-, meaning "after" or "beyond") is a prefix meaning more comprehensive or transcending. [source Wikipedia](https://en.wikipedia.org/wiki/Meta). 
 
 With Co.Meta you can test over system boundaries, you can go to one application, fetch data, and save it in variables. Then go to another application and use the data to test against content or use it as search input. This is just a glimpse of the versatility and flexibility of the tool. As the product is being improved and upgraded, its versatility and flexibility will only be enhanced for the sake of user satisfaction and usefulness.
 
 
-Co.Meta uses a no-code/low-code approach to define test steps and executes them using behave (BDD approach) against selenium web-driver, which grabs virtual or real browsers from Selenium Hub. The results from the execution (timing, steps execution logs, screenshots, video etc.) are stored in the filesystem and referenced in the database. The results can be consumed via REST API or easily in your browsers with Co.Meta's User Interface build with Angular. 
+Co.Meta uses both codeless and code based approach to define test steps and executes them using behave (BDD approach) against selenium web-driver, which grabs virtual or real browsers from Selenium Hub. The results from the execution (timing, steps execution logs, screenshots, video etc.) are stored in the filesystem and referenced in the database. The results can be consumed via REST API or easily in your browsers with Co.Meta's User Interface is build with Angular. 
 
-Cometa is available on-cloud and on-prem.
-
-Find the offical homepage cometa.rocks [here](https://cometa.rocks/). The website is undergoing major changes in the background.
+Co.meta is available on cloud and on-prem.
 
 You are looking at the Cometa Community Edition (CE) [licensed](#license) under AGPLv3. See [Cometa Versions](#cometaversions) to understand the difference from Cloud Edition (CEE) the Enterprise Edition (EE).
 
@@ -61,20 +59,18 @@ Cometa comes in various flavours:
 
 **Community Edition** 
 
-The public github repo is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
+The public github repo containing the source code for installation is at [github.com/cometa-rocks/cometa](https://github.com/cometa-rocks/cometa/).  The Community Edition does not include cloud and enterprise features and in general lags behind the leading cloud/enterprise repo.
 
 Co.Meta Community edition is licensed under AGPLv3. See the license details. See the [license details](#license).
 
 
 **Cloud Edition Enterprise**
 
-A hosted-by-us version is ready for you to use. There are 3 plans: Standard, Gold, and Premium for you to choose from. The details of these plans are subject to official interactions. 
+A hosted-by-us version is ready for you to use. There are 4 plans: Standard, Silver, Gold, and Enterprise Cloud for you to choose from. The details of these plans are subject to official interactions. 
 
 <a name="cometahistory"></a>
 
 **Enterprise Edition**
-
-The internal repo is on our [gitlab server](https://git.amvara.de/amvara/cometa). Please let [us know](mailto:enterpriseaccess@cometa.rocks), if you want access there. 
 
 To use the Enterprise (On-premise) Edition you need an Enterprise License. It has all the features of the Premium Plan under Cloud Edition and comes with exciting perks such as onboarding support for the QA team, unlimited projects, unlimited users, all web browsers, priority support, and many more exciting advantages.
 
@@ -92,6 +88,7 @@ Development started around 2014-2015, when Daimler AG, Germany asked for an agil
 | 2021 | Chaining of execution via automated scheduling, development of new landing (beta). Inauguration of public repo on GitHub |
 | 2022 | New customers signup for Enterprise-Grade Testing. Pilot promotional activities begin within a select community of software engineers for feedback |
 | 2023 | With the confidence established in Co.Meta, a global legal entity is formed to promote the product for we firmly believe that the future is open source with enterprise grade architecture and security. With our 1st of its kind concept in the world, we are on the way to make a difference in the world |
+| 2024 | Roadmap: Enhance Data Driven Editor, Import and Migrate Tests from other platforms, Database Testing, AI usage for finding better selectors, Load Testing, Show Network and Browser KPIs via CDP (Chrome) | 
 
 
 <a name="cometamindmap"></a>
@@ -116,19 +113,19 @@ Is that a feature of our application? Or is that a testplan.
 
 So, to get things right:
 
-* A feature in our world is a building block. We want to test a feature (one single behaviour) on mobile and on desktop. That means: can we click on every element of menu and is the result as expected? That is a feature. We call the feature "menu"
+* A feature in our world is a building block. We want to test a feature (one single behavior) on mobile and on desktop. That means: can we click on every element of menu and is the result as expected? That is a feature. We call the feature "menu"
 * Several features will then be grouped into a testplan. So testing an application consists of: test menu, test upload, test searching and test backend.
 
 So testing a whole application consists of testing many features on different devices. That is a testplan.
 
-With Co.meta you can include anything everywhere. A Login feature maybe always necesarry and from there your test different sections of your applications.
+With Co.meta you can include anything everywhere. A Login feature maybe always necessary and from there your test different sections of your applications.
 Co.meta does not have a hierarchy. You can run anything anywhere else.
 
 This being said, it is your part to structure your tests and working with Co.meta will help you reuse anything anywhere else. Whenever you encounter something that you did before - just include it.
 
 Some how Co.meta is like wikipedia, anything depends, may depend or may be singular.
 
-A common hierachy we enconter is:
+A common hierarchy we encounter is:
 ```
 | Call some URL (DEV/STAGE/PROD)
 |-- From there do the login (but this login is used anywhere else)
@@ -166,11 +163,11 @@ You want to see the code running below? See [actions.py](https://github.com/come
 
 In cometa you can use selectors. Cometa automatically tests for ID, tagname, classname, inner HTML, xpath.
 
-Therefor in most cases you do not have to worry about seperating xpath or css selectors. Just use them and cometa will understand what you are looking for.
+Therefor in most cases you do not have to worry about separating xpath or css selectors. Just use them and cometa will understand what you are looking for.
 
 Q: How do I select a button? 
 A: Use the step `"I move mouse to {selector} and click"`. Replace "{selector}" with a xpath selector "//button[.='Text seen on button']" or using css e.g. button:nth-of-type(1)
-A: Use the step `I can click on button "{button_name}"`. Where button name translates into the text of the button or any attribut with that text.
+A: Use the step `I can click on button "{button_name}"`. Where button name translates into the text of the button or any attribute with that text.
 
 We have put together a huge summary about selectors and differences between CSS and X-Path. [learn about selectors like CSS and xpath](css-xpath.md). 
 
@@ -203,7 +200,7 @@ Variables can be based on `Environment`, `Department` or `Feature`, which user i
 Since quantity of variables tends to gradually increase, at certain point it can becomes somewhat time consuming to track the desired variable. For this reason we developed a popup that you can make use of to efficiently search and insert variables directly into steps. With this new implementation, user has no need to first search for desired variable and then manually write it's name in step.
 
 * For popup to open, write `$` character in step's predetermined slot for variable insertion - `"{$variable_name}" > "$"`, this will display all the accessible variables.
-* To filter variables, folow up `$` character with desired key word.  Ex: `"$foo"`.
+* To filter variables, follow up `$` character with desired key word.  Ex: `"$foo"`.
 * Variables are filtered `inclusively`, meaning that provided keyword does not have to be exact name of variable, if variable's name contains provided keyword, it will be displayed.
 * By clicking any of the variables in the popup, you will be able to insert it into step automatically.
 * If match can not be found for provided key word, popup will display a message, informing user that no variable can be found based on current key word.
@@ -231,7 +228,7 @@ Use the step: `Run Javascript function "{function}"`
    
 Replace "{function}" with "alert('foo')" to get a first understanding. Inside the "" you can place anything you'd like and that is valid JavaScript. You do not have to care about escaping a _"_ ... cometa does that for you. 
 
-If you want to use  x-path selectors in Javascript, use document.evalute() function. See details at: https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate
+If you want to use  x-path selectors in Javascript, use document.evaluate() function. See details at: https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate
 
 <a name="compare-selector-values"></a>
 
@@ -259,13 +256,13 @@ Use the `"Execute Java-Script"` beforehand and get the formatting right.
 
 Another Example: "Assert for a string to have a certain format, e.g. the string is longer then 5 characters"
 
-To acomplish this, save the string you want to assert in an environment variable. You can do this manually or let cometa do this using the step `Save selector "{css_selector}" value to environment variable "{variable_name}"`. This step looks for a value-tag or innerHTML, creates the variable specified and saves the value into that. A typical usecase is a data entry system with values that shall be checked on a reporting system or a summary list. So, first grab the value from a selector, e.g. `//input[@id='ordernumber']` save it into a variable MYORDERNUMBER.
+To acomplish this, save the string you want to assert in an environment variable. You can do this manually or let cometa do this using the step `Save selector "{css_selector}" value to environment variable "{variable_name}"`. This step looks for a value-tag or innerHTML, creates the variable specified and saves the value into that. A typical use case is a data entry system with values that shall be checked on a reporting system or a summary list. So, first grab the value from a selector, e.g. `//input[@id='ordernumber']` save it into a variable MYORDERNUMBER.
 
 Then use `Run Javascript "{function}"` as step and assert with javascript on the format, e.g. the following code checks that the string is longer then 5 characters: `Run Javascript function " if ( !"$MYORDERNUMBER".length>5 ) throw "Found an Error: Order Number is not greater than zero" "`.
 
 Other examples:
 * Assert that ordernumber starts with "X-": `Run Javascript function " if ( !"$MYORDERNUMBER".substring(0,2)=='X-' ) throw "Found an Error: Order Number is not greater than zero" "`
-* Assert that ordernumber is exactly 10 chracters and ends with "-0": `Run Javascript function " if ( !"$MYORDERNUMBER".substring("$MYORDERNUMBER".length-2)=='-0' || !"$MYORDERNUMBER".length==10  ) throw "Found an Error: Order Number is not greater than zero" "`
+* Assert that ordernumber is exactly 10 characters and ends with "-0": `Run Javascript function " if ( !"$MYORDERNUMBER".substring("$MYORDERNUMBER".length-2)=='-0' || !"$MYORDERNUMBER".length==10  ) throw "Found an Error: Order Number is not greater than zero" "`
 
 <a name="create-sub-feature"></a>
 
@@ -318,7 +315,7 @@ Timeouts are important part of feature's steps, since depending on step's descri
 
 # Integration with Webhooks
 
-Integration is usefull to get feedback on test results via Webhooks. Any application supporting webhooks can be notified by co.meta at the end of a test execution either on error or always.
+Integration is useful to get feedback on test results via Webhooks. Any application supporting webhooks can be notified by co.meta at the end of a test execution either on error or always.
 
 The integration is user and department dependent. Each user can have different notifications. If two users use the same webhook, then for each user the webhook will be executed.
 
@@ -326,7 +323,7 @@ The integration is user and department dependent. Each user can have different n
 
 # Integration with Gitlab / Github
 
-To integerate cometa into you CI/CD pipeline the REST API is your friend. You can trigger anything that you would do from the UI via REST API. It is easy and straight forward.
+To integrate cometa into you CI/CD pipeline the REST API is your friend. You can trigger anything that you would do from the UI via REST API. It is easy and straight forward.
 
 See [`integration with gitlab`](https://github.com/cometa-rocks/cometa/blob/master/scripts/integration-with-gitlab.sh) as an example. Depending on your authentication provider and URL endpoints, you have to adapt the variables and URL endpoints in the script.
 
@@ -355,7 +352,7 @@ Saved results will not be touched by the housekeeping.
 
 Cometa is secured via [OIDC](https://en.wikipedia.org/wiki/OpenID). OIDC is state of the art enterprise security that connects and integrates with the  authentication provider of your choice. 
 
-The Freemium and Cloud Version of cometa uses google-oAuth and gitlab oAuth as option to select from.
+The Free and Cloud Version of cometa uses google-oAuth and gitlab oAuth as option to select from.
 
 If you would like to integrate with other authentication providers, please let us know or contribute. We would be happy to accept your pull request.
 
