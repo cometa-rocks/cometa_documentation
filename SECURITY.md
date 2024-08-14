@@ -11,7 +11,7 @@ The Cometa team prioritizes the security of its platform and appreciates your de
     * Steps to reproduce the issue or a proof-of-concept.
     * Any relevant configurations or settings.
 
-* Once reported, our team will respond promptly, outlining the subsequent steps in addressing your report. Expect regular updates on the progress towards a resolution, and we may request additional information or guidance.
+* Once reported, our team will respond promptly, outlining the subsequent steps in addressing your report. Expect regular updates on the progress toward a resolution, and we may request additional information or guidance.
 
 ### For security bugs in third-party modules:
 
