@@ -2,9 +2,9 @@
 
 Any actions you can execute on the Cometa Frontend User Interface can be triggered programmatically via REST API. Cometa uses [Django](https://www.djangoproject.com/) for the backend REST API services. It is implemented in python.
 
-Find below a short overview over REST API endpoints to use. Further down you find details on the specific endpoints, like Post parameters and Json results to be expected.
+Find below a short overview of REST API endpoints to use. Further down, you will find details on the specific endpoints,  such as POST parameters and JSON results to be expected.
 
-This documentation is work in progress and could need some help.
+This documentation is work in progress and may need some help.
 
 
 Execute a Feature / Test from Django
@@ -88,7 +88,7 @@ Others
 
 For more details see http://your_server:8000/docs/
 
-All create <code>POST</code> methods returns code <code>201</code> and row inserted, if it is created correctly.
+All create <code>POST</code> methods returns code <code>201</code> and the row inserted if created correctly.
 All request body parameters should be "application/json", unless specified.
 All request responses are in JSON format, unless specified.
 
@@ -121,11 +121,11 @@ Implemented by: Alex
 Changelog:
 * 13.07.2020 RRO documentation and fixing latest changes breaking scheduling
 
-#  %{color:#584492}Account roles%
+#  Account roles
 
 ###  <code>GET /backend/api/account_roles/</code>
 
-Retrieve all available roles for accounts, this is used for Admin --> Accounts and will be empty if the user doesn't have permissions to it.
+Retrieve all available roles for accounts, this is used for Admin --> Accounts and will be empty if the user doesn't have permissions.
 
 ##### Request Examples
 
@@ -148,11 +148,11 @@ Retrieve all available roles for accounts, this is used for Admin --> Accounts a
 ]
 </code></pre>
 
-#  %{color:#584492}Accounts%
+#  Accounts
 
 ###  <code>GET /backend/api/accounts/</code>
 
-Retrieve all available accounts in database, will be empty is user doesn't have enough permissions.
+Retrieve all available accounts in database. Will be empty is user doesn't have enough permissions.
 
 ##### Request Examples
 
@@ -200,13 +200,13 @@ last_login?: string;
 
 Delete an account by UserID
 
-#  %{color:#584492}Actions%
+#  Actions
 
 ###  <code>GET /backend/api/actions/</code>
 
 Retrieve available actions.
 
-#  %{color:#584492}Applications%
+#  Applications
 
 ###  <code>GET /backend/api/applications/</code>
 
@@ -271,12 +271,12 @@ Retrieve local browsers.
 ]
 </code></pre>
 
-#  %{color:#584492}Departments%
+#  Departments
 
 ###  <code>GET /backend/api/departments/</code>
 
-Retrieve all available departments for the current logged user.
-*NOTE:* If the current logged user has permissions of Admin/SUPERUSER, all departments in database will be retrieved.
+Retrieve all available departments for the current logged-in user.
+*NOTE:* If the current logged-in user has Admin/SUPERUSER permissions, all departments in the database will be retrieved.
 
 ##### Request Examples
 
@@ -324,7 +324,7 @@ Retrieve the available departments for the current logged user, only retrieves t
 ]
 </code></pre>
 
-#  %{color:#584492}Environments%
+#  Environments
 
 ###  <code>GET /backend/api/environments/</code>
 
@@ -359,11 +359,11 @@ Create environment.
 environment_name: string;
 </code></pre>
 
-#  %{color:#584492}Feature Results%
+#  Feature Results
 
 ###  <code>GET /api/feature_results/<feature_id>/</code>
 
-Retrieve feature results.
+Retrieve feature results for the given feature_id.
 
 ##### Request Example
 
@@ -429,7 +429,7 @@ Create a new feature result (actually only used for behave).
 |   screen_actual     | CharField(max_length=100) | Yes | 
 |   screen_diff     | CharField(max_length=100) | Yes | 
 
-#  %{color:#584492}Features%
+#  Features
 
 ###  <code>GET /backend/api/features/</code>
 
@@ -492,7 +492,7 @@ status code 500
 }
 </code></pre>
 
-#  %{color:#584492}Folders%
+#  Folders
 
 ###  <code>GET /backend/api/folders/</code>
 
@@ -551,9 +551,9 @@ folder_name: string;
 
 ###  <code>DELETE /backend/api/folders/<folder_id>/remove/</code>
 
-Deletes a folder by FolderID
+Delete a folder by FolderID
 
-#  %{color:#584492}Step Results%
+#  Step Results
 
 ###  <code>GET /backend/api/feature_results/<feature_result_id>/step_results/</code>
 
@@ -596,7 +596,7 @@ Create a step result (mostly used for behave).
 |   pixel_diff     | IntegerField | Yes | 
 |   success        | BooleanField | Yes |
 
-#  %{color:#584492}Steps%
+# Steps
 
 ###  <code>GET /backend/steps/<feature_id>/</code>
 
@@ -652,7 +652,7 @@ last_edited: number;
 video: boolean;
 </code></pre>
 
-#  %{color:#584492}Screenshots%
+#  Screenshots
 
 ###  <code>GET /backend/screenshots/<step_result_id>/</code>
 
@@ -666,17 +666,17 @@ Retrieve available screenshot for a given step result.
 
 ###  <code>GET /backend/screenshot/<screenshot_name>/</code>
 
-Retrieve screenshot from Django.
+Retrieve screenshot by name from Django.
 *NOTES:* Django will automatically compress the image at 70%, it will also detect if the requesting browser is WebP compatible and serve the image as WebP instead of JPG.
 
 ###  <code>GET /backend/removeScreenshot/<screenshot_name>/</code>
 
-Deletes a screenshot from the server.
+Delete a screenshot by name from the server.
 *NOTES:* If the screenshot removal requested is about the style/template version, another removal request should be done to remove the original template file, for example for a given feature and step index (index of step ignoring previous disabled steps):
 
 <pre>http://localhost:8000/backend/removeScreenshot/AMVARA_23_4.png/</pre>
 
-#  %{color:#584492}Variables%
+#  Variables
 
 ###  <code>GET /backend/api/variables/<environment_name>/</code>
 
@@ -704,7 +704,7 @@ Set variables for a given environment.
 
 Remove variable by it's ID.
 
-#  %{color:#584492}Others%
+# Others
 
 ###  <code>GET /backend/addoidcaccount/</code>
 
