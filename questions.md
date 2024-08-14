@@ -68,7 +68,7 @@ We need to mark checkboxes to `true` if order status is `Canceled`.
 ```
 ### How to solve this problem with co.meta
 To solve this problem we can use `Run Javascript function "{function}"` step.
-Inside the Javascript code we can create small function to archive what we want, so we'll create small steps to solve the problem.
+Inside the Javascript code we can create small function to achieve what we want, so we'll create small steps to solve the problem.
 #### **1. Get all elements with status `Canceled`**
 
 To get all elements with status `Canceled` we can use XPath or IF-Else condition inside JS, in this case we will be using XPath.
@@ -186,7 +186,7 @@ function getRandomInt(min, max) {
 #### **2. Get a random number using the function above**
 ```javascript
 // get all rows
-let rows = document.querySelectorAll("tabled.tr");
+let rows = document.querySelectorAll("table tr");
 // minimum value here is 2 because we don't want to include header
 let randomNumber = getRandomInt(2, rows.length);
 ```
@@ -203,14 +203,14 @@ row.querySelector(input).checked = true;
 This is how the step would look like after all
 ```
 Run Javascript function "
-// return a random number between mix and max
+// return a random number between min and max
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 // get all rows
-let rows = document.querySelectorAll("tabled.tr");
+let rows = document.querySelectorAll("table tr");
 // minimum value here is 2 because we don't want to include header
 let randomNumber = getRandomInt(2, rows.length);
 // get row
