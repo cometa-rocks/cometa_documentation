@@ -24,7 +24,7 @@ Welcome to the Browser Concurrency Control feature! This enhancement empowers us
    - Within the feature settings, go to the browser selection section.
 
 4. **Select Browsers and Adjust Settings:**
-   - Choose the browsers you want to execute concurrently and set the desired amount of concurrent browser executions.
+   - Choose the browsers you want to execute concurrently and set the desired number of concurrent browser executions.
 ![Browser Concurrency Configuration](img/browser_concurrency.png)
 
 5. **Save and Execute:**
@@ -32,7 +32,7 @@ Welcome to the Browser Concurrency Control feature! This enhancement empowers us
 
 ## Feedback
 
-We value your feedback! If you have suggestions, encounter any issues, or want to share your experience with the Browser Concurrency Control feature, please let us know through the [**co.meta's** Github](https://github.com/cometa-rocks/cometa/issues) repository.
+We value your feedback! If you have suggestions, encounter any issues, or want to share your experience with the Browser Concurrency Control feature, please let us know through [**co.meta's** Github](https://github.com/cometa-rocks/cometa/issues) repository.
 
 ## Version History
 
