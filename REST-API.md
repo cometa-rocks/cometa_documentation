@@ -243,7 +243,7 @@ Create application.
 app_name: string;
 </code></pre>
 
-#  %{color:#584492}Browsers%
+#  Browsers
 
 ###  <code>GET /backend/api/browsers/</code>
 
