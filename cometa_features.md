@@ -13,7 +13,7 @@ Exposing detailed information about the server, backend technologies, or other c
 
 If information about the server's application reveals the presence of vulnerabilities such as XSS, CSRF, DDoS, or others, it increases the risk of malicious activities. Attackers armed with this knowledge could exploit the identified vulnerabilities, potentially leading to harmful consequences.
 
-For better understanding of HTTP response headers vulnerabilities please refer [X-Powered-By](https://www.zaproxy.org/docs/alerts/10037/), [Server](https://www.zaproxy.org/docs/alerts/10036-2) and [HTTP response headers cheet sheets](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#server). 
+For a better understanding of HTTP response headers vulnerabilities, please refer [X-Powered-By](https://www.zaproxy.org/docs/alerts/10037/), [Server](https://www.zaproxy.org/docs/alerts/10036-2) and [HTTP response headers cheet sheets](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#server). 
 
 #### The Cometa has introduced the feature
 During feature execution, Cometa records and validates network response headers filters the ones exposing sensitive information, and displays the count in real time. After execution, users can check the step report for details on vulnerable headers and network responses, aiding in understanding.
@@ -55,7 +55,7 @@ Cometa will display a list of network responses within the step report. This lis
 
 In the OPTIONS section of the Step Report, you should find the following icon.
 
-> **Note:** In case of vulnerabilities, a red indicator will be shown otherwise, the color will be gray.
+> **Note:** In case of vulnerabilities, a red indicator will be shown; otherwise, the color will be gray.
 
 1. This indicates that the network header has been recorded and does have vulnerabilities.
 
@@ -86,8 +86,19 @@ This provides instructions on how to configure and use the email feature to send
     <img width="1000px" src="img\email\email_template.png">
 
 2. **Add Recipient Email Addresses**:
-    - In the field labeled "Email address, use tab to separate emails," enter the email addresses of the recipients. Separate multiple email addresses by pressing the `Tab` key.
+    - In the field labeled "Email address, use tab to separate emails," enter the email addresses of the recipients. Separate multiple email addresses by pressing       the `Tab` key.
     - Example: `abc@xyz.com`
+
+3. **CC (Carbon Copy)**:
+    - This field allows you to include additional recipients who will receive a copy of the email. The recipients listed here can see each other's email                 addresses. Use tabs to separate multiple email addresses. 
+    - Separate multiple email addresses by pressing the `Tab` key.
+      - Example: `abc@xyz.com`
+
+4. **BCC (Blind Carbon Copy)**:
+    - This field is used for entering email addresses of recipients who will receive the email without other recipients being aware of it. 
+    - Each recipient added here will not be able to see the other addresses listed in this field. Use tabs to separate multiple email addresses.
+    - Separate multiple email addresses by pressing the `Tab` key.
+      - Example: `abc@xyz.com`
 
 3. **Subject**:
     - Enter the subject of your email in the "Subject" field. If you leave this field empty, a default subject will be used.
@@ -116,8 +127,8 @@ This provides instructions on how to configure and use the email feature to send
     <br><b>Feature Name</b>
     <br><b>Co.meta</b>
     ```
-    - Screenshots will be included in the email body in the sequence they are enabled in the steps. The placeholders `$screenshot[1]`, `$screenshot[2]`, etc., correspond to the screenshots of the steps that have the screenshot option enabled.
-    - When an email is received, you will see that the screenshots are attached as images in the same sequence as they are mentioned in the mail body template above.
+    - Screenshots will be included in the email body in the sequence they are enabled in the steps. The placeholders $screenshot[1], $screenshot[2], etc.,               correspond to the screenshots of the steps that have the screenshot option enabled.
+    - When an email is received, you will see that the screenshots are attached as images in the same sequence as they are mentioned in the mail body template           above.
 
 5. **Email Sending Conditions**: Choose when to send the email:
     - **Always**: Sends an email regardless of the task's outcome.
