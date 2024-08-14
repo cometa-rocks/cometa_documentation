@@ -23,11 +23,11 @@ Click [Amvara GitLab link](https://git.amvara.de/) to create or login to your ac
 
 **Step 5:** Enter "YOUR_CURRENT_PASSWORD" and "VERIFICATION_CODE", then click "Register with two-factor app". Next get your first verification code to setup MFA <br>
     
-> Note: Do not use this step if you are going to use secret key for automation using Cometa. Rather use <a target="_blank" href="https://github.com/cometa-rocks/cometa_documentation/blob/test/MFA_Authentication_using_cometa.md#:~:text=Get%20verification%20code"> Get verification code </a>. After that complete [Step 6](#STEP-6).
+> Note: Do not use this step if you are going to use secret key for automation using Cometa. Instead, use the <a target="_blank" href="https://github.com/cometa-rocks/cometa_documentation/blob/test/MFA_Authentication_using_cometa.md#:~:text=Get%20verification%20code"> Get verification code </a>. After that complete [Step 6](#STEP-6).
     
 #### Setup your authenticator app
 
-* Scan the displayed QR code in any authenticator app, such as [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) etc<br>
+* Scan the displayed QR code with any authenticator app, such as [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) etc<br>
 * You will see your GitLab account listed in the authenticator app.<br>
 * Now, in the authenticator app, navigate to your account and retrieve the OTP. <br>
 
