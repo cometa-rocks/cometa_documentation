@@ -629,7 +629,7 @@ click</td>
 
 ### Editing Excel Files<a id="EDITEXCEL_AC"></a>
 
-Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerful, when it comes to working with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
+Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for working with Excel files. This library is powerful, when it comes to handling with Excel, it can transform Excel lists in Crosstabs, set formatting and many more. Cometa only uses Edit and Assert value for now. Feel free add functionality you need. 
 
 <table>
     <tr>
