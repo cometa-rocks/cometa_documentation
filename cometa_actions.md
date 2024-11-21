@@ -8,17 +8,19 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 1. [Browser actions](#browser-actions)
 2. [API actions](#api-actions)
 3. [AI - actions](#ai-actions)
-4. [CSS selectors actions](#css-selectors-actions)
-5. [Feature actions](#feature-actions)
-6. [Mouse actions](#mouse-actions)
-7. [Keyboard actions](#keyboard-actions)
-8. [IBM actions](#ibm-actions)
-9. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
-10. [Editing Excel Files](#editing-excel-files)
-11. [Uploading and Downloading files](#uploading-and-downloading-files)
-12. [Other actions](#other-actions)
-13. [Action Examples](#action-examples)
-12. [Support](#support)
+4. [Conditional - actions](#condicional-actions)
+5. [Validation - actions](#validation-actions)
+6. [CSS selectors actions](#css-selectors-actions)
+7. [Feature actions](#feature-actions)
+8. [Mouse actions](#mouse-actions)
+9. [Keyboard actions](#keyboard-actions)
+10. [IBM actions](#ibm-actions)
+11. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+12. [Editing Excel Files](#editing-excel-files)
+13. [Uploading and Downloading files](#uploading-and-downloading-files)
+14. [Other actions](#other-actions)
+15. [Action Examples](#action-examples)
+16. [Support](#support)
 
 <br/>
 
@@ -263,6 +265,117 @@ If you have suggestions or needs for a step / actions that you would rather impl
 				<code>Assert variable "status_code" to "match" "200"</code><br>
 			<b>Example 2:</b><br>
   				<code>Assert variable "response_message" to "contain" "Operation completed"</code>
+		</td> 
+	</tr> 
+</table>
+
+### Condicional actions<a id="CSS_AC"></a>
+
+<table> 
+	<tr> 
+		<th>Action</th> 
+		<th>Description</th> 
+		<th>Example</th> 
+	</tr> 
+	<tr> 
+		<td>If "{value1}" "{condition}" "{value2}"</td> 
+		<td>Checks if `value1` is exactly equal to `value2`.</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$is_visible" "equals" "True"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" is not equal to "value2".</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$variable_1" "not equals" "$variable_2"</code><br>
+			<b>Example 2:</b><br>
+				<code>If "$variable_1" "not equals" "Pink"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" contains the substring "value2".</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$message" "contains" "success"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" does not contain the substring "value2".</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$message" "not contains" "error"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" is greater than or equal to "value2" (numeric comparison).</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$response_time" ">=" "200"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" is less than or equal to "value2" (numeric comparison).</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$response_time" "<=" "500"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" is equal to "value2" (numeric comparison).</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$score" "=="` "100"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td></td> 
+		<td>Checks if "value1" is not equal to "value2" (numeric comparison).</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>If "$score" "!=" "50"</td> 
+	</tr>
+	<tr> 
+		<td>Else</td> 
+		<td>Specifies the alternative case when `$is_visible` is not `True`.</td> 
+		<td>Else.</td> 
+	</tr> 
+	<tr> 
+		<td>End If</td> 
+		<td>Closes the conditional block started by `If`.</td> 
+		<td>End If.</td> 
+	</tr> 
+</table>
+
+### Validation actions<a id="CSS_AC"></a>
+
+<table>
+	<tr> 
+		<th>Action</th> 
+		<th>Description</th> 
+		<th>Example</th> 
+	</tr> 
+	<tr> 
+		<td>Validate if "{selector}" present in the browser in "{time}" seconds and save result in "{variable}"</td> 
+		<td>Checks if the specified selector is present in the browser within the given time and saves the result to a variable.</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>Validate if "//h1[contains(text(),'Explore projects')]" present in the browser in "15" seconds and save result in "is_visible"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td>Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"</td> 
+		<td>Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
+		<td>
+			<b>Example 1:</b><br>
+				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "is_visible"</code>
 		</td> 
 	</tr> 
 </table>
