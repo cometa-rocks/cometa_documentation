@@ -269,7 +269,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
 	</tr> 
 </table>
 
-### Condicional actions<a id="CSS_AC"></a>
+### Conditional actions<a id="CSS_AC"></a>
 
 <table> 
 	<tr> 
