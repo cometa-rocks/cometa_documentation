@@ -8,7 +8,7 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 1. [Browser actions](#browser-actions)
 2. [API actions](#api-actions)
 3. [AI - actions](#ai-actions)
-4. [Conditional - actions](#condicional-actions)
+4. [Conditional - actions](#conditional-actions)
 5. [Validation - actions](#validation-actions)
 6. [CSS selectors actions](#css-selectors-actions)
 7. [Feature actions](#feature-actions)
