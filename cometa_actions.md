@@ -267,6 +267,33 @@ If you have suggestions or needs for a step / actions that you would rather impl
   				<code>Assert variable "response_message" to "contain" "Operation completed"</code>
 		</td> 
 	</tr> 
+	<tr> 
+		<td>Get information based on """{user_message_to_ai}""" and store in the "{variable}" with "{option}"</td> 
+		<td>
+			Uses AI to analyze the input provided in the format of a user message, processes the information, 
+			and stores the result in the specified variable. 
+			An optional parameter `option` can modify the output format (e.g., convert to JSON).
+		</td> 
+		<td>
+			<b>Example 1:</b><br>
+			<code>Get information based on """[{ "content": "Describe the image" }]""" and store in the "analysis_result" with "Output JSON"</code><br>
+			<b>Example 2:</b><br>
+			<code>Get information based on """[{ "content": "Summarize the data" }]""" and store in the "summary_variable"</code>
+		</td> 
+	</tr> 
+	<tr> 
+		<td>Get information based on """{prompt}""" from current screen and store in the "{variable}" with "{option}"</td> 
+		<td>
+			Captures the current screen, analyzes it based on the given `prompt`, and stores the result in the specified variable.
+			An optional parameter `option` can be used to process the result, such as converting it to JSON.
+		</td> 
+		<td>
+			<b>Example 1:</b><br>
+			<code>Get information based on """Extract all text in the image""" from current screen and store in the "text_output" with "Output JSON"</code><br>
+			<b>Example 2:</b><br>
+			<code>Get information based on """Identify objects in the image""" from current screen and store in the "object_list"</code>
+		</td> 
+	</tr>
 </table>
 
 ### Conditional actions<a id="CSS_AC"></a>
