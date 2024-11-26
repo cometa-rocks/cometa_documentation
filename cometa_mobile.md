@@ -22,7 +22,7 @@ You can access mobile containers in two ways:
 
 If you want to work with the feature, you need to follow these steps:
 
-<img src="img\mobile_features\modify.png" width="800px">
+<img src="img/mobile_feature/modify.png" width="800px">
 
 Go to the feature of the department you want.
 
