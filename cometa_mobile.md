@@ -3,7 +3,6 @@
 
 # Co.meta mobile feature 
 1. [Start Mobile](#start-mobile)
-1. [Email Feature](#email-feature)
 
 <br/>
 
