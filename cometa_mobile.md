@@ -1,16 +1,21 @@
 <img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
+# Co.meta mobile feature
+1. [Start Mobile](#start-mobile)
 
-# Co.meta mobile feature 
-1. [Start Mobile (Edit Feature)](#start-mobile)
-2. [Start Mobile (Landing tree)](#start-mobile)
-3. [Shared-mobiles](#start-mobile)
-4. [Live steps (Landing tree)](#start-mobile)
-5. [Main-view  (Landing tree)](#start-mobile)
+2. [Landing tree](#landing-tree)
+
+3. [Shared Mobiles](#shared-mobiles)
+
+4. [Live Steps](#live-steps)
+
+5. [Main view](#main-view)
+
+6. [Available Buttons](#available-buttons)
 
 <br/>
 
-### Start mobile (Edit Feature) <a id="CSS_AC"></a>
+### Start Mobile
 
 Why do we activate the Start button for mobile device containers?
 
@@ -48,8 +53,7 @@ To see more information, we have to click to more vert:
 
 <img src="img/mobile_feature/more_information.png" width="400px">
 
-
-### Start mobile (Landing Tree)<a id="CSS_AC"></a>
+### Landing tree
 
 If you prefer to work from the Landing Tree, select the department you want and use the mobile device functionality as follows:
 
@@ -63,27 +67,31 @@ Once the department is selected, the "Start" button will become enabled.
 
 <img src="img/mobile_feature/mobile_container.png" width="400px">
 
-### Shared mobile (Edit Feature) <a id="CSS_AC"></a>
+### Shared Mobiles
 
 To view the mobile devices of other colleagues in the same department, we need to scroll down until we reach "Shared Mobile."
 
 <img src="img/mobile_feature/shared.png" width="400px">
 
-### Live steps (Edit Feature) <a id="CSS_AC"></a>
+### Live Steps
 
 Once the steps related to the mobile device are completed, we will be able to access the noVNC of the desired mobile. 
 Once we reach the step where the mobile is loaded, the novnc will become visible, and we can view the mobile.
 
 <img src="img/mobile_feature/live-steps.png" width="800px">
 
-### Main-view (results) <a id="CSS_AC"></a>
+### Main view
 
 Once all steps are completed, the result will appear as the second icon (a camera).
 If there's one mobile, it will display directly; if multiple, a dropdown will allow selection.
 <img src="img/mobile_feature/result.png" width="800px">
 
-<h3>Available Buttons</h3>
+### Available Buttons
+
 <h4>1. noVNC</h4> 
+noVNC enables web-based access to VNC servers via browsers.
+<img src="img/mobile_feature/novnc.png" width="400px">
+
 <!-- noVNC Functionalities Table -->
 <table>
   <thead>
@@ -132,7 +140,10 @@ If there's one mobile, it will display directly; if multiple, a dropdown will al
   </tbody>
 </table>
 
-<h4>2. Inspector</h4>
+<h4>2. Inspector</h4> 
+Appium Inspector identifies mobile app elements for automated testing.
+<img src="img/mobile_feature/inspect.png" width="400px">
+
 <!-- Inspector Functionalities Table -->
 <table>
   <thead>
@@ -184,3 +195,11 @@ If there's one mobile, it will display directly; if multiple, a dropdown will al
     </tr>
   </tbody>
 </table>
+
+<h4>3. Pause</h4> 
+Pause the mobile device
+<img src="img/mobile_feature/pause.png" width="400px">
+
+<h4>4. Restart</h4> 
+Restart the mobile device that was paused.
+<img src="img/mobile_feature/restart.png" width="400px">
