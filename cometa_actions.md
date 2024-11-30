@@ -10,17 +10,18 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 3. [AI - actions](#ai-actions)
 4. [Conditional - actions](#conditional-actions)
 5. [Validation - actions](#validation-actions)
-6. [CSS selectors actions](#css-selectors-actions)
-7. [Feature actions](#feature-actions)
-8. [Mouse actions](#mouse-actions)
-9. [Keyboard actions](#keyboard-actions)
-10. [IBM actions](#ibm-actions)
-11. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
-12. [Editing Excel Files](#editing-excel-files)
-13. [Uploading and Downloading files](#uploading-and-downloading-files)
-14. [Other actions](#other-actions)
-15. [Action Examples](#action-examples)
-16. [Support](#support)
+6. [Mobile - actions](#mobile-actions)
+7. [CSS selectors actions](#css-selectors-actions)
+8. [Feature actions](#feature-actions)
+9. [Mouse actions](#mouse-actions)
+10. [Keyboard actions](#keyboard-actions)
+11. [IBM actions](#ibm-actions)
+12. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+13. [Editing Excel Files](#editing-excel-files)
+14. [Uploading and Downloading files](#uploading-and-downloading-files)
+15. [Other actions](#other-actions)
+16. [Action Examples](#action-examples)
+17. [Support](#support)
 
 <br/>
 
@@ -378,6 +379,409 @@ If you have suggestions or needs for a step / actions that you would rather impl
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
 	</tr> 
+</table>
+
+### Mobile actions<a id="CSS_AC"></a>
+
+<table> 
+	<tr> 
+		<th>Action</th> 
+		<th>Description</th> 
+		<th>Example</th> 
+	</tr> 
+	<tr>
+		<td>Start mobile "{mobile_name}" use capabilities """{capabilities}""" reference to "{variable_name}"</td>
+		<td>Starts a mobile device and optionally sets capabilities or assigns a reference variable.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Start mobile "Pixel 6" use capabilities """{ "platformName": "Android", "deviceName": "Pixel 6" }""" reference to "$mobile_device"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Connect to mobile "{mobile_code}" use capabilities """{capabilities}""" reference to "{variable_name}"</td>
+		<td>Connects to a mobile device using its code, optionally defining capabilities or assigning a reference variable.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Connect to mobile "123ABC" use capabilities """{ "platformName": "iOS", "deviceName": "iPhone 13" }""" reference to "$ios_device"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Switch mobile to "{variable_name}"</td>
+		<td>Switches the current mobile device context to a given variable name.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Switch mobile to "$mobile_device"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Install app "{apk_file_path}"</td>
+		<td>Installs an application on the mobile device using the APK file path.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Install app "com.example.apk"</code>
+		</td>
+	</tr>
+	<tr>
+    		<td>Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"</td>
+    		<td>Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
+		<td>
+			<b>Example:</b><br>
+			<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "$is_visible"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Tap on element "{selector}"</td>
+		<td>Performs a "tap" on a mobile element identified by its selector.</td>
+		<td>
+			<b>Example:</b><br>
+		        <code>Tap on element "#submit-button"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Long press element "{selector}"</td>
+		<td>Performs a "long press" on a mobile element identified by its selector.</td>
+		<td>
+			<b>Example:</b><br>
+			<code>Long press element ".search-bar"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Double tap on element "{selector}"</td>
+		<td>Performs a "double tap" on a mobile element identified by its selector.</td>
+		<td>
+			<b>Example:</b><br>
+			<code>Double tap on element "#image-gallery img"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Swipe right on element "{selector}" by "{default_200}"px</td>
+		<td>Performs a swipe to the right on a mobile element identified by its selector.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Swipe right on element ".carousel" by "300px"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Swipe left on element "{selector}" by "{default_200}"px</td>
+		<td>Performs a swipe to the left on a mobile element identified by its selector.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Swipe left on element ".news-feed" by "200px"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Swipe up on element "{selector}" by "{default_200}"px</td>
+		<td>Performs a swipe up on a mobile element identified by its selector.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Swipe up on element ".chat-box" by "150px"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Swipe down on element "{selector}" by "{default_200}"px</td>
+		<td>Performs a swipe down on a mobile element identified by its selector.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Swipe down on element "#feed" by "200px"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Swipe from coordinate "{start_x},{start_y}" to "{end_x},{end_y}"</td>
+		<td>Performs a swipe between two specific screen coordinates.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Swipe from coordinate "200,300" to "400,500"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Set value "{text}" on the mobile element "{selector}"</td>
+		<td>Inputs text into a mobile element, such as a text box, identified by its selector.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Set value "Hello World" on the mobile element "#username-input"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Clear textbox "{selector}"</td>
+		<td>Clears the content of a mobile text box identified by its selector.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Clear textbox "#email-input"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Check if element "{selector}" is not visible</td>
+		<td>Checks that a mobile element is not visible on the screen.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Check if element ".modal" is not visible</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Check if element "{selector}" is enabled</td>
+		<td>Checks that a mobile element is enabled.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Check if element "#submit-button" is enabled</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Check if element "{selector}" is not enabled</td>
+		<td>Checks that a mobile element is not enabled.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Check if element ".submit-btn" is not enabled</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Check if element "{selector}" contains text "{text}"</td>
+		<td>Checks that a mobile element contains specific text.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Check if element ".header" contains text "Welcome"</code>
+		</td>
+	</tr>
+	<tr>
+		<td>Check if element "{selector}" does not contain text "{text}"</td>
+		<td>Checks that a mobile element does not contain specific text.</td>
+		<td>
+		<b>Example:</b><br>
+			<code>Check if element "#error-message" does not contain text "Success"</code>
+		</td>
+	</tr>
+	<tr>
+	    <td>Switch to frame with id "{frame_id}"</td>
+	    <td>Switches the context to the specified frame by its ID.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Switch to frame with id "main-frame"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Start the mobile app "{app_package}" "{app_activity}"</td>
+	    <td>Starts the specified mobile application using its package and activity names.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Start the mobile app "com.example.apk" "MainActivity"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Close the mobile app "{app_package}"</td>
+	    <td>Closes the specified mobile application.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Close the mobile app "com.example.apk"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Uninstall app "{app_package}" with "{option}"</td>
+	    <td>Uninstalls the specified application from the device, with an optional flag to not fail.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Uninstall app "com.example.apk" with "Do not fail"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Tap on coordinates "{x}, {y}"</td>
+	    <td>Performs a tap action at the specified screen coordinates.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Tap on coordinates "100, 200"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Pinch to zoom in on element with "{selector}"</td>
+	    <td>Performs a pinch-to-zoom-in gesture on the specified element using its selector.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Pinch to zoom in on element with "//button[@id=\'zoom-in\']"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Pinch to zoom out on element with "{selector}"</td>
+	    <td>Performs a pinch-to-zoom-out gesture on the specified element using its selector.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Pinch to zoom out on element with "//button[@id=\'zoom-out\']"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Rotate screen to landscape mode</td>
+	    <td>Rotates the mobile screen orientation to landscape mode.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Rotate screen to landscape mode</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Rotate screen to portrait mode</td>
+	    <td>Rotates the mobile screen orientation to portrait mode.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Rotate screen to portrait mode</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Check if app "{app_package}" is installed on device "{device_name}"</td>
+	    <td>Verifies if the specified app is installed on the given device.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Check if app "com.example.apk" is installed on device "Pixel_5"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Check if app "{app_package}" is running on device "{device_name}"</td>
+	    <td>Checks if the specified app is currently running on the given device. (Requires platform-specific handling.)</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Check if app "com.example.apk" is running on device "Pixel_5"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Capture logs from mobile device and store in the "{variable}"</td>
+	    <td>Captures logs from the mobile device and stores them in a variable for later use.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Capture logs from mobile device and store in the "$device_logs"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Get current device orientation and store in the "{variable}"</td>
+	    <td>Retrieves the current orientation of the device and stores it in a variable.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Get current device orientation and store in the "$current_orientation"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Change device orientation to "{orientation}"</td>
+	    <td>Changes the orientation of the mobile device to the specified mode (e.g., landscape, portrait).</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Change device orientation to "LANDSCAPE"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Lock the screen</td>
+	    <td>Locks the mobile device screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Lock the screen</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Unlock the screen</td>
+	    <td>Unlocks the mobile device screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Unlock the screen</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Switch to mobile app context "{context}"</td>
+	    <td>Switches the mobile driver to the specified app context.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Switch to mobile app context "NATIVE_APP"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Go back</td>
+	    <td>Navigates back to the previous screen in the mobile app.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Go back</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Go to Home</td>
+	    <td>Navigates to the home screen of the mobile device.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Go to Home</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Open recent apps</td>
+	    <td>Opens the recent apps screen on the mobile device.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Open recent apps</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Check if element with text "{text}" is visible</td>
+	    <td>Checks if an element containing the specified text is visible on the screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Check if element with text "Settings" is visible</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Perform drag and drop from "{start_element}" to "{end_element}"</td>
+	    <td>Performs a drag-and-drop action from one element to another on the screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Perform drag and drop from "sourceElement" to "targetElement"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Wait for element "{selector}" to appear</td>
+	    <td>Waits until the specified element appears on the screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Wait for element "//button[@id=\'submit\']" to appear</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Wait for element "{selector}" to disappear</td>
+	    <td>Waits until the specified element disappears from the screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Wait for element "//div[@class=\'loading\']" to disappear</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Validate text "{text}" on mobile screen</td>
+	    <td>Validates that the specified text is present on the mobile screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Validate text "Welcome" on mobile screen</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Fetch mobile device details and store in the "{variable}"</td>
+	    <td>Fetches details about the mobile device and stores them in the specified variable.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Fetch mobile device details and store in the "deviceDetails"</code>
+	    </td>
+	</tr>
+	<tr>
+	    <td>Set geolocation to "{latitude}, {longitude}"</td>
+	    <td>Sets the geolocation of the mobile device to the specified latitude and longitude.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Set geolocation to "37.7749, -122.4194"</code>
+	    </td>
+	</tr>
+<!-- 	<tr>
+	    <td>Set mobile timezone to "{timezone}"</td>
+	    <td>Sets the timezone of the mobile device to the specified value.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        	<code>Set mobile timezone to "America/New_York"</code>
+	    </td>
+	</tr> -->
+	<tr>
+	    <td>Check if element "{selector}" is visible</td>
+	    <td>Checks if the element specified by the selector is visible on the screen.</td>
+	    <td>
+	        <b>Example:</b><br>
+	        <code>Check if element "//div[@id=\'banner\']" is visible</code>
+	    </td>
+	</tr>
+
 </table>
 
 ### CSS selectors actions<a id="CSS_AC"></a>
