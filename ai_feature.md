@@ -47,6 +47,16 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 		</td> 
 	</tr> 
 	<tr> 
+		<td>Get information from current screen based on "{prompt}" and store in "{variable}" with "{option}"</td> 
+		<td>Analyzes the current screen based on the given prompt and stores the result in a specified variable. Optionally, the result can be formatted in JSON using the "Output JSON" option.</td> 
+		<td>
+			<b>Example 1:</b><br>
+				<code>Get information from current screen based on "Extract visible text" and store in "extracted_text"</code><br>
+			<b>Example 2:</b><br>
+				<code>Get information from current screen based on "Identify all input fields" and store in "input_list" with "Output JSON"</code>
+		</td> 
+	</tr>
+	<tr> 
 		<td>Get screenshot and store in the variable "{variable_name}"</td> 
 		<td>This step captures a screenshot of the current screen and stores it in the specified variable.</td> 		<td>
 			<b>Example 1:</b><br>
