@@ -278,6 +278,16 @@ If you have suggestions or needs for a step / actions that you would rather impl
 	</tr> 
 </table>
 
+#### Example of conditional steps: Reference cometa page.
+```
+[{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"wait until I can see \"Complete Meta Test Platform\" on page","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Validate if \"//div[text()=\"Complete Meta Test Platform\"]\" appeared in the browser in \"15\" seconds and save result in \"is_visible\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# This step show you a pop up with parameters","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"is_visible\" value for \"5\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"I sleep \"10\" seconds","step_type":"normal","continue_on_failure":false,"timeout":15},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"If \"$is_visible\" \"equals\" \"True\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Visible","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Else","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Not Visible","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"End If","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Check if the variable has a word of our choice.","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"If \"$is_visible\" \"contains\" \"Test\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Check if the variable does not contain the word of our choice.","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"If \"$is_visible\" \"not contains\" \"error\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":false,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Trying now another element that is not present","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Validate if \"//div[text()=\"Complete Meta Test Department\"]\" present in the browser in \"15\" seconds and save result in \"is_present\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"is_present\" value for \"5\" seconds","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"If \"$is_present\" \" not equals\" \"True\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Not Present","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Else","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"# Present","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"End If","step_type":"normal","continue_on_failure":false,"timeout":60}]
+```
+
+#### Example of numeric conditional steps: Reference cometa page.
+```
+
+```
+
 ### Validation actions<a id="CSS_AC"></a>
 
 <table>
@@ -291,7 +301,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		<td>Checks if the specified selector is present in the browser within the given time and saves the result to a variable.</td> 
 		<td>
 			<b>Example 1:</b><br>
-				<code>Validate if "//h1[contains(text(),'Explore projects')]" present in the browser in "15" seconds and save result in "is_visible"</code>
+				<code>Validate if "//h1[contains(text(),'Explore projects')]" present in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
 	</tr> 
 	<tr> 
@@ -299,7 +309,7 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		<td>Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
 		<td>
 			<b>Example 1:</b><br>
-				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "is_visible"</code>
+				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
 	</tr> 
 </table>
