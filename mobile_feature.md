@@ -30,7 +30,7 @@ You can access mobile containers in two ways:
 
 If you want to work with the feature, you need to follow these steps:
 
-Go to the feature of the department you want.
+Go to the feature of the department you want. Click to Modify.
 
 <img src="img/mobile_feature/modify.png" width="600px">
 
