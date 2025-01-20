@@ -17,73 +17,73 @@
 
 ### Start Mobile
 
-Why do we activate the Start button for mobile device containers?
+Why is the Start button activated for mobile device containers?
 
-Once manually activated, you will be able to access the mobile device through the predefined steps we provide in the Feature's Step Editor.
+Once manually activated, access to the mobile device is available through the predefined steps provided in the Feature's Step Editor.
 
 These mobile containers can be initialized, paused, and restarted.
 
-You can access mobile containers in two ways:
+Mobile containers can be accessed in two ways:
 
   * Through the Feature.
   * Through the Landing Tree.
 
-If you want to work with the feature, you need to follow these steps:
+To work with the feature, follow these steps:
 
-Go to the feature of the department you want. Click to Modify.
+Go to the feature of the desired department and click on Modify.
 
 <img src="img/mobile_feature/modify.png" width="600px">
 
-Click on Start Mobile or <strong>shortcut(S)</strong>:
+Click on Start Mobile or use the shortcut <strong>shortcut(S)</strong>:
 
 <img src="img/mobile_feature/information.png" width="800px">
 
-Next step, we have to chose the mobile container and start it:
+Next, choose the mobile container and start it:
 
 <img src="img/mobile_feature/mobile_container.png" width="400px">
 
-Note: If you don’t have the package, you must upload it through the Upload option in Edit Feature, ensuring that the package is in APK format.
-Additionally, you can install an APK package for the mobile device.
+Note: If the package is not available, upload it through the Upload option in Edit Feature, ensuring the package is in APK format.
+Additionally, an APK package can be installed on the mobile device.
 
 <img src="img/mobile_feature/files_upload.png" width="800px">
 
 More information:
 
-To see more information, we have to click to more vert:
+To view additional details, click on more options:
 
 <img src="img/mobile_feature/more_information.png" width="400px">
 
 ### Landing tree
 
-If you prefer to work from the Landing Tree, select the department you want and use the mobile device functionality as follows:
+If working from the Landing Tree is preferred, select the desired department to use the mobile device functionality as follows:
 
 <img src="img/mobile_feature/landing_tree.png" width="200px" height="500px">
 
-First select the department and start the mobile device of your choice.
+First, select the department and start the desired mobile device.
 
 <img src="img/mobile_feature/landing_tree_choice_department.png" width="800px" height="500px">
 
-Once the department is selected, the "Start" button will become enabled.
+Once the department is selected, the "Start" button will be enabled.
 
 <img src="img/mobile_feature/mobile_container.png" width="400px">
 
 ### Shared Mobiles
 
-To view the mobile devices of other colleagues in the same department, we need to scroll down until we reach "Shared Mobile."
+To view the mobile devices of other colleagues in the same department, scroll down until reaching "Shared Mobile."
 
 <img src="img/mobile_feature/shared.png" width="400px">
 
 ### Live Steps
 
-Once the steps related to the mobile device are completed, we will be able to access the noVNC of the desired mobile. 
-Once we reach the step where the mobile is loaded, the novnc will become visible, and we can view the mobile.
+Once the steps related to the mobile device are completed, access to the noVNC of the desired mobile will be available.
+When reaching the step where the mobile is loaded, the noVNC will become visible, allowing the mobile to be viewed.
 
 <img src="img/mobile_feature/live-steps.png" width="800px">
 
 ### Main view
 
 Once all steps are completed, the result will appear as the second icon (a camera).
-If there's one mobile, it will display directly; if multiple, a dropdown will allow selection.
+If there is one mobile, it will display directly; if multiple, a dropdown will allow selection.
 <img src="img/mobile_feature/result.png" width="800px">
 
 ### Available Buttons
