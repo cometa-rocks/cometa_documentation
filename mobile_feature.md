@@ -1,19 +1,29 @@
 <img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
 # Co.meta mobile feature
-1. [Start Mobile](#start-mobile)
+1. [Introduction](#introduction)
 
-2. [Landing tree](#landing-tree)
+2. [Start Mobile](#start-mobile)
 
-3. [Shared Mobiles](#shared-mobiles)
+3. [Landing tree](#landing-tree)
 
-4. [Live Steps](#live-steps)
+4. [Shared Mobiles](#shared-mobiles)
 
-5. [Main view](#main-view)
+5. [Live Steps](#live-steps)
 
-6. [Available Buttons](#available-buttons)
+6. [Main view](#main-view)
+
+7. [Available Buttons](#available-buttons)
 
 <br/>
+
+### Introduction
+
+Automated tests on mobile devices are crucial for ensuring software quality, efficiency, and consistency. 
+
+They help detect errors quickly, reduce testing time, and are scalable, allowing for testing across multiple device configurations without manual intervention. 
+
+Statistics show that 80% of companies adopting automated testing report increased software quality and shorter delivery times. By implementing a feature that automates these steps with a mobile emulator, you can significantly improve workflow and application reliability.
 
 ### Start Mobile
 
