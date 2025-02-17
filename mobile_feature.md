@@ -65,21 +65,17 @@ More information:
 
 To view additional details, click on more options:
 
-<img src="img/mobile_feature/more_information.png" width="400px">
+<img src="img/mobile_feature/more_info_mobile_device.png" width="400px">
 
 ### Landing tree
 
 If working from the Landing Tree is preferred, select the desired department to use the mobile device functionality as follows:
 
-<img src="img/mobile_feature/landing_tree.png" width="200px" height="500px">
+<img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="500px">
 
 First, select the department and start the desired mobile device.
 
-<img src="img/mobile_feature/landing_tree_choice_department.png" width="800px" height="500px">
-
-Once the department is selected, the "Start" button will be enabled.
-
-<img src="img/mobile_feature/mobile_container.png" width="400px">
+<img src="img/mobile_feature/Select_department.png" width="600px" height="550px">
 
 ### Shared Mobiles
 
