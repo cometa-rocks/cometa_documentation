@@ -42,15 +42,19 @@ To work with the feature, follow these steps:
 
 Go to the feature of the desired department and click on Modify.
 
-<img src="img/mobile_feature/modify.png" width="600px">
+<img src="img/mobile_feature/modify.png" width="400px">
 
 Click on Start Mobile or use the shortcut <strong>shortcut(S)</strong>:
 
-<img src="img/mobile_feature/information.png" width="800px">
+<img src="img/mobile_feature/information.png" width="900px">
+
+Next, go to Mobile devices:
+
+<img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="300px">
 
 Next, choose the mobile container and start it:
 
-<img src="img/mobile_feature/mobile_container.png" width="400px">
+<img src="img/mobile_feature/start_emulator.png" width="400px">
 
 Note: If the package is not available, upload it through the Upload option in Edit Feature, ensuring the package is in APK format.
 Additionally, an APK package can be installed on the mobile device.
