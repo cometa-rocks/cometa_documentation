@@ -94,6 +94,7 @@ When reaching the step where the mobile is loaded, the noVNC will become visible
 
 Once all steps are completed, the result will appear as the second icon (a camera).
 If there is one mobile, it will display directly; if multiple, a dropdown will allow selection.
+Additionally, there is a 'Mobile' column that shows the mobile name.
 <img src="img/mobile_feature/result.png" width="800px">
 
 ### Available Buttons
