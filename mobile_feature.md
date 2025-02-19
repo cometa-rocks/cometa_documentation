@@ -55,10 +55,14 @@ Next, go to Mobile devices:
 Next, choose the mobile container and start it:
 
 <img src="img/mobile_feature/start.png" width="400px">
+Once started, the emulator can be paused if needed.
+
 <img src="img/mobile_feature/running_to_pause.png" width="400px">
+If paused, it can be restarted to resume operation.
+
 <img src="img/mobile_feature/paused_to_restart.png" width="400px">
 
-Note: If the package is not available, upload it through the Upload option in Edit Feature, ensuring the package is in APK format.
+Note: If the package is not available, upload it through the Upload option in <strong>Edit Feature</strong>, ensuring the package is in APK format.
 Additionally, an APK package can be installed on the mobile device.
 
 <img src="img/mobile_feature/files_upload.png" width="800px">
