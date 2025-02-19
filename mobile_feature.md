@@ -54,9 +54,9 @@ Next, go to Mobile devices:
 
 Next, choose the mobile container and start it:
 
-<img src="img/mobile_feature/start_emulator.png" width="400px">
+<img src="img/mobile_feature/start.png" width="400px">
 <img src="img/mobile_feature/running_to_pause.png" width="400px">
-<img src="img/mobile_feature/stoped_to_restart.png" width="400px">
+<img src="img/mobile_feature/paused_to_restart.png" width="400px">
 
 Note: If the package is not available, upload it through the Upload option in Edit Feature, ensuring the package is in APK format.
 Additionally, an APK package can be installed on the mobile device.
