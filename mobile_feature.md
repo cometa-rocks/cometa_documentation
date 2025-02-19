@@ -71,7 +71,7 @@ To view additional details, click on more options:
 
 If working from the Landing Tree is preferred, select the desired department to use the mobile device functionality as follows:
 
-<img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="500px">
+<img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="300px">
 
 First, select the department and start the desired mobile device.
 
