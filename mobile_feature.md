@@ -65,7 +65,13 @@ If paused, it can be restarted to resume operation.
 Note: If the package is not available, upload it through the Upload option in <strong>Edit Feature</strong>, ensuring the package is in APK format.
 Additionally, an APK package can be installed on the mobile device.
 
-<img src="img/mobile_feature/files_upload.png" width="800px">
+<img src="img/mobile_feature/upload_apk.png" width="1000px">
+
+Now, go to the Emulator Feature, click on the more_vert (⋮) icon, and select <strong>Modify</strong>. From there, upload the package in APK format to make it available.
+
+<img src="img/mobile_feature/more_vert_emulator.png" width="400px">
+
+Additionally, 
 
 More information:
 
