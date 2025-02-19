@@ -55,6 +55,8 @@ Next, go to Mobile devices:
 Next, choose the mobile container and start it:
 
 <img src="img/mobile_feature/start_emulator.png" width="400px">
+<img src="img/mobile_feature/running_to_pause.png" width="400px">
+<img src="img/mobile_feature/stoped_to_restart.png" width="400px">
 
 Note: If the package is not available, upload it through the Upload option in Edit Feature, ensuring the package is in APK format.
 Additionally, an APK package can be installed on the mobile device.
@@ -75,7 +77,7 @@ If working from the Landing Tree is preferred, select the desired department to 
 
 First, select the department and start the desired mobile device.
 
-<img src="img/mobile_feature/Select_department.png" width="600px" height="550px">
+<img src="img/mobile_feature/Select_department.png" width="300px" height="275px">
 
 ### Shared Mobiles
 
@@ -95,7 +97,8 @@ When reaching the step where the mobile is loaded, the noVNC will become visible
 Once all steps are completed, the result will appear as the second icon (a camera).
 If there is one mobile, it will display directly; if multiple, a dropdown will allow selection.
 Additionally, there is a 'Mobile' column that shows the mobile name.
-<img src="img/mobile_feature/result.png" width="800px">
+
+<img src="img/mobile_feature/result.png" width="1000px">
 
 ### Available Buttons
 
