@@ -216,8 +216,8 @@ Appium Inspector identifies mobile app elements for automated testing.
 
 <h4>3. Pause</h4> 
 Pause the mobile device
-<img src="img/mobile_feature/pause.png" width="400px">
+<img src="img/mobile_feature/running_to_pause.png" width="400px">
 
 <h4>4. Restart</h4> 
 Restart the mobile device that was paused.
-<img src="img/mobile_feature/restart.png" width="400px">
+<img src="img/mobile_feature/paused_to_restart.png" width="400px">
