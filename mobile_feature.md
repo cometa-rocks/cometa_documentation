@@ -13,7 +13,7 @@
 
 6. [Main view](#main-view)
 
-7. [Available Buttons](#available-buttons)
+7. [NoVNC & Inspect](#novnc-inspect)
 
 <br/>
 
@@ -48,9 +48,15 @@ Click on Start Mobile or use the shortcut <strong>shortcut(S)</strong>:
 
 <img src="img/mobile_feature/information.png" width="900px">
 
-Next, go to Mobile devices:
+### Landing tree
+
+If working from the Landing Tree is preferred, select the desired department to use the mobile device functionality as follows:
 
 <img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="300px">
+
+First, select the department and start the desired mobile device.
+
+<img src="img/mobile_feature/Select_department.png" width="400px">
 
 Next, choose the mobile container and start it:
 
@@ -95,16 +101,6 @@ To view additional details, click on more options:
 
 <img src="img/mobile_feature/more_info_mobile_device.png" width="400px">
 
-### Landing tree
-
-If working from the Landing Tree is preferred, select the desired department to use the mobile device functionality as follows:
-
-<img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="300px">
-
-First, select the department and start the desired mobile device.
-
-<img src="img/mobile_feature/Select_department.png" width="300px" height="275px">
-
 ### Shared Mobiles
 
 To view the mobile devices of other colleagues in the same department, scroll down until reaching "Shared Mobile."
@@ -126,7 +122,7 @@ Additionally, there is a 'Mobile' column that shows the mobile name.
 
 <img src="img/mobile_feature/result.png" width="1000px">
 
-### Available Buttons
+### NoVNC Inspect
 
 <h4>1. noVNC</h4> 
 noVNC enables web-based access to VNC servers via browsers.
@@ -235,11 +231,3 @@ Appium Inspector identifies mobile app elements for automated testing.
     </tr>
   </tbody>
 </table>
-
-<h4>3. Pause</h4> 
-Pause the mobile device
-<img src="img/mobile_feature/running_to_pause.png" width="400px">
-
-<h4>4. Restart</h4> 
-Restart the mobile device that was paused.
-<img src="img/mobile_feature/paused_to_restart.png" width="400px">
