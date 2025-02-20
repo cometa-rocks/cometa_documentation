@@ -71,7 +71,23 @@ Now, go to the Emulator Feature, click on the more_vert (⋮) icon, and select <
 
 <img src="img/mobile_feature/more_vert_emulator.png" width="400px">
 
-Additionally, 
+Once in the Modify section, four tabs will be displayed: Information, Install APK, Installed APK, and Share Emulator.
+
+Install APK: Allows uploading an APK file for installation.
+
+<img src="img/mobile_feature/dialog_install_apk.png" width="1000px">
+
+Installed APK: Displays a list of already installed APKs.
+
+<img src="img/mobile_feature/dialog_installed_apk.png" width="1000px">
+
+Share Emulator: Provides options to share the emulator instance.
+
+<img src="img/mobile_feature/dialog_share_emulator.png" width="1000px">
+
+Feature Emulator Shared: Shows the emulator in shared mode.
+
+<img src="img/mobile_feature/emulator_shared.png" width="400px">
 
 More information:
 
