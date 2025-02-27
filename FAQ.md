@@ -1,3 +1,6 @@
+
+![img](img/logos/COMETA_Logo_Y_W.png)
+
 # General Framework and Functionality
 
 ### 1. How to generate random IDs, names, emails, or any digits in the framework
@@ -41,11 +44,11 @@ See https://www.youtube.com/watch?v=So_I8CjoRPI - Minute around 5:00
 
 ### 11. How to connect to our database server using the framework
 
-See video.
+Please watch the video on Database Testing linked above.
 
 ### 12. How to read, write, update, and delete data using the framework
 
-See video.
+Please watch the video on Database Testing linked above.
 
 ### 13. How to retrieve data from the database
 
@@ -53,7 +56,7 @@ You can assert on the result using JQ.
 
 ### 14. How to perform database testing
 
-See video.
+Please watch the video on Database Testing linked above.
 
 # Mobile and Performance Testing
 ### Mobile testing feature showcase: "mobile video here"
@@ -62,10 +65,13 @@ See video.
 
 ### 15. Is it possible to create a mobile department? and what are its related functionalities?
 
+Cometa currently does not feature mobile exclusive departments.<br>
+Please watch the video on Mobile Testing linked above.
+
 ### 16. How to perform performance testing (load, stress) using the framework
-See video.
+Please watch the video on Load Testing linked above.
 ### 17. How to do non-functional testing like load or stress.
-See video.
+Please watch the video on Load Testing linked above.
 # Cloud Execution
 
 ### 18. Is it possible to run code in the cloud?
