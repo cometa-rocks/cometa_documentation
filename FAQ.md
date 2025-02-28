@@ -4,7 +4,7 @@
 # General Framework and Functionality
 
 ### 1. How to generate random IDs, names, emails, or any digits in the framework
-Create a string of random "{x}" numbers and save to "{variable_name}" 
+Create a string of random ```{x}``` numbers and save to ```{variable_name}``` 
 Anything missing can easily be added.
 ### 2. Is it possible to store XPath in a local variables on a per-feature basis?
 Yes
@@ -16,7 +16,7 @@ Yes. Cometa will detect endless loops like: include f1, which includes F2, F2 in
 See https://www.youtube.com/watch?v=So_I8CjoRPI - Minute around 5:00
 ### 6. Is it possible to write custom logic in this framework?
 There is a step dedicated to running custom JS methods <br>
-Run Javascript function "{function}"
+```Run Javascript function "{function}"```
 <br>
 Add your steps here: https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/actions.py
 <br>
@@ -24,7 +24,7 @@ See how special steps for testing "IBM Cognos" are grouped here: https://github.
 
 ### 7. Is it possible to directly move to any dependent feature files?
 
-Yes. In the execution result page (L2) click on the step. It will open up the "included" Feature. 
+Need to implent
 
 ### 8. How to run all test feature files using a CI/CD pipeline like Jenkins or GitLab after deployment
 
@@ -91,7 +91,7 @@ Sharing Features between installations per copy and import - without transportat
 </details>
 
 ### 19. How to verify if two strings are exactly the same in the framework
-With action "Assert last API call", using JQ, we can compare strings such as:
+With action ```Assert last API call```, using JQ, we can compare strings such as:
 
 ![img](img/stringCompare.png)
 <br>
@@ -100,7 +100,7 @@ In this example we compare the color of an object and check if the output is tru
 
 ### 20. What is the difference between equals and == when comparing strings?
 
-As of now there is no equals() filter in JQ, '==' is used to compare both strings and objects alike.
+As of now there is no equals() filter in JQ, ```==``` is used to compare both strings and objects alike.
 <br>
 
 ![img](img/stringAndObjectComparison.png)
@@ -108,30 +108,30 @@ As of now there is no equals() filter in JQ, '==' is used to compare both string
 
 ### 21. How to compare two strings while ignoring their case in the framework
 
-Adding "| ascii_downcase" as a filter, will handle input string as lowercase
+Adding ```| ascii_downcase``` as a filter, will handle input string as lowercase
 <br>
 For example:
 <br>
- 'response.content.[0].data.color | ascii_downcase == "cloudy white"' 
+ ``` 'response.content.[0].data.color | ascii_downcase == "cloudy white"' ``` 
 <br>
 ![img](img/caseInsensitive.png)
 
 
 ### 22. Can equalsIgnoreCase be used to compare strings with special characters?
-There is no equalsIgnoreCase method in jq. However, "ascii_downcase will only affect characters that have a lowercse counterpart in ASCII.<br>
-For example "Hello@//(())??*¿¿" | ascii_downcase will only affect the first 'H'
+There is no ```equalsIgnoreCase``` method in jq. However, ```ascii_downcase``` will only affect characters that have a lowercse counterpart in ASCII.<br>
+For example ```Hello@//(())??*¿¿ | ascii_downcase``` will only affect the first 'H'
 
 For non ASCII characters like unicode, preprocessing the string will be the best solution. 
 
 ### 23. How to check if a string contains a specific substring in the framework
 
-Using index(< substring >).<br>
-This will return the starting index of the substring if found, else it will return null<br>
+Using ```index(<substring>)```.<br>
+This will return the starting index of the substring if found, else it will return ```null```<br>
 
 We can check the existence of a substring by using: <br>
 
-Assert last API Call property ".response.content.[0].data.color | index("C") != null" to "match" "true" <br>
- Being the input "Cloudy White", the return should be 0 != null -> true.
+```Assert last API Call property ".response.content.[0].data.color | index("C") != null" to "match" "true" ```<br>
+ Being the input "```Cloudy White```", the return should be ```0 != null = true```.
 
 ### 24. What does the contains method return if the substring is not found?
 
@@ -139,65 +139,65 @@ See above
 
 ### 25. How to verify if a string starts with a specific prefix in the framework
 
-Assert last API Call property ".response.content.[0].data.color | index("C") == 0" to "match" "true" <br>
+```Assert last API Call property ".response.content.[0].data.color | index("C") == 0" to "match" "true"``` <br>
 
-This example checks if "C" prefix is found as a substring in index 0.
+This example checks if ```C``` prefix is found as a substring in index ```0```.
 
 ### 26. What happens if the prefix is longer than the string itself?
 
-index() returns null
+```index()``` returns ```null```
 
 ### 27. How to check if a string ends with a specific suffix in the framework
 
-For this usecase, use endswith(< suffix >). Returning a boolean whether it finds it or not.
+For this usecase, use ```endswith(<suffix>)```. Returning a boolean whether it finds it or not.
 
 ### 28. Can endsWith be used with an empty string?
 
-Yes, it can. Unless the substring is an empty string, it will return false.
+Yes, it can. Unless the substring is an empty string, it will return ```false```.
 
 ### 29. How to verify if a string is empty in the framework
 
-Use length method
+Use ```length``` method
 <br>
 Example:
 <br>
-Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true" 
+```Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true"``` 
 
 ### 30. What is the difference between isEmpty and checking if the string is null?
 
-jq does not have a isEmpty method, however checking with '==' can be used to check if the string is "" empty or null
+jq does not have a ```isEmpty``` method, however checking with ```==``` can be used to check if the string is ```""``` empty or ```null```
 
 ### 31. How to determine the length of a string in the framework
 
-Use length method
+Use ```length``` method
 <br>
 Example:
 <br>
-Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true" 
+```Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true" ```
 
 ### 32. What does the length method return for an empty string?
 
-0
+```0```
 
 ### 33. How to check if a string matches a specific regular expression in the framework
 
 ![img](img/regularExpression.png)<br>
 
 In this example we use a regular expression to check if the input is a price number followed by a '.' followed by cents<br>
-Also added tostring to parse the price as a string.
+Also added ```tostring``` to parse the price as a ```string```.
 
 
 ### 34. Can matches be used to validate email addresses or phone numbers?
 
 Yes, to validate an email use the same logic of regular expressions displayed in JQ Manual<br>
-Example for Email:  ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$
+Example for Email:  ```^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$```
 
 <br>
-Example for Phone (Spanish format 9 digit): ^[0-9]{9}$
+Example for Phone (Spanish format 9 digit): ```^[0-9]{9}$```
 
 ### 35. How to replace a specific character or substring in a string in the framework
 
-use gsub() method
+use ```gsub()``` method
 
 ![img](img/replaceString.png)
 
@@ -205,19 +205,19 @@ use gsub() method
 
 ### 36. What happens if the substring to be replaced is not found?
 
-gsub() returns the original, string, unmodified
+```gsub()``` returns the original string, unmodified
 
 ### 37. How to replace all occurrences of a substring or pattern in a string in the framework
 
-gsub() also replaces all occurrences it finds of the first argument, with the second
+```gsub()``` also replaces all occurrences it finds of the first argument, with the second
 
 ### 38. What is the difference between replace and replaceAll?
 
-These methods are not available in JQ, gsub() provides all the tools necessary for string manipulation.
+These methods are not available in JQ, ```gsub()``` provides all the tools necessary for string manipulation.
 
 ### 39. How to convert a string to lowercase in the framework
 
-ascii_downcase
+```ascii_downcase```
 
 ### 40. Does toLowerCase modify the original string?
 
@@ -225,15 +225,15 @@ No, jq functions are immutable; they return new values.
 
 ### 41. How to convert a string to uppercase in the framework
 
-ascii_upcase
+```ascii_upcase```
 
 ### 42. Can toUpperCase handle non-English characters?
 
-ascii_upcase and ascii_downcase work only for ASCII characters. Other Unicode cases require external handling
+```ascii_upcase``` and ```ascii_downcase``` work only for ASCII characters. Other Unicode cases require external handling
 
 ### 43. How to remove leading and trailing whitespace from a string in the framework
 
-Use ltrimstr(string) and rtrimstr(string) <br>
+Use ```ltrimstr(string)``` and ```rtrimstr(string)``` <br>
 
 Both functions output the input without the prefix/suffix indicated as argument, if it exists.
 
@@ -243,36 +243,36 @@ The above methods only remove leading and trailing strings
 
 ### 45. How to extract a portion of a string in the framework
 
-Use .[start, finish]
+Use ```.[x:y]```
 <br>
-Example: Given Assert last API Call property ".response.content.[0].data.color | .[2:8] == "oudy W"" to "match" "true"
+Example: Given ```Assert last API Call property ".response.content.[0].data.color | .[2:8] == "oudy W"" to "match" "true"```
 
 ### 46. What happens if the start or end index is out of bounds?
 
-When indexes are out of bounds, .[x,y] <br>
+When indexes are out of bounds, ```.[x,y]``` <br>
 If index goes beyond the max length, index is treated as max length<br>
 if index is negative, it will count from the end
 
-Example: "Cloudy White"<br>
-[0:9999] -> "Cloudy White"<br>
-[99:9999] -> ""<br>
-[-4:11] -> "hit"<br>
-[1:-4] -> "loudy W"<br>
+Example: Cloudy White<br>
+```[0:9999]``` -> ```Cloudy White```<br>
+```[99:9999]``` -> ```""```<br>
+```[-4:11]``` -> ```hit```<br>
+```[1:-4]``` -> ```loudy W```<br>
 
 ### 47. How to compare two strings lexicographically in the framework
 
-Use '==', '>', '<' for lexicographical comparison<br>
-
+Use ```==```, ```>```, ```<``` for lexicographical comparison<br>
+0
 ![img](img/lexicographicComparison.png)
 
 ### 48. What does a negative, zero, or positive return value from compareTo indicate?
 
-jq doesn't have compareTo, but lexicographic comparison is done using <, >, and ==.
+jq doesn't have ```compareTo```, but lexicographic comparison is done using ```<```, ```>```, and ```==```.
 
 
 ### 49. How to compare two strings lexicographically while ignoring case in the framework
 
-Convert both to lowercase using ascii_downcase before comparison.
+Convert both to lowercase using ```ascii_downcase``` before comparison.
 
 ### 50. What is the difference between compareTo and compareToIgnoreCase?
 
@@ -280,51 +280,52 @@ See #48 and #49
 
 ### 51. How to find the index of a specific character or substring in a string in the framework
 
-use index(), it will return the index of the character / first character in the substring
+use ```index()```, it will return the index of the character / first character in the substring
 
 ### 52. What does indexOf return if the character or substring is not found?
     
-index returns null if not found.
+index returns ```null``` if not found.
 
 ### 53. How to find the last occurrence of a specific character or substring in a string in the framework
 
-Use rindex(string)
+Use ```rindex(string)```
 
 ### 54. What is the difference between indexOf and lastIndexOf?
-indexOf and lastIndexoff while not present in jq index and rindex will do the same.<br>
-index(string) finds the first match, rindex(string) finds the last.
+```indexOf``` and ```lastIndexoff``` while not present in jq index and rindex will do the same.<br>
+```index(string)``` finds the first match, ```rindex(string)``` finds the last.
 
 ### 55. How to retrieve a character at a specific index in a string in the framework
 
-with explode and implode<br>
+with ```explode``` and ```implode```<br>
 
-explode, creates an array with the string's codepoint number of each character.
+```explode```: creates an array with the string's codepoint number of each character.
 
-implode, reverses the explode
+```implode```: reverses the explode
 
 So in the following example, we get "Cloudy White"
 
-after explosion -> [67,108,111,117,100,121,32,87,104,105,116,101] 
+after explosion -> ```[67,108,111,117,100,121,32,87,104,105,116,101]``` 
 
-select index 7 -> 87
+select index ```7``` -> ```87```
 
-Insert it into a single element array [87], this is because implode requires an array, hence adding [.]
+Insert it into a single element array ```[87]```, this is because implode requires an array, hence adding ```[.]```
 
-Finally we implode, reversing [87] into -> "W"
+Finally we ```implode```, reversing ```[87]``` into -> ```W```
 
 ![img](img/extractCharacter.png)
 
 ### 56. What happens if the index is out of bounds?
 
-Returns null if the index is out of range.
+Returns ```null``` if the index is out of range.
 
 ### 57. How to split a string into an array based on a delimiter in the framework
 
-We use split() method
+
+We use ```split()``` method
 
 ### 58. What happens if the delimiter is not found in the string?
 
-split() returns an array with the original string as the only element, if delimiter is not found.
+```split()``` returns an array with the original string as the only element, if delimiter is not found.
 
 # User Roles and Administration
 
@@ -341,8 +342,35 @@ See above.
 # Data Driven Testing
 ### 61. Can we write data on Excel sheet(If excel used on Data driven).
 
-Yes, use step: Edit "{file}" and set "{value}" to "{cell}"
+Yes, use step: Edit ```{file}``` and set ```{value}``` to ```{cell}```
 
 ### 62. Excel sheet should be Auto-save if we manipulate data after uploading.
 
 Excel file is automatically saved and will contain the value set to the cell on next run.
+
+### 63 How to do testing in headless mode in Co-Meta?
+
+Cometa already runs in headless mode. VNC is available too.
+
+### 64 Does cometa feature language selection?
+
+Yes , Cometa's language can be changed using environment variables.
+
+### 65 Debugging of code?
+
+No debugging in code, only with reports.<br>
+See feature logs for execution details.
+
+### 66 Does cometa feature any kind of reporting?
+
+Yes, Cometa features reporting and validations in it.
+
+### 67 Does it feature a notification mechanism?
+
+Yes, cometa features Webhooks for integration in Messengers.
+
+### 68 Issue log?
+
+Using cometa fetch console
+
+
