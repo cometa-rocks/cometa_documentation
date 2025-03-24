@@ -7,111 +7,107 @@
 
 <h1>FAQ & Common Questions</h1>
 
-<h2>General Framework and Functionality</h2>
+  <h1>General Framework and Functionality</h1>
 
-<b>1. How to generate random IDs, names, emails, or any digits in the framework</b><br> 
-Create a string of random ```{x}``` numbers and save to ```{variable_name}```  
-Anything missing can easily be added.
+  <b>Q: Want random IDs, names, emails, or digits magically popping up in your framework?</b></br>
+  A: Easy! Just sprinkle a few characters, toss them into a variable, and voilà—randomness served fresh! 🍕✨
 
-<b> 2. Is it possible to store XPath in a local variables on a per-feature basis?</b><br>
-Yes
 
-<b> 3. Is it possible to store all common XPaths of the entire application in a global variable?</b><br>
-Yes - limited department wide. If you create a department, which is common to everybody (e.g. DEFAULT/PUBLIC), then you can share between all users/departments.<br>
+  <b>Q: Can I keep my precious XPath safe and cozy in local variables, feature by feature?    </b></br>
+   A: Absolutely! You already spotted that shiny little button—just click and save your XPath treasures! 🎯✨  
 
-<b> 4. Is it possible to create all common methods in a global feature file to call inside any feature?</b><br>
-Yes. Cometa will detect endless loops like: include f1, which includes F2, F2 includes F3, which includes F1 <- results in feature not to be able to be saved.<br>
+ <b>Q: Can I stuff all my app's favorite XPaths into one global variable basket?    </b></br>
+   A: Go wild! Just set up a cozy little "department" everyone knows (think: DEFAULT or PUBLIC)—then watch your XPaths happily shared among teammates like fresh office donuts! 🍩🌍  
 
-<b> 5. How to run only smoke test cases when having multiple smoke and regression feature files in a folder</b><br>
-See https://www.youtube.com/watch?v=So_I8CjoRPI - Minute around 5:00<br>
 
-<b> 6. Is it possible to write custom logic in this framework?</b><br>
-There is a step dedicated to running custom JS methods <br>
-```Run Javascript function "{function}"```
-<br>
-Add your steps here: https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/actions.py
-<br>
-See how special steps for testing "IBM Cognos" are grouped here: https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/tools/cognos.py
+<b>Q: Can I put all my handy methods into one global feature file and call them anytime, anywhere?    </b></br>
+   A: Absolutely! Just keep it tidy—Cometa's smart enough to catch sneaky endless loops like "F1 calls F2, F2 calls F3, F3 calls... uh-oh... back to F1" and will gently tell you, "Nope, can't save that!" 🔄🚫  
 
-<b> 7. Is it possible to directly move to any dependent feature files?</b><br>
-Need to implent
 
-<b> 8. How to run all test feature files using a CI/CD pipeline like Jenkins or GitLab after deployment</b><br>
-Cometa offers REST API. Anything you can do from the frontend, you can to in the pipeline.
-<br>
-E.g. click on "..." of a folder and run all tests inside.
-<br>
+<b>Q: Got tons of smoke and regression tests files in a folder—how do I run only those quick-and-easy smoke tests?    </b></br>
+   A: Easy-peasy! Watch this short clip (around 5:00) 👉 <a href="https://www.youtube.com/watch?v=So_I8CjoRPI">YouTube magic link</a> and you're good to go! 🎬✨
+
+
+<b>Q: Can I add my own secret sauce—custom logic—to spice up the framework?    </b></br>
+   A: Heck yes! There's even a special step just for your JavaScript magic:     </b></br>
+  ✨ Run Javascript function "{function}" ✨    </b></br>
+  Want more control? Sprinkle your custom Python steps right <a href="https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/actions.py">here</a>. And if you're feeling fancy, see how IBM Cognos has its own special group of steps right <a href="https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/tools/cognos.py">here</a>. 🎩🐍⚡
+
+ <b>Q: Can I jump straight to any dependent feature files in one click?    </b></br>
+   A: Almost there—but hold your horses! 🐎 This one's still baking in the oven. (Stay tuned: implementation coming soon!) 🍪✨  
+
+
+<b>Q: How can I auto-run ALL my test features with a CI/CD pipeline like Jenkins or GitLab after deployment?    </b></br>
+   A: Piece of cake! 🍰 Cometa gives you a tasty REST API—so if you can click it on the frontend (like that handy "..." button to run all tests in a folder), your pipeline can magically do it too. CI/CD for the win! 🚀✨  
+
 ![img](img/runAllFeatures.png)
 
-<b> 9. Executing smoke and regression test cases feature-wise?</b><br>
-See https://www.youtube.com/watch?v=So_I8CjoRPI - Minute around 5:00
+  <b>Q: How do I run smoke and regression tests feature by feature?  </b></br>
+  A: Simple! Check out this video around 5:00 and get the step-by-step magic 💥: <a href="https://www.youtube.com/watch?v=So_I8CjoRPI">YouTube link</a>. You'll be running tests like a pro in no time! 🎬🎯
+
 
 <b> 10. How to integrate scripts into a CI/CD pipeline? For example, if a new build is deployed on a testing server, how will it trigger the script and email the report to the required recipient</b><br>
 
-<h2> Database Testing</h2>
+<h1>Database Testing</h1>
 
-<b> Database Testing feature showcase: https://youtu.be/uGRXoUh3aFA</b>
+<b>Q: How do I perform database testing?  </b></br>
+   A: Watch the Database Testing video! 🎬 <a href="https://youtu.be/uGRXoUh3aFA">Click here for a full walkthrough!</a>  
 
-<b> 11. How to connect to our database server using the framework</b><br>
-Please watch the video on Database Testing linked above.
+<b>Q: How do I connect to our database server using the framework?  </b></br>
+   A: Check out the magic happening in the Database Testing video 🎥: <a href="https://youtu.be/uGRXoUh3aFA">Watch here for all the details!</a>  
 
-<b> 12. How to read, write, update, and delete data using the framework</b><br>
-Please watch the video on Database Testing linked above.
+<b>Q: How do I read, write, update, and delete data with the framework?  </b></br>
+   A: You guessed it—the Database Testing video has you covered! Head over to this <a href="https://youtu.be/uGRXoUh3aFA">link</a> and follow along. 📹✨  
 
-<b> 13. How to retrieve data from the database</b><br>
-You can assert on the result using JQ.
+<b>Q: How do I retrieve data from the database?  </b></br>
+   A: Easy! You can assert the results using JQ. 🔍 Get all the details from the video right here: <a href="https://youtu.be/uGRXoUh3aFA">Database Testing</a>.  
 
-<b> 14. How to perform database testing</b><br>
-Please watch the video on Database Testing linked above.
 
-<h2> Mobile and Performance Testing</h2>
+
+<h1>Mobile and Performance Testing</h1>
 
 <b> Mobile testing feature showcase: "mobile video here"</b><br>
 
-<b> Load testing feature showcase: https://youtu.be/hWAyx6iBbU4</b><br>
+<b>Q: How do I perform performance testing (load, stress) using the framework?  </b></br>
+   A: Want to test the limits? The Load Testing video shows you how to crush it! 💪 Check it out here: <a href="https://youtu.be/hWAyx6iBbU4">Load Testing</a>.</p>
+
+<b>Q: How do I do non-functional testing, like load or stress?  </b></br>
+   A: Non-functional testing? Covered! Watch the Load Testing video for all the juicy details: <a href="https://youtu.be/hWAyx6iBbU4">Click here</a>. 🚀</p>
+
+<h1>Cloud Execution</h1>
+
+<b>Q: Can I run my code somewhere cozy up in the cloud? ☁️  </b></br>
+   A: Absolutely! Cometa loves clouds—use it as SaaS or install it yourself on-premises or in the cloud. Better yet, the friendly Cometa Team will gladly set it up and maintain it wherever your heart desires. And if you need to share features between installations, it's just a quick copy-and-import (without transporting variables). Cloud-nine coding, here we come! 🚀🌤️</p>
 
 
-<b> 15. Is it possible to create a mobile department? and what are its related functionalities?</b><br>
-Cometa currently does not feature mobile exclusive departments.<br>
-Please watch the video on Mobile Testing linked above.
 
-<b> 16. How to perform performance testing (load, stress) using the framework</b><br>
-Please watch the video on Load Testing linked above.
+ <h1>String Methods in the Framework</h1>
 
-<b> 17. How to do non-functional testing like load or stress.</b><br>
-Please watch the video on Load Testing linked above.
+<b>Q: How do I handle all my string magic in the framework? 🔮  </b></br>
+   A: Cometa’s got your back—JQ is your go-to wizard for strings and JSON object manipulations. Need a quick spellbook? Check out <a href="https://jqlang.org/manual/">the official JQ manual</a> for guidance and examples. Let the string wizardry begin! 🚀</p>
 
-<h2>Cloud Execution</h2>
-
-<b> 18. Is it possible to run code in the cloud?</b><br>
-Cometa can be used as SaaS or be installed on-premises or on-cloud.<br>
-Cometa Team can install as well as maintain where ever you want.<br>
-Sharing Features between installations per copy and import - without transportation of variables.<br>
-
-<h2>String Methods in the Framework</h2>
-
-<h3>Cometa uses JQ for everything related to string and json object manipulation please follow this manual and the examples below in case of doubts: https://jqlang.org/manual/</h3> <br>
 <details>
   <summary><h3>Cometa test in json format used in the following questions</h3></summary>
   [{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Make an API call with \"GET\" to \"https://api.restful-api.dev/objects\"","step_action":"Make an API call with \"{method}\" to \"{endpoint}\" with \"params:{parameters}\" and \"headers:{headers}\" and \"body:{body}\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step compares 2 objects ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data == {\"color\":\"Cloudy White\", \"capacity\":\"128 GB\"}\" to \"match\" \"true\"","step_action":"Assert last API Call property \"{jq_pattern}\" to \"{condition}\" \"{value}\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step compares 2 strings ignoring case of input ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color | ascii_downcase == \"cloudy white\"\" to \"match\" \"true\"","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step checks length  ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color | length == 12\" to \"match\" \"true\"","step_action":"Assert last API Call property \"{jq_pattern}\" to \"{condition}\" \"{value}\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step checks if input contains Indicated Letter ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color | index(\"C\") != null\" to \"match\" \"true\" ","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step tests matching number -> cast to string to regex ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[3].data.price | tostring |test(\"^[0-9]+\\\\.[0-9]+$\") == true\" to \"match\" \"true\" ","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step replaces substring with another substring ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color | gsub(\"White\" ; \"Blue\") == \"Cloudy Blue\"\" to \"match\" \"true\" ","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step extracts a portion of a string using indexes ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color | .[2:8] == \"oudy W\"\" to \"match\" \"true\" ","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step compares two strings lexicographically replace with '==', '>' and '<' ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color > .response.content.[0].data.capacity\" to \"match\" \"true\"","step_action":"Assert last API Call property \"{jq_pattern}\" to \"{condition}\" \"{value}\"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"################ This step checks for a specific character in a specific index ################","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":60},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Assert last API Call property \".response.content.[0].data.color | explode | .[7] | [.] | implode == \"W\"\" to \"match\" \"true\"","step_action":"Assert last API Call property \"{jq_pattern}\" to \"{condition}\" \"{value}\"","step_type":"normal","continue_on_failure":false,"timeout":60}]
 </details><br>
 
-<b>19. How to verify if two strings are exactly the same in the framework</b><br>
-With action ```Assert last API call```, using JQ, we can compare strings such as:
+<b>Q: How to check if two strings match exactly?  </b></br>
+   A: Easy! Use Cometa’s Assert last API call with JQ. Just like checking if "banana" equals "banana". Simple and sweet! 🍌</p>
+   In this example we compare the color of an object and check if the output is true
+:
 ![img](img/stringCompare.png)
 <br>
-In this example we compare the color of an object and check if the output is true
 
 
-<b> 20. What is the difference between equals and == when comparing strings?</b><br>
-As of now there is no equals() filter in JQ, ```==``` is used to compare both strings and objects alike.
-<br>
+<b>Q: What's the difference between equals and == for strings?  </b></br>
+   A: In JQ-land, == is your best (and only) friend—no equals() here. Works perfectly for strings and JSON objects alike!</p>
+
 ![img](img/stringAndObjectComparison.png)
 
 
-<b> 21. How to compare two strings while ignoring their case in the framework</b><br>
-Adding ```| ascii_downcase``` as a filter, will handle input string as lowercase
-<br>
+<b>Q: Compare strings ignoring case?  </b></br>
+   A: Add ascii_downcase. E.g., ```"Cloudy White" | ascii_downcase == "cloudy white"```—case closed! 😎</p>
+
 For example:
 <br>
  ``` 'response.content.[0].data.color | ascii_downcase == "cloudy white"' ``` 
@@ -119,109 +115,111 @@ For example:
 ![img](img/caseInsensitive.png)
 
 
-<b> 22. Can equalsIgnoreCase be used to compare strings with special characters?</b><br>
-There is no ```equalsIgnoreCase``` method in jq. However, ```ascii_downcase``` will only affect characters that have a lowercse counterpart in ASCII.<br>
-For example ```Hello@//(())??*¿¿ | ascii_downcase``` will only affect the first 'H'
-For non ASCII characters like unicode, preprocessing the string will be the best solution. 
+ <b>Q: Can equalsIgnoreCase handle special characters?  </b></br>
+   A: No direct equalsIgnoreCase in JQ, and ascii_downcase only affects ASCII letters (e.g., "Hello@//" → "hello@//"). Special characters need extra care (pre-processing recommended)!</p>
+ 
 
-<b> 23. How to check if a string contains a specific substring in the framework</b><br>
-Using ```index(<substring>)```.<br>
-This will return the starting index of the substring if found, else it will return ```null```<br>
-We can check the existence of a substring by using: <br>
-```Assert last API Call property ".response.content.[0].data.color | index("C") != null" to "match" "true" ```<br>
- Being the input "```Cloudy White```", the return should be ```0 != null = true```.
+  <b>Q: Check if a string contains a substring?  </b></br>
+   A: Use index(&lt;substring&gt;). Returns position if found, or null.<br>
+  Example: ```"Cloudy" | index("C") != null``` → true. ✔️</p>
 
-<b> 24. What does the contains method return if the substring is not found?</b><br>
-See above
 
-<b> 25. How to verify if a string starts with a specific prefix in the framework</b><br>
-```Assert last API Call property ".response.content.[0].data.color | index("C") == 0" to "match" "true"``` <br>
-This example checks if ```C``` prefix is found as a substring in index ```0```.
+  <b>Q: What if contains doesn't find anything?  </b></br>
+   A: Returns null.</p>
 
-<b> 26. What happens if the prefix is longer than the string itself?</b><br>
-```index()``` returns ```null```
+  <b>Q: Verify a string starts with a prefix?  </b></br>
+   A: ```"Cloudy" | index("C") == 0``` means "C" is at the start. 🎯</p>
 
-<b> 27. How to check if a string ends with a specific suffix in the framework</b><br>
-For this usecase, use ```endswith(<suffix>)```. Returning a boolean whether it finds it or not.
 
-<b> 28. Can endsWith be used with an empty string?</b><br>
-Yes, it can. Unless the substring is an empty string, it will return ```false```.
+<b>Q: What if the prefix is longer than the string itself?  </b></br>
+   A: Returns null.</p>
 
-<b> 29. How to verify if a string is empty in the framework</b><br>
-Use ```length``` method
-<br>
+  <b>Q: Check if a string ends with a suffix?  </b></br>
+   A: ```endswith("suffix")``` → returns true or false. Easy peasy!</p>
+
+
+ <b>Q: Can you use ```endsWith``` with an empty string?  </b></br>
+   A: Sure! An empty string always returns true.</p>
+
+
+ <b>Q: Verify if a string is empty?  </b></br>
+   A: ```"string" | length == 0```. If length is zero, voilà—empty! 🕳️</p>
+
 Example:
 <br>
 ```Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true"``` 
 
-<b> 30. What is the difference between isEmpty and checking if the string is null?</b><br>
-jq does not have a ```isEmpty``` method, however checking with ```==``` can be used to check if the string is ```""``` empty or ```null```
+<b>Q: Difference between checking empty vs. null in JQ?  </b></br>
+   A: No isEmpty() in JQ; simply check ```== "" or == null```. Done!</p>
 
-<b> 31. How to determine the length of a string in the framework</b><br>
-Use ```length``` method
-<br>
-Example:
-<br>
-```Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true" ```
 
-<b> 32. What does the length method return for an empty string?</b><br>
-```0```
+<b>Q: Determine the length of a string?  </b></br>
+   A: ```"yourstring" | length```. Counts characters neatly.</p>
 
-<b> 33. How to check if a string matches a specific regular expression in the framework</b><br>
+
+<b>Q: Length for an empty string?  </b></br>
+   A: Zero, obviously! ```"" | length == 0```</p>
+
+
+<b>Q: Check a string with a regex pattern?  </b></br>
+   A: Use JQ's test(). Regex magic ✨</p>
 ![img](img/regularExpression.png)<br>
 In this example we use a regular expression to check if the input is a price number followed by a '.' followed by cents<br>
 Also added ```tostring``` to parse the price as a ```string```.
 
 
-<b> 34. Can matches be used to validate email addresses or phone numbers?</b><br>
-Yes, to validate an email use the same logic of regular expressions displayed in JQ Manual<br>
+ <b>Q: Validate emails or phones?  </b></br>
 Example for Email:  ```^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$```
 <br>
 Example for Phone (Spanish format 9 digit): ```^[0-9]{9}$```
 
-<b> 35. How to replace a specific character or substring in a string in the framework</b><br>
-use ```gsub()``` method<br>
+ <b>Q: Replace characters or substrings?  </b></br>
+   A: ```gsub("old"; "new")```. Quick swap!</p>
 ![img](img/replaceString.png)
 
 
 
-<b> 36. What happens if the substring to be replaced is not found?</b><br>
-```gsub()``` returns the original string, unmodified
+ <b>Q: What if substring not found in replace?  </b></br>
+   A: String remains unchanged.</p>
 
-<b> 37. How to replace all occurrences of a substring or pattern in a string in the framework</b><br>
-```gsub()``` also replaces all occurrences it finds of the first argument, with the second
 
-<b> 38. What is the difference between replace and replaceAll?</b><br>
-These methods are not available in JQ, ```gsub()``` provides all the tools necessary for string manipulation.
+<b>Q: Replace ALL occurrences?  </b></br>
+   A: Again, gsub() handles all replacements gracefully.</p>
 
-<b> 39. How to convert a string to lowercase in the framework</b><br>
-```ascii_downcase```
 
-<b> 40. Does toLowerCase modify the original string?</b><br>
-No, jq functions are immutable; they return new values.
+<b>Q: Difference between replace and replaceAll?  </b></br>
+   A: JQ only needs ```gsub()```—it does it all!</p>
 
-<b> 41. How to convert a string to uppercase in the framework</b><br>
-```ascii_upcase```
 
-<b> 42. Can toUpperCase handle non-English characters?</b><br>
-```ascii_upcase``` and ```ascii_downcase``` work only for ASCII characters. Other Unicode cases require external handling
+<b>Q: Convert string to lowercase?  </b></br>
+   A: ```ascii_downcase```</p>
 
-<b> 43. How to remove leading and trailing whitespace from a string in the framework</b><br>
-Use ```ltrimstr(string)``` and ```rtrimstr(string)``` <br>
-Both functions output the input without the prefix/suffix indicated as argument, if it exists.
 
-<b> 44. Does trim remove spaces between words in a string?</b><br>
-The above methods only remove leading and trailing strings
+<b>Q: Does ascii_downcase change the original string?  </b></br>
+   A: Nope, JQ functions are immutable—safe and sound.</p>
 
-<b> 45. How to extract a portion of a string in the framework</b><br>
-Use ```.[x:y]```
-<br>
-Example: Given ```Assert last API Call property ".response.content.[0].data.color | .[2:8] == "oudy W"" to "match" "true"```
+<b>Q: Convert to uppercase?  </b></br>
+   A: ```ascii_upcase``` 🔥</p>
 
-<b> 46. What happens if the start or end index is out of bounds?</b><br>
-When indexes are out of bounds, ```.[x,y]``` <br>
-If index goes beyond the max length, index is treated as max length<br>
-if index is negative, it will count from the end
+
+<b>Q: Can ascii_upcase handle non-English chars?  </b></br>
+   A: Nope—ASCII chars only. Unicode? Need extra love (external handling).</p>
+
+
+ <b>Q: Remove leading/trailing whitespace?  </b></br>
+   A: Use ```ltrimstr()``` / ```rtrimstr()``` for leading/trailing specific strings.</p>
+
+
+ <b>Q: Does trim remove spaces between words?  </b></br>
+   A: Nope, only start/end of strings. Middle spaces stay cozy.</p>
+
+
+    <b>Q: Extract substring (slicing)?  </b></br>
+   A: ```"Cloudy" | .[2:5]``` → "oud"</p>
+
+
+<b>Q: What if indexes go out of bounds?  </b></br>
+   A: If over max length → empty string; negatives count from end.</p>
 Example: Cloudy White<br>
 ```[0:9999]``` -> ```Cloudy White```<br>
 ```[99:9999]``` -> ```""```<br>
