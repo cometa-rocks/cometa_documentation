@@ -11,7 +11,8 @@
 
   <b>Q: Want random IDs, names, emails, or digits magically popping up in your framework?</b></br>
   A: Easy! Just sprinkle a few characters, toss them into a variable, and voilà—randomness served fresh! 🍕✨
-
+  
+![img](img/var_button_cometa.png)
 
   <b>Q: Can I keep my precious XPath safe and cozy in local variables, feature by feature?    </b></br>
    A: Absolutely! You already spotted that shiny little button—just click and save your XPath treasures! 🎯✨  
