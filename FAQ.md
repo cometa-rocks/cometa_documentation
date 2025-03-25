@@ -5,9 +5,9 @@
 </picture>
 
 
-<h1>FAQ & Common Questions</h1>
+<h1>😊 FAQ & Common Question</h1>
 
-  <h1>General Framework and Functionality</h1>
+  <h2>🚀 General Framework & Cool Functionalities</h2>
 
   <b>Q: Want random IDs, names, emails, or digits magically popping up in your framework?</b></br>
   A: Easy! Just sprinkle a few characters, toss them into a variable, and voilà—randomness served fresh! 🍕✨
@@ -49,7 +49,7 @@
 
 <b> 10. How to integrate scripts into a CI/CD pipeline? For example, if a new build is deployed on a testing server, how will it trigger the script and email the report to the required recipient</b><br>
 
-<h1>Database Testing</h1>
+<h2>Database Testing</h2>
 
 <b>Q: How do I perform database testing?  </b></br>
    A: Watch the Database Testing video! 🎬 <a href="https://youtu.be/uGRXoUh3aFA">Click here for a full walkthrough!</a>  
@@ -65,7 +65,7 @@
 
 
 
-<h1>Mobile and Performance Testing</h1>
+<h2>Mobile and Performance Testing</h2>
 
 <b> Mobile testing feature showcase: "mobile video here"</b><br>
 
@@ -75,14 +75,14 @@
 <b>Q: How do I do non-functional testing, like load or stress?  </b></br>
    A: Non-functional testing? Covered! Watch the Load Testing video for all the juicy details: <a href="https://youtu.be/hWAyx6iBbU4">Click here</a>. 🚀</p>
 
-<h1>Cloud Execution</h1>
+<h2>Cloud Execution</h2>
 
 <b>Q: Can I run my code somewhere cozy up in the cloud? ☁️  </b></br>
    A: Absolutely! Cometa loves clouds—use it as SaaS or install it yourself on-premises or in the cloud. Better yet, the friendly Cometa Team will gladly set it up and maintain it wherever your heart desires. And if you need to share features between installations, it's just a quick copy-and-import (without transporting variables). Cloud-nine coding, here we come! 🚀🌤️</p>
 
 
 
- <h1>String Methods in the Framework</h1>
+ <h2>String Methods in the Framework</h2>
 
 <b>Q: How do I handle all my string magic in the framework? 🔮  </b></br>
    A: Cometa’s got your back—JQ is your go-to wizard for strings and JSON object manipulations. Need a quick spellbook? Check out <a href="https://jqlang.org/manual/">the official JQ manual</a> for guidance and examples. Let the string wizardry begin! 🚀</p>
