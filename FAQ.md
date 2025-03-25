@@ -214,7 +214,7 @@ Example for Phone (Spanish format 9 digit): ```^[0-9]{9}$```
    A: Nope, only start/end of strings. Middle spaces stay cozy.</p>
 
 
-    <b>Q: Extract substring (slicing)?  </b></br>
+  <b>Q: Extract substring (slicing)?  </b></br>
    A: ```"Cloudy" | .[2:5]``` → "oud"</p>
 
 
@@ -230,48 +230,40 @@ Example: Cloudy White<br>
 Use ```==```, ```>```, ```<``` for lexicographical comparison<br>
 ![img](img/lexicographicComparison.png)
 
-<b> 48. What does a negative, zero, or positive return value from compareTo indicate?</b><br>
-jq doesn't have ```compareTo```, but lexicographic comparison is done using ```<```, ```>```, and ```==```.
+<b>Q: What does a negative, zero, or positive return value from compareTo indicate?</b><br> 
+  A: Trick question! jq laughs in the face of compareTo. Instead, it uses the simpler, friendlier, "I learned this in kindergarten" operators: ```<```, ```>```, and ```==```.</p>
 
+<b>Q: How to compare two strings lexicographically while ignoring case in the framework</b><br> 
+  A: Politely force both strings into lowercase submission with ascii_downcase before they argue. Peace achieved.</p>
 
-<b> 49. How to compare two strings lexicographically while ignoring case in the framework</b><br>
-Convert both to lowercase using ```ascii_downcase``` before comparison.
+<b>Q: What is the difference between compareTo and compareToIgnoreCase?</b><br> 
+  A: Spoiler alert: one doesn't exist, and the other involves forcing strings to lower their voices.</p>
 
-<b> 50. What is the difference between compareTo and compareToIgnoreCase?</b><br>
-See #48 and #49
+<b>Q: How to find the index of a specific character or substring in a string in the framework?</b><br> 
+  A: Use ```index()``` to pinpoint exactly where your substring is hiding. Think of it as GPS for strings.</p>
 
-<b> 51. How to find the index of a specific character or substring in a string in the framework</b><br>
-use ```index()```, it will return the index of the character / first character in the substring
+<b>Q: What does ```indexOf``` return if the character or substring is not found?</b><br> 
+  A: It returns null, jq’s polite way of saying, "I have no idea what you're talking about."</p>
 
-<b> 52. What does indexOf return if the character or substring is not found?</b><br> 
-index returns ```null``` if not found.
+<b>Q: How to find the last occurrence of a specific character or substring in a string in the framework?</b><br> 
+  A: Use ```rindex(string)```. Like asking your friend, "Okay seriously, where'd you last see your keys?"</p>
 
-<b> 53. How to find the last occurrence of a specific character or substring in a string in the framework</b><br>
-Use ```rindex(string)```
+<b>Q: What is the difference between ```indexOf``` and ```lastIndexOf```?</b><br> 
+  A: While jq doesn't technically know ```indexOf``` or ```lastIndexOf```, it does have ```index()``` (the first sighting) and ```rindex()``` (the "I swear it was right here last time" sighting).</p>
 
-<b> 54. What is the difference between indexOf and lastIndexOf?</b><br>
-```indexOf``` and ```lastIndexoff``` while not present in jq index and rindex will do the same.<br>
-```index(string)``` finds the first match, ```rindex(string)``` finds the last.
-
-<b> 55. How to retrieve a character at a specific index in a string in the framework</b><br>
-with ```explode``` and ```implode```<br>
-```explode```: creates an array with the string's codepoint number of each character.
-```implode```: reverses the explode
-So in the following example, we get "Cloudy White"
-after explosion -> ```[67,108,111,117,100,121,32,87,104,105,116,101]``` 
-select index ```7``` -> ```87```
-Insert it into a single element array ```[87]```, this is because implode requires an array, hence adding ```[.]```
-Finally we ```implode```, reversing ```[87]``` into -> ```W```<br>
+<b>Q: How to retrieve a character at a specific index in a string in the framework</b><br> 
+  A: You'll have to explode your string (don't panic, it's safe), grab the right character by its numeric code, then implode it again to politely reconstruct the chaos.</p>
+ Example:<br> "Cloudy White" → explode → [67,108,111,117,100,121,32,87,104,105,116,101] → take index 7 (87) → wrap lovingly in [87] → implode → "W". Ta-da, you've performed string surgery!
 ![img](img/extractCharacter.png)
 
-<b> 56. What happens if the index is out of bounds?</b><br>
-Returns ```null``` if the index is out of range.
+<b>Q: What happens if the index is out of bounds?</b><br>
+  A: Returns ```null``` if the index is out of range.</p>
 
-<b> 57. How to split a string into an array based on a delimiter in the framework</b><br>
-We use ```split()``` method
+<b>Q: How to split a string into an array based on a delimiter in the framework</b><br>
+ A: We use ```split()``` method.</p>
 
-<b> 58. What happens if the delimiter is not found in the string?</b><br>
-```split()``` returns an array with the original string as the only element, if delimiter is not found.
+<b>Q: What happens if the delimiter is not found in the string?</b><br>
+  A: ```split()``` returns an array with the original string as the only element, if delimiter is not found.</p>
 
 <h2>User Roles and Administration</h2>
 
