@@ -12,23 +12,23 @@ Welcome to the FAQ—where we answer your burning questions before you've even t
 <h2>🚀 General Framework & Cool Functionalities</h2>
 
   <b>Q: Want random IDs, names, emails, or digits magically popping up in your framework?</b></br>
-  A: Easy! Just sprinkle a few characters, toss them into a variable, and voilà—randomness served fresh! 🍕✨
+  A: Easy! Just sprinkle a few characters, toss them into a variable, and voilà—randomness served fresh! 🍕
   
 ![img](img/var_button_cometa.png)
 
   <b>Q: Can I keep my precious XPath safe and cozy in local variables, feature by feature?    </b></br>
-   A: Absolutely! You already spotted that shiny little button—just click and save your XPath treasures! 🎯✨  
+   A: Absolutely! You already spotted that shiny little button—just click and save your XPath treasures! 🎯
 
  <b>Q: Can I stuff all my app's favorite XPaths into one global variable basket?    </b></br>
-   A: Go wild! Just set up a cozy little "department" everyone knows (think: DEFAULT or PUBLIC)—then watch your XPaths happily shared among teammates like fresh office donuts! 🍩🌍  
+   A: Go wild! Just set up a cozy little "department" everyone knows (think: DEFAULT or PUBLIC)—then watch your XPaths happily shared among teammates like fresh office donuts! 🍩
 
 
 <b>Q: Can I put all my handy methods into one global feature file and call them anytime, anywhere?    </b></br>
-   A: Absolutely! Just keep it tidy—Cometa's smart enough to catch sneaky endless loops like "F1 calls F2, F2 calls F3, F3 calls... uh-oh... back to F1" and will gently tell you, "Nope, can't save that!" 🔄🚫  
+   A: Absolutely! Just keep it tidy—Cometa's smart enough to catch sneaky endless loops like "F1 calls F2, F2 calls F3, F3 calls... uh-oh... back to F1" and will gently tell you, "Nope, can't save that!" 🚫  
 
 
 <b>Q: Got tons of smoke and regression tests files in a folder—how do I run only those quick-and-easy smoke tests?    </b></br>
-   A: Easy-peasy! Watch this short clip (around 5:00) 👉 <a href="https://www.youtube.com/watch?v=So_I8CjoRPI">YouTube magic link</a> and you're good to go! 🎬✨
+   A: Easy-peasy! Watch this short clip (around 5:00) 👉 <a href="https://www.youtube.com/watch?v=So_I8CjoRPI">YouTube magic link</a> and you're good to go! 🎬
 
 
 <b>Q: Can I add my own secret sauce—custom logic—to spice up the framework?    </b></br>
@@ -37,21 +37,21 @@ Welcome to the FAQ—where we answer your burning questions before you've even t
   Want more control? Sprinkle your custom Python steps right <a href="https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/actions.py">here</a>. And if you're feeling fancy, see how IBM Cognos has its own special group of steps right <a href="https://github.com/cometa-rocks/cometa/blob/master/backend/behave/cometa_itself/steps/tools/cognos.py">here</a>. 🎩🐍⚡
 
  <b>Q: Can I jump straight to any dependent feature files in one click?    </b></br>
-   A: Almost there—but hold your horses! 🐎 This one's still baking in the oven. (Stay tuned: implementation coming soon!) 🍪✨  
+   A: Almost there—but hold your horses! 🐎 This one's still baking in the oven. (Stay tuned: implementation coming soon!) 🍪
 
 
 <b>Q: How can I auto-run ALL my test features with a CI/CD pipeline like Jenkins or GitLab after deployment?    </b></br>
-   A: Piece of cake! 🍰 Cometa gives you a tasty REST API—so if you can click it on the frontend (like that handy "..." button to run all tests in a folder), your pipeline can magically do it too. CI/CD for the win! 🚀✨  
+   A: Piece of cake! 🍰 Cometa gives you a tasty REST API—so if you can click it on the frontend (like that handy "..." button to run all tests in a folder), your pipeline can magically do it too. CI/CD for the win! 🚀
 
 ![img](img/runAllFeatures.png)
 
   <b>Q: How do I run smoke and regression tests feature by feature?  </b></br>
-  A: Simple! Check out this video around 5:00 and get the step-by-step magic 💥: <a href="https://www.youtube.com/watch?v=So_I8CjoRPI">YouTube link</a>. You'll be running tests like a pro in no time! 🎬🎯
+  A: Simple! Check out this video around 5:00 and get the step-by-step magic 💥: <a href="https://www.youtube.com/watch?v=So_I8CjoRPI">YouTube link</a>. You'll be running tests like a pro in no time! 🎬
 
 
 <b> 10. How to integrate scripts into a CI/CD pipeline? For example, if a new build is deployed on a testing server, how will it trigger the script and email the report to the required recipient</b><br>
 
-<h2>Database Testing</h2>
+<h2>🗄️🛢️📚Database Testing</h2>
 
 <b>Q: How do I perform database testing?  </b></br>
    A: Watch the Database Testing video! 🎬 <a href="https://youtu.be/uGRXoUh3aFA">Click here for a full walkthrough!</a>  
@@ -67,7 +67,7 @@ Welcome to the FAQ—where we answer your burning questions before you've even t
 
 
 
-<h2>Mobile and Performance Testing</h2>
+<h2>📱⚡🚀Mobile and Performance Testing</h2>
 
 <b> Mobile testing feature showcase: "mobile video here"</b><br>
 
@@ -77,14 +77,14 @@ Welcome to the FAQ—where we answer your burning questions before you've even t
 <b>Q: How do I do non-functional testing, like load or stress?  </b></br>
    A: Non-functional testing? Covered! Watch the Load Testing video for all the juicy details: <a href="https://youtu.be/hWAyx6iBbU4">Click here</a>. 🚀</p>
 
-<h2>Cloud Execution</h2>
+<h2>☁️🚀⚙️Cloud Execution</h2>
 
 <b>Q: Can I run my code somewhere cozy up in the cloud? ☁️  </b></br>
    A: Absolutely! Cometa loves clouds—use it as SaaS or install it yourself on-premises or in the cloud. Better yet, the friendly Cometa Team will gladly set it up and maintain it wherever your heart desires. And if you need to share features between installations, it's just a quick copy-and-import (without transporting variables). Cloud-nine coding, here we come! 🚀🌤️</p>
 
 
 
- <h2>String Methods in the Framework</h2>
+ <h2>🔤🛠️✨String Methods in the Framework</h2>
 
 <b>Q: How do I handle all my string magic in the framework? 🔮  </b></br>
    A: Cometa’s got your back—JQ is your go-to wizard for strings and JSON object manipulations. Need a quick spellbook? Check out <a href="https://jqlang.org/manual/">the official JQ manual</a> for guidance and examples. Let the string wizardry begin! 🚀</p>
@@ -268,41 +268,38 @@ Use ```==```, ```>```, ```<``` for lexicographical comparison<br>
 <b>Q: What happens if the delimiter is not found in the string?</b><br>
   A: ```split()``` returns an array with the original string as the only element, if delimiter is not found.</p>
 
-<h2>User Roles and Administration</h2>
+<h2>👤🔑⚙️User Roles and Administration</h2>
 
-<b> 59. My user role is ANALYSIS. Is it okay for me to lead my project, or is it possible to have project/department-wise admin roles?</b><br>
-Cometa comes with a lot of capabilities, which can be assigned to a role:<br>
+<b>Q: My user role is ANALYSIS. Can I lead my project, or do I need a fancy admin hat for each department?</b><br> A: ANALYSIS roles are awesome at crunching numbers, but to lead projects or departments, you'll need specific admin superpowers. Thankfully, Cometa lets you assign different admin hats (and capes!) for each project or department, keeping things organized and heroic.
 ![img](img/rolePermissions.png)
 In the screenshot you can see that "Access to Edit a department" can be given to a certain role like "Department Admin" to add or delete users.
 
-<b> 60. How can we assign and manage project/department-wise admin roles?</b><br>
-See above.
+<b>Q: How can we hand out those cool admin hats (and capes!) for each project or department?</b><br>
+A: Easy! Cometa lets you assign and manage admin roles by project or department, so you can effortlessly give the right people their superhero powers exactly where they're needed.
 
-<h2>Data Driven Testing</h2>
+<h2>🗄️💾Data Driven Testing</h2>
 
-<b> 61. Can we write data on Excel sheet(If excel used on Data driven).</b><br>
-Yes, use step: Edit ```{file}``` and set ```{value}``` to ```{cell}```<br>
+<b>Q: Can we scribble data directly onto an Excel sheet (for those "data-driven" moments)?</b><br>
+A: Absolutely! Just use the magic step: <code>Edit {file}</code> and sprinkle your <code>{value}</code> into the cozy little <code>{cell}</code>. Voilà! Excel happiness unlocked.
 
-<b> 62. Excel sheet should be Auto-save if we manipulate data after uploading.</b><br>
-Excel file is automatically saved and will contain the value set to the cell on next run.
+<b>Q: Will my Excel sheet auto-save after I tweak the data I uploaded?</b><br>
+A: Absolutely! Cometa auto-saves your Excel file, keeping all your genius data moves safe and sound for your next run—so you can forget the frantic CTRL+S dance.
 
-<b> 63. How to do testing in headless mode in Co-Meta?</b><br>
-Cometa already runs in headless mode. VNC is available too.
+<b>Q: How can I run tests in headless mode with Co-Meta?</b><br>
+A: Good news! Co-Meta was born headless, like a friendly ghost—no UI required! But if you're curious to peek behind the scenes, VNC is there to let you watch the magic happen.
 
-<b> 64. Does cometa feature language selection?</b><br>
-Yes, Cometa's language can be changed using environment variables.
+<b>Q: Does Cometa speak other languages, or am I stuck with English forever?</b><br> A: Good news! Cometa is multilingual—just tweak a few environment variables, and it'll happily chat in your favorite language.
 
-<b> 65. Debugging of code?</b><br>
-No debugging in code, only with reports.<br>
-See feature logs for execution details.
+<b>Q: Can I debug my code directly?</b><br>
+A: Nope! Cometa believes in debugging the civilized way—through reports. Think of it as detective work: check the feature logs for clues and execution details to crack the case.
 
-<b> 66. Does cometa feature any kind of reporting?</b><br>
-Yes, Cometa features reporting and validations in it.
+<b>Q: Does Cometa have any kind of reporting magic?</b><br>
+A: Absolutely! Cometa comes packed with built-in reporting and validations—think of it as your personal assistant who loves turning data into easy-to-read stories (and making sure everything checks out along the way).
 
-<b> 67. Does it feature a notification mechanism?</b><br>
-Yes, cometa features Webhooks for integration in Messengers.
+<b>Q: Does it come with notifications, or do I have to keep hitting refresh like it's 1999?</b><br>
+A: Relax! Cometa’s got your back with Webhooks—sending real-time notifications straight to your favorite messengers, so you can finally stop the refresh madness.
 
-<b> 68. Issue log?</b><br>
-Using cometa fetch console
+<b>Q: 68. How can I check the issue log?</b><br>
+A: Just fire up the trusty <code>cometa fetch console</code>—your personal detective that tracks down all the clues and mysteries hiding in your logs.
 
 
