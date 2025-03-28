@@ -103,13 +103,13 @@ Welcome to the FAQ—where we answer your burning questions before you've even t
 
 
 <b>Q: What's the difference between equals and == for strings?  </b></br>
-   A: In JQ-land, == is your best (and only) friend—no equals() here. Works perfectly for strings and JSON objects alike!</p>
+   A: In JQ-land, ```==``` is your best (and only) friend—no ```equals()``` here. Works perfectly for strings and JSON objects alike!</p>
 
 ![img](img/stringAndObjectComparison.png)
 
 
 <b>Q: Compare strings ignoring case?  </b></br>
-   A: Add ascii_downcase. E.g., ```"Cloudy White" | ascii_downcase == "cloudy white"```—case closed! 😎</p>
+   A: Add ```ascii_downcase```. E.g., ```"Cloudy White" | ascii_downcase == "cloudy white"```—case closed! 😎</p>
 
 For example:
 <br>
@@ -119,11 +119,11 @@ For example:
 
 
  <b>Q: Can equalsIgnoreCase handle special characters?  </b></br>
-   A: No direct equalsIgnoreCase in JQ, and ascii_downcase only affects ASCII letters (e.g., "Hello@//" → "hello@//"). Special characters need extra care (pre-processing recommended)!</p>
+   A: No direct equalsIgnoreCase in JQ, and ```ascii_downcase``` only affects ASCII letters (e.g., "Hello@//" → "hello@//"). Special characters need extra care (pre-processing recommended)!</p>
  
 
   <b>Q: Check if a string contains a substring?  </b></br>
-   A: Use index(&lt;substring&gt;). Returns position if found, or null.<br>
+   A: Use ```index(&lt;substring&gt;)```. Returns position if found, or null.<br>
   Example: ```"Cloudy" | index("C") != null``` → true. ✔️</p>
 
 
@@ -153,7 +153,7 @@ Example:
 ```Assert last API Call property ".response.content.[0].data.color | length == 0" to "match" "true"``` 
 
 <b>Q: Difference between checking empty vs. null in JQ?  </b></br>
-   A: No isEmpty() in JQ; simply check ```== "" or == null```. Done!</p>
+   A: No ```isEmpty()``` in JQ; simply check ```== "" or == null```. Done!</p>
 
 
 <b>Q: Determine the length of a string?  </b></br>
@@ -165,7 +165,7 @@ Example:
 
 
 <b>Q: Check a string with a regex pattern?  </b></br>
-   A: Use JQ's test(). Regex magic ✨</p>
+   A: Use JQ's ```test()```. Regex magic ✨</p>
 ![img](img/regularExpression.png)<br>
 In this example we use a regular expression to check if the input is a price number followed by a '.' followed by cents<br>
 Also added ```tostring``` to parse the price as a ```string```.
@@ -187,7 +187,7 @@ Example for Phone (Spanish format 9 digit): ```^[0-9]{9}$```
 
 
 <b>Q: Replace ALL occurrences?  </b></br>
-   A: Again, gsub() handles all replacements gracefully.</p>
+   A: Again, ```gsub()``` handles all replacements gracefully.</p>
 
 
 <b>Q: Difference between replace and replaceAll?  </b></br>
