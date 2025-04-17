@@ -36,6 +36,7 @@ All about testing
 - [Create sub-feature](#create-sub-feature)
 - [Up- and Downloading Files](#up-and-download)
 - [Questions](questions.md)
+- [FAQ](FAQ.md)
 
 All about integration
 - [Integration with Webhooks](#integration) 
