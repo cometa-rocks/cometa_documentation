@@ -11,6 +11,7 @@
   [![GitHub Stars](https://img.shields.io/github/stars/cometa-rocks/cometa?style=social)](https://github.com/cometa-rocks/cometa/stargazers)
   [![Join our Community on Discord](https://img.shields.io/discord/810822044367061042?label=Join%20our%20Community&logo=discord)](https://discord.gg/PUxt5bsRej)
   [![YouTube Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube&style=flat-square)](https://www.youtube.com/watch?v=VIDEO_ID)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/cometa_rocks?style=social)](https://twitter.com/cometa_rocks)
 
 
 
@@ -25,31 +26,29 @@
 **Cometa** stands for **Complete Meta Test Platform** — a versatile, powerful testing solution that lets you run automated tests **across system boundaries** using either a **codeless editor** or **full-code mode**, on cloud or on-prem.
 
 > _Meta_ comes from the Greek “μετά-” meaning "beyond" — and that’s exactly what Cometa enables.
+## One More Thing...
 
+Imagine a world where testing isn't just about finding bugs. It's about creating perfect user experiences, across every system, every time. That's Cometa.
+
+## Why Cometa?
+
+**Because testing should be:**
+- **Simple**: No-code or full-code, your choice
+- **Powerful**: Test across any system, any boundary
+- **Beautiful**: Results that tell a story
+- **Smart**: AI-powered, future-ready
+  
 **With Cometa, you can:**
-- Fetch data from one system and test it in another.
-- Create scalable test plans with reusable features.
-- Use BDD-style tests with [Behave](https://github.com/behave/behave) + Selenium.
-- View results with logs, screenshots, videos.
-- Consume results via a REST API or a beautiful Angular UI.
 
----
+> [!TIP]
+> - Fetch data from one system and test it in another  
+> - Create scalable test plans with reusable features  
+> - Use BDD-style tests with [Behave](https://github.com/behave/behave) + Selenium  
+> - View results with logs, screenshots, and videos  
+> - Access results via a REST API or a beautiful Angular UI  
 
-## ⚡ Key Features
 
-- ✅ No-code + full-code test creation
-- 🔁 Cross-system test flows
-- 🧠 Over 70 prebuilt test steps
-- 📸 Screenshots & video capture
-- 🌍 Cloud & on-prem deployments
-- 🔐 OIDC Security (Google, GitLab OAuth, more)
-- 📦 REST API for integration & CI/CD
-- 🧪 BDD syntax with Behave + Selenium WebDriver
-- 📊 Visual result dashboards
-
----
-
-## ✨ Quick Start
+## Get Started
 
 Get started with Cometa Community Edition:
 
@@ -72,72 +71,18 @@ Use the UI > Import JSON and try [feature_example_your_first_testcase.json](exam
 
 ---
 
-## 🧭 Table of Contents
+## 🔀 Choose Your Path
 
-<details>
-<summary>📦 Versions</summary>
+### Community Edition
+- Open-source on GitHub
+- Free forever under [AGPLv3](LICENSE)
+- [Get started now](https://github.com/cometa-rocks/cometa)
 
-- [Cometa Versions](main?tab=readme-ov-file#-cometa-versions)
-- [Cometa History](#cometa-history)
-
-</details>
-
-<details>
-<summary>🚀 Getting Started</summary>
-
-- [Overview: 5W1H](#cometa-overview---5w1h)
-- [What is a Testplan / Feature](#what-is-a-testplan-versus-feature)
-- [Your First Test](#your-first-test)
-- [All About Cometa Steps](#all-about-cometa-steps)
-- [All About Selectors](#all-about-selectors)
-- [Data Driven Testing (DDT)](#data-driven-testing-ddt)
-- [Execute JavaScript](#execute-your-own-javascript)
-- [Compare Values Across Systems](#compare-the-values-of-two-selectors-over-system-boundaries)
-- [Create Sub-Features](#create-a-sub-features)
-- [Upload & Download Files](#upload-and-download-files)
-- [Step Timeouts](#step-timeouts)
-</details>
-
-<details>
-<summary>🔌 Integrations</summary>
-
-- [Integration with Webhooks](#integration-with-webhooks)
-- [Integration with GitHub/GitLab](#integration-with-gitlab--github)
-- [REST API](#rest-api)
-</details>
-
-<details>
-<summary>🔐 Operations & Maintenance</summary>
-
-- [Security](#security)
-- [Housekeeping](#housekeeping)
-</details>
-
-<details>
-<summary>💬 Community & Help</summary>
-
-- [Sponsors](#sponsors)
-- [Want to Help?](#want-to-help-with-cometa-development)
-- [Need Help?](#you-are-stuck-and-need-some-help)
-- [Design, Fonts & Logos](#design)
-</details>
-
----
-
-## 🔀 Cometa Versions
-
-### 🧪 Community Edition (CE)
-- Open-source on GitHub ([repo](https://github.com/cometa-rocks/cometa))
-- Lags behind premium features
-- Free under [AGPLv3](#license)
-
-### ☁️ Cloud Enterprise Edition (CEE)
-- Fully hosted, 4-tier plans: Standard, Silver, Gold, Enterprise
-- Details upon request
-
-### 🏢 On-Prem Enterprise Edition (EE)
-- All Cloud features + more
-- Includes onboarding, unlimited users, advanced browser support, priority support
+### Enterprise
+- Fully managed on cloud or on-prem
+- Advanced features & support
+- Unlimited users & browsers
+- [Let's talk](mailto:tec_dev@cometa.rocks)
 
 ---
 
