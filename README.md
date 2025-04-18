@@ -4,7 +4,6 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 <div align="center">
-  <img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" alt="Cometa Logo" width="400"/>
   <h1>Cometa - Complete Meta Test Automation</h1>
   <h4>Codeless & Code-Based Testing Across Systems. Cloud & On-Prem Ready.</h4>
 
