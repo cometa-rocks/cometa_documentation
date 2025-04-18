@@ -7,9 +7,10 @@
   <h1>Cometa - Complete Meta Test Automation</h1>
   <h4>Codeless & Code-Based Testing Across Systems. Cloud & On-Prem Ready.</h4>
 
-  ![License](https://img.shields.io/github/license/cometa-rocks/cometa)
+  [![License: AGPL v3](https://img.shields.io/github/license/cometa-rocks/cometa)](https://www.gnu.org/licenses/agpl-3.0.html)
   ![Stars](https://img.shields.io/github/stars/cometa-rocks/cometa?style=social)
-  ![Discord](https://img.shields.io/discord/12345678?label=Join%20our%20Community)
+  [![Join our Community on Discord](https://img.shields.io/discord/810822044367061042?label=Join%20our%20Community&logo=discord)](https://discord.gg/PUxt5bsRej)
+
 
   <br/>
   <em>Created for DevOps, QA Engineers, SDETs, Developers & Business Teams</em>
