@@ -1,22 +1,23 @@
-GNU AFFERO GENERAL PUBLIC LICENSE
-Version 3, 19 November 2007
-
-Copyright (C) 2021 COMETA ROCKS S.L.
-
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
-
--------------------------------------------------------------------------------
+Copyright 2021 COMETA ROCKS S.L.
 
 Portions of this software are licensed as follows:
 
 * All content that resides under the "ee/" directory of this repository (Enterprise Edition) is licensed under the license defined in "ee/LICENSE".
-* All third-party components incorporated into the Cometa Software are licensed under the original license provided by the owner of the applicable component.
-* Content outside of the above-mentioned directories or restrictions is available under the AGPLv3 license as defined below.
+* All third-party components incorporated into the Cometa.Rocks Software are licensed under the original license provided by the owner of the applicable component.
+* Content outside of the above-mentioned directories or restrictions above is available under the "AGPLv3" license as defined below.
 
 -------------------------------------------------------------------------------
 
-                   The GNU Affero General Public License is a free, copyleft license for software and other kinds of works, specifically designed to ensure cooperation with the community in the case of network server software.
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+
+                            Preamble
+
+The GNU Affero General Public License is a free, copyleft license for software and other kinds of works, specifically designed to ensure cooperation with the community in the case of network server software.
 
 The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, our General Public Licenses are intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users.
 
