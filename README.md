@@ -77,7 +77,7 @@ Use the UI > Import JSON and try [feature_example_your_first_testcase.json](exam
 <details>
 <summary>📦 Versions</summary>
 
-- [Cometa Versions](#cometa-versions)
+- [Cometa Versions](main?tab=readme-ov-file#-cometa-versions)
 - [Cometa History](#cometa-history)
 
 </details>
