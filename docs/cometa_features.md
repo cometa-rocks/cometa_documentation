@@ -1,4 +1,4 @@
-<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
 
 
 # Co.meta feature list
@@ -48,7 +48,7 @@ When creating a feature in Cometa, the Information section includes an option to
 
 > **Note:** Enabling this checkbox will record all your network response headers and store them in the database, potentially increasing the data load. Therefore, if the feature is not in use, please kindly consider disabling the checkbox.   
 
-<img src="img\feature_screens\information_section.jpg" width="800px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\information_section.jpg" width="800px">
 
 #### Refer To Report
 Cometa will display a list of network responses within the step report. This list will show which network responses were received during each step. Specifically, if a step takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
@@ -59,15 +59,15 @@ In the OPTIONS section of the Step Report, you should find the following icon.
 
 1. This indicates that the network header has been recorded and does have vulnerabilities.
 
-    <img width="300px" src="img\feature_screens\vulnerability_Indicator.jpg">
+    <img width="300px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\vulnerability_Indicator.jpg">
     <br><br>
 1. This indicates that the network header has been recorded and does not have vulnerabilities.
 
-    <img width="300px" src="img\feature_screens\logging_Indicator.jpg">
+    <img width="300px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\logging_Indicator.jpg">
     <br><br>
 1. Click on the icon shown above to view the list of responses.
 
-     <img width="800px" src="img\feature_screens\JQ_Screen.jpg">
+     <img width="800px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\JQ_Screen.jpg">
 
 1. The JSON data can be analyzed using JQ patterns. Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) to learn about patterns 
 
@@ -83,7 +83,7 @@ This provides instructions on how to configure and use the email feature to send
 1. **In the create Feature screen navigate to the EMAIL TEMPLATE section**
    <br>
    <br>
-    <img width="1000px" src="img\email\email_template.png">
+    <img width="1000px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\email\email_template.png">
 
 2. **Add Recipient Email Addresses**:
     - In the field labeled "Email address, use tab to separate emails," enter the email addresses of the recipients. Separate multiple email addresses by pressing       the `Tab` key.
