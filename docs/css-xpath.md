@@ -1,4 +1,8 @@
-<img src="img/logos/COMETA_Logo_Y_W.png" width="600px"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+</picture>
 
 <br />
 
@@ -48,7 +52,7 @@ If you are familiar with xpath and want to see details, go directly to the xpath
 
 In the world everything is classified to discern one thing from another. For instance, someone can have a cat as a pet which in order to be identified and distinguished from the a different cat, is given a name, a gender, a breed, etc. The same thing happens with websites, as each element has its type, class, name, id, etc. Behind the scenes of a webpage there is a source code written in HTML language and the result will vary depending of what tag is used or what properties are given to this.
 
-<img src="img/webpage.png" width="600px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/webpage.png" width="600px">
 
 ### 2. What are CSS selectors?<a name="CSS_SE"></a>
 
@@ -148,7 +152,7 @@ Example:
 
 - _//div//span_
 
-<img src="img/Ex1.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex1.png">
 
 ### Attribute selectors<a name="ATT_XP"></a>
 
@@ -201,7 +205,7 @@ Example:
 
 - _//div[@class]_
 
-<img src="img/Ex2.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex2.png">
 
 ### Order selectors<a name="ORD_XP"></a>
 
@@ -242,7 +246,7 @@ Example:
 
 - _//div[4]_
 
-<img src="img/Ex3.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex3.png">
 
 ### Siblings<a name="SIB_XP"></a>
 
@@ -277,7 +281,7 @@ Example:
 
 - _//div/following-sibling::span_
 
-<img src="img/Ex4.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex4.png">
 
 ### Jquery selectors<a name="JQU_XP"></a>
 
@@ -310,7 +314,7 @@ Example:
 
 - _//div/@class_
 
-<img src="img/Ex5.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex5.png">
 
 ### Other selectors<a name="OTH_XP"></a>
 
@@ -401,7 +405,7 @@ Example:
 
 - _/html/body/cometa/header/div[1]/div[1]/div[1]_
 
-<img src="img/Ex6.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex6.png">
 
 ### Predicates<a name="PRD_XP"></a>
 
@@ -488,7 +492,7 @@ Example:
 
 - _//div[last()]_
 
-<img src="img/Ex7.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex7.png">
 
 ### Chaining order<a name="COR_XP"></a>
 
@@ -502,11 +506,11 @@ Example:
 
 - _//div[1]/div_
 
-<img src="img/Ex8.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex8.png">
 
 - _//div/div[1]_
 
-<img src="img/Ex9.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex9.png">
 
 ### Node functions<a name="NFC_XP"></a>
 
@@ -545,7 +549,7 @@ Example:
 
 - _//span[text()="co."]_
 
-<img src="img/Ex10.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex10.png">
 
 
 ### Boolean functions<a name="BFC_XP"></a>
@@ -565,7 +569,7 @@ Example:
 
 - _//span[not(text()="co.")]_
 
-<img src="img/Ex11.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex11.png">
 
 ### Type conversion<a name="TFC_XP"></a>
 
@@ -642,7 +646,7 @@ Example:
 
 - _//div[string-length("abc")]_
 
-<img src="img/Ex12.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex12.png">
 
 ### Unions<a name="UNI_XP"></a>
 
@@ -656,7 +660,7 @@ Example:
 
 - _//div/div/div/div | //span_
 
-<img src="img/Ex13.png">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex13.png">
 
 <br/>
 
