@@ -155,7 +155,7 @@ We’re here to support you:
 - Black: `#191919`
 
 ### Logos
-See [Logos Section](#design) for all supported formats.
+See [Logos Section](img/logos) for all supported formats.
 
 ---
 
