@@ -111,8 +111,8 @@ Here are some direct links to core guides:
 - 🧩 [Step Library](docs/cometa_actions.md)
 - 🧠 [Selectors Guide](docs/css-xpath.md)
 - 🔧 [REST API](docs/REST-API.md)
-- ❓ [FAQ](FAQ.md)
-- ❓ [Questions](questions.md)
+- ❓ [FAQ](docs/FAQ.md)
+- ❓ [Questions](docs/questions.md)
 
 ---
 
