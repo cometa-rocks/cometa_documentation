@@ -124,7 +124,7 @@ We’d love your help to improve Cometa! Start with:
 # Make your changes
 # Submit a pull request ✨
 ```
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) (coming soon).
+See [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ---
 
