@@ -14,6 +14,7 @@ Here are some of the questions that we have received on how to test something in
 
 - [Can you create conditions?](#question1)
 - [Randomly select/click](#question2)
+- For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5
 
 <br />
 
