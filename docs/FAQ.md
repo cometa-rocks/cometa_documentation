@@ -5,43 +5,8 @@
 </picture>
 
 # FAQ & Common Questions
-
-<div style="max-width: 600px; margin: 30px auto; position: relative;">
-  <input type="text" id="faqSearch" placeholder="🔍 Search questions..." style="width: 100%; padding: 12px 20px; border: 2px solid #e0e0e0; border-radius: 25px; font-size: 16px; transition: all 0.3s ease; outline: none;" onkeyup="searchFAQ()">
-  <style>
-    #faqSearch:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
-    }
-    #faqSearch::placeholder {
-      color: #999;
-    }
-  </style>
-</div>
-
-<script>
-function searchFAQ() {
-  const input = document.getElementById('faqSearch');
-  const filter = input.value.toLowerCase();
-  const questions = document.getElementsByTagName('h3');
-  
-  for (let i = 0; i < questions.length; i++) {
-    const question = questions[i];
-    const text = question.textContent || question.innerText;
-    const answer = question.nextElementSibling;
-    
-    if (text.toLowerCase().indexOf(filter) > -1 || 
-        (answer && answer.textContent.toLowerCase().indexOf(filter) > -1)) {
-      question.style.display = "";
-      if (answer) answer.style.display = "";
-    } else {
-      question.style.display = "none";
-      if (answer) answer.style.display = "none";
-    }
-  }
-}
-</script>
-
+> [!TIP]
+> -  Use your browser's search (Ctrl+F or Cmd+F) to find specific topics
 ## Table of Contents
 - [General Framework and Functionality](#general-framework-and-functionality)
 - [Database Testing](#database-testing)
