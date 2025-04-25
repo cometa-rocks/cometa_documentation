@@ -1,5 +1,8 @@
-
-![img](img/logos/COMETA_Logo_Y_W.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+</picture>
 
 <h1>FAQ & Common Questions</h1>
 
@@ -37,7 +40,7 @@ Cometa offers REST API. Anything you can do from the frontend, you can to in the
 <br>
 E.g. click on "..." of a folder and run all tests inside.
 <br>
-![img](img/runAllFeatures.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/runAllFeatures.png)
 
 <b> 9. Executing smoke and regression test cases feature-wise?</b><br>
 See https://www.youtube.com/watch?v=So_I8CjoRPI - Minute around 5:00
@@ -94,7 +97,7 @@ Sharing Features between installations per copy and import - without transportat
 
 <b>19. How to verify if two strings are exactly the same in the framework</b><br>
 With action ```Assert last API call```, using JQ, we can compare strings such as:
-![img](img/stringCompare.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/stringCompare.png)
 <br>
 In this example we compare the color of an object and check if the output is true
 
@@ -102,7 +105,7 @@ In this example we compare the color of an object and check if the output is tru
 <b> 20. What is the difference between equals and == when comparing strings?</b><br>
 As of now there is no equals() filter in JQ, ```==``` is used to compare both strings and objects alike.
 <br>
-![img](img/stringAndObjectComparison.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/stringAndObjectComparison.png)
 
 
 <b> 21. How to compare two strings while ignoring their case in the framework</b><br>
@@ -112,7 +115,7 @@ For example:
 <br>
  ``` 'response.content.[0].data.color | ascii_downcase == "cloudy white"' ``` 
 <br>
-![img](img/caseInsensitive.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/caseInsensitive.png)
 
 
 <b> 22. Can equalsIgnoreCase be used to compare strings with special characters?</b><br>
@@ -164,7 +167,7 @@ Example:
 ```0```
 
 <b> 33. How to check if a string matches a specific regular expression in the framework</b><br>
-![img](img/regularExpression.png)<br>
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/regularExpression.png)<br>
 In this example we use a regular expression to check if the input is a price number followed by a '.' followed by cents<br>
 Also added ```tostring``` to parse the price as a ```string```.
 
@@ -177,7 +180,7 @@ Example for Phone (Spanish format 9 digit): ```^[0-9]{9}$```
 
 <b> 35. How to replace a specific character or substring in a string in the framework</b><br>
 use ```gsub()``` method<br>
-![img](img/replaceString.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/replaceString.png)
 
 
 
@@ -226,7 +229,7 @@ Example: Cloudy White<br>
 
 <b> 47. How to compare two strings lexicographically in the framework</b><br>
 Use ```==```, ```>```, ```<``` for lexicographical comparison<br>
-![img](img/lexicographicComparison.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/lexicographicComparison.png)
 
 <b> 48. What does a negative, zero, or positive return value from compareTo indicate?</b><br>
 jq doesn't have ```compareTo```, but lexicographic comparison is done using ```<```, ```>```, and ```==```.
@@ -260,7 +263,7 @@ after explosion -> ```[67,108,111,117,100,121,32,87,104,105,116,101]```
 select index ```7``` -> ```87```
 Insert it into a single element array ```[87]```, this is because implode requires an array, hence adding ```[.]```
 Finally we ```implode```, reversing ```[87]``` into -> ```W```<br>
-![img](img/extractCharacter.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/extractCharacter.png)
 
 <b> 56. What happens if the index is out of bounds?</b><br>
 Returns ```null``` if the index is out of range.
@@ -275,7 +278,7 @@ We use ```split()``` method
 
 <b> 59. My user role is ANALYSIS. Is it okay for me to lead my project, or is it possible to have project/department-wise admin roles?</b><br>
 Cometa comes with a lot of capabilities, which can be assigned to a role:<br>
-![img](img/rolePermissions.png)
+![img](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/rolePermissions.png)
 In the screenshot you can see that "Access to Edit a department" can be given to a certain role like "Department Admin" to add or delete users.
 
 <b> 60. How can we assign and manage project/department-wise admin roles?</b><br>
