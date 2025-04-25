@@ -19,40 +19,42 @@ Here are the most frequently used xpath selectors:
 
 If you are familiar with xpath and want to see details, go directly to the xpath topic you are looking for or read through the introduction of HTML and CSS before.
 
-1. [How is an HTML page structured?](#how-is-an-html-page-structured)
-2. [What are CSS selectors?](#CSS_SE)
-3. [What is XPath](#XPATH_SE)
-4. [Using XPath](#USEXP_SE)
-    1. [Descendant selectors](#DES_XP)
-    2. [Attribute selectors](#ATT_XP)
-    3. [Order selectors](#ORD_XP)
-    4. [Siblings](#SIB_XP)
-    5. [Jquery selectors](#JQU_XP)
-    6. [Other selectors](#OTH_XP)
-    7. [Steps and axes](#STAX_XP)
-    8. [Prefixes](#PRF_XP)
-    9. [Predicates](#PRD_XP)
-    10. [Operators](#OPE_XP)
-    11. [Using nodes](#NOD_XP)
-    12. [Indexing](#IND_XP)
-    13. [Chaining order](#COR_XP)
-    14. [Node functions](#NFC_XP)
-    15. [Boolean functions](#BFC_XP)
-    16. [Type conversion](#TFC_XP)
-    17. [String functions](#SFC_XP)
-    18. [Axes](#AXE_XP)
-    19. [Unions](#UNI_XP)
-5. [Support](#SUPPORT_SE)
+1. [How is an HTML page structured?](#html-structure)
+2. [What are CSS selectors?](#css-selectors)
+3. [What is XPath](#xpath)
+4. [Using XPath](#using-xpath)
+    * [Descendant selectors](#descendant)
+    * [Attribute selectors](#attribute)
+    * [Order selectors](#order)
+    * [Siblings](#siblings)
+    * [Jquery selectors](#jquery)
+    * [Other selectors](#other)
+    * [Steps and axes](#steps)
+    * [Prefixes](#prefixes)
+    * [Predicates](#predicates)
+    * [Operators](#operators)
+    * [Using nodes](#nodes)
+    * [Indexing](#indexing)
+    * [Chaining order](#chaining)
+    * [Node functions](#node-func)
+    * [Boolean functions](#boolean)
+    * [Type conversion](#type)
+    * [String functions](#string)
+    * [Axes](#axes)
+    * [Unions](#unions)
+5. [Support](#support)
 
 <br/>
 
+<a id="html-structure"></a>
 ### 1. How is an HTML page structured?
 
 In the world everything is classified to discern one thing from another. For instance, someone can have a cat as a pet which in order to be identified and distinguished from the a different cat, is given a name, a gender, a breed, etc. The same thing happens with websites, as each element has its type, class, name, id, etc. Behind the scenes of a webpage there is a source code written in HTML language and the result will vary depending of what tag is used or what properties are given to this.
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/webpage.png" width="600px">
 
-### 2. What are CSS selectors?<a name="CSS_SE"></a>
+<a id="css-selectors"></a>
+### 2. What are CSS selectors?
 
 Whenever you want to design or edit an webpage, you will a specific tool to said task. Css selectors are a tool to decide which element of the HTML code needs to be selected. This method can be used to call any component expected to be interacted with or be modified by the user. Knowing that, the user must learn a set of rules and the patterns used to select the desired elements. Here are a few basic examples:
 
@@ -89,13 +91,14 @@ Whenever you want to design or edit an webpage, you will a specific tool to said
     </tr>
 <table>
 
-### 3. What is XPath?<a name="XPATH_SE"></a>
+<a id="xpath"></a>
+### 3. What is XPath
 
-XPath stands for XML Path. It’s a query language that helps identify elements from an XML document. It uses expressions that navigate into an XML document in a way that can be traced from the start to the intended element—like forming a path from the start. Despite being harder to learn and master, XPath has multiple advantages over CSS selectors:
+XPath stands for XML Path. It's a query language that helps identify elements from an XML document. It uses expressions that navigate into an XML document in a way that can be traced from the start to the intended element—like forming a path from the start. Despite being harder to learn and master, XPath has multiple advantages over CSS selectors:
 
 - Creating in XPath is more flexible than in CSS Selector.
 
-- When you don’t know the name of an element, you can use contains to search for possible matches.
+- When you don't know the name of an element, you can use contains to search for possible matches.
 
 - Queries are compact, easy to type and read and easily parsed and can return any number of results, including zero.
 
@@ -103,11 +106,13 @@ XPath stands for XML Path. It’s a query language that helps identify elements 
 
 - It can be used in JavaScript, Java, XML Schema, PHP, Python, C, C++, and lots of other languages.
 
-### 4. Using XPath<a name="USEXP_SE"></a>
+<a id="using-xpath"></a>
+### 4. Using XPath
 
 At first glance learning XPath might seem a little bit complex, but once mastered, it transforms into a very powerful tool. Here is a list of the XPath selectors and its equivalent to CSS selectors:
 
-### Descendant selectors<a name="DES_XP"></a>
+<a id="descendant"></a>
+### Descendant selectors
 
 Descendant selectors are used to specify the starting point of a selection.
 
@@ -152,7 +157,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex1.png">
 
-### Attribute selectors<a name="ATT_XP"></a>
+<a id="attribute"></a>
+### Attribute selectors
 
 Attribute selectors are used to specify the attributes of the elements to be selected.
 
@@ -205,7 +211,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex2.png">
 
-### Order selectors<a name="ORD_XP"></a>
+<a id="order"></a>
+### Order selectors
 
 Order selectors are used to specify the index of the element to be selected inside of a node.
 
@@ -246,7 +253,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex3.png">
 
-### Siblings<a name="SIB_XP"></a>
+<a id="siblings"></a>
+### Siblings
 
 Sibling selections are an extension of the descendant selectors.
 
@@ -281,7 +289,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex4.png">
 
-### Jquery selectors<a name="JQU_XP"></a>
+<a id="jquery"></a>
+### Jquery selectors
 
 The following XPath selectors have the same functionality as if you were to use JQuery to select an element.
 
@@ -314,7 +323,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex5.png">
 
-### Other selectors<a name="OTH_XP"></a>
+<a id="other"></a>
+### Other selectors
 
 <table>
     <tr>
@@ -357,7 +367,8 @@ Example:
 
 Example:
 
-### Steps and axes<a name="STAX_XP"></a>
+<a id="steps"></a>
+### Steps and axes
 
 A step in XPath is the name of the element or the function used for the query.
 
@@ -380,7 +391,7 @@ An axis represents a relationship to the context (current) node and is used to l
         <td>Selects an element below the main element, not necessarily directly below</td>
     </tr>
     <tr>
-        <td colspan="3">Separate your steps with /. Use two (//) if you don’t want to select direct children.</td>
+        <td colspan="3">Separate your steps with /. Use two (//) if you don't want to select direct children.</td>
     </tr>
     <tr>
         <td>Prefix //</td>
@@ -405,7 +416,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex6.png">
 
-### Predicates<a name="PRD_XP"></a>
+<a id="predicates"></a>
+### Predicates
 
 Predicates are used to find a specific node or a node that contains a specific value. They are always embedded in square brackets.
 
@@ -422,7 +434,8 @@ Predicates are used to find a specific node or a node that contains a specific v
 
 Example:
 
-### Operators<a name="OPE_XP"></a>
+<a id="operators"></a>
+### Operators
 
 <table>
     <tr>
@@ -455,7 +468,8 @@ Example:
     </tr>
 </table>
 
-### Indexing<a name="IND_XP"></a>
+<a id="indexing"></a>
+### Indexing
 
 These are different ways to select and element on a specified index.
 
@@ -492,7 +506,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex7.png">
 
-### Chaining order<a name="COR_XP"></a>
+<a id="chaining"></a>
+### Chaining order
 
 In a XPath query the order is very important as it will affect the final result. The following examples will return different values.
 
@@ -510,7 +525,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex9.png">
 
-### Node functions<a name="NFC_XP"></a>
+<a id="node-func"></a>
+### Node functions
 
 <table>
     <tr>
@@ -549,8 +565,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex10.png">
 
-
-### Boolean functions<a name="BFC_XP"></a>
+<a id="boolean"></a>
+### Boolean functions
 
 <table>
     <tr>
@@ -569,7 +585,8 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex11.png">
 
-### Type conversion<a name="TFC_XP"></a>
+<a id="type"></a>
+### Type conversion
 
 <table>
     <tr>
@@ -590,7 +607,8 @@ Example:
     </tr>
 </table>
 
-### String functions<a name="SFC_XP"></a>
+<a id="string"></a>
+### String functions
 
 <table>
     <tr>
@@ -646,7 +664,55 @@ Example:
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex12.png">
 
-### Unions<a name="UNI_XP"></a>
+<a id="axes"></a>
+### Axes
+
+Axes are used to navigate through the document tree.
+
+<table>
+    <tr>
+        <th>Axis</th>
+        <th>Example</th>
+        <th>Explanation</th>
+    </tr>
+    <tr>
+        <td>Axe /</td>
+        <td>//ul/li/a</td>
+        <td>Selects an element directly below the main element</td>
+    </tr>
+    <tr>
+        <td>Axe //</td>
+        <td>//[@id="list"]//a</td>
+        <td>Selects an element below the main element, not necessarily directly below</td>
+    </tr>
+    <tr>
+        <td colspan="3">Separate your steps with /. Use two (//) if you don't want to select direct children.</td>
+    </tr>
+    <tr>
+        <td>Prefix //</td>
+        <td>//hr[@class='edge']</td>
+        <td>Starts the selection from any element</td>
+    </tr>
+    <tr>
+        <td>Prefix ./</td>
+        <td>./a</td>
+        <td>Starts the selection from a position relative to a previously selected element</td>
+    </tr>
+    <tr>
+        <td>Prefix /</td>
+        <td>/html/body/div</td>
+        <td>Starts the selection from the first line of the code</td>
+    </tr>
+</table>
+
+Example:
+
+- _/html/body/cometa/header/div[1]/div[1]/div[1]_
+
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex6.png">
+
+<a id="unions"></a>
+### Unions
 
 In XPath it is possible to join two or more independent queries into a single one
 
@@ -664,5 +730,6 @@ Example:
 
 As you can see, aside from the already existing CSS selectors XPath offers a greater amount of selection options vastly expanding the querying possibilities. Furthermore, as XPath can be used in many different programming languages, it can become a very useful, flexible and powerful tool in software developing and testing.
 
-### 5. Support<a name="SUPPORT_SE"></a>
+<a id="support"></a>
+### 5. Support
 For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5
