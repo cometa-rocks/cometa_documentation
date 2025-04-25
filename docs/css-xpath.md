@@ -19,7 +19,7 @@ Here are the most frequently used xpath selectors:
 
 If you are familiar with xpath and want to see details, go directly to the xpath topic you are looking for or read through the introduction of HTML and CSS before.
 
-1. [How is an HTML page structured?](#HTML_SE)
+1. [How is an HTML page structured?](#how-is-an-html-page-structured)
 2. [What are CSS selectors?](#CSS_SE)
 3. [What is XPath](#XPATH_SE)
 4. [Using XPath](#USEXP_SE)
@@ -46,9 +46,7 @@ If you are familiar with xpath and want to see details, go directly to the xpath
 
 <br/>
 
-# <span class="gold">Co.</span>meta selectors
-
-### 1. How is an HTML page structured?<a name="HTML_SE"></a>
+### 1. How is an HTML page structured?
 
 In the world everything is classified to discern one thing from another. For instance, someone can have a cat as a pet which in order to be identified and distinguished from the a different cat, is given a name, a gender, a breed, etc. The same thing happens with websites, as each element has its type, class, name, id, etc. Behind the scenes of a webpage there is a source code written in HTML language and the result will vary depending of what tag is used or what properties are given to this.
 
