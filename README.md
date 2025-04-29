@@ -12,6 +12,7 @@
   [![Join our Community on Discord](https://img.shields.io/discord/810822044367061042?label=Join%20our%20Community&logo=discord)](https://discord.gg/PUxt5bsRej)
   [![YouTube Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube&style=flat-square)](https://youtu.be/s86rnmbLDpc)
   [![Twitter Follow](https://img.shields.io/twitter/follow/cometa_rocks?style=social)](https://twitter.com/cometa_rocks)
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 
 
@@ -110,8 +111,8 @@ Here are some direct links to core guides:
 - 🧩 [Step Library](docs/cometa_actions.md)
 - 🧠 [Selectors Guide](docs/css-xpath.md)
 - 🔧 [REST API](docs/REST-API.md)
-- ❓ [FAQ](FAQ.md)
-- ❓ [Questions](questions.md)
+- ❓ [FAQ](docs/FAQ.md)
+- ❓ [Questions](docs/questions.md)
 
 ---
 
@@ -123,7 +124,7 @@ We’d love your help to improve Cometa! Start with:
 # Make your changes
 # Submit a pull request ✨
 ```
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) (coming soon).
+See [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ---
 
@@ -154,7 +155,7 @@ We’re here to support you:
 - Black: `#191919`
 
 ### Logos
-See [Logos Section](#design) for all supported formats.
+See [Logos Section](img/logos) for all supported formats.
 
 ---
 
