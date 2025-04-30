@@ -67,7 +67,7 @@ Next, choose the mobile container and start it:
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/start.png" width="400px">
 Once started, the emulator can be paused if needed.
 
-<img src="img/mobile_feature/running_to_pause.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/running_to_pause.png" width="400px">
 If paused, it can be restarted to resume operation.
 
 <img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/paused_to_restart.png" width="400px">
