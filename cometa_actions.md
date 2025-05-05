@@ -308,7 +308,9 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		</td> 
 	</tr> 
 	<tr>
-	    <td>Assert "{value_one}" to be the same as "{value_two}"</td>
+	    <td>
+        Assert "{value_one}" to be the same as "{value_two}"
+        </td>
         <td>
         Compares whether <code>{value_one}</code> is exactly equal to <code>{value_two}</code>. Supports both variable-to-value and variable-to-variable comparisons.
         </td>
@@ -320,8 +322,11 @@ If you have suggestions or needs for a step / actions that you would rather impl
         </td>
 	</tr>
 	<tr>
-		<td>Assert "{value_one}" to contain "{value_two}"</td>
-		<td>Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.
+		<td>
+        Assert "{value_one}" to contain "{value_two}"
+        </td>
+		<td>
+        Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.
         </td>
 		<td>
 		    <b>Example 1:</b> Check if variable contains value<br>
