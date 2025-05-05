@@ -308,25 +308,27 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		</td> 
 	</tr> 
 	<tr>
-	        <td>Assert "{value_one}" to be same as "{value_two}"</td>
-		<td>Compares if the value of <code>{value_one}</code> is exactly the same as <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.</td>
-	        <td>
-	            <b>Example 1:</b> Compare variable to value<br>
-	            <code>Assert "$expected_value" to be same as "100"</code><br><br>
-	            <b>Example 2:</b> Compare value to variable<br>
-	            <code>Assert "100" to be same as "$expected_value"</code>
-	        </td>
+	    <td>Assert "{value_one}" to be the same as "{value_two}"</td>
+        <td>
+        Compares whether <code>{value_one}</code> is exactly equal to <code>{value_two}</code>. Supports both variable-to-value and variable-to-variable comparisons.
+        <br><br>
+            <b>Example 1:</b> Compare a variable to a value<br>
+                <code>Assert "$expected_value" to be same as "100"</code><br>
+            <b>Example 2:</b> Compare a value to a variable<br>
+                <code>Assert "100" to be same as "$expected_value"</code>
+        </td>
 	</tr>
 	<tr>
 		<td>Assert "{value_one}" to contain "{value_two}"</td>
-		<td>Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.</td>
+		<td>Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.
+        </td>
 		<td>
 		    <b>Example 1:</b> Check if variable contains value<br>
 		    <code>Assert "$response_message" to contain "success"</code><br><br>
 		    <b>Example 2:</b> Check if value contains variable<br>
 		    <code>Assert "success message" to contain "$response_message"</code>
 		</td>
-    	</tr>
+    </tr>
 </table>
 
 ### CSS selectors actions<a id="CSS_AC"></a>
