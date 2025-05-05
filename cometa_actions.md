@@ -311,11 +311,12 @@ If you have suggestions or needs for a step / actions that you would rather impl
 	    <td>Assert "{value_one}" to be the same as "{value_two}"</td>
         <td>
         Compares whether <code>{value_one}</code> is exactly equal to <code>{value_two}</code>. Supports both variable-to-value and variable-to-variable comparisons.
-        <br><br>
+        </td>
+        <td>
             <b>Example 1:</b> Compare a variable to a value<br>
-                <code>Assert "$expected_value" to be same as "100"</code><br>
+            <code>Assert "$expected_value" to be same as "100"</code><br>
             <b>Example 2:</b> Compare a value to a variable<br>
-                <code>Assert "100" to be same as "$expected_value"</code>
+            <code>Assert "100" to be same as "$expected_value"</code>
         </td>
 	</tr>
 	<tr>
