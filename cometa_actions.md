@@ -1,4 +1,8 @@
-<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+</picture>
 
 
 # Co.meta steps table of contents
@@ -292,48 +296,69 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		<th>Example</th> 
 	</tr> 
 	<tr> 
-		<td>Validate if "{selector}" present in the browser in "{time}" seconds and save result in "{variable}"</td> 
-		<td>Checks if the specified selector is present in the browser within the given time and saves the result to a variable.</td> 
+
+		<td>
+        Validate if "{selector}" present in the browser in "{time}" seconds and save result in "{variable}"</td> 
+
+		<td>
+        Checks if the specified selector is present in the browser within the given time and saves the result to a variable.
+        </td> 
+
 		<td>
 			<b>Example 1:</b><br>
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" present in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
+
 	</tr> 
 	<tr> 
-		<td>Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"</td> 
-		<td>Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
+		<td>
+        Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"
+        </td> 
+
+		<td>
+        Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.
+        </td>
+
 		<td>
 			<b>Example 1:</b><br>
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
 	</tr> 
-	<tr>
-	    <td>
+    <tr>
+
+        <td>
         Assert "{value_one}" to be the same as "{value_two}"
         </td>
+
         <td>
         Compares whether <code>{value_one}</code> is exactly equal to <code>{value_two}</code>. Supports both variable-to-value and variable-to-variable comparisons.
         </td>
+
         <td>
             <b>Example 1:</b> Compare a variable to a value<br>
-            <code>Assert "$expected_value" to be same as "100"</code><br>
+                <code>Assert "$expected_value" to be same as "100"</code><br>
             <b>Example 2:</b> Compare a value to a variable<br>
-            <code>Assert "100" to be same as "$expected_value"</code>
+                <code>Assert "100" to be same as "$expected_value"</code>
         </td>
+
 	</tr>
-	<tr>
-		<td>
+    <tr>
+
+        <td>
         Assert "{value_one}" to contain "{value_two}"
         </td>
+
 		<td>
         Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.
         </td>
+
 		<td>
 		    <b>Example 1:</b> Check if variable contains value<br>
-		    <code>Assert "$response_message" to contain "success"</code><br><br>
+		        <code>Assert "$response_message" to contain "success"</code><br><br>
 		    <b>Example 2:</b> Check if value contains variable<br>
-		    <code>Assert "success message" to contain "$response_message"</code>
+		        <code>Assert "success message" to contain "$response_message"</code>
 		</td>
+
     </tr>
 </table>
 
