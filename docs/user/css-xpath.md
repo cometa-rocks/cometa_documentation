@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 
@@ -51,7 +51,7 @@ If you are familiar with xpath and want to see details, go directly to the xpath
 
 In the world everything is classified to discern one thing from another. For instance, someone can have a cat as a pet which in order to be identified and distinguished from the a different cat, is given a name, a gender, a breed, etc. The same thing happens with websites, as each element has its type, class, name, id, etc. Behind the scenes of a webpage there is a source code written in HTML language and the result will vary depending of what tag is used or what properties are given to this.
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/webpage.png" width="600px">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/webpage.png" width="600px">
 
 <a id="css-selectors"></a>
 ### 2. What are CSS selectors?
@@ -155,7 +155,7 @@ Example:
 
 - _//div//span_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex1.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex1.png">
 
 <a id="attribute"></a>
 ### Attribute selectors
@@ -209,7 +209,7 @@ Example:
 
 - _//div[@class]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex2.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex2.png">
 
 <a id="order"></a>
 ### Order selectors
@@ -251,7 +251,7 @@ Example:
 
 - _//div[4]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex3.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex3.png">
 
 <a id="siblings"></a>
 ### Siblings
@@ -287,7 +287,7 @@ Example:
 
 - _//div/following-sibling::span_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex4.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex4.png">
 
 <a id="jquery"></a>
 ### Jquery selectors
@@ -321,7 +321,7 @@ Example:
 
 - _//div/@class_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex5.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex5.png">
 
 <a id="other"></a>
 ### Other selectors
@@ -414,7 +414,7 @@ Example:
 
 - _/html/body/cometa/header/div[1]/div[1]/div[1]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex6.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex6.png">
 
 <a id="predicates"></a>
 ### Predicates
@@ -504,7 +504,7 @@ Example:
 
 - _//div[last()]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex7.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex7.png">
 
 <a id="chaining"></a>
 ### Chaining order
@@ -519,11 +519,11 @@ Example:
 
 - _//div[1]/div_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex8.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex8.png">
 
 - _//div/div[1]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex9.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex9.png">
 
 <a id="node-func"></a>
 ### Node functions
@@ -563,7 +563,7 @@ Example:
 
 - _//span[text()="co."]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex10.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex10.png">
 
 <a id="boolean"></a>
 ### Boolean functions
@@ -583,7 +583,7 @@ Example:
 
 - _//span[not(text()="co.")]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex11.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex11.png">
 
 <a id="type"></a>
 ### Type conversion
@@ -662,7 +662,7 @@ Example:
 
 - _//div[string-length("abc")]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex12.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex12.png">
 
 <a id="axes"></a>
 ### Axes
@@ -709,7 +709,7 @@ Example:
 
 - _/html/body/cometa/header/div[1]/div[1]/div[1]_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex6.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex6.png">
 
 <a id="unions"></a>
 ### Unions
@@ -724,7 +724,7 @@ Example:
 
 - _//div/div/div/div | //span_
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/Ex13.png">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/Ex13.png">
 
 <br/>
 

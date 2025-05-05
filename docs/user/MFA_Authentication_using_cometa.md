@@ -1,4 +1,8 @@
-<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+</picture>
 
 # Automation of Muti Factor Authentication with Cometa
 Multi factor authentication which are done by One time password, those can be automated using Cometa 
@@ -100,7 +104,7 @@ The automation of two-factor authentication with Cometa requires two steps.
     * Please follow the steps, as shown in the screenshot below
     <br>
     <br>
-    <img src="img/mfa_screens/MFA_login_test.png" width="700px"/>
+    <img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/MFA_login_test.png" width="700px"/>
 
 
 
