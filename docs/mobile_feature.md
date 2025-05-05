@@ -1,4 +1,8 @@
-<img src="img/logos/COMETAROCKS_LogoEslog_Y_W.png" width="600px"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+</picture>
 
 # Co.meta mobile feature
 1. [Introduction](#introduction)
@@ -42,77 +46,77 @@ To work with the feature, follow these steps:
 
 Go to the feature of the desired department and click on Modify.
 
-<img src="img/mobile_feature/modify.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/modify.png" width="400px">
 
 Click on Start Mobile or use the shortcut <strong>shortcut(S)</strong>:
 
-<img src="img/mobile_feature/information.png" width="900px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/information.png" width="900px">
 
 ### Landing tree
 
 If working from the Landing Tree is preferred, select the desired department to use the mobile device functionality as follows:
 
-<img src="img/mobile_feature/tree_mobile_device.png" width="200px" height="300px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/tree_mobile_device.png" width="200px" height="300px">
 
 First, select the department and start the desired mobile device.
 
-<img src="img/mobile_feature/Select_department.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/Select_department.png" width="400px">
 
 Next, choose the mobile container and start it:
 
-<img src="img/mobile_feature/start.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/start.png" width="400px">
 Once started, the emulator can be paused if needed.
 
-<img src="img/mobile_feature/running_to_pause.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/running_to_pause.png" width="400px">
 If paused, it can be restarted to resume operation.
 
-<img src="img/mobile_feature/paused_to_restart.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/paused_to_restart.png" width="400px">
 
 Note: If the package is not available, upload it through the Upload option in <strong>Edit Feature</strong>, ensuring the package is in APK format.
 Additionally, an APK package can be installed on the mobile device.
 
-<img src="img/mobile_feature/upload_apk.png" width="1000px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/upload_apk.png" width="1000px">
 
 Now, go to the Emulator Feature, click on the more_vert (⋮) icon, and select <strong>Modify</strong>. From there, upload the package in APK format to make it available.
 
-<img src="img/mobile_feature/more_vert_emulator.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/more_vert_emulator.png" width="400px">
 
 Once in the Modify section, four tabs will be displayed: Information, Install APK, Installed APK, and Share Emulator.
 
 Install APK: Allows uploading an APK file for installation.
 
-<img src="img/mobile_feature/dialog_install_apk.png" width="1000px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/dialog_install_apk.png" width="1000px">
 
 Installed APK: Displays a list of already installed APKs.
 
-<img src="img/mobile_feature/dialog_installed_apk.png" width="1000px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/dialog_installed_apk.png" width="1000px">
 
 Share Emulator: Provides options to share the emulator instance.
 
-<img src="img/mobile_feature/dialog_share_emulator.png" width="1000px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/dialog_share_emulator.png" width="1000px">
 
 Feature Emulator Shared: Shows the emulator in shared mode.
 
-<img src="img/mobile_feature/emulator_shared.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/emulator_shared.png" width="400px">
 
 More information:
 
 To view additional details, click on more options:
 
-<img src="img/mobile_feature/more_info_mobile_device.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/more_info_mobile_device.png" width="400px">
 
 ### Shared Mobiles
 
 To view the mobile devices of other colleagues in the same department, scroll down until reaching "Shared Mobile."
 
-<img src="img/mobile_feature/shared.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/shared.png" width="400px">
 
 ### Live Steps
 
 Once the steps related to the mobile device are completed, access to the noVNC of the desired mobile will be available.
 When reaching the step where the mobile is loaded, the noVNC will become visible, allowing the mobile to be viewed.
 
-<img src="img/mobile_feature/live-steps.png" width="800px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/live-steps.png" width="800px">
 
 ### Main view
 
@@ -120,13 +124,13 @@ Once all steps are completed, the result will appear as the second icon (a camer
 If there is one mobile, it will display directly; if multiple, a dropdown will allow selection.
 Additionally, there is a 'Mobile' column that shows the mobile name.
 
-<img src="img/mobile_feature/result.png" width="1000px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/result.png" width="1000px">
 
 ### NoVNC Inspect
 
 <h4>1. noVNC</h4> 
 noVNC enables web-based access to VNC servers via browsers.
-<img src="img/mobile_feature/novnc.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/novnc.png" width="400px">
 
 <!-- noVNC Functionalities Table -->
 <table>
@@ -178,7 +182,7 @@ noVNC enables web-based access to VNC servers via browsers.
 
 <h4>2. Inspector</h4> 
 Appium Inspector identifies mobile app elements for automated testing.
-<img src="img/mobile_feature/inspect.png" width="400px">
+<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/mobile_feature/inspect.png" width="400px">
 
 <!-- Inspector Functionalities Table -->
 <table>
