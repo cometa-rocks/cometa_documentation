@@ -17,7 +17,6 @@
 - [Backend Resources](#backend-resources)
 - [Directory Layout](#directory-layout)
 - [Support](#support)
-- [Investing](#investing)
 - [License](#license)
 
 ## Quick Start
@@ -33,7 +32,7 @@ In corporate environments there are some things to know regarding Internet acces
 ### 1. Docker and Docker Compose
 Docker and Docker Compose run seamlessly on both Mac and Windows. Installations have been successfully carried out using Docker Desktop 4.25.2 on macOS 14.1 with Rosetta x86/amd64 emulation. Additionally, running WSL with Ubuntu is a viable option. The choice ultimately depends on your personal preference. Co.meta runs best on Linux, considering that Linux is its native environment. Please use Linux as the operating system. You can explore pre-built [Virtual Boxes](https://osboxes.org/) for your convenience.
 
-Minimum hardware requirements: 16GB RAM, 8 CPUs, 10GB of diskspace.
+### Minimum hardware requirements: 16GB RAM, 8 CPUs, 10GB of diskspace.
 
 ### 2. Internet Connection
 Co.meta needs to be able to fetch software from the internet. For example python libraries, pre-built containers with virtual browser.
@@ -111,7 +110,7 @@ Your server must be in sync with the global time - consider using [NTP](https://
 
 Why is this important? Because Co.meta supports Single Sign On Providers like oAuth from Gitlab, Github, Azure, Google, Facebook, Ping or others. And the cookie timestamp must be accurate.
 
-## Installation :fire:
+## Installation
 
 Co.meta normally is installed in less then 10 minutes. In case you are stuck for more than 5 minutes - please let us know. And please give us the opportunity to help you. We want to learn how you are using Co.meta and what problems you encounter. We are happy to help.
 
@@ -267,6 +266,8 @@ That's all, easy peasy.
 ```
 
 ## Support
+📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
+💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)
 
 See [Documentation](https://github.com/cometa-rocks/cometa_documentation) for in depth explanations how to use Co.meta.
 
