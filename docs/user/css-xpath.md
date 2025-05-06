@@ -30,10 +30,8 @@ If you are familiar with xpath and want to see details, go directly to the xpath
     * [Jquery selectors](#jquery)
     * [Other selectors](#other)
     * [Steps and axes](#steps)
-    * [Prefixes](#prefixes)
     * [Predicates](#predicates)
     * [Operators](#operators)
-    * [Using nodes](#nodes)
     * [Indexing](#indexing)
     * [Chaining order](#chaining)
     * [Node functions](#node-func)
@@ -732,4 +730,5 @@ As you can see, aside from the already existing CSS selectors XPath offers a gre
 
 <a id="support"></a>
 ### 5. Support
-For further questions or issues, please contact us at our email <tec_dev@cometa.rocks> or via Discord https://discord.gg/e3uBKHhKW5
+📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
+💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)

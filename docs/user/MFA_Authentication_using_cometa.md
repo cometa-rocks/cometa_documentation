@@ -70,7 +70,7 @@ The automation of two-factor authentication with Cometa requires two steps.
 
       Create one-time password of "{x}" digits using pairing-key "{value}" and save it to the encrypted variable "{variable_name}
         
-    Refer to the <a target="_blank" href="https://github.com/Cometa-rocks/Cometa_documentation/blob/main/Cometa_actions.md#:~:text=online%20excel%20viewer.-,Create%20one%2Dtime%20password%20of%20%22%7Bx%7D%22%20digits%20using,-pairing%2Dkey%20%22%7Bvalue">Create one-time password using Cometa </a>
+    Refer to the <a target="_blank" href="https://github.com/Cometa-rocks/Cometa_documentation/blob/main/docs/user/cometa_actions.md#:~:text=online%20excel%20viewer.-,Create%20one%2Dtime%20password%20of%20%22%7Bx%7D%22%20digits%20using,-pairing%2Dkey%20%22%7Bvalue">Create one-time password using Cometa </a>
 
 
     #### For illustration, you can automate the login screen of Cometa to test the functionality of the MFA automation feature

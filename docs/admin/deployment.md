@@ -32,7 +32,7 @@ In corporate environments there are some things to know regarding Internet acces
 ### 1. Docker and Docker Compose
 Docker and Docker Compose run seamlessly on both Mac and Windows. Installations have been successfully carried out using Docker Desktop 4.25.2 on macOS 14.1 with Rosetta x86/amd64 emulation. Additionally, running WSL with Ubuntu is a viable option. The choice ultimately depends on your personal preference. Co.meta runs best on Linux, considering that Linux is its native environment. Please use Linux as the operating system. You can explore pre-built [Virtual Boxes](https://osboxes.org/) for your convenience.
 
-### Minimum hardware requirements: 16GB RAM, 8 CPUs, 10GB of diskspace.
+#### Minimum hardware requirements: 16GB RAM, 8 CPUs, 10GB of diskspace.
 
 ### 2. Internet Connection
 Co.meta needs to be able to fetch software from the internet. For example python libraries, pre-built containers with virtual browser.
@@ -120,7 +120,7 @@ git clone https://github.com/cometa-rocks/cometa.git
 ```
 
 ### 2. Setup Authentication Provider
-To setup Google (for a more in detail guide [click here](./docs/GoogleAuthentication.md)):
+To setup Google:
 * Go to [Google Developer Console](https://console.cloud.google.com/)
 * Create an OAuth application
 * Add your domain to the allowed hosts
@@ -128,7 +128,7 @@ To setup Google (for a more in detail guide [click here](./docs/GoogleAuthentica
 * Set `redirect_uri` to `https://<domain>/callback` on your project's credential page
 * For further information please refer to [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/6158849?hl=en#zippy=)
 
-To setup Gitlab (for a more in detail guide [click here](./docs/GitAuthentication.md)):
+To setup Gitlab (for a more in detail guide [click here](../user/MFA_Authentication_preparation.md)):
 * Go to [git.amvara.de](https://git.amvara.de/)
 * Create a new account
 * Settings > Application > Add new application
@@ -269,7 +269,7 @@ That's all, easy peasy.
 📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
 💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)
 
-See [Documentation](https://github.com/cometa-rocks/cometa_documentation) for in depth explanations how to use Co.meta.
+See [Getting Started](../user/getting_started.md) for in depth explanations how to use Co.meta.
 
 Happy to see your e-Mail help - at - cometa.rocks.
 

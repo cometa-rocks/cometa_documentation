@@ -811,3 +811,7 @@ Removes a feature result by it's ID. It will also remove the parent run object i
 ###  <code>GET /backend/feature_runs/<run_id>/remove/</code>
 
 Removes a feature run by it's ID. It will also remove all child feature results.
+
+## Support
+📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
+💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)

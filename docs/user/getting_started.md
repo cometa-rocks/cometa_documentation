@@ -93,7 +93,7 @@ Once you're comfortable with basic tests, explore:
 - [Cometa Features](cometa_features.md) - Learn about advanced capabilities
 - [Step Library](cometa_actions.md) - Discover all available actions
 - [Selectors Guide](css-xpath.md) - Master element targeting
-- [REST API](REST-API.md) - Explore automation possibilities
+- [REST API](../developer/REST-API.md) - Explore automation possibilities
 
 #### Specialized Testing
 - [Mobile Testing](mobile_feature.md) - Test on mobile devices
@@ -101,14 +101,12 @@ Once you're comfortable with basic tests, explore:
 - [Load Testing](LOAD_TESTING.md) - Performance testing guide
 
 #### Additional Resources
-- [Tutorials](tutorials.md) - Step-by-step guides
 - [FAQ](FAQ.md) - Common questions and answers
 - [Questions](questions.md) - Additional Q&A
 
 ## Need Help?
 
 ### 7. Where can I get help?
-- Check the [FAQ](FAQ.md) for common questions
 - Join our [Discord community](https://discord.gg/PUxt5bsRej)
 - Contact us at [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)
 
