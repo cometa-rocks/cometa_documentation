@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 <div align="center">
@@ -26,7 +26,7 @@
 
 **Cometa** stands for **Complete Meta Test Platform** — a versatile, powerful testing solution that lets you run automated tests **across system boundaries** using either a **codeless editor** or **full-code mode**, on cloud or on-prem.
 
-> _Meta_ comes from the Greek “μετά-” meaning "beyond" — and that’s exactly what Cometa enables.
+> _Meta_ comes from the Greek "μετά-" meaning "beyond" — and that's exactly what Cometa enables.
 ## One More Thing...
 
 Imagine a world where testing isn't just about finding bugs. It's about creating perfect user experiences, across every system, every time. That's Cometa.
@@ -68,7 +68,7 @@ http://localhost:4200
 Use the UI > Import JSON and try [feature_example_your_first_testcase.json](examples/feature_example_your_first_testcase.json)
 ```
 
-📖 Full guide: [Your First Test](#your-first-test)
+📖 Full guide: [Your First Test](docs/user/getting_started.md)
 
 ---
 
@@ -107,18 +107,18 @@ Use the UI > Import JSON and try [feature_example_your_first_testcase.json](exam
 
 Here are some direct links to core guides:
 
-- 🧱 [Cometa Features](docs/cometa_features.md)
-- 🧩 [Step Library](docs/cometa_actions.md)
-- 🧠 [Selectors Guide](docs/css-xpath.md)
-- 🔧 [REST API](docs/REST-API.md)
-- ❓ [FAQ](docs/FAQ.md)
-- ❓ [Questions](docs/questions.md)
+- 🧱 [Cometa Features](docs/user/cometa_features.md)
+- 🧩 [Step Library](docs/user/cometa_actions.md)
+- 🧠 [Selectors Guide](docs/user/css-xpath.md)
+- 🔧 [REST API](docs/developer/REST-API.md)
+- ❓ [FAQ](docs/user/FAQ.md)
+- ❓ [Questions](docs/user/questions.md)
 
 ---
 
 ## 🧑‍💻 Want to Contribute?
 
-We’d love your help to improve Cometa! Start with:
+We'd love your help to improve Cometa! Start with:
 ```bash
 # Fork the repo
 # Make your changes
@@ -137,7 +137,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ## 🆘 Need Help?
 
-We’re here to support you:
+We're here to support you:
 
 📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
 💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)

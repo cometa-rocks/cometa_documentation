@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 
@@ -52,7 +52,7 @@ Cometa offers REST API. Anything you can do from the frontend, you can do in the
 
 E.g. click on "..." of a folder and run all tests inside.
 
-![Run All Features](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/runAllFeatures.png)
+![Run All Features](../../img/runAllFeatures.png)
 
 ### 9. Executing smoke and regression test cases feature-wise?
 See [this video](https://www.youtube.com/watch?v=So_I8CjoRPI) - Minute around 5:00.
@@ -112,14 +112,14 @@ Sharing Features between installations per copy and import - without transportat
 
 ### 19. How to verify if two strings are exactly the same in the framework
 With action `Assert last API call`, using JQ, we can compare strings such as:
-![String Compare](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/stringCompare.png)
+![String Compare](../../img/stringCompare.png)
 
 In this example we compare the color of an object and check if the output is true.
 
 ### 20. What is the difference between equals and == when comparing strings?
 As of now there is no equals() filter in JQ, `==` is used to compare both strings and objects alike.
 
-![String and Object Comparison](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/stringAndObjectComparison.png)
+![String and Object Comparison](../../img/stringAndObjectComparison.png)
 
 ### 21. How to compare two strings while ignoring their case in the framework
 Adding `| ascii_downcase` as a filter, will handle input string as lowercase.
@@ -129,7 +129,7 @@ For example:
 'response.content.[0].data.color | ascii_downcase == "cloudy white"'
 ```
 
-![Case Insensitive](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/caseInsensitive.png)
+![Case Insensitive](../../img/caseInsensitive.png)
 
 ### 22. Can equalsIgnoreCase be used to compare strings with special characters?
 There is no `equalsIgnoreCase` method in jq. However, `ascii_downcase` will only affect characters that have a lowercase counterpart in ASCII.  
@@ -186,7 +186,7 @@ Assert last API Call property ".response.content.[0].data.color | length == 0" t
 `0`.
 
 ### 33. How to check if a string matches a specific regular expression in the framework
-![Regular Expression](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/regularExpression.png)
+![Regular Expression](../../img/regularExpression.png)
 
 In this example we use a regular expression to check if the input is a price number followed by a '.' followed by cents.  
 Also added `tostring` to parse the price as a `string`.
@@ -198,7 +198,7 @@ Example for Phone (Spanish format 9 digit): `^[0-9]{9}$`.
 
 ### 35. How to replace a specific character or substring in a string in the framework
 use `gsub()` method.  
-![Replace String](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/replaceString.png)
+![Replace String](../../img/replaceString.png)
 
 ### 36. What happens if the substring to be replaced is not found?
 `gsub()` returns the original string, unmodified.
@@ -244,7 +244,7 @@ Example: Cloudy White.
 
 ### 47. How to compare two strings lexicographically in the framework
 Use `==`, `>`, `<` for lexicographical comparison.  
-![Lexicographic Comparison](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/lexicographicComparison.png)
+![Lexicographic Comparison](../../img/lexicographicComparison.png)
 
 ### 48. What does a negative, zero, or positive return value from compareTo indicate?
 jq doesn't have `compareTo`, but lexicographic comparison is done using `<`, `>`, and `==`.
@@ -277,7 +277,7 @@ after explosion -> `[67,108,111,117,100,121,32,87,104,105,116,101]`.
 select index `7` -> `87`.  
 Insert it into a single element array `[87]`, this is because implode requires an array, hence adding `[.]`.  
 Finally we `implode`, reversing `[87]` into -> `W`.  
-![Extract Character](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/extractCharacter.png)
+![Extract Character](../../img/extractCharacter.png)
 
 ### 56. What happens if the index is out of bounds?
 Returns `null` if the index is out of range.
@@ -292,7 +292,7 @@ We use `split()` method.
 
 ### 59. My user role is ANALYSIS. Is it okay for me to lead my project, or is it possible to have project/department-wise admin roles?
 Cometa comes with a lot of capabilities, which can be assigned to a role:  
-![Role Permissions](https://github.com/cometa-rocks/cometa_documentation/blob/main/img/rolePermissions.png)  
+![Role Permissions](../../img/rolePermissions.png)  
 In the screenshot you can see that "Access to Edit a department" can be given to a certain role like "Department Admin" to add or delete users.
 
 ### 60. How can we assign and manage project/department-wise admin roles?
