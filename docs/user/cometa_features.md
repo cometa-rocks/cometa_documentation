@@ -8,6 +8,7 @@
 # Co.meta feature list
 1. [Security Feature](#security-feature)
 1. [Email Feature](#email-feature)
+1. [API Testing](#api-testing)
 
 <br/>
 
@@ -141,3 +142,38 @@ This provides instructions on how to configure and use the email feature to send
 6. **Additional Options**:
     - **Do not use default template**: Check this option if you do not want to use the default email template, By default this is Off.
     - **Attach PDF report to email**: Check this option if you want to attach a PDF report to the email, By default this is On.
+
+## API Testing Feature
+
+Cometa provides robust API testing capabilities that allow you to validate your backend services and APIs alongside your UI tests. This feature enables comprehensive end-to-end testing of your application stack.
+
+### Key API Testing Features
+
+- **RESTful API Support**: Test RESTful APIs with support for all standard HTTP methods (GET, POST, PUT, DELETE, PATCH).
+- **Request Configuration**: Easily configure request headers, body content, and authentication details.
+- **Response Validation**: Verify response status codes, headers, and body content against expected values.
+- **JSON Schema Validation**: Validate API responses against predefined JSON schemas to ensure data integrity.
+- **Data Extraction**: Extract data from API responses to use in subsequent test steps.
+- **Chaining Requests**: Chain multiple API requests together, using data from previous responses.
+
+
+### Setting Up API Tests
+
+#### Video Demonstration on API Call Editor: https://youtu.be/plC8qag08ZQ
+
+1. **Create a New Feature**: Start by creating a new feature in Cometa.
+2. **Add API Step**: In the steps section, start by adding API calling step:
+
+```jq
+Make an API call with "{method}" to "{endpoint}" with "params:{parameters}" and "headers:{headers}" and "body:{json_body}" and "row_body:{row_body}"
+```
+
+3. **Configure Request**: Right clicking the step, displays the option to edit the request in the Edit API call window. This allows a fast and confortable way to edit the HTTP method, parameters, headers and body of the request.
+<br>
+    <img  width="500px" src="../../img/APICallEditorButtoon.png">
+<br>
+<br>
+    <img  width="800px" src="../../img/APICallEditor1.png">
+
+
+4. **Define Assertions**: Configure assertions to validate the response meets your expectations.
