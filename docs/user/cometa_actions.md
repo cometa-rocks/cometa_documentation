@@ -29,7 +29,7 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 
 # <span class="gold">Co.</span>meta steps / actions
 
-Actions or steps are the build blocks from where your tell Co.meta what you want to automate. You have actions for clicking, browsing, screen sizing, downloading, can send keys and so on and so on.
+Actions or steps are the build blocks from where you tell Co.meta what you want to automate. You have actions for clicking, browsing, screen sizing, downloading, can send keys and so on and so on.
 
 We have grouped the different actions and the first one is "Browser actions".
 
@@ -1032,6 +1032,9 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             <br><strong>Step 3:</strong> Enter {value} -> "HVVH FUSO XXXX HLH7 FQKE JU2L ZZEU E2XV"
             <br><strong>Step 4:</strong> Enter {variable_name} -> "myOTPVariableName"
             <h4>Note: The stored OTP value will be encrypted, and it expires in 30 seconds.</h4>
+	    > [!TIP]
+	    > When using schedules, avoid excuting on the hour, 15 minutes, 30 minutes and 45 minutes.
+	    > This can cause your OTP to fail for timing reasons. Better execute on uneven times.
         </td>
     </tr>
 </table>
