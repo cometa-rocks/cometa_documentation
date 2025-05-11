@@ -63,7 +63,7 @@ cd cometa
 # (install dependencies, start services, etc.)
 
 # 3. Launch the UI
-http://localhost:4200
+https://localhost/
 
 # 4. Import your first test
 Use the UI > Import JSON and try [feature_example_your_first_testcase.json](examples/feature_example_your_first_testcase.json)
