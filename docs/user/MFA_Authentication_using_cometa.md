@@ -104,7 +104,4 @@ The automation of two-factor authentication with Cometa requires two steps.
     * Please follow the steps, as shown in the screenshot below
     <br>
     <br>
-    <img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/MFA_login_test.png" width="700px"/>
-
-
-
+    <img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/MFA_login_test.png" width="700px"/> 
