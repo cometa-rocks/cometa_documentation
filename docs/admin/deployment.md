@@ -269,7 +269,7 @@ That's all, easy peasy.
 📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
 💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)
 
-See [Getting Started](../user/getting_started.md) for in depth explanations how to use Co.meta.
+See [Getting Started](../user/GETTING_STARTED.md) for in depth explanations how to use Co.meta.
 
 Happy to see your e-Mail help - at - cometa.rocks.
 

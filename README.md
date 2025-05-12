@@ -39,9 +39,10 @@ Imagine a world where testing isn't just about finding bugs. It's about creating
 - **Beautiful**: Results that tell a story
 - **Smart**: AI-powered, future-ready
   
-**With Cometa, you can:**
 
 > [!TIP]
+>
+> **With Cometa, you can:**
 > - Fetch data from one system and test it in another  
 > - Create scalable test plans with reusable features  
 > - Use BDD-style tests with [Behave](https://github.com/behave/behave) + Selenium  
@@ -68,7 +69,7 @@ https://localhost/
 Use the UI > Import JSON and try [feature_example_your_first_testcase.json](examples/feature_example_your_first_testcase.json)
 ```
 
-📖 Full guide: [Your First Test](docs/user/getting_started.md)
+📖 Full guide: [Your First Test](docs/user/GETTING_STARTED.md)
 
 ---
 
@@ -109,12 +110,10 @@ Here are some direct links to core guides:
 
 - 🧱 [Cometa Features](docs/user/cometa_features.md)
 - 🧩 [Step Library](docs/user/cometa_actions.md)
-- 🧠 [Selectors Guide](docs/user/css-xpath.md)
+- 🧠 [Selectors Guide](docs/user/cometa_selectors.md)
 - 🔧 [REST API](docs/developer/REST-API.md)
 - ❓ [FAQ](docs/user/FAQ.md)
 - ❓ [Questions](docs/user/questions.md)
-
----
 
 ## 🧑‍💻 Want to Contribute?
 
@@ -158,7 +157,3 @@ We're here to support you:
 See [Logos Section](img/logos) for all supported formats.
 
 ---
-
-## 📄 License
-
-Licensed under **AGPLv3**. See [`LICENSE`](https://github.com/cometa-rocks/cometa_documentation/blob/main/LICENSE) for details.

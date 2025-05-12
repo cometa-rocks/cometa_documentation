@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
-  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png" width="800px">
 </picture>
 
 # Enable MFA in Amvara GitLab account
@@ -19,14 +19,13 @@ Click [Amvara GitLab link](https://git.amvara.de/) to create or login to your ac
 **Step 1:** Login to your [Amvara GitLab](https://git.amvara.de/) account 
 
 **Step 2:** Click "Profile Icon" > "Preferences" <br>
-<br><img src="
-https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/preferences.jpg" width="200px"/> <br>
+<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/preferences.jpg" width="800px"/> <br>
 
 **Step 3:** Click "Account" <br>
-<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/AccountButton.jpg" width="200px"/><br>
+<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/AccountButton.jpg" width="800px"/><br>
 
 **Step 4:** Click "Enable Two Factor Authentication" <br>
-<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/EnableMFA.jpg" width="700px"/><br>
+<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/EnableMFA.jpg" width="800px"/><br>
 
 **Step 5:** Enter "YOUR_CURRENT_PASSWORD" and "VERIFICATION_CODE", then click "Register with two-factor app". Next get your first verification code to setup MFA <br>
     
@@ -43,4 +42,4 @@ https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa
 <br>
 
 **Step 6:**<a id="STEP-6"><a> Click 'Download Codes' and store them in a secure location. This will complete your MFA setup successfully<br>
-<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/CodesScreen.jpg" width="700px"/><br>
+<br><img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/mfa_screens/CodesScreen.jpg" width="800px"/><br> 

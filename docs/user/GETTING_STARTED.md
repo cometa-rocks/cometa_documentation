@@ -92,7 +92,7 @@ Once you're comfortable with basic tests, explore:
 #### Core Features
 - [Cometa Features](cometa_features.md) - Learn about advanced capabilities
 - [Step Library](cometa_actions.md) - Discover all available actions
-- [Selectors Guide](css-xpath.md) - Master element targeting
+- [Selectors Guide](cometa_selectors.md) - Master element targeting
 - [REST API](../developer/REST-API.md) - Explore automation possibilities
 
 #### Specialized Testing
