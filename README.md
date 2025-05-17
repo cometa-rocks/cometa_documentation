@@ -4,7 +4,7 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 <div align="center">
-  <h1>Cometa - Complete Meta Test Automation</h1>
+  <h1>Cometa - Complete Meta Test Platform</h1>
   <h4>Codeless & Code-Based Testing Across Systems. Cloud & On-Prem Ready.</h4>
 
   [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/agpl-3.0.html)
@@ -81,10 +81,10 @@ Use the UI > Import JSON and try [feature_example_your_first_testcase.json](exam
 - [Get started now](https://github.com/cometa-rocks/cometa)
 
 ### Enterprise
-- Fully managed on cloud or on-prem
-- Advanced features & support
-- Unlimited users & browsers
-- [Let's talk](mailto:tec_dev@cometa.rocks)
+- Fully managed on cloud / on-prem / hybrid
+- Access to advanced features and dedicated support
+- Unlimited users [usage subject to hardware configuration]
+- [Let's talk](mailto:tec_dev@cometa.rocks,shobhit@teamteki.com)
 
 ---
 
