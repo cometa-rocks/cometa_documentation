@@ -84,7 +84,7 @@ Use the UI > Import JSON and try [feature_example_your_first_testcase.json](exam
 - Fully managed on cloud / on-prem / hybrid
 - Access to advanced features and dedicated support
 - Unlimited users [usage subject to hardware configuration]
-- [Let's talk](mailto:tec_dev@cometa.rocks,shobhit@teamteki.com)
+- [Let's talk](mailto:tec_dev@cometa.rocks,sales@cometa.rocks)
 
 ---
 
