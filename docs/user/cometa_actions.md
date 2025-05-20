@@ -963,12 +963,13 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <br><code>Wait "22" seconds for "#Load_in_20_Secs" to appear and disappear using option "fail if never visible"</code>
         </td></tr>
         <tr>
-          <td><strong>Wait until "{selector}" is loaded</strong><br>
-          Useful as an alternative to the "wait until I can see something on page" step if you want to dynamically wait for an element to appear.<br/>
-        </td>
-        <td>then wait until "//div[@class='div_class_name']" is loaded</td>
-    </tr>
-    <tr>
+  <td>Wait until "{selector}" is loaded</td>
+  <td>
+    Useful as an alternative to the "wait until I can see something on page" step if you want to dynamically wait for an element to appear.<br/>
+  </td>
+  <td>then wait until "//div[@class='div_class_name']" is loaded</td>
+</tr>
+<tr>
         <td>I can do a OIDC auth with username "{username}" and "{password}"</td>
         <td>Do a login using OIDC Authentication, and please use variables to mask sensitive values like passwords.</td>
         <td>
