@@ -42,6 +42,9 @@
 ### AI Feature
 - [Co.Meta using AI to do anything](https://www.loom.com/share/1d5cdb0681ab46308ddf96de0b824e10?sid=5cb1df8b-04ac-4dcd-96e5-47e2a96565b6) - Exploring AI capabilities in Co.meta
 
+### Accessibility Testing
+- [Co.meta Accessibility Testing required by European Accessibilty Act](https://www.loom.com/share/1d5cdb0681ab46308ddf96de0b824e10?sid=5cb1df8b-04ac-4dcd-96e5-47e2a96565b6) - Exploring accessibility testing, regarding users with differing access needs.
+
 ## Community and Interviews
 
 ### Expert Insights
