@@ -42,11 +42,6 @@
 ### AI Feature
 - [Co.Meta using AI to do anything](https://www.loom.com/share/1d5cdb0681ab46308ddf96de0b824e10?sid=5cb1df8b-04ac-4dcd-96e5-47e2a96565b6) - Exploring AI capabilities in Co.meta
 
-### Specialized Testing
-- [Video on Cometa testing IBM Cognos Cube Dimension](https://youtu.be/3QuJwprcf7U) - Specialized testing for IBM Cognos
-
-
-
 ## Community and Interviews
 
 ### Expert Insights
