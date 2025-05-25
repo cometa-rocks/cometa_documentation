@@ -10,7 +10,7 @@
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Product Overview](#product-overview)
-- [The Latest Tutorials](#latest-tutorials)
+- [The Latest Tutorials](#the-latest-tutorials)
 - [API Testing and Integration](#api-testing-and-integration)
 - [Advanced Features](#advanced-features)
 - [Community and Interviews](#community-and-interviews)
