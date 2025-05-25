@@ -10,6 +10,7 @@
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Product Overview](#product-overview)
+- [The Latest Tutorials](#latest-tutorials)
 - [API Testing and Integration](#api-testing-and-integration)
 - [Advanced Features](#advanced-features)
 - [Community and Interviews](#community-and-interviews)
@@ -26,12 +27,18 @@
 ### What is Co.meta?
 - [What the product: Cometa](https://www.youtube.com/watch?v=8uv-QAJkOLY&t=9s)
 
+## The Latest Tutorials
+- [Duplicate feature confirmation option](https://www.youtube.com/watch?v=TwEILUBuP-4)
+- [Testautomation using REST API with JSON and XML queries and responses](https://www.youtube.com/watch?v=QQf6nrAP-Sw)
+
+
 ## API Testing and Integration
 
 ### REST API and CI/CD
 - [Co.Meta REST API CI/CD Integrations 1](https://youtu.be/TFsZSmyM4wU) - Part 1 of REST API integration
 - [Co.Meta REST API CI/CD Integrations 2](https://youtu.be/TD9U_cbM_JA) - Part 2 of REST API integration
 - [Co.Meta enhancement to API step editor when adding headers + payloads](https://youtu.be/plC8qag08ZQ) - Advanced API testing features
+- [Testautomation using REST API with JSON and XML queries and responses](https://www.youtube.com/watch?v=QQf6nrAP-Sw) - Advanced API testing features
 
 ### Data Handling
 - [Co.Meta Upload File handling and Data Driven Testing enhancements](https://youtu.be/f-3PxxhrIGY) - Learn about file handling and data-driven testing
