@@ -45,29 +45,34 @@ Imagine a world where testing isn't just about finding bugs. It's about creating
 > **With Cometa, you can:**
 > - Fetch data from one system and test it in another  
 > - Create scalable test plans with reusable features  
-> - Use BDD-style tests with [Behave](https://github.com/behave/behave) + Selenium  
+> - Use BDD-style tests with Behave and Selenium  
 > - View results with logs, screenshots, and videos  
 > - Access results via a REST API or a beautiful Angular UI  
 
 
-## Get Started
+## Quick Start
 
-Get started with Cometa Community Edition:
+1. **Join Discord Community**
+   - [Join our Discord](https://discord.gg/e3uBKHhKW5) for instant access to Co.Meta (for free of course)
+   - Ask for invitation link
+   - No installation required
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/cometa-rocks/cometa.git
+2. **Local Installation**
+   ```bash
+   git clone https://github.com/cometa-rocks/cometa.git
+   cd cometa
+   ./cometa.sh
+   ```
+   Access the UI at `https://localhost:443`
 
-# 2. Follow setup instructions
-cd cometa
-# (install dependencies, start services, etc.)
+> [!NOTE]
+> - Default ports: 443 (HTTPS) and 80 (HTTP)
+> - Customize ports in `docker-compose.yml` if needed
+> - Installation typically completes in 8 minutes. If you face any issues [contact us](#support)
+> - In corporate environments there are some things to know regarding Internet access as well as SSO provider setup.
 
-# 3. Launch the UI
-https://localhost/
+*Check our [Deployment guide](https://github.com/cometa-rocks/cometa_documentation/blob/main/docs/admin/deployment.md) for manual installation steps and corporate environments requirements.*
 
-# 4. Import your first test
-Use the UI > Import JSON and try [feature_example_your_first_testcase.json](examples/feature_example_your_first_testcase.json)
-```
 
 📖 Full guide: [Your First Test](docs/user/GETTING_STARTED.md)
 
