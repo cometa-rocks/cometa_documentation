@@ -1358,13 +1358,20 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
     <tr>
         <td>Dynamic Dates </td>
         <td>
-            In any step the "#today;<pattern>" will be replaced with the formatted date.
+            In any step the "#today;<pattern>" will be replaced with the formatted date. Possible formatting and time adding or subtracting is based on python <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes">date function</a>
         </td>
         <td>
             <h4>Example</h4>
-            <strong>Step:</strong> Save "#today;%Y-%m-%d;days=+5" to runtime variable "date2" will save todays date + 5 days formatted as year-month-day.
-	    Possible formatting and time adding or subtracting is based on python <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes">date function</a>
-	    Use the following example for further explanation: ```[{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Today's date: #today;%d-%m-%Y\" to runtime variable \"date1\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date1\" value for \"1\" seconds","step_action":"Show me variable \"{variable}\" value for \"{seconds}\" seconds","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Due date: #today;%Y-%m-%d;days=+5\" to runtime variable \"date2\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date2\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Future time: #today;%Y-%m-%d %H:%M;hours=+3\" to runtime variable \"date3\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date3\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Break ends at: #today;%H:%M;minutes=+30\" to runtime variable \"date4\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date4\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Start: #today;%Y-%m-%d;days=-2\nEnd: #today;%Y-%m-%d;days=+5\" to runtime variable \"date5\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date5\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10}]```
+    <strong>Step 1:</strong> Save "Today's date: #today;%d-%m-%Y" to runtime variable "date1"
+    <br><strong>Step 2:</strong> Show me variable "date1" value for "1" seconds
+    <br><strong>Step 3:</strong> Save "Due date: #today;%Y-%m-%d;days=+5" to runtime variable "date2"
+    <br><strong>Step 4:</strong> Show me variable "date2" value for "1" seconds
+    <br><strong>Step 5:</strong> Save "Future time: #today;%Y-%m-%d %H:%M;hours=+3" to runtime variable "date3"
+    <br><strong>Step 6:</strong> Show me variable "date3" value for "1" seconds
+    <br><strong>Step 7:</strong> Save "Break ends at: #today;%H:%M;minutes=+30" to runtime variable "date4"
+    <br><strong>Step 8:</strong> Show me variable "date4" value for "1" seconds
+    <br><strong>Step 9:</strong> Save "Start: #today;%Y-%m-%d;days=-2"
+    <br><strong>Step 10:</strong> Show me variable "date5" value for "1" seconds
         </td>
     </tr>
 </table>
