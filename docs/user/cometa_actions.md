@@ -295,23 +295,73 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		<th>Action</th> 
 		<th>Description</th> 
 		<th>Example</th> 
-	</tr> 
+	</tr> 		
 	<tr> 
-		<td>Validate if "{selector}" present in the browser in "{time}" seconds and save result in "{variable}"</td> 
-		<td>Checks if the specified selector is present in the browser within the given time and saves the result to a variable.</td> 
+		<td>
+        Validate if "{selector}" present in the browser in "{time}" seconds and save result in "{variable}"
+		</td> 
+
+		<td>
+        Checks if the specified selector is present in the browser within the given time and saves the result to a variable.
+        </td> 
+
 		<td>
 			<b>Example 1:</b><br>
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" present in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
+
 	</tr> 
 	<tr> 
 		<td>Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"</td> 
 		<td>Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
 		<td>
+        Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"
+        </td> 
+
+		<td>
+        Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.
+        </td>
+
+		<td>
 			<b>Example 1:</b><br>
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
 	</tr> 
+    <tr>
+
+        <td>
+        Assert "{value_one}" to be the same as "{value_two}"
+        </td>
+
+        <td>
+        Compares whether <code>{value_one}</code> is exactly equal to <code>{value_two}</code>. Supports both variable-to-value and variable-to-variable comparisons.
+        </td>
+
+        <td>
+            <b>Example 1:</b> Compare a variable to a value<br>
+                <code>Assert "$expected_value" to be same as "100"</code><br>
+            <b>Example 2:</b> Compare a value to a variable<br>
+                <code>Assert "100" to be same as "$expected_value"</code>
+        </td>
+
+	</tr>
+    <tr>
+
+        <td>
+        Assert "{value_one}" to contain "{value_two}"
+        </td>
+
+		<td>
+        Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.
+        </td>
+
+		<td>
+		    <b>Example 1:</b> Check if variable contains value<br>
+		        <code>Assert "$response_message" to contain "success"</code><br><br>
+		    <b>Example 2:</b> Check if value contains variable<br>
+		        <code>Assert "success message" to contain "$response_message"</code>
+		</td>
+    </tr>
 </table>
 
 ### CSS selectors actions<a id="CSS_AC"></a>
