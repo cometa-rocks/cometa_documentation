@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cometa-rocks/cometa_documentation/blob/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 
@@ -8,12 +8,13 @@
 # Co.meta feature list
 1. [Security Feature](#security-feature)
 1. [Email Feature](#email-feature)
+1. [API Testing](#api-testing)
 
 <br/>
 
 ## Security Feature.
 
-Exposing detailed information about the server, backend technologies, or other components running on the web server can pose a security risk. This information is often referred to as "server headers" or "HTTP response headers“. It includes details such as the web server software, server version, programming language, and other technologies in use.
+Exposing detailed information about the server, backend technologies, or other components running on the web server can pose a security risk. This information is often referred to as "server headers" or "HTTP response headers". It includes details such as the web server software, server version, programming language, and other technologies in use.
 
 If information about the server's application reveals the presence of vulnerabilities such as XSS, CSRF, DDoS, or others, it increases the risk of malicious activities. Attackers armed with this knowledge could exploit the identified vulnerabilities, potentially leading to harmful consequences.
 
@@ -52,7 +53,7 @@ When creating a feature in Cometa, the Information section includes an option to
 
 > **Note:** Enabling this checkbox will record all your network response headers and store them in the database, potentially increasing the data load. Therefore, if the feature is not in use, please kindly consider disabling the checkbox.   
 
-<img src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\information_section.jpg" width="800px">
+<img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/information_section.jpg" width="800px">
 
 #### Refer To Report
 Cometa will display a list of network responses within the step report. This list will show which network responses were received during each step. Specifically, if a step takes 2 seconds to execute, any network responses received during those 2 seconds will be stored alongside the step.
@@ -63,15 +64,15 @@ In the OPTIONS section of the Step Report, you should find the following icon.
 
 1. This indicates that the network header has been recorded and does have vulnerabilities.
 
-    <img width="300px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\vulnerability_Indicator.jpg">
+    <img width="300px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/vulnerability_Indicator.jpg">
     <br><br>
 1. This indicates that the network header has been recorded and does not have vulnerabilities.
 
-    <img width="300px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\logging_Indicator.jpg">
+    <img width="300px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/logging_Indicator.jpg">
     <br><br>
 1. Click on the icon shown above to view the list of responses.
 
-     <img width="800px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\feature_screens\JQ_Screen.jpg">
+     <img width="800px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/JQ_Screen.jpg">
 
 1. The JSON data can be analyzed using JQ patterns. Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) to learn about patterns 
 
@@ -87,7 +88,7 @@ This provides instructions on how to configure and use the email feature to send
 1. **In the create Feature screen navigate to the EMAIL TEMPLATE section**
    <br>
    <br>
-    <img width="1000px" src="https://github.com/cometa-rocks/cometa_documentation/blob/main/img\email\email_template.png">
+    <img width="1000px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/email/email_template.png">
 
 2. **Add Recipient Email Addresses**:
     - In the field labeled "Email address, use tab to separate emails," enter the email addresses of the recipients. Separate multiple email addresses by pressing       the `Tab` key.
@@ -141,3 +142,38 @@ This provides instructions on how to configure and use the email feature to send
 6. **Additional Options**:
     - **Do not use default template**: Check this option if you do not want to use the default email template, By default this is Off.
     - **Attach PDF report to email**: Check this option if you want to attach a PDF report to the email, By default this is On.
+
+## API Testing Feature
+
+Cometa provides robust API testing capabilities that allow you to validate your backend services and APIs alongside your UI tests. This feature enables comprehensive end-to-end testing of your application stack.
+
+### Key API Testing Features
+
+- **RESTful API Support**: Test RESTful APIs with support for all standard HTTP methods (GET, POST, PUT, DELETE, PATCH).
+- **Request Configuration**: Easily configure request headers, body content, and authentication details.
+- **Response Validation**: Verify response status codes, headers, and body content against expected values.
+- **JSON Schema Validation**: Validate API responses against predefined JSON schemas to ensure data integrity.
+- **Data Extraction**: Extract data from API responses to use in subsequent test steps.
+- **Chaining Requests**: Chain multiple API requests together, using data from previous responses.
+
+
+### Setting Up API Tests
+
+#### Video Demonstration on API Call Editor: https://youtu.be/plC8qag08ZQ
+
+1. **Create a New Feature**: Start by creating a new feature in Cometa.
+2. **Add API Step**: In the steps section, start by adding API calling step:
+
+```jq
+Make an API call with "{method}" to "{endpoint}" with "params:{parameters}" and "headers:{headers}" and "body:{json_body}" and "row_body:{row_body}"
+```
+
+3. **Configure Request**: Right clicking the step, displays the option to edit the request in the Edit API call window. This allows a fast and confortable way to edit the HTTP method, parameters, headers and body of the request.
+<br>
+    <img  width="500px" src="../../img/APICallEditorButtoon.png">
+<br>
+<br>
+    <img  width="800px" src="../../img/APICallEditor1.png">
+
+
+4. **Define Assertions**: Configure assertions to validate the response meets your expectations.
