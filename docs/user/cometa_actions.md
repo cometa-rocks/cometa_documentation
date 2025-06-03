@@ -297,65 +297,47 @@ If you have suggestions or needs for a step / actions that you would rather impl
 		<th>Example</th> 
 	</tr> 		
 	<tr> 
-		<td>
+		<td style="vertical-align:top">
         Validate if "{selector}" present in the browser in "{time}" seconds and save result in "{variable}"
 		</td> 
-
-		<td>
+		<td style="vertical-align:top">
         Checks if the specified selector is present in the browser within the given time and saves the result to a variable.
         </td> 
-
-		<td>
+		<td style="vertical-align:top">
 			<b>Example 1:</b><br>
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" present in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
-
 	</tr> 
 	<tr> 
-		<td>Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"</td> 
-		<td>Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
-		<td>
-        Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"
-        </td> 
-
-		<td>
-        Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.
-        </td>
-
-		<td>
+		<td style="vertical-align:top">Validate if "{selector}" appeared in the browser in "{time}" seconds and save result in "{variable}"</td> 
+		<td style="vertical-align:top">Checks if the specified selector is visible in the browser within the given time and saves the result to a variable.</td>
+		<td style="vertical-align:top">
 			<b>Example 1:</b><br>
 				<code>Validate if "//h1[contains(text(),'Explore projects')]" appeared in the browser in "15" seconds and save result in "$is_visible"</code>
 		</td> 
 	</tr> 
     <tr>
-
-        <td>
+        <td style="vertical-align:top">
         Assert "{value_one}" to be the same as "{value_two}"
         </td>
-
-        <td>
+        <td style="vertical-align:top">
         Compares whether <code>{value_one}</code> is exactly equal to <code>{value_two}</code>. Supports both variable-to-value and variable-to-variable comparisons.
         </td>
-
-        <td>
+        <td style="vertical-align:top">
             <b>Example 1:</b> Compare a variable to a value<br>
                 <code>Assert "$expected_value" to be same as "100"</code><br>
             <b>Example 2:</b> Compare a value to a variable<br>
                 <code>Assert "100" to be same as "$expected_value"</code>
         </td>
-
 	</tr>
     <tr>
-
-        <td>
+        <td style="vertical-align:top">
         Assert "{value_one}" to contain "{value_two}"
         </td>
-
-		<td>
+		<td style="vertical-align:top">
         Checks if the value of <code>{value_one}</code> contains <code>{value_two}</code>. This can be used both for variable-to-value and value-to-variable comparisons.
         </td>
-
-		<td>
+		<td style="vertical-align:top">
 		    <b>Example 1:</b> Check if variable contains value<br>
 		        <code>Assert "$response_message" to contain "success"</code><br><br>
 		    <b>Example 2:</b> Check if value contains variable<br>
@@ -1391,7 +1373,7 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         <td>Create one-time password of "{x}" digits using pairing-key "{value}" and save it to encrypted variable "{variable_name}"</td>
         <td>
             It generates an OTP for Multi-Factor authentication and stores it in the provided <i>variable_name</i> 
-            <br><br>See detailed documentation on <a href="./MFA_Authentication_using_cometa.md" target="_blank">Automation of Multi Factor Authentication with Cometa</a>
+            <br><br>See detailed documentation on <a href="./mfa_authentication_using_cometa.md" target="_blank">Automation of Multi Factor Authentication with Cometa</a>
         </td>
         <td>
             <h4>Example</h4>
@@ -1405,16 +1387,22 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
 	    > This can cause your OTP to fail for timing reasons. Better execute on uneven times.
         </td>
     </tr>
-    <tr>
-        <td>Dynamic Dates </td>
-        <td>
-            In any step the "#today;<pattern>" will be replaced with the formatted date.
+   <tr>
+        <td style="vertical-align:top">Dynamic Dates </td>
+        <td style="vertical-align:top">
+            In any step the "#today;<pattern>" will be replaced with the formatted date. Possible formatting and time adding or subtracting is based on python <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes">date function</a>
         </td>
         <td>
-            <h4>Example</h4>
-            <strong>Step:</strong> Save "#today;%Y-%m-%d;days=+5" to runtime variable "date2" will save todays date + 5 days formatted as year-month-day.
-	    Possible formatting and time adding or subtracting is based on python <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes">date function</a>
-	    Use the following example for further explanation: ```[{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Today's date: #today;%d-%m-%Y\" to runtime variable \"date1\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date1\" value for \"1\" seconds","step_action":"Show me variable \"{variable}\" value for \"{seconds}\" seconds","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Due date: #today;%Y-%m-%d;days=+5\" to runtime variable \"date2\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date2\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Future time: #today;%Y-%m-%d %H:%M;hours=+3\" to runtime variable \"date3\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date3\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Break ends at: #today;%H:%M;minutes=+30\" to runtime variable \"date4\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date4\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Save \"Start: #today;%Y-%m-%d;days=-2\nEnd: #today;%Y-%m-%d;days=+5\" to runtime variable \"date5\"","step_action":"Save \"{value}\" to environment variable \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":10},{"enabled":true,"screenshot":false,"step_keyword":"Given","compare":false,"step_content":"Show me variable \"date5\" value for \"1\" seconds","step_action":"","step_type":"normal","continue_on_failure":false,"timeout":10}]```
+    <strong>Step 1:</strong> Save "Today's date: #today;%d-%m-%Y" to runtime variable "date1"
+    <br><strong>Step 2:</strong> Show me variable "date1" value for "1" seconds
+    <br><strong>Step 3:</strong> Save "Due date: #today;%Y-%m-%d;days=+5" to runtime variable "date2"
+    <br><strong>Step 4:</strong> Show me variable "date2" value for "1" seconds
+    <br><strong>Step 5:</strong> Save "Future time: #today;%Y-%m-%d %H:%M;hours=+3" to runtime variable "date3"
+    <br><strong>Step 6:</strong> Show me variable "date3" value for "1" seconds
+    <br><strong>Step 7:</strong> Save "Break ends at: #today;%H:%M;minutes=+30" to runtime variable "date4"
+    <br><strong>Step 8:</strong> Show me variable "date4" value for "1" seconds
+    <br><strong>Step 9:</strong> Save "Start: #today;%Y-%m-%d;days=-2"
+    <br><strong>Step 10:</strong> Show me variable "date5" value for "1" seconds
         </td>
     </tr>
 </table>
