@@ -7,12 +7,16 @@
   <h1>Cometa - Complete Meta Test Platform</h1>
   <h4>Codeless & Code-Based Testing Across Systems. Cloud & On-Prem Ready.</h4>
 
+  [![Docker Pulls](https://img.shields.io/docker/pulls/cometa/django?style=flat-square)](https://hub.docker.com/r/cometa/django)
   [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/agpl-3.0.html)
   [![GitHub Stars](https://img.shields.io/github/stars/cometa-rocks/cometa?style=social)](https://github.com/cometa-rocks/cometa/stargazers)
-  [![Join our Community on Discord](https://img.shields.io/discord/810822044367061042?label=Join%20our%20Community&logo=discord)](https://discord.gg/PUxt5bsRej)
+  [![Join](https://img.shields.io/discord/810822044367061042?label=Join%20our%20Community&logo=discord)](https://discord.gg/PUxt5bsRej)
   [![YouTube Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube&style=flat-square)](https://youtu.be/s86rnmbLDpc)
   [![Twitter Follow](https://img.shields.io/twitter/follow/cometa_rocks?style=social)](https://twitter.com/cometa_rocks)
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+  [![GitHub Issues](https://img.shields.io/github/issues/cometa-rocks/cometa?style=flat-square)](https://github.com/cometa-rocks/cometa/issues)
+  [![GitHub PRs](https://img.shields.io/github/issues-pr/cometa-rocks/cometa?style=flat-square)](https://github.com/cometa-rocks/cometa/pulls)
+  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cometa-rocks/cometa)
 
 
 
