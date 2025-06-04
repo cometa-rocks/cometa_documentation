@@ -55,6 +55,8 @@ Imagine a world where testing isn't just about finding bugs. It's about creating
 > - Combine Browser, API, mobile and native desktop testing in a single feature
 > - Use AI to generate tests in natural language
 
+Read more in the detailed overview of [Cometa Features](https://github.com/cometa-rocks/cometa_documentation/blob/main/docs/user/cometa_features.md)
+
 
 ## Quick Start
 
