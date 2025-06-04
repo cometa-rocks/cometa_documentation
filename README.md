@@ -47,7 +47,9 @@ Imagine a world where testing isn't just about finding bugs. It's about creating
 > - Create scalable test plans with reusable features  
 > - Use BDD-style tests with Behave and Selenium  
 > - View results with logs, screenshots, and videos  
-> - Access results via a REST API or a beautiful Angular UI  
+> - Access results via a REST API or a beautiful Angular UI
+> - Combine Browser, API, mobile and native desktop testing in a single feature
+> - Use AI to generate tests in natural language
 
 
 ## Quick Start
