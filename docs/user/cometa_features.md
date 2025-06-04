@@ -84,13 +84,16 @@ In the OPTIONS section of the Step Report, you should find the following icon.
 > **Note:** In case of vulnerabilities, a red indicator will be shown; otherwise, the color will be gray.
 
 1. This indicates that the network header has been recorded and does have vulnerabilities.
-    <img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/vulnerability_Indicator.jpg" alt="Vulnerability Indicator" style="display: block; max-width: 400px;">
+
+    <img width="300px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/vulnerability_Indicator.jpg">
     <br><br>
-2. This indicates that the network header has been recorded and does not have vulnerabilities.
-    <img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/logging_Indicator.jpg" alt="Logging Indicator" style="display: block; max-width: 400px;">
+1. This indicates that the network header has been recorded and does not have vulnerabilities.
+
+    <img width="300px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/logging_Indicator.jpg">
     <br><br>
-3. Click on the icon shown above to view the list of responses.
-    <img src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/JQ_Screen.jpg" alt="JQ Screen" style="display: block; max-width: 900px;">
+1. Click on the icon shown above to view the list of responses.
+
+     <img width="800px" src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/feature_screens/JQ_Screen.jpg">
 
 4. The JSON data can be analyzed using JQ patterns. Please refer [JQ Documentation](https://jqlang.github.io/jq/manual/) to learn about patterns.
 
