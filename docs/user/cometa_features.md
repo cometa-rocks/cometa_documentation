@@ -11,6 +11,7 @@
 1. [API Testing](#api-testing)
 1. [End-to-End Monitoring](#tbd)
 1. [Load testing](#tbd)
+1. [Accessability Testing](#tbd)
 1. [Mobile testing](#tbd)
 1. [AI Feature](#tbd)
 1. [Multi Factor Authentication](#tbd)
