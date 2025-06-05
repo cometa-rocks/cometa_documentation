@@ -16,7 +16,7 @@
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
   [![GitHub Issues](https://img.shields.io/github/issues/cometa-rocks/cometa?style=flat-square)](https://github.com/cometa-rocks/cometa/issues)
   [![GitHub PRs](https://img.shields.io/github/issues-pr/cometa-rocks/cometa?style=flat-square)](https://github.com/cometa-rocks/cometa/pulls)
-  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cometa-rocks/cometa)
+  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cometa-rocks/cometa_documentation)
 
 
 
@@ -55,7 +55,7 @@ Imagine a world where testing isn't just about finding bugs. It's about creating
 > - Combine Browser, API, mobile and native desktop testing in a single feature
 > - Use AI to generate tests in natural language
 
-Read more in the detailed overview of [Cometa Features](https://github.com/cometa-rocks/cometa_documentation/blob/main/docs/user/cometa_features.md)
+Read more in the detailed overview of [Cometa Features](docs/user/cometa_features.md)
 
 
 ## Quick Start
@@ -76,10 +76,10 @@ Read more in the detailed overview of [Cometa Features](https://github.com/comet
 > [!NOTE]
 > - Default ports: 443 (HTTPS) and 80 (HTTP)
 > - Customize ports in `docker-compose.yml` if needed
-> - Installation typically completes in 8 minutes. If you face any issues [contact us](#support)
+> - Installation typically completes in 8 minutes. If you face any issues [contact us](#-need-help)
 > - In corporate environments there are some things to know regarding Internet access as well as SSO provider setup.
 
-*Check our [Deployment guide](https://github.com/cometa-rocks/cometa_documentation/blob/main/docs/admin/deployment.md) for manual installation steps and corporate environments requirements.*
+*Check our [Deployment guide](docs/admin/deployment.md) for manual installation steps and corporate environments requirements.*
 
 
 📖 Full guide: [Your First Test](docs/user/GETTING_STARTED.md)
@@ -118,15 +118,47 @@ Read more in the detailed overview of [Cometa Features](https://github.com/comet
 ---
 
 ## 🔍 Explore the Docs
+### Core guides for:
+<details>
+<summary><strong>Admins</strong></summary>
 
-Here are some direct links to core guides:
+1. Deployment
+   - [Deployment Guide](docs/admin/deployment.md)
+</details>
 
-- 🧱 [Cometa Features](docs/user/cometa_features.md)
-- 🧩 [Step Library](docs/user/cometa_actions.md)
-- 🧠 [Selectors Guide](docs/user/cometa_selectors.md)
-- 🔧 [REST API](docs/developer/REST-API.md)
-- ❓ [FAQ](docs/user/FAQ.md)
-- ❓ [Questions](docs/user/questions.md)
+<details>
+<summary><strong>Developers</strong></summary>
+
+1. API Documentation
+   - [REST API](docs/developer/REST-API.md)
+</details>
+
+<details>
+<summary><strong>Users</strong></summary>
+
+1. First Steps
+   - [Getting Started](docs/user/GETTING_STARTED.md)
+   - [Feature Example: Your First Testcase](docs/user/feature_example_your_first_testcase.json)
+
+2. Core Concepts
+   - [Cometa Features](docs/user/cometa_features.md)
+   - [Cometa Actions](docs/user/cometa_actions.md)
+   - [Cometa Selectors](docs/user/cometa_selectors.md)
+
+3. Advanced Features
+   - [Mobile Feature](docs/user/mobile_feature.md)
+   - [AI Feature](docs/user/ai_feature.md)
+   - [Load Testing](docs/user/LOAD_TESTING.md)
+
+4. Authentication
+   - [MFA Authentication Preparation](docs/user/mfa_authentication_preparation.md)
+   - [MFA Authentication Using Cometa](docs/user/mfa_authentication_using_cometa.md)
+
+5. Support
+   - [Tutorials](docs/user/TUTORIALS.md)
+   - [FAQ](docs/user/FAQ.md)
+   - [Additional Questions](docs/user/questions.md)
+</details>
 
 ## 🧑‍💻 Want to Contribute?
 
