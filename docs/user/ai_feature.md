@@ -1,97 +1,119 @@
+# AI Testing Feature
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
-  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
+> [!TIP]
+> - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 
-# Co.meta steps table of contents
+## What is the AI Testing Feature?
+The AI Testing Feature enables intelligent test automation through computer vision, natural language processing, and machine learning capabilities. This feature allows for robust visual testing, content validation, and dynamic interaction with web and mobile applications. And of course autonomous browsing.
 
-Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mouse to {selector} and click". Below is a list of grouped actions by topic.
+## Key Capabilities
+- Automated autonomous browsing
+- Visual object detection and recognition
+- Screen content analysis and validation
+- Natural language processing for test instructions
+- Dynamic element identification
+- Intelligent test step generation
+- Visual regression testing
+- Automated test maintenance
+- Real-time analysis and reporting
 
+## Core Components
 
+### Visual Analysis
+- Object detection and classification
+- Text extraction (OCR)
+- Layout analysis
+- Color and style detection
+- Visual comparison
+- Element positioning
 
-### AI actions
+### Natural Language Processing
+- Test step interpretation
+- Content validation
+- Semantic analysis
+- Multi-language support
+- Context-aware processing
 
-<table> 
-	<tr> 
-		<th>Action</th> 
-		<th>Description</th> 
-		<th>Example</th> 
-	</tr> 
-	<tr> 
-		<td>Validate current screen to contain "{object_name}" with "{options}"</td> 
-		<td>Validates whether the current screen contains a specified object.<br><br> Additional options can be provided to refine the validation.</td> 
-		<td>
-			<b>Example 1:</b><br>
-				<code>Validate current screen to contain "Car"</code><br>
-			<b>Example 2 (refine validation):</b><br>
-				<code>Validate current screen to contain "Car" with "color:red"</code>
-		</td> 
-	</tr> 
-	<tr> 
-		<td> Get list of visible objects in the current screen and store in "{variable}" with "{options}"</td> 
-		<td>Retrieves the list of visible objects on the current screen and stores it in a specified variable. <br><br>Additional options can refine the list.</td> 
-		<td>
-			<b>Example 1:</b><br>
-				<code>Get list of visible objects in the current screen and store in "myObjects"</code><br>
-			<b>Example 2 (refine validation):</b><br>
-				<code>Get list of visible objects in the current screen and store in "myObjects" with "visible_only"</code>
-		</td> 
-	</tr> 
-	<tr> 
-		<td>Get information based on "{user_message_to_ai}" and store in "{variable}" with "{options}"</td> 
-		<td>This step allows you to send a specific request or instruction to the AI, along with images or other data for analysis. The AI's response will be stored in a specified variable.<br><br>Optionally, you can modify how the result is processed by using the "Output JSON" option.</td> 
-		<td>
-			<b>Example 1:</b><br>
-			<code>Get information based on "[{\"content\": \"Get the visible car color\", \"images\": [\"screenshot1\"]}]" and store in "chart_analysis" with "Output JSON"</code><br>
-			<b>Example 2:</b><br>
-			<code>Get information based on "[{'content': 'Identify all buttons on the screen', 'images': ['ui_screenshot']}}]" and store in "button_list" with "Output JSON"</code>
-		</td> 
-	</tr> 
-	<tr> 
-		<td>Get information from current screen based on "{prompt}" and store in "{variable}" with "{option}"</td> 
-		<td>Analyzes the current screen based on the given prompt and stores the result in a specified variable. Optionally, the result can be formatted in JSON using the "Output JSON" option.</td> 
-		<td>
-			<b>Example 1:</b><br>
-				<code>Get information from current screen based on "[{\"content\": \"Extract visible text\"}]" and store in "extracted_text"</code><br>
-			<b>Example 2:</b><br>
-				<code>Get information from current screen based on "[{\"content\": \"Identify all input fields\"}]" and store in "input_list" with "Output JSON"</code>
-		</td> 
-	</tr>
-	<tr> 
-		<td>Get screenshot and store in the variable "{variable_name}"</td> 
-		<td>This step captures a screenshot of the current screen and stores it in the specified variable.</td> 		<td>
-			<b>Example 1:</b><br>
-				<code>Get screenshot and store in the variable "current_screen"</code>
-		</td> 
-	</tr> 
-	<tr> 
-		<td>Show me variable "{variable_name}" value for "{seconds}" seconds</td> 
-		<td>Displays the value of a specified variable for a certain number of seconds.</td> 
-		<td>
-			<b>Example 1:</b><br>
-				<code>Show me variable "myVariable" value for "5" seconds</code>
-		</td> 
-	</tr> 
-	<tr> 
-		<td>Assert variable "{variable_name}" using jq_pattern "{jq_pattern}" to "{condition}" "{value}"</td> 
-		<td>This step asserts that a value within a stored variable matches or contains a specified value using a JQ pattern. It is useful for validating JSON-like data structures stored in variables.</td> 
-		<td>
-			<b>Example 1:</b><br>
-				<code>Assert variable "api_response" using jq_pattern ".status" to "match" "success"</code><br>
-			<b>Example 2:</b><br>
-				<code>Assert variable "api_response" using jq_pattern ".message" to "contain" "completed successfully"</code>
-		</td> 
-	</tr> 
-	<tr> 
-		<td>Assert variable "{variable_name}" to "{condition}" "{value}"</td> 
-		<td>Asserts the value of a variable directly using a condition (match or contain).</td> 
-		<td>
-			<b>Example 1:</b><br>
-				<code>Assert variable "status_code" to "match" "200"</code><br>
-			<b>Example 2:</b><br>
-  				<code>Assert variable "response_message" to "contain" "Operation completed"</code>
-		</td> 
-	</tr> 
-</table>
+### Machine Learning Features
+- Dynamic element locator adaptation
+- Pattern recognition
+- Anomaly detection
+- Self-healing test scripts
+- Performance optimization
+
+## Integration Points
+
+### Frontend Integration
+- AI-powered test step editor
+- Visual element selector
+- Real-time analysis feedback
+- Interactive result visualization
+- Smart suggestion system
+
+### Backend Services
+- AI model management
+- Image processing pipeline
+- Result analysis and storage
+- Model training and updates
+- Performance monitoring
+
+### Test Execution Engine
+- Dynamic test adaptation
+- Intelligent wait strategies
+- Smart retry mechanisms
+- Context-aware validation
+- Automated error recovery
+
+## Supported AI Operations
+
+### Screen Analysis
+- Object detection
+- Text extraction
+- Layout validation
+- Color analysis
+- Element relationships
+- Visual hierarchy
+
+### Test Intelligence
+- Smart element location
+- Dynamic wait times
+- Automatic retry strategies
+- Error prediction
+- Test optimization
+
+### Data Processing
+- Result aggregation
+- Pattern analysis
+- Anomaly detection
+- Performance metrics
+- Quality scoring
+
+## Best Practices
+
+### Test Design
+- Use clear, descriptive prompts
+- Leverage visual identifiers
+- Implement smart waiting strategies
+- Include fallback mechanisms
+- Monitor AI performance
+
+### Performance Optimization
+- Cache common operations
+- Optimize image processing
+- Use appropriate timeout values
+- Implement parallel processing
+- Monitor resource usage
+
+## Need Help?
+
+### Where can I get help?
+- Join our [Discord community](https://discord.gg/PUxt5bsRej)
+- Contact us at [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)
+
+Happy testing! 🚀
