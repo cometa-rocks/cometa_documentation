@@ -10,18 +10,36 @@
 > - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 
 ## Feature List
-1. [Security Feature](#security-feature)
-2. [Email Feature](#email-feature)
-3. [API Testing](#api-testing)
-4. [End-to-End Monitoring](#end-to-end-monitoring)
+1. [End to End Monitoring](#end-to-end-monitoring)
+2. [Security Feature](#security-feature)
+3. [AI Feature](#ai-feature)
+4. [API Testing](#api-testing)
 5. [Load Testing](#load-testing)
-6. [Accessibility Testing](#accessibility-testing)
-7. [Mobile Testing](#mobile-testing)
-8. [AI Feature](#ai-feature)
-9. [Multi-Factor Authentication](#multi-factor-authentication)
-10. [Data Driven Testing](#data-driven-testing)
-11. [Database Testing](#database-testing)
-12. [Historical Analysis Feature](#historical-analysis-feature)
+6. [Historical Analysis Feature](#historical-analysis-feature)
+7. [Data Driven Testing](#data-driven-testing)
+8. [Database Testing](#database-testing)
+9. [Mobile Testing](#mobile-testing)
+10. [Accessibility Testing](#accessibility-testing)
+11. [Multi-Factor Authentication](#multi-factor-authentication)
+12. [Email Feature](#email-feature)
+
+## End to  End Monitoring
+
+### What is the End-to-End Monitoring Feature?
+The End-to-End Monitoring Feature provides comprehensive real-time monitoring and visualization of test execution, allowing users to track test progress, analyze results, and identify issues across the entire testing pipeline.
+
+### Key Capabilities
+- Real-time test execution monitoring
+- WebSocket-based live updates
+- Test progress visualization
+- Results analysis and reporting
+- Screenshot comparison
+- Video recording of test execution
+- PDF report generation
+- Performance metrics tracking
+
+[Learn more about End-to-End Monitoring](e2e_monitoring.md)  
+[Back to top](#feature-list)
 
 ## Security Feature
 
@@ -44,21 +62,20 @@ The Security Feature helps identify and validate network response headers that m
 [Learn more about Security Feature](security_feature.md)  
 [Back to top](#feature-list)
 
-## Email Feature
+## AI Feature
 
-### What is the Email Feature?
-The Email Feature enables sending notifications upon completion or failure of test executions, with customizable email templates and screenshot attachments.
+### What is the AI Feature?
+The AI Feature provides intelligent validation and object recognition capabilities for testing.
 
 ### Key Capabilities
-- Configure recipient email addresses (To, CC, BCC)
-- Custom email subject and message body
-- HTML template support
-- Screenshot attachments
-- Conditional email sending (Always/On error)
-- PDF report attachments
-- Custom template options
+- Automated autonomous browsing
+- Screen content validation
+- Object recognition
+- Visible object listing
+- Custom validation options
+- AI-powered test automation
 
-[Learn more about Email Feature](email_feature.md)  
+[Learn more about AI Feature](ai_feature.md)  
 [Back to top](#feature-list)
 
 ## API Testing
@@ -78,24 +95,6 @@ Cometa provides robust API testing capabilities for validating backend services 
 [Learn more about API Testing](api_test.md)  
 [Back to top](#feature-list)
 
-## End-to-End Monitoring
-
-### What is the End-to-End Monitoring Feature?
-The End-to-End Monitoring Feature provides comprehensive real-time monitoring and visualization of test execution, allowing users to track test progress, analyze results, and identify issues across the entire testing pipeline.
-
-### Key Capabilities
-- Real-time test execution monitoring
-- WebSocket-based live updates
-- Test progress visualization
-- Results analysis and reporting
-- Screenshot comparison
-- Video recording of test execution
-- PDF report generation
-- Performance metrics tracking
-
-[Learn more about End-to-End Monitoring](e2e_monitoring.md)  
-[Back to top](#feature-list)
-
 ## Load Testing
 
 ### What is the Load Testing Feature?
@@ -112,72 +111,22 @@ The Load Testing feature allows users to optimize performance testing by control
 [Learn more about Load Testing](LOAD_TESTING.md)  
 [Back to top](#feature-list)
 
-## Accessibility Testing
+## Historical Analysis Feature
 
-### What is the Accessibility Testing Feature?
-The Accessibility Testing Feature enables automated testing of web applications for compliance with accessibility standards and guidelines, ensuring your applications are accessible to users with disabilities.
-
-### Key Capabilities
-- WCAG 2.1 compliance testing
-- Automated accessibility scanning
-- Detailed violation reporting
-- Screen reader compatibility testing
-- Keyboard navigation testing
-- Color contrast validation
-- ARIA attribute verification
-- Accessibility score generation
-- PDF report generation
-- Integration with existing test suites
-
-[Learn more about Accessibility Testing](accessibility_testing.md)  
-[Back to top](#feature-list)
-
-## Mobile Testing
-
-### What is the Mobile Testing Feature?
-The Mobile Testing feature enables automated testing on mobile devices through emulators and real devices.
+### What is the Historical Analysis Feature?
+The Historical Analysis Feature provides comprehensive capabilities for analyzing test execution history, trends, and patterns over time. It enables teams to track test performance, identify recurring issues, and make data-driven decisions about test maintenance and optimization.
 
 ### Key Capabilities
-- Mobile device emulation
-- APK installation and management
-- noVNC remote device visualization
-- Appium Inspector integration
-- Real-time device monitoring
-- Screenshot capture
-- Multi-user access
-- CI/CD integration
+- Test execution history tracking
+- Performance trend analysis
+- Failure pattern identification
+- Test coverage evolution
+- Execution time tracking
+- Test result visualization
+- Custom report generation
+- Data export capabilities
 
-[Learn more about Mobile Testing](mobile_feature.md)  
-[Back to top](#feature-list)
-
-## AI Feature
-
-### What is the AI Feature?
-The AI Feature provides intelligent validation and object recognition capabilities for testing.
-
-### Key Capabilities
-- Screen content validation
-- Object recognition
-- Visible object listing
-- Custom validation options
-- AI-powered test automation
-
-[Learn more about AI Feature](ai_feature.md)  
-[Back to top](#feature-list)
-
-## Multi-Factor Authentication
-
-### What is the MFA Feature?
-The MFA Feature enables testing of multi-factor authentication systems, including OTP generation and validation.
-
-### Key Capabilities
-- OTP generation
-- Secret key management
-- Encrypted variable storage
-- MFA flow automation
-- Integration with authentication systems
-
-[Learn more about Multi-Factor Authentication](mfa_authentication_using_cometa.md)  
+[Learn more about Historical Analysis](historical_analysis.md)  
 [Back to top](#feature-list)
 
 ## Data Driven Testing
@@ -213,22 +162,74 @@ The Database Testing Feature enables direct database interactions and validation
 [Learn more about Database Testing](database_testing.md)  
 [Back to top](#feature-list)
 
-## Historical Analysis Feature
+## Mobile Testing
 
-### What is the Historical Analysis Feature?
-The Historical Analysis Feature provides comprehensive capabilities for analyzing test execution history, trends, and patterns over time. It enables teams to track test performance, identify recurring issues, and make data-driven decisions about test maintenance and optimization.
+### What is the Mobile Testing Feature?
+The Mobile Testing feature enables automated testing on mobile devices through emulators and real devices.
 
 ### Key Capabilities
-- Test execution history tracking
-- Performance trend analysis
-- Failure pattern identification
-- Test coverage evolution
-- Execution time tracking
-- Test result visualization
-- Custom report generation
-- Data export capabilities
+- Mobile device emulation
+- APK installation and management
+- noVNC remote device visualization
+- Appium Inspector integration
+- Real-time device monitoring
+- Screenshot capture
+- Multi-user access
+- CI/CD integration
 
-[Learn more about Historical Analysis](historical_analysis.md)  
+[Learn more about Mobile Testing](mobile_feature.md)  
+[Back to top](#feature-list)
+
+## Accessibility Testing
+
+### What is the Accessibility Testing Feature?
+The Accessibility Testing Feature enables automated testing of web applications for compliance with accessibility standards and guidelines, ensuring your applications are accessible to users with disabilities.
+
+### Key Capabilities
+- WCAG 2.1 compliance testing
+- Automated accessibility scanning
+- Detailed violation reporting
+- Screen reader compatibility testing
+- Keyboard navigation testing
+- Color contrast validation
+- ARIA attribute verification
+- Accessibility score generation
+- PDF report generation
+- Integration with existing test suites
+
+[Learn more about Accessibility Testing](accessibility_testing.md)  
+[Back to top](#feature-list)
+
+## Multi-Factor Authentication
+
+### What is the MFA Feature?
+The MFA Feature enables testing of multi-factor authentication systems, including OTP generation and validation.
+
+### Key Capabilities
+- OTP generation
+- Secret key management
+- Encrypted variable storage
+- MFA flow automation
+- Integration with authentication systems
+
+[Learn more about Multi-Factor Authentication](mfa_authentication_using_cometa.md)  
+[Back to top](#feature-list)
+
+## Email Feature
+
+### What is the Email Feature?
+The Email Feature enables sending notifications upon completion or failure of test executions, with customizable email templates and screenshot attachments.
+
+### Key Capabilities
+- Configure recipient email addresses (To, CC, BCC)
+- Custom email subject and message body
+- HTML template support
+- Screenshot attachments
+- Conditional email sending (Always/On error)
+- PDF report attachments
+- Custom template options
+
+[Learn more about Email Feature](email_feature.md)  
 [Back to top](#feature-list)
 
 ## Need Help?
