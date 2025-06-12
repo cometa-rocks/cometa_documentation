@@ -1001,7 +1001,7 @@ The Telegram Notifications Feature enables sending test execution results and up
 - Group topic support
 
 > [!TIP]
-> Watch our <a href="https://www.youtube.com/watch?v=j-hTiwg5o30" target="_blank">video tutorial</a> to see Telegram Notifications in action!
+> Watch our <a href="https://www.youtube.com/watch?v=j-hTiwg5o30" onclick="window.open(this.href); return false;">video tutorial</a> to see Telegram Notifications in action!
 
 <details>
 <summary>Learn more about Telegram Notifications</summary>
