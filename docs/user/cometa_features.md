@@ -24,7 +24,7 @@
 12. [Email Feature](#email-feature)
 13. [Telegram Notifications](#telegram-notifications)
 
-## End to  End Monitoring
+## End to End Monitoring
 
 ### Key Capabilities
 - Real-time test execution monitoring
