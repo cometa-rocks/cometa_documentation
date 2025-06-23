@@ -118,46 +118,14 @@ Read more in the detailed overview of [Cometa Features](docs/user/cometa_feature
 
 ## 🔍 Explore the Docs
 ### Core guides for:
-<details>
-<summary><strong>Admins</strong></summary>
 
-1. Deployment
-   - [Deployment Guide](docs/admin/deployment.md)
-</details>
+#### [Admins](docs/admin/README.md)
 
-<details>
-<summary><strong>Developers</strong></summary>
 
-1. API Documentation
-   - [REST API](docs/developer/REST-API.md)
-</details>
+#### [Developers](docs/developer/README.md)
 
-<details>
-<summary><strong>Users</strong></summary>
 
-1. First Steps
-   - [Getting Started](docs/user/GETTING_STARTED.md)
-   - [Feature Example: Your First Testcase](docs/user/feature_example_your_first_testcase.json)
-
-2. Core Concepts
-   - [Cometa Features](docs/user/cometa_features.md)
-   - [Cometa Actions](docs/user/cometa_actions.md)
-   - [Cometa Selectors](docs/user/cometa_selectors.md)
-
-3. Advanced Features
-   - [Mobile Feature](docs/user/mobile_feature.md)
-   - [AI Feature](docs/user/ai_feature.md)
-   - [Load Testing](docs/user/LOAD_TESTING.md)
-
-4. Authentication
-   - [MFA Authentication Preparation](docs/user/mfa_authentication_preparation.md)
-   - [MFA Authentication Using Cometa](docs/user/mfa_authentication_using_cometa.md)
-
-5. Support
-   - [Tutorials](docs/user/TUTORIALS.md)
-   - [FAQ](docs/user/FAQ.md)
-   - [Additional Questions](docs/user/questions.md)
-</details>
+#### [Users](docs/user/README.md)
 
 ## 🧑‍💻 Want to Contribute?
 
