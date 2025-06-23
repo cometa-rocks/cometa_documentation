@@ -24,7 +24,7 @@
 
 ---
 
-## 🔍 Admin Documentation
+## Admin Documentation
 
 This section contains all the information needed for system administrators to deploy, configure, and maintain Cometa.
 
@@ -44,7 +44,7 @@ This section contains all the information needed for system administrators to de
 
 ---
 
-## 🚀 Quick Deployment
+## Quick Deployment
 
 1. **Local Installation**
    ```bash
@@ -63,7 +63,7 @@ This section contains all the information needed for system administrators to de
 
 ---
 
-## 👥 User Management
+## User Management
 
 Cometa supports multiple user roles with granular permissions:
 
@@ -98,7 +98,7 @@ Cometa supports multiple user roles with granular permissions:
 
 ---
 
-## ⚙️ System Configuration
+## System Configuration
 
 **Backend Resources:**
 - **Selenoid Grid**: `http://localhost:4444/wd/hub`
@@ -126,7 +126,7 @@ Cometa supports multiple user roles with granular permissions:
 
 ---
 
-## 🔒 Security & Authentication
+## Security & Authentication
 
 Cometa supports multiple SSO providers:
 
@@ -174,7 +174,7 @@ Cometa supports multiple SSO providers:
 
 ---
 
-## 💾 Backup & Recovery
+## Backup & Recovery
 
 **Creating Backups:**
 - Execute backup script from root folder:
@@ -190,7 +190,7 @@ Cometa supports multiple SSO providers:
 
 ---
 
-## 🌐 Browser Management
+## Browser Management
 
 **Installing Browser Versions:**
 - Install latest browser versions (optional):
@@ -206,7 +206,7 @@ Cometa supports multiple SSO providers:
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 **Common Issues:**
 - Installation typically takes 8-10 minutes
@@ -228,7 +228,7 @@ Cometa supports multiple SSO providers:
 
 ---
 
-## 🆘 Support
+## Support
 
 We're here to support you:
 
