@@ -54,20 +54,16 @@ This section contains all the information needed for system administrators to de
    ```
    Access the UI at `https://localhost:443`
 
-> [!NOTE]
-> - Default ports: 443 (HTTPS) and 80 (HTTP)
-> - Customize ports in `docker-compose.yml` if needed
-> - Installation typically completes in 8 minutes. If you face any issues [contact us](#need-help)
-> - In corporate environments there are some things to know regarding Internet access as well as SSO provider setup.
+   - Default ports: 443 (HTTPS) and 80 (HTTP)
+   - Customize ports in `docker-compose.yml` if needed
+   - Installation typically completes in 8 minutes. If you face any issues, [contact us](#support)
+   - In corporate environments, review Internet access and SSO provider setup requirements.
 
-*Check our [Deployment guide](deployment.md) for manual installation steps and corporate environments requirements.*
+*See the [Deployment Guide](deployment.md) for manual installation steps and corporate environment requirements.*
 
 ---
 
 ## 👥 User Management
-
-<details>
-<summary><strong>User Roles & Permissions</strong></summary>
 
 Cometa supports multiple user roles with granular permissions:
 
@@ -76,96 +72,65 @@ Cometa supports multiple user roles with granular permissions:
 - **ANALYSIS**: Analysis and reporting focused role
 - **Department Admin**: Department-specific administration rights
 
-#### Role Capabilities
-Cometa comes with extensive role-based permissions that can be assigned to different user types:
+**Role Capabilities:**
 - Access to edit departments
 - User management within departments
 - Feature creation and modification
 - Test execution permissions
 - Reporting and analysis access
 
-![Role Permissions](../../img/rolePermissions.png)
-
-#### Department-Wise Administration
+**Department-Wise Administration:**
 - Create department-specific admin roles
 - Assign users to multiple departments
 - Manage permissions at department level
 - Share resources between departments
 
-</details>
-
-<details>
-<summary><strong>Account Management</strong></summary>
-
-#### Default Superuser
+**Default Superuser:**
 - Default superuser is created at runtime as `admin:admin`
 - Create additional superusers via Django admin interface
 - Access Django admin at `http://localhost:8000/admin`
 
-#### User Account Operations
-- **GET** `/backend/api/accounts/` - Retrieve all accounts (requires permissions)
-- **PATCH** `/backend/api/accounts/<user_id>/` - Modify account information
-- **DELETE** `/backend/api/accounts/<user_id>/` - Delete user account
-- **GET** `/backend/api/account_roles/` - Retrieve account roles
-
-</details>
+**User Account Operations:**
+- **GET** `/backend/api/accounts/` – Retrieve all accounts (requires permissions)
+- **PATCH** `/backend/api/accounts/<user_id>/` – Modify account information
+- **DELETE** `/backend/api/accounts/<user_id>/` – Delete user account
+- **GET** `/backend/api/account_roles/` – Retrieve account roles
 
 ---
 
 ## ⚙️ System Configuration
 
-<details>
-<summary><strong>Backend Resources</strong></summary>
-
-Access these resources for system administration:
-
+**Backend Resources:**
 - **Selenoid Grid**: `http://localhost:4444/wd/hub`
 - **Selenoid Dashboard**: `http://localhost:4444/dashboard/`
 - **Django Admin**: `http://localhost:8000/admin`
 
-</details>
-
-<details>
-<summary><strong>Directory Layout</strong></summary>
-
+**Directory Layout:**
 ```
 ./behave                # Behave related files
-./crontabs              # contains crontab files for Django & Behave
+./crontabs              # Crontab files for Django & Behave
 ./selenoid              # Selenoid related files
 ./front                 # Apache and Angular files
 ./src                   # Django related files
-./src/backend           # contains the Backend code for URLs
-./src/cometa_pj         # contains the configuration of Django
+./src/backend           # Backend code for URLs
+./src/cometa_pj         # Django configuration
 ./ws-server             # WebSocket server related files
 ```
 
-</details>
-
-<details>
-<summary><strong>System Requirements</strong></summary>
-
-#### Hardware Requirements {#system-resources}
+**System Requirements:**
 - **Minimum**: 16GB RAM, 8 CPUs, 28GB disk space
-- **Recommended**: Higher specifications for production use
-- **Disk Space**: Approximately 28GB required
-
-#### System Configuration
+- **Recommended**: Higher specs for production
 - **ulimit**: Set to 8192 for corporate environments using proxy
 - **Server Time**: Must be synchronized with NTP (max 10-minute deviation)
 - **Operating System**: Linux recommended (native environment)
-
-</details>
 
 ---
 
 ## 🔒 Security & Authentication
 
-<details>
-<summary><strong>Single Sign-On (SSO) Setup</strong></summary>
-
 Cometa supports multiple SSO providers:
 
-#### Google OAuth Setup
+**Google OAuth Setup:**
 1. Go to [Google Developer Console](https://console.cloud.google.com/)
 2. Create an OAuth application
 3. Add your domain to allowed hosts
@@ -173,7 +138,7 @@ Cometa supports multiple SSO providers:
 5. Paste credentials in `./front/apache-conf/metadata/accounts.google.com.client`
 6. Set `redirect_uri` to `https://<domain>/callback`
 
-#### GitLab OAuth Setup
+**GitLab OAuth Setup:**
 1. Go to [git.amvara.de](https://git.amvara.de/)
 2. Create a new account
 3. Settings > Application > Add new application
@@ -182,140 +147,96 @@ Cometa supports multiple SSO providers:
 6. Paste credentials in `./front/apache-conf/metadata/accounts/git.amvara.de.client`
 7. Set `redirect_uri` to `https://<domain>/callback`
 
-</details>
+**Corporate Environment Configuration:**
 
-<details>
-<summary><strong>Corporate Environment Configuration</strong></summary>
-
-#### Proxy Configuration
-Configure Docker to use corporate proxy:
-
-```json
-{
-  "proxies": {
-    "default": {
-      "httpProxy": "http://<host>:<port>",
-      "httpsProxy": "http://<host>:<port>",
-      "noProxy": "localhost,127.0.0.1,172.0.0.1/8,cometa_socket,cometa_zalenium,cometa_front,cometa_behave,cometa_django,cometa_postgres,behave"
+- Configure Docker to use corporate proxy:
+  ```json
+  {
+    "proxies": {
+      "default": {
+        "httpProxy": "http://<host>:<port>",
+        "httpsProxy": "http://<host>:<port>",
+        "noProxy": "localhost,127.0.0.1,172.0.0.1/8,cometa_socket,cometa_zalenium,cometa_front,cometa_behave,cometa_django,cometa_postgres,behave"
+      }
     }
   }
-}
-```
-
-#### Required Domain Whitelist
-| **Domain** | **Reason** |
-|------------|------------|
-| git.amvara.de | GitLab-runner updates |
-| d.amvara.de | Discord notifications |
-| github.com, raw.githubusercontent.com | GitHub dependencies |
-| hub.docker.com | Docker images |
-| registry.npmjs.org | Node.js packages |
-| pypi.org | Python libraries |
-| deb.debian.org | Debian packages |
-
-</details>
+  ```
+- Required domain whitelist:
+  | **Domain** | **Reason** |
+  |------------|------------|
+  | git.amvara.de | GitLab-runner updates |
+  | d.amvara.de | Discord notifications |
+  | github.com, raw.githubusercontent.com | GitHub dependencies |
+  | hub.docker.com | Docker images |
+  | registry.npmjs.org | Node.js packages |
+  | pypi.org | Python libraries |
+  | deb.debian.org | Debian packages |
 
 ---
 
 ## 💾 Backup & Recovery
 
-<details>
-<summary><strong>Creating Backups</strong></summary>
+**Creating Backups:**
+- Execute backup script from root folder:
+  ```bash
+  ./backup.sh
+  ```
+- Backup includes database, features metadata, screenshots, and is timestamped.
 
-Execute backup script from root folder:
-```bash
-./backup.sh
-```
-
-Backup includes:
-- Database backup
-- All features metadata
-- Screenshots taken
-- Timestamped backup folder
-
-</details>
-
-<details>
-<summary><strong>Restoring Backups</strong></summary>
-
+**Restoring Backups:**
 1. Unzip `db_data.zip` and copy contents to folder `db_data`
 2. Unzip `features.zip` and `screenshots.zip` directly inside behave folder
 3. Restart containers: `docker-compose restart`
-
-</details>
 
 ---
 
 ## 🌐 Browser Management
 
-<details>
-<summary><strong>Installing Browser Versions</strong></summary>
+**Installing Browser Versions:**
+- Install latest browser versions (optional):
+  ```bash
+  ./backend/selenoid/deploy_selenoid.sh -n 3
+  ```
+- This configures and pulls the three newest Docker images with virtual browsers.
 
-Install latest browser versions (optional):
-```bash
-./backend/selenoid/deploy_selenoid.sh -n 3
-```
-
-This configures and pulls the three newest Docker images with virtual browsers.
-
-</details>
-
-<details>
-<summary><strong>Browser Configuration</strong></summary>
-
+**Browser Configuration:**
 - Selenoid images are the browsers available in Cometa
 - Parse new browser images: `https://localhost/backend/parseBrowsers/`
 - Support for BrowserStack, HeadSpin, or SauceLabs browsers (advanced setup)
-
-</details>
 
 ---
 
 ## 🔧 Troubleshooting
 
-<details>
-<summary><strong>Common Issues</strong></summary>
-
-#### Installation Problems
+**Common Issues:**
 - Installation typically takes 8-10 minutes
 - If stuck for more than 5 minutes, contact support
 - Check logs: `docker-compose logs -f --tail=10`
 
-#### Debug Mode
-Enable frontend debug mode:
-```bash
-docker exec -it cometa_front bash
-root@cometa_front:/code# ./start.sh serve
-```
-Access debug mode at `https://localhost/debug/`
+**Debug Mode:**
+- Enable frontend debug mode:
+  ```bash
+  docker exec -it cometa_front bash
+  root@cometa_front:/code# ./start.sh serve
+  ```
+- Access debug mode at `https://localhost/debug/`
 
-#### Import Actions
-On first start, manually parse actions:
-- Visit `https://localhost/backend/parseActions/`
-- Import option also available in Admin Section
-
-</details>
-
-<details>
-<summary><strong>Support Resources</strong></summary>
-
-📫 Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)  
-💬 Discord: [Join us](https://discord.gg/e3uBKHhKW5)  
-🐛 Issues: [GitHub Issues](https://github.com/cometa-rocks/cometa/issues)
-
-</details>
+**Import Actions:**
+- On first start, manually parse actions:
+  - Visit `https://localhost/backend/parseActions/`
+  - Import option also available in Admin Section
 
 ---
 
-## 🧑‍🤝‍🧑 Sponsors
-
-## 🆘 Need Help?
+## 🆘 Support
 
 We're here to support you:
 
-- [Discord Community](https://discord.gg/PUxt5bsRej) - Join for instant access and support
-- [YouTube Channel](https://www.youtube.com/channel/UCSne7hU1GRbg4cV0qWvD2Uw) - Video tutorials and demos
-- [GitHub Issues](https://github.com/cometa-rocks/cometa/issues) - Report bugs and request features
+- [Discord Community](https://discord.gg/PUxt5bsRej) – Join for instant access and support
+- [YouTube Channel](https://www.youtube.com/channel/UCSne7hU1GRbg4cV0qWvD2Uw) – Video tutorials and demos
+- [GitHub Issues](https://github.com/cometa-rocks/cometa/issues) – Report bugs and request features
+- Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)
+
 ---
 
 ## 🧑‍🤝‍🧑 Sponsors
