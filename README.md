@@ -28,8 +28,7 @@
 
 ## 🚀 What is Cometa?
 
-**Cometa** stands for **Complete Meta Test Platform** — a versatile, powerful testing solution that lets you run automated tests **across system boundaries** using either a **codeless editor** or **full-code mode**, on cloud or on-prem.
-
+**Cometa** stands for **Complete Meta Test Platform** — a versatile, powerful testing solution that lets you run automated tests **across system boundaries** using either a **codeless editor** or **full-code mode**, on cloud, hybrid or on-prem. In today's landscape where **AI** and open source are rapidly advancing, robust **software security** is not optional.
 > _Meta_ comes from the Greek "μετά-" meaning "beyond" — and that's exactly what Cometa enables.
 ## One More Thing...
 
