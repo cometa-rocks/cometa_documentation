@@ -86,7 +86,6 @@ API documentation and development resources
 ### Advanced Features
 - **AI-Powered Testing**: Autonomous browsing and intelligent test generation
 - **Data-Driven Testing**: Parameterized tests with external data sources
-- **Email Testing**: Email validation and testing workflows
 - **Telegram Integration**: Real-time notifications and alerts
 - **End-to-End Monitoring**: Real-time test execution monitoring
 - **Historical Analysis**: Test result trends and analytics
