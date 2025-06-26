@@ -141,8 +141,8 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ## 🧑‍🤝‍🧑 Sponsors
 
-- **Mercedes-Benz AG**
-- **Daimler Trucks AG**
+- Mercedes-Benz AG
+- Daimler Trucks AG
 
 ---
 

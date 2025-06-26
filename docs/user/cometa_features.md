@@ -222,6 +222,9 @@ The AI Feature provides intelligent validation and object recognition capabiliti
 - Visible object listing
 - Custom validation options
 - AI-powered test automation
+> [!TIP]
+> Watch our [video tutorial](https://www.loom.com/share/1d5cdb0681ab46308ddf96de0b824e10?sid=5cb1df8b-04ac-4dcd-96e5-47e2a96565b6) to see Testing using AI Agent in action! Also check [video tutorial](https://www.youtube.com/watch?v=QQf6nrAP-Sw) for more on Automation!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about AI Feature</summary>
@@ -280,6 +283,10 @@ Cometa provides robust API testing capabilities for validating backend services 
 - Data extraction from responses
 - Request chaining
 - API call editor with visual interface
+
+> [!TIP]
+> Watch our [video tutorial](https://youtu.be/plC8qag08ZQ) to see Testing using API in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about API Testing</summary>
@@ -349,6 +356,10 @@ The Load Testing feature allows users to optimize performance testing by control
 - User-friendly interface
 - Real-time monitoring
 - Concurrent browser execution
+
+> [!TIP]
+> Watch our [video tutorial](https://www.youtube.com/watch?v=hWAyx6iBbU4) to see Load Testing in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about Load Testing</summary>
@@ -483,6 +494,10 @@ The Data Driven Testing Feature allows testing with multiple data sets from vari
 - Dynamic data handling
 - Test case parameterization
 
+> [!TIP]
+> Watch our [video tutorial](https://youtu.be/f-3PxxhrIGY) to see Data-Driven Testing in action!
+> *(Right-click to open in new tab)*
+
 <details>
 <summary>Learn more about Data Driven Testing</summary>
 
@@ -567,6 +582,10 @@ The Database Testing Feature enables direct database interactions and validation
 - JQ pattern support for data processing
 - Secure credential management
 - JSON output conversion
+
+> [!TIP]
+> Watch our [video tutorial](https://www.youtube.com/watch?v=uGRXoUh3aFA) to see Database Testing in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about Database Testing</summary>
@@ -806,6 +825,10 @@ The Accessibility Testing Feature enables automated testing of web applications 
 - Accessibility score generation
 - PDF report generation
 - Integration with existing test suites
+
+> [!TIP]
+> Watch our [video tutorial](https://www.youtube.com/watch?v=04bZhh2188Y) to see Accessibility Testing in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about Accessibility Testing</summary>

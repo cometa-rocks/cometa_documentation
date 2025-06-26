@@ -61,6 +61,8 @@ This section contains all the information needed for system administrators to de
 
 *See the [Deployment Guide](deployment.md) for manual installation steps and corporate environment requirements.*
 
+[↑ Back to top](#)
+
 ---
 
 ## User Management
@@ -96,6 +98,8 @@ Cometa supports multiple user roles with granular permissions:
 - **DELETE** `/backend/api/accounts/<user_id>/` – Delete user account
 - **GET** `/backend/api/account_roles/` – Retrieve account roles
 
+[↑ Back to top](#)
+
 ---
 
 ## System Configuration
@@ -123,6 +127,8 @@ Cometa supports multiple user roles with granular permissions:
 - **ulimit**: Set to 8192 for corporate environments using proxy
 - **Server Time**: Must be synchronized with NTP (max 10-minute deviation)
 - **Operating System**: Linux recommended (native environment)
+
+[↑ Back to top](#)
 
 ---
 
@@ -172,6 +178,8 @@ Cometa supports multiple SSO providers:
   | pypi.org | Python libraries |
   | deb.debian.org | Debian packages |
 
+[↑ Back to top](#)
+
 ---
 
 ## Backup & Recovery
@@ -188,6 +196,8 @@ Cometa supports multiple SSO providers:
 2. Unzip `features.zip` and `screenshots.zip` directly inside behave folder
 3. Restart containers: `docker-compose restart`
 
+[↑ Back to top](#)
+
 ---
 
 ## Browser Management
@@ -203,6 +213,8 @@ Cometa supports multiple SSO providers:
 - Selenoid images are the browsers available in Cometa
 - Parse new browser images: `https://localhost/backend/parseBrowsers/`
 - Support for BrowserStack, HeadSpin, or SauceLabs browsers (advanced setup)
+
+[↑ Back to top](#)
 
 ---
 
@@ -226,20 +238,22 @@ Cometa supports multiple SSO providers:
   - Visit `https://localhost/backend/parseActions/`
   - Import option also available in Admin Section
 
+[↑ Back to top](#)
+
 ---
 
-## Support
+## 🆘 Need Help?
 
 We're here to support you:
 
-- [Discord Community](https://discord.gg/PUxt5bsRej) – Join for instant access and support
-- [YouTube Channel](https://www.youtube.com/channel/UCSne7hU1GRbg4cV0qWvD2Uw) – Video tutorials and demos
-- [GitHub Issues](https://github.com/cometa-rocks/cometa/issues) – Report bugs and request features
-- Email: [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)
-
+- [Discord Community](https://discord.gg/PUxt5bsRej) - Join for instant access and support
+- [YouTube Channel](https://www.youtube.com/channel/UCSne7hU1GRbg4cV0qWvD2Uw) - Video tutorials and demos
+- [GitHub Issues](https://github.com/cometa-rocks/cometa/issues) - Report bugs and request features
 ---
 
 ## 🧑‍🤝‍🧑 Sponsors
 
 - Mercedes-Benz AG
 - Daimler Trucks AG
+
+[↑ Back to top](#)

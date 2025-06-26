@@ -45,7 +45,7 @@ This section contains all the information needed for users to start with Cometa.
    - [Load Testing](LOAD_TESTING.md) - Performance and concurrent browser testing
    - [API Testing](api_test.md) - REST API testing capabilities
    - [Database Testing](database_testing.md) - Database connection and testing
-   - [Data Driven Testing](data_driven_testing.md) - Parameterized and data-driven tests
+   - [Data Driven Testing](data_driven_testing.md) - Parameterised and data-driven tests
    - [Accessibility Testing](accessibility_testing.md) - WCAG compliance and accessibility testing
    - [Security Feature](security_feature.md) - Security header validation and vulnerability detection
    - [Email Feature](email_feature.md) - Email testing and validation
