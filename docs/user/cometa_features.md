@@ -11,8 +11,8 @@
 
 ## Feature List
 1. [End to End Monitoring](#end-to-end-monitoring)
-2. [Security Feature](#security-feature)
-3. [AI Feature](#ai-feature)
+2. [Basic Security Feature](#security-feature)
+3. [AI & Automation Feature](#ai-feature)
 4. [API Testing](#api-testing)
 5. [Load Testing](#load-testing)
 6. [Historical Analysis Feature](#historical-analysis-feature)
@@ -222,6 +222,9 @@ The AI Feature provides intelligent validation and object recognition capabiliti
 - Visible object listing
 - Custom validation options
 - AI-powered test automation
+> [!TIP]
+> Watch the [video tutorial](https://www.loom.com/share/1d5cdb0681ab46308ddf96de0b824e10?sid=5cb1df8b-04ac-4dcd-96e5-47e2a96565b6) to see Testing using AI Agent in action! Also check [video tutorial](https://www.youtube.com/watch?v=QQf6nrAP-Sw) for more on Automation!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about AI Feature</summary>
@@ -280,6 +283,10 @@ Cometa provides robust API testing capabilities for validating backend services 
 - Data extraction from responses
 - Request chaining
 - API call editor with visual interface
+
+> [!TIP]
+> Watch the [video tutorial](https://youtu.be/plC8qag08ZQ) to see Testing using API in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about API Testing</summary>
@@ -349,6 +356,10 @@ The Load Testing feature allows users to optimize performance testing by control
 - User-friendly interface
 - Real-time monitoring
 - Concurrent browser execution
+
+> [!TIP]
+> Watch the [video tutorial](https://www.youtube.com/watch?v=hWAyx6iBbU4) to see Load Testing in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about Load Testing</summary>
@@ -483,6 +494,10 @@ The Data Driven Testing Feature allows testing with multiple data sets from vari
 - Dynamic data handling
 - Test case parameterization
 
+> [!TIP]
+> Watch the [video tutorial](https://youtu.be/f-3PxxhrIGY) to see Data-Driven Testing in action!
+> *(Right-click to open in new tab)*
+
 <details>
 <summary>Learn more about Data Driven Testing</summary>
 
@@ -568,53 +583,116 @@ The Database Testing Feature enables direct database interactions and validation
 - Secure credential management
 - JSON output conversion
 
+> [!TIP]
+> Watch the [video tutorial](https://www.youtube.com/watch?v=uGRXoUh3aFA) to see Database Testing in action!
+> *(Right-click to open in new tab)*
+
 <details>
 <summary>Learn more about Database Testing</summary>
 
-## What is the Database Testing Feature?
-The Database Testing Feature enables direct database interactions and validations, providing comprehensive support for both SQL and NoSQL databases through SQLAlchemy and other database drivers.
+## What is SQLAlchemy Database Support?
+SQLAlchemy is a powerful Python library that provides an Object Relational Mapper (ORM) and low-level SQL execution support for various relational databases. It supports SQL-92 as well as newer SQL standards.
 
 ## Key Capabilities
-- SQL and NoSQL database support
-- Database connection management
-- CRUD operations execution
-- Data validation and assertions
-- Query execution and result analysis
-- JQ pattern support for data processing
-- Secure credential management
-- JSON output conversion
+- SQL-92 compliant database support
+- Object Relational Mapping (ORM)
+- Low-level SQL execution
+- Multiple database driver support
+- Connection string management
+- Query building and execution
+- Transaction management
+- Schema management
 
-## Supported Databases
+## Supported Standards
 
 ### SQL Databases
-- SQLite
-- MySQL/MariaDB
-- PostgreSQL
-- Microsoft SQL Server
-- Oracle
-- IBM DB2
+| Database | SQL-92 Support | SQLAlchemy Driver |
+|----------|---------------|-------------------|
+| MySQL | Yes | `mysql+pymysql://` or `mysql+mysqlconnector://` |
+| PostgreSQL | Yes | `postgresql+psycopg2://` |
+| SQLite | Yes | `sqlite:///database.db` |
+| Microsoft SQL Server | Yes | `mssql+pyodbc://` |
+| Oracle | Yes | `oracle+cx_oracle://` |
+| MariaDB | Yes | `mysql+pymysql://` |
+| IBM Db2 | Yes | `ibm_db_sa://` |
 
-### NoSQL Databases
-- MongoDB
-- Redis
-- Cassandra
-- Elasticsearch
-- Graph Databases (Neo4j+)
+## Testing Categories
 
-## Database Drivers Installation
+### Core Installation
+```sh
+pip install sqlalchemy
+```
 
-Install the required database drivers using Poetry:
+### Database Drivers
+```sh
+pip install pymysql                # MySQL / MariaDB
+pip install psycopg2                # PostgreSQL
+pip install pyodbc                  # MSSQL (Microsoft SQL Server)
+pip install cx_Oracle                # Oracle
+pip install ibm_db_sa                # IBM Db2
+```
 
-| Database | Poetry Install Command |
-|----------|----------------------|
-| SQLAlchemy | `poetry add sqlalchemy` |
-| MySQL (PyMySQL) | `poetry add pymysql` |
-| MySQL (MySQL Connector) | `poetry add mysql-connector-python` |
-| PostgreSQL (Psycopg2) | `poetry add psycopg2` |
-| SQLite | `poetry add sqlite` |
-| MSSQL (PyODBC) | `poetry add pyodbc` |
-| Oracle (cx_Oracle) | `poetry add cx_oracle` |
-| IBM Db2 | `poetry add ibm_db_sa` |
+## Implementation Methods
+
+### MySQL / MariaDB
+```python
+from sqlalchemy import create_engine
+
+# Using PyMySQL driver (Recommended)
+engine = create_engine("mysql+pymysql://testuser:testpassword@localhost/testdb")
+
+# OR using MySQL Connector
+engine = create_engine("mysql+mysqlconnector://testuser:testpassword@localhost/testdb")
+
+with engine.connect() as conn:
+    result = conn.execute("SELECT * FROM users;")
+    print(result.fetchall())
+```
+Works with MySQL and MariaDB (SQL-92 compliant).
+
+### PostgreSQL
+```python
+engine = create_engine("postgresql+psycopg2://testuser:testpassword@localhost/testdb")
+```
+PostgreSQL supports SQL-92 and newer features like JSON storage, window functions.
+
+### SQLite (Lightweight, No Server Needed)
+```python
+engine = create_engine("sqlite:///mydatabase.db")
+```
+Good for local testing, fully supports SQL-92 but lacks advanced features like `RIGHT JOIN`.
+
+### Microsoft SQL Server (MSSQL)
+```python
+engine = create_engine("mssql+pyodbc://testuser:testpassword@localhost/testdb?driver=SQL+Server")
+```
+MSSQL supports SQL-92 and extensions like `TOP` (instead of `LIMIT`).
+
+### Oracle Database
+```python
+engine = create_engine("oracle+cx_oracle://testuser:testpassword@localhost:1521/orcl")
+```
+Oracle follows SQL-92 but has proprietary syntax like `ROWNUM` instead of `LIMIT`.
+
+### IBM Db2
+```python
+engine = create_engine("ibm_db_sa://testuser:testpassword@localhost/testdb")
+```
+IBM Db2 is SQL-92 compliant with additional OLAP features.
+
+## Reporting and Analysis
+
+### SQL-92 Compatibility
+If you need SQL-92 compatibility, MySQL, PostgreSQL, SQLite, and SQL Server are good choices.
+For enterprise solutions, PostgreSQL, MSSQL, and Oracle offer more features.
+For lightweight development, use SQLite (no installation required).
+
+## Integration Capabilities
+
+### Final Thoughts
+SQLAlchemy supports almost every relational database, whether SQL-92 compliant or newer.
+
+Would you like help choosing a database or setting up ORM models in SQLAlchemy?
 </details>
 
 [Back to top](#feature-list)
@@ -747,6 +825,10 @@ The Accessibility Testing Feature enables automated testing of web applications 
 - Accessibility score generation
 - PDF report generation
 - Integration with existing test suites
+
+> [!TIP]
+> Watch the [video tutorial](https://www.youtube.com/watch?v=04bZhh2188Y) to see Accessibility Testing in action!
+> *(Right-click to open in new tab)*
 
 <details>
 <summary>Learn more about Accessibility Testing</summary>
@@ -1001,7 +1083,7 @@ The Telegram Notifications Feature enables sending test execution results and up
 - Group topic support
 
 > [!TIP]
-> Watch our [video tutorial](https://youtu.be/LcykwJoLZQY) to see Telegram Notifications in action!
+> Watch the [video tutorial](https://youtu.be/LcykwJoLZQY) to see Telegram Notifications in action!
 > *(Right-click to open in new tab)*
 
 <details>

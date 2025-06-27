@@ -15,17 +15,18 @@ Co.meta offers versatile and easy to use steps like "Goto URL {URL}" or "Move mo
 4. [Conditional - actions](#conditional-actions)
 5. [Validation - actions](#validation-actions)
 6. [CSS selectors actions](#css-selectors-actions)
-7. [Feature actions](#feature-actions)
-8. [Mobile actions](#mobile-actions)
-9. [Mouse actions](#mouse-actions)
-10. [Keyboard actions](#keyboard-actions)
-11. [IBM actions](#ibm-actions)
-12. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
-13. [Editing Excel Files](#editing-excel-files)
-14. [Uploading and Downloading files](#uploading-and-downloading-files)
-15. [Other actions](#other-actions)
-16. [Action Examples](#action-examples)
-17. [Support](#support)
+7. [Database actions](#database-actions)
+8. [Feature actions](#feature-actions)
+9. [Mobile actions](#mobile-actions)
+10. [Mouse actions](#mouse-actions)
+11. [Keyboard actions](#keyboard-actions)
+12. [IBM actions](#ibm-actions)
+13. [IBM Cognos QueryStudio actions](#ibm-cognos-querystudio-actions)
+14. [Editing Excel Files](#editing-excel-files)
+15. [Uploading and Downloading files](#uploading-and-downloading-files)
+16. [Other actions](#other-actions)
+17. [Action Examples](#action-examples)
+18. [Support](#support)
 
 <br/>
 
@@ -587,6 +588,66 @@ click</td>
             <br>_________________________________________________________
         <td>
     </tr>
+</table>
+
+### Database actions<a id="DB_AC"></a>
+
+<table>
+  <tr>
+    <th>Action</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Connect to SQL database</td>
+    <td style="vertical-align:top">
+      Establishes a connection to a SQL database using a connection string and stores it in a variable.
+    </td>
+    <td style="vertical-align:top">
+      <b>Example 1:</b><br>
+      <code>Connect to SQL database using "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;" and store connection in "myDatabaseConnection"</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Execute SQL query</td>
+    <td style="vertical-align:top">
+      Executes a SQL query and stores the result in a specified variable.
+    </td>
+    <td style="vertical-align:top">
+      <b>Example 1:</b><br>
+      <code>Execute SQL query "SELECT * FROM users" and store result in "user_data"</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Connect to NoSQL database</td>
+    <td style="vertical-align:top">
+      Establishes a connection to a NoSQL database (e.g., MongoDB) and stores it in a variable.
+    </td>
+    <td style="vertical-align:top">
+      <b>Example 1:</b><br>
+      <code>Connect to NoSQL database using "mongodb://localhost:27017" and store connection in "mongoConnection"</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Execute NoSQL query</td>
+    <td style="vertical-align:top">
+      Executes a NoSQL query on a specific collection and stores the result in a variable.
+    </td>
+    <td style="vertical-align:top">
+      <b>Example 1:</b><br>
+      <code>Execute the NoSQL query "{status: 'active'}" on the "users" collection and store the result in "active_users"</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Switch current database</td>
+    <td style="vertical-align:top">
+      Switches the active database connection to another one previously stored in a variable.
+    </td>
+    <td style="vertical-align:top">
+      <b>Example 1:</b><br>
+      <code>Switch current database to "myDatabaseConnection"</code>
+    </td>
+  </tr>
 </table>
 
 ### Feature actions<a id="FEATURE_AC"></a>
