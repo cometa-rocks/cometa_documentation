@@ -885,7 +885,7 @@ click</td>
       <td><code>Uninstall app "com.example.app"</code></td>
     </tr>
 
-
+ 
     <tr>
       <td>On mobile start app "{app_package}" "{app_activity}"</td>
       <td>Starts the mobile app with the specified package and activity name</td>
@@ -894,88 +894,17 @@ click</td>
 
     
     <tr>
-      <td>Close app</td>
+      <td>On mobile close app "{app_package}"</td>
       <td>Closes the mobile app with the specified package name</td>
       <td><code>On mobile close app "com.example.app"</code></td>
     </tr>
     
-    <tr>
-    (deleted?)
-      <td>Check element is visible</td>
-      <td>Asserts that the element is visible on screen</td>
-      <td><code>Check if element "//android.widget.TextView[@text='Welcome']" is visible</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Check element is not visible</td>
-      <td>Verifies that an element is not visible on the screen</td>
-      <td><code>Check if element "//*[@id='popup']" is not visible</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Check element is enabled</td>
-      <td>Verifies that an element is currently enabled</td>
-      <td><code>Check if element "//*[@id='submit']" is enabled</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleetd')
-      <td>Check element is not enabled</td>
-      <td>Verifies that an element is currently disabled</td>
-      <td><code>Check if element "//*[@id='submit']" is not enabled</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Check element contains text</td>
-      <td>Checks that the element includes the expected text content</td>
-      <td><code>Check if element "//*[@id='message']" contains text "Welcome"</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Check element does not contain text</td>
-      <td>Ensures the specified text is not present in the element</td>
-      <td><code>Check if element "//*[@id='message']" does not contain text "Error"</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Validate screen contains object</td>
-      <td>Checks the screen for a specific string or object presence</td>
-      <td><code>Validate if current screen contains "Welcome"</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Switch to frame by ID</td>
-      <td>Switches the context to a specific frame using its ID</td>
-      <td><code>Switch to frame with id "frame1"</code></td>
-    </tr>
-
     
     <tr>
     (On mobile check if app "{app_package}" is installed on device "{device_name}")
       <td>Check if app "{app_package}" is installed on mobile device "{device_name}"</td>
       <td>Verifies whether the specified app is installed on the target device.</td>
       <td><code>Check if app "com.example.apk" is installed on device "device_1"</code></td>
-    </tr>
-
-    
-    <tr>
-    (deleted?)
-      <td>Check if app "{app_package}" is running on mobile device "{device_name}"</td>
-      <td>Attempts to check if the app is currently running. Requires platform-specific implementation.</td>
-      <td><code>Check if app "com.example.app" is running on device "device_1"</code></td>
     </tr>
 
 
@@ -1051,22 +980,12 @@ click</td>
     </tr>
 
 
-    
-    <tr>
-    (deleted?)
-      <td>Check if mobile element with text "{text}" is visible</td>
-      <td>Verifies that an element containing the given text is visible on screen.</td>
-      <td><code>Check if mobile element with text "Welcome" is visible</code></td>
-    </tr>
-
-
     <tr>
     (On mobile perform drag and drop from "{start_element}" to "{end_element}")
       <td>Perform drag and drop from "{start_element}" to "{end_element}" on mobile</td>
       <td>Performs a drag and drop operation between two elements identified by their IDs.</td>
       <td><code>Perform drag and drop from "source_element_id" to "target_element_id"</code></td>
     </tr>
-
 
     
     <tr>
@@ -1123,6 +1042,28 @@ click</td>
       <td>Verifies that a specific element is visible on the screen using XPath.</td>
       <td><code>Check if mobile element "//android.widget.Button[@text='Submit']" is visible</code></td>
     </tr>
+
+    <tr>
+      <td>Assert element is present</td>
+      <td>Checks if a specific element is visible on the screen</td>
+      <td><code>On mobile assert "//android.widget.Button[@text='Submit']" is present</code></td>
+    </tr>
+
+    
+    <tr>
+      <td>Validate if element is visible</td>
+      <td>Checks if the element is visible and stores the result in a variable</td>
+      <td><code>On mobile validate if "//android.widget.Button[@text='Submit']" is visible and save result in "is_visible"</code></td>
+    </tr>
+
+    
+    <tr>
+      <td>Validate if element is present</td>
+      <td>Checks if the element exists (present in DOM) and stores the result in a variable</td>
+      <td><code>On mobile validate if "//android.widget.Button[@text='Submit']" is present and save result in "is_present"</code></td>
+    </tr>
+
+    
   </tbody>
 </table>
 
