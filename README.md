@@ -112,8 +112,8 @@ Read more in the detailed overview of [Cometa Features](docs/user/cometa_feature
 | 2021 | Public GitHub repo |
 | 2022 | Enterprise pilots |
 | 2023 | Formation of global legal entity |
-| 2024 | Roadmap: AI selectors, Load Testing, Chrome CDP metrics |
-| 2025 | Enhanced AI capabilities, Database Testing, and expanded enterprise features |
+| 2024 |  AI selectors, Load Testing, Chrome CDP metrics |
+| 2025 | Roadmap: Enhanced AI capabilities, Database Testing, and expanded enterprise features |
 
 ---
 
