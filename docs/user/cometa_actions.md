@@ -1,4 +1,4 @@
-<picture>
+ <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
@@ -691,26 +691,22 @@ click</td>
     </tr>
   </thead>
   <tbody>
-	<tr>
-      <td>Start mobile "{mobile_name}" use capabilities """{capabilities}""" reference to "{variable_name}"</td>
+	  
+    <tr>
+    (Start mobile "{mobile_name}" use capabilities "{capabilities}" reference to "{variable_name}")
+      <td>Start mobile "{mobile_name}" use capabilities "{capabilities}" reference to "{variable_name}"</td>
       <td>
-        Starts an Android emulator using an available image, creates a container (without launching it), applies optional capabilities, and stores the reference for later steps.
+	Starts an Android emulator using an available image, creates a container (without launching it), applies optional capabilities, and stores the reference for later steps.
       </td>
       <td>
-        <code>Start mobile "Android_Emulator" use capabilities """{ "platformName": "Android", "app": "/path/to/app.apk" }""" reference to "myMobile"</code>
+	<code>Start mobile "Android_Emulator" use capabilities """{ "platformName": "Android", "app": "/path/to/app.apk" }""" reference to "myMobile"</code>
       </td>
     </tr>
+
+    
     <tr>
-      <td>Start mobile "{mobile_name}"</td>
-      <td>
-        Starts an Android emulator without any additional capabilities or reference name.
-      </td>
-      <td>
-        <code>Start mobile "Android_Emulator"</code>
-      </td>
-    </tr>
-    <tr>
-      <td>Connect to mobile "{mobile_code}" use capabilities """{capabilities}""" reference to "{variable_name}"</td>
+    (Connect to mobile "{mobile_code}" use capabilities "{capabilities}" reference to "{variable_name}")
+      <td>Connect to mobile "{mobile_code}" use capabilities "{capabilities}" reference to "{variable_name}"</td>
       <td>
         Connects to an already running mobile container (based on its hostname), allows optional capabilities (without overwriting existing ones), and stores the reference for later steps.
       </td>
@@ -718,276 +714,411 @@ click</td>
         <code>Connect to mobile "Android_1234" use capabilities """{ "platformName": "Android", "noReset": true }""" reference to "connectedMobile"</code>
       </td>
     </tr>
+
+    
     <tr>
-      <td>Connect to mobile "{mobile_code}"</td>
-      <td>
-        Connects to an already running mobile container without any additional capabilities or reference name.
-      </td>
-      <td>
-        <code>Connect to mobile "Android_1234"</code>
-      </td>
-    </tr>
-    <tr>
+    (Switch mobile to "{variable_name}")
       <td>Switch mobile to "{variable_name}"</td>
       <td>Changes the active mobile device in the context</td>
       <td><code>Switch mobile to "fd12345d12a1"</code></td>
-    </tr>
+    </tr> 
+
+    
     <tr>
+    (Install app "{apk_file_path}" on mobile)
       <td>Install app "{apk_file_path}" on mobile</td>
       <td>Installs an APK file onto the current mobile</td>
       <td><code>Install app "new_app.apk" on mobile</code></td>
     </tr>
+
+    ***********
     <tr>
+    (On mobile tap on "{selector}")
       <td>Tap on mobile element "{selector}"</td>
       <td>Taps on a specific element using XPath</td>
       <td><code>Tap on mobile element "//android.widget.TextView[@text="Next"]"</code></td>
     </tr>
-    <tr>
+
+    ***********
+    <tr> 
+    (On mobile long press "{selector}")
       <td>Long press mobile element "{selector}"</td>
       <td>Long press on the specified mobile element</td>
       <td><code>Long press mobile element "//*[@id='button']"</code></td>
     </tr>
+
+	(step long press)
+
+    ***********
     <tr>
+    (On mobile double tap on "{selector}")
       <td>Double tap on mobile element "{selector}"</td>
       <td>Performs a double tap on a given element</td>
       <td><code>Double tap on mobile element "//*[@id='button']"</code></td>
     </tr>
+
+    ***********
     <tr>
+    (On mobile swipe right "{selector}" by "{default_200}"px)
       <td>Swipe right on mobile element "{selector}" by "{default_200}"px</td>
       <td>Swipes right a given number of pixels</td>
       <td><code>Swipe right on mobile element "//*[@id='slider']" by "300"px</code></td>
     </tr>
+
+    ***********
     <tr>
+    (On mobile swipe left "{selector}" by "{default_200}"px)
       <td>Swipe left on mobile element "{selector}" by "{default_200}"px</td>
       <td>Swipes left a given number of pixels</td>
       <td><code>Swipe left on mobile element "//*[@id='slider']" by "300"px</code></td>
     </tr>
+
     <tr>
+    (On mobile swipe up "{selector}" by "{default_200}"px)
       <td>Swipe up on mobile element "{selector}" by "{default_200}"px</td>
       <td>Swipes up a given number of pixels</td>
       <td><code>Swipe up on mobile element "//*[@id='list']" by "400"px</code></td>
     </tr>
+
+
     <tr>
+    (On mobile swipe down "{selector}" by "{default_200}"px)
       <td>Swipe down on mobile element "{selector}" by "{default_200}"px</td>
       <td>Swipes down a given number of pixels</td>
       <td><code>Swipe down on mobile element "//*[@id='list']" by "400"px</code></td>
     </tr>
+
+
     <tr>
+    (On mobile swipe from coordinate "{start_x},{start_y}" to "{end_x},{end_y}" on mobile)
       <td>Swipe from coordinate "{start_x},{start_y}" to "{end_x},{end_y}" on mobile</td>
       <td>Performs a swipe from one coordinate to another</td>
       <td><code>Swipe from coordinate "100,200" to "300,400" on mobile</code></td>
     </tr>
+
+
     <tr>
+    (On mobile set value "{text}" on "{selector}")
       <td>Set value "{text}" on the mobile element "{selector}"</td>
       <td>Sets the given text on a specified input</td>
       <td><code>Set value "Hello World" on the mobile element "//*[@id='input']"</code></td>
     </tr>
+
+
     <tr>
+    (On mobile clear textbox "{selector}")
       <td>Clear mobile textbox "{selector}"</td>
       <td>Clears the content of an input element</td>
       <td><code>Clear mobile textbox "//*[@id='input']"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile assert if "{selector}" is not visible)
       <td>Check if mobile element "{selector}" is not visible</td>
       <td>Verifies that an element is not visible on the screen</td>
       <td><code>Check if element "//*[@id='popup']" is not visible</code></td>
     </tr>
+
+
     <tr>
+    (On mobile assert if "{selector}" is enabled)
       <td>Check if mobile element "{selector}" is enabled</td>
       <td>Verifies that an element is currently enabled</td>
       <td><code>Check if element "//*[@id='submit']" is enabled</code></td>
     </tr>
+
+
     <tr>
+    (On mobile assert if "{selector}" is not enabled)
       <td>Check if mobile element "{selector}" is not enabled</td>
       <td>Verifies that an element is currently disabled</td>
       <td><code>Check if element "//*[@id='submit']" is not enabled</code></td>
     </tr>
+
+
+    
     <tr>
+    (On mobile assert if "{selector}" contains text "{text}")
       <td>Check if mobile element "{selector}" contains text "{text}"</td>
       <td>Checks that the element includes the expected text content</td>
       <td><code>Check if element "//*[@id='message']" contains text "Welcome"</code></td>
     </tr>
+
+
     <tr>
+    (On mobile assert if "{selector}" does not contain text "{text}")
       <td>Check if mobile element "{selector}" does not contain text "{text}"</td>
       <td>Ensures the specified text is not present in the element</td>
       <td><code>Check if element "//*[@id='message']" does not contain text "Error"</code></td>
     </tr>
+
+
     <tr>
+    (On mobile assert if screen contains "{object_name}")
       <td>Validate if current mobile screen contains "{object_name}"</td>
       <td>Checks the screen for a specific string or object presence</td>
       <td><code>Validate if current screen contains "Welcome"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile switch to frame with id "{frame_id}")
       <td>Switch to mobile frame with id "{frame_id}"</td>
       <td>Switches the context to a specific frame using its ID</td>
       <td><code>Switch to frame with id "frame1"</code></td>
     </tr>
+
+    
     <tr>
-      <td>Tap element</td>
-      <td>Taps on the specified element</td>
-      <td><code>Tap on element with xpath "//android.widget.TextView[@text='Login']"</code></td>
-    </tr>
-    <tr>
+    (On mobile long press "{selector}")
       <td>Long press element</td>
       <td>Performs a long press on the given element</td>
       <td><code>Long press element with xpath "//android.widget.TextView[@text='Login']"</code></td>
     </tr>
+
+    
     <tr>
-      <td>Swipe from element</td>
-      <td>Swipes from one element to another</td>
-      <td><code>Swipe from element "//android.widget.TextView[@text='Start']" to element "//android.widget.TextView[@text='End']"</code></td>
-    </tr>
-    <tr>
-      <td>Swipe screen</td>
-      <td>Swipes in the given direction: up, down, left, or right</td>
-      <td><code>Swipe "up"</code></td>
-    </tr>
-    <tr>
-      <td>Install APK</td>
-      <td>Installs the specified APK file on the device</td>
-      <td><code>Install APK "/path/to/app.apk"</code></td>
-    </tr>
-    <tr>
+    (On mobile uninstall app "{app_package}" with "{option}" from mobile)
       <td>Uninstall app</td>
       <td>Uninstalls the app with the given package name</td>
       <td><code>Uninstall app "com.example.app"</code></td>
     </tr>
+
+
     <tr>
+      <td>On mobile start app "{app_package}" "{app_activity}"</td>
+      <td>Starts the mobile app with the specified package and activity name</td>
+      <td><code>On mobile start app "com.example.app" "com.example.app.MainActivity"</code></td>
+    </tr>
+
+    
+    <tr>
+      <td>Close app</td>
+      <td>Closes the mobile app with the specified package name</td>
+      <td><code>On mobile close app "com.example.app"</code></td>
+    </tr>
+    
+    <tr>
+    (deleted?)
       <td>Check element is visible</td>
       <td>Asserts that the element is visible on screen</td>
       <td><code>Check if element "//android.widget.TextView[@text='Welcome']" is visible</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Check element is not visible</td>
       <td>Verifies that an element is not visible on the screen</td>
       <td><code>Check if element "//*[@id='popup']" is not visible</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Check element is enabled</td>
       <td>Verifies that an element is currently enabled</td>
       <td><code>Check if element "//*[@id='submit']" is enabled</code></td>
     </tr>
+
+    
     <tr>
+    (deleetd')
       <td>Check element is not enabled</td>
       <td>Verifies that an element is currently disabled</td>
       <td><code>Check if element "//*[@id='submit']" is not enabled</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Check element contains text</td>
       <td>Checks that the element includes the expected text content</td>
       <td><code>Check if element "//*[@id='message']" contains text "Welcome"</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Check element does not contain text</td>
       <td>Ensures the specified text is not present in the element</td>
       <td><code>Check if element "//*[@id='message']" does not contain text "Error"</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Validate screen contains object</td>
       <td>Checks the screen for a specific string or object presence</td>
       <td><code>Validate if current screen contains "Welcome"</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Switch to frame by ID</td>
       <td>Switches the context to a specific frame using its ID</td>
       <td><code>Switch to frame with id "frame1"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile check if app "{app_package}" is installed on device "{device_name}")
       <td>Check if app "{app_package}" is installed on mobile device "{device_name}"</td>
       <td>Verifies whether the specified app is installed on the target device.</td>
       <td><code>Check if app "com.example.apk" is installed on device "device_1"</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Check if app "{app_package}" is running on mobile device "{device_name}"</td>
       <td>Attempts to check if the app is currently running. Requires platform-specific implementation.</td>
       <td><code>Check if app "com.example.app" is running on device "device_1"</code></td>
     </tr>
+
+
     <tr>
+    (Capture logs from mobile device and store in the "{variable}") its the same
       <td>Capture logs from mobile device and store in the "{variable}"</td>
       <td>Retrieves logcat logs from the device and stores them in a runtime variable.</td>
       <td><code>Capture logs from mobile device and store in the "mobile_logs"</code></td>
     </tr>
+
+
     <tr>
+    (On mobile get device orientation and store in the "{variable}")
       <td>Get mobile device orientation and store in the "{variable}"</td>
       <td>Fetches the current screen orientation and saves it to a runtime variable.</td>
       <td><code>Get mobile device orientation and store in the "orientation_variable"</code></td>
     </tr>
+
+
     <tr>
+    (On mobile change device orientation to "{orientation}")
       <td>Change mobile device orientation to "{orientation}"</td>
       <td>Changes the screen orientation to either LANDSCAPE or PORTRAIT.</td>
       <td><code>Change device orientation to "LANDSCAPE"</code></td>
     </tr>
+
+
     <tr>
+    (On mobile lock the screen)
       <td>Lock the screen mobile</td>
       <td>Locks the screen of the connected mobile device.</td>
       <td><code>Lock the screen mobile</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile unlock the screen)
       <td>Unlock the mobile screen</td>
       <td>Unlocks the screen of the mobile device.</td>
       <td><code>Unlock the mobile screen</code></td>
     </tr>
+
+
     <tr>
+    (On mobile switch to app context "{context}")
       <td>Switch to mobile app context "{context}"</td>
       <td>Switches the context between native app and webview contexts.</td>
       <td><code>Switch to mobile app context "WEBVIEW_com.example"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile go back)
       <td>Go back in mobile</td>
       <td>Simulates pressing the back button on the mobile device.</td>
       <td><code>Go back in mobile</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile go to home)
       <td>Go to Home in mobile</td>
       <td>Simulates pressing the HOME button to return to the device's home screen.</td>
       <td><code>Go to Home in mobile</code></td>
     </tr>
+
+
     <tr>
+    (On mobile open recent apps)
       <td>Open recent apps in mobile</td>
       <td>Opens the recent apps screen using keycode 187.</td>
       <td><code>Open recent apps in mobile</code></td>
     </tr>
+
+
+    
     <tr>
+    (deleted?)
       <td>Check if mobile element with text "{text}" is visible</td>
       <td>Verifies that an element containing the given text is visible on screen.</td>
       <td><code>Check if mobile element with text "Welcome" is visible</code></td>
     </tr>
+
+
     <tr>
+    (On mobile perform drag and drop from "{start_element}" to "{end_element}")
       <td>Perform drag and drop from "{start_element}" to "{end_element}" on mobile</td>
       <td>Performs a drag and drop operation between two elements identified by their IDs.</td>
       <td><code>Perform drag and drop from "source_element_id" to "target_element_id"</code></td>
     </tr>
+
+
+    
     <tr>
+    (On mobile wait for "{selector}" to appear)
       <td>Wait for mobile element "{selector}" to appear</td>
       <td>Waits for the specified element to appear on the mobile screen using an XPath selector.</td>
       <td><code>Wait for element "//android.widget.TextView[@text='Welcome']" to appear</code></td>
     </tr>
+
+
     <tr>
+    (On mobile wait for "{selector}" to disappear)
       <td>Wait for mobile element "{selector}" to disappear</td>
       <td>Waits for the specified element to be removed from the screen. Useful for waiting out loading indicators.</td>
       <td><code>Wait for element "//android.widget.ProgressBar" to disappear</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile assert if "{text}" appeared on screen)
       <td>Validate text "{text}" on mobile screen</td>
       <td>Checks whether the specified text is visible anywhere on the screen.</td>
       <td><code>Validate text "Login successful" on mobile screen</code></td>
     </tr>
+
+    
     <tr>
+    (deleted?)
       <td>Fetch mobile device details and store in the "{variable}"</td>
       <td>Retrieves the device capabilities and stores them in a runtime variable.</td>
       <td><code>Fetch mobile device details and store in the "device_info"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile set geolocation to "{latitude}, {longitude}"')
       <td>Set mobile geolocation to "{latitude}, {longitude}"</td>
       <td>Sets the device's geolocation to specific coordinates.</td>
       <td><code>Set mobile geolocation to "37.7749, -122.4194"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile set timezone to "{timezone}")
       <td>Set mobile timezone to "{timezone}"</td>
       <td>Sets the device's timezone to a specific value.</td>
       <td><code>Set mobile timezone to "Europe/Berlin"</code></td>
     </tr>
+
+    
     <tr>
+    (On mobile assert "{selector}" is visible)
       <td>Check if mobile element "{selector}" is visible</td>
       <td>Verifies that a specific element is visible on the screen using XPath.</td>
       <td><code>Check if mobile element "//android.widget.Button[@text='Submit']" is visible</code></td>
