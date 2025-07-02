@@ -96,7 +96,7 @@ Read more in the detailed overview of [Cometa Features](docs/user/cometa_feature
 - Fully managed on cloud / on-prem / hybrid
 - Access to advanced features and dedicated support
 - Unlimited users [usage subject to hardware configuration]
-- [Let's talk](mailto:tec_dev@cometa.rocks,sales@cometa.rocks)
+- [Let's talk](mailto:sales@cometa.rocks)
 
 ---
 
@@ -112,7 +112,8 @@ Read more in the detailed overview of [Cometa Features](docs/user/cometa_feature
 | 2021 | Public GitHub repo |
 | 2022 | Enterprise pilots |
 | 2023 | Formation of global legal entity |
-| 2024 | Roadmap: AI selectors, Load Testing, Chrome CDP metrics |
+| 2024 |  AI selectors, Load Testing, Chrome CDP metrics |
+| 2025 | Roadmap: Enhanced AI capabilities, Database Testing, and expanded enterprise features |
 
 ---
 
