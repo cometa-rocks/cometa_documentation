@@ -1,4 +1,4 @@
-# Faker Data Generator for Behave Steps
+# Faker Data Generator for Cometa Random Data Generator Steps
 
 This module provides a custom Behave step to dynamically generate fake data using the [Faker](https://faker.readthedocs.io/en/master/) library and store it in a runtime variable for use across your test scenarios.
 
@@ -20,7 +20,7 @@ These steps will:
 
 ---
 
-## 🔧 Supported Faker Data Types
+## 🔧 Supported Random Data Types
 
 The following information types are supported out of the box:
 
