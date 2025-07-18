@@ -694,13 +694,13 @@ click</td>
 <tr>
     <td>Start mobile "{mobile_name}" use capabilities "{capabilities}" reference to "{variable_name}"</td>
     <td>Starts an Android emulator using an available image, creates a container (without launching it), applies optional capabilities, and stores the reference for later steps.</td>
-    <td><code>Start mobile "Android_Emulator" use capabilities """{ "platformName": "Android", "app": "/path/to/app.apk" }""" reference to "myMobile"</code></td>
+    <td><code>Start mobile "Android_Emulator" use capabilities "{ "platformName": "Android", "app": "/path/to/app.apk" }" reference to "myMobile"</code></td>
 </tr>
 <tr>
     <td>Connect to mobile "{mobile_code}" use capabilities "{capabilities}" reference to "{variable_name}"</td>
     <td>
         Connects to an already running mobile container (based on its hostname), allows optional capabilities (without overwriting existing ones), and stores the reference for later steps.</td>
-    <td><code>Connect to mobile "Android_1234" use capabilities """{ "platformName": "Android", "noReset": true }""" reference to "connectedMobile"</code></td>
+    <td><code>Connect to mobile "Android_1234" use capabilities "{ "platformName": "Android", "noReset": true }" reference to "connectedMobile"</code></td>
 </tr>
 <tr>
     <td>Switch mobile to "{variable_name}"</td>
