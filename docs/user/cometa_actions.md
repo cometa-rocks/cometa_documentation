@@ -682,6 +682,11 @@ click</td>
 
 ### Mobile actions<a id="CSS_AC"></a>
 
+Import below JSON to your feature
+```
+[{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"Connect to mobile \"copy_from_mobile_view\" use capabilities \"{\n\"appPackage\": \"com.your.app\",\n\"appActivity\": \"com.your.app.MainActivity\",\n\"app\": \"uploads/com.your.app.apk\"\n}\" reference to \"mobile_name\"\n","step_action":"Connect to mobile \"{mobile_code}\" use capabilities \"{capabilities}\" reference to \"{variable_name}\"","step_type":"normal","continue_on_failure":false,"timeout":60,"selected":false},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"On mobile tap on \"com.android.permissioncontroller:id/permission_allow_foreground_only_button\"","step_action":"On mobile tap on \"{selector}\"","step_type":"normal","continue_on_failure":false,"timeout":60,"selected":false},{"compare":false,"screenshot":true,"step_keyword":"Given","step_content":"On mobile set value \"{text}\" on \"{selector}\"","step_action":"On mobile set value \"{text}\" on \"{selector}\"","enabled":true,"continue_on_failure":false,"timeout":60,"selected":false},{"enabled":true,"screenshot":true,"step_keyword":"Given","compare":false,"step_content":"On mobile validate if \"{selector}\" is visible and save result in \"{variable}\"","step_action":"On mobile validate if \"{selector}\" is visible and save result in \"{variable}\"","step_type":"normal","continue_on_failure":false,"timeout":60,"selected":false},{"compare":false,"screenshot":true,"step_keyword":"Given","step_content":"# Refer https://github.com/cometa-rocks/cometa_documentation/blob/main/docs/user/cometa_actions.md#mobile-actions for more action related details","step_action":"On mobile validate if \"{selector}\" is visible and save result in \"{variable}\"","enabled":true,"continue_on_failure":false,"timeout":60,"selected":false}]
+```
+
 <table>
 <thead>
     <tr>
