@@ -538,6 +538,11 @@ click</td>
         <td></td>
     </tr>
     <tr>
+        <td>Set value "{text}" on "{selector}" and do not check the value</td>
+        <td>Assign a value to an element, commonly used for input fields, when verification of the value isn’t necessary, particularly in cases where the entered value is redirected or displayed in another element. </td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Scroll to "{amount}"px on element "{selector}"</td>
         <td>Scrolls to a given amount of pixels in the Y axis inside a specific element using a CSS selector</td>
         <td></td>
