@@ -26,6 +26,19 @@ This repository includes a flexible `start.sh` script to create and run Android 
 ./start.sh [--emulator_name=NAME] [--device=DEVICE_ID] [--api_level=LEVEL] [--target=TARGET] \
            [--arch=ARCH] [--screen_size=WxH] [--theme=THEME] [--gpu=GPU_MODE]
 ```
+### Example
+```bash
+./start.sh \
+  --emulator_name=pixel4xl-api35 \
+  --device=pixel_4_xl \
+  --api_level=35 \
+  --target=google_apis_playstore \
+  --arch=x86_64 \
+  --screen_size=1440x3040 \
+  --theme=light \
+  --gpu=host
+```
+
 
 You can also use environment variables instead of CLI arguments. CLI arguments override environment variables.
 
