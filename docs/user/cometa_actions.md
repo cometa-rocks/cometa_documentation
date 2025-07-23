@@ -1471,15 +1471,15 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
         </td>
         <td>
     <strong>Example 1:</strong> Save "#today;%d-%m-%Y" to runtime variable "date1"
-    <br><strong>Output 1:</strong> `02-06-2025`
+    <br><strong>Output 1:</strong> 02-06-2025
     <br><strong>Example 2:</strong> Save "Due date: #today;%Y-%m-%d;days=+5" to runtime variable "date2"
-    <br><strong>Output 2:</strong> `Due date: 2025-06-07`
+    <br><strong>Output 2:</strong> Due date: 2025-06-07
     <br><strong>Example 3:</strong> Save "Future time: #today;%Y-%m-%d %H:%M;hours=+3" to runtime variable "date3"
-    <br><strong>Output 3:</strong> `Future time: 2025-06-02 21:32`
+    <br><strong>Output 3:</strong> Future time: 2025-06-02 21:32
     <br><strong>Example 4:</strong> Save "Break ends at: #today;%H:%M;minutes=+30" to runtime variable "date4"
-    <br><strong>Output 4:</strong> `Break ends at: 19:02`
+    <br><strong>Output 4:</strong> Break ends at: 19:02
     <br><strong>Example 5:</strong> Save "Start: #today;%Y-%m-%d;days=-2End: #today;%Y-%m-%d;days=+5" to runtime variable "date5"
-    <br><strong>Output 5:</strong> `Start: 2025-06-022End: 2025-06-02`
+    <br><strong>Output 5:</strong> Start: 2025-06-022End: 2025-06-02
         </td>
     </tr>
 </table>
