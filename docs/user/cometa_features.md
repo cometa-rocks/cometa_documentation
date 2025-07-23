@@ -18,11 +18,12 @@
 6. [Historical Analysis Feature](#historical-analysis-feature)
 7. [Data Driven Testing](#data-driven-testing)
 8. [Database Testing](#database-testing)
-9. [Mobile Testing](#mobile-testing)
-10. [Accessibility Testing](#accessibility-testing)
-11. [Multi-Factor Authentication](#multi-factor-authentication)
-12. [Email Feature](#email-feature)
-13. [Telegram Notifications](#telegram-notifications)
+9. [Random Data Generation](#random-data-generation)
+10. [Mobile Testing](#mobile-testing)
+11. [Accessibility Testing](#accessibility-testing)
+12. [Multi-Factor Authentication](#multi-factor-authentication)
+13. [Email Feature](#email-feature)
+14. [Telegram Notifications](#telegram-notifications)
 
 ## End to End Monitoring
 
@@ -693,6 +694,74 @@ For lightweight development, use SQLite (no installation required).
 SQLAlchemy supports almost every relational database, whether SQL-92 compliant or newer.
 
 Would you like help choosing a database or setting up ORM models in SQLAlchemy?
+</details>
+
+[Back to top](#feature-list)
+
+## Random Data Generation
+
+### What is the Random Data Generation Feature?
+The Random Data Generation feature enables you to create realistic fake data and random strings for your test automation, supporting a wide variety of data types and custom patterns.
+
+### Key Capabilities
+- Generate fake data using the Faker library
+- Create random strings from regex patterns
+- Store generated data in runtime variables
+- Support for many data types (names, emails, addresses, etc.)
+- Easy integration with test steps
+
+<details>
+<summary>Learn more about Random Data Generation</summary>
+
+#### Faker Data Step Definition
+Generate fake data of a specified type and store it in a runtime variable for use in your test scenarios.
+
+```gherkin
+Generate random "<information>" and store in "<variable>"
+```
+- **information**: Type of fake data to generate (e.g., `email`, `name`, `address`)
+- **variable**: Name of the variable to store the generated value
+
+**Example:**
+```gherkin
+Generate random "email" and store in "random_value"
+```
+
+#### Supported Data Types
+- `first_name`, `last_name`, `name`
+- `email`, `safe_email`, `free_email`, `ascii_email`
+- `phone_number`, `address`, `city`, `state`, `country`, `zip_code`
+- `company`, `job`, `user_name`, `credit_card_number`, `iban`, `ipv4`, `uuid4`, `date`, `paragraph`, `url`, `color_name`, and many more (see Faker documentation)
+
+#### Regex-Based Random String Generation
+Generate random strings based on regular expressions and store them as runtime variables using the `rstr` library.
+
+```gherkin
+Generate random string based on "<regex_pattern>" and store in "<variable>"
+```
+- **regex_pattern**: A valid regex pattern supported by `rstr.xeger`.
+- **variable**: Name of the runtime variable to store the generated value.
+
+**Examples:**
+```gherkin
+Generate random string based on "[A-Za-z0-9]{8}" and store in "random_id"
+Generate random string based on "[a-z]{5,10}" and store in "username"
+```
+
+**Sample Patterns & Results:**
+| Pattern Description       | Regex Pattern                                               | Sample Results             |
+|--------------------------|-------------------------------------------------------------|----------------------------|
+| Alphanumeric 8-char      | `[A-Za-z0-9]{8}`                                            | `Ax2Df7Lz`, `Hd82KaPz`     |
+| Lowercase word (5–10)    | `[a-z]{5,10}`                                               | `tgdblmk`, `flanders`      |
+| Email format             | `[a-z]{5,10}\.[a-z]{3,5}@[a-z]{4,8}\.com`                 | `bradley.port@oceanbay.com`, `elena.code@pixels.com` |
+| Date (YYYY-MM-DD)        | `\d{4}-\d{2}-\d{2}`                                      | `2022-08-14`, `2023-04-17` |
+| UUID format              | `[a-f0-9]{8}-[a-f0-9]{4}-[1-5][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}` | `9b2f4a87-b4c3-4a2c-9d9f-204d5a2e2f3b` |
+| US Phone Number          | `\(\d{3}\) \d{3}-\d{4}`                                | `(415) 555-0198`           |
+| Hex Color Code           | `#[A-Fa-f0-9]{6}`                                          | `#4Bc91f`                  |
+| Strong Password Format   | `[A-Z]{1}[a-z]{3,5}[0-9]{3}`                               | `Nxyz123`                  |
+| US ZIP Code              | `\d{5}(-\d{4})?`                                         | `12345-6789`               |
+
+
 </details>
 
 [Back to top](#feature-list)

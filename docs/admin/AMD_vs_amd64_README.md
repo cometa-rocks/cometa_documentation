@@ -1,35 +1,38 @@
 
-# Understanding AMD vs amd64 Architecture
+# AMD vs amd64 Architecture: Quick Guide
 
-## 🔹 1. What is the difference between **AMD** and **amd64**?
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
+</picture>
 
-### ✅ **AMD** (Advanced Micro Devices):
+> [!TIP]
+> Confused by "AMD" vs "amd64"? You're not alone! This guide explains the difference in simple terms, with examples and a handy cheat sheet.
 
-- **Type**: Company
-- **What it does**: Makes computer **processors (CPUs)** and **graphics cards (GPUs)**.
-- **Famous Products**:
+## What is the difference between **AMD** and **amd64**?
+
+### AMD (Advanced Micro Devices)
+- **Type:** Company
+- **What it does:** Makes computer **processors (CPUs)** and **graphics cards (GPUs)**
+- **Famous Products:**
   - **Ryzen** – For desktops/laptops
   - **EPYC** – For servers
   - **Radeon** – Graphics cards
-- **Competitor of**: Intel and NVIDIA
+- **Competitor of:** Intel and NVIDIA
 
----
-
-### ✅ **amd64** (Architecture):
-
-- **Type**: CPU architecture (64-bit)
-- **Full Name**: AMD 64-bit
-- **Created by**: AMD in 2003
-- **Purpose**: It extends the 32-bit x86 architecture to support:
+### amd64 (Architecture)
+- **Type:** CPU architecture (64-bit)
+- **Full Name:** AMD 64-bit
+- **Created by:** AMD in 2003
+- **Purpose:** Extends the 32-bit x86 architecture to support:
   - **More memory (over 4 GB)**
   - **64-bit operating systems**
   - **Faster performance for modern software**
 
 > ⚠️ Despite being created by AMD, **Intel also uses this architecture**. It is now the **standard 64-bit architecture** for nearly all desktop and server CPUs.
 
----
-
-### 🔁 Comparison Table
+### Comparison Table
 
 | Feature     | **AMD**                  | **amd64** (x86-64)            |
 |-------------|--------------------------|-------------------------------|
@@ -41,11 +44,11 @@
 
 ---
 
-## 🔹 2. Which processors support **amd64** architecture?
+## Which processors support **amd64** architecture?
 
-### ✅ All Modern AMD and Intel Processors
+### All Modern AMD and Intel Processors
 
-### 🔸 From AMD:
+#### From AMD:
 - **Athlon 64** – First processor to support amd64
 - **Phenom**
 - **FX series**
@@ -53,10 +56,10 @@
 - **Threadripper**
 - **EPYC** – For servers
 
-### 🔸 From Intel:
+#### From Intel:
 Intel refers to amd64 as **Intel 64** — but it's the **same architecture**.
 
-#### 💻 Desktop and Laptop CPUs:
+**Desktop and Laptop CPUs:**
 - Pentium 4 (with EM64T – from 2004)
 - Pentium D
 - Intel Core 2 Duo, Core 2 Quad
@@ -65,7 +68,7 @@ Intel refers to amd64 as **Intel 64** — but it's the **same architecture**.
 - Intel Atom (Z3000 and later)
 - Core M series
 
-#### 🖥️ Server CPUs:
+**Server CPUs:**
 - Intel Xeon series:
   - Xeon E3, E5, E7
   - Xeon Scalable (Silver, Gold, Platinum)
@@ -74,11 +77,11 @@ Intel refers to amd64 as **Intel 64** — but it's the **same architecture**.
 
 ---
 
-## 🔹 3. Which Operating Systems support **amd64**?
+## Which Operating Systems support **amd64**?
 
 These operating systems can run on any CPU that supports amd64 (Intel or AMD):
 
-### 🐧 Linux:
+### Linux:
 - Ubuntu (amd64 versions)
 - Debian
 - Fedora
@@ -86,21 +89,21 @@ These operating systems can run on any CPU that supports amd64 (Intel or AMD):
 - CentOS / RHEL
 - openSUSE
 
-### 🪟 Windows:
+### Windows:
 - Windows XP x64 Edition (2005)
 - Windows Vista, 7, 8, 10, 11 (64-bit)
 - Windows Server editions (2003+)
 
-### 🍎 macOS:
+### macOS:
 - macOS on **Intel Macs** (2006–2020)
 - Note: **Apple Silicon (M1, M2)** uses a different architecture (**ARM64**)
 
-### 🧠 BSDs:
+### BSDs:
 - FreeBSD
 - OpenBSD
 - NetBSD (all have amd64 versions)
 
-### 🐳 Docker/Containers:
+### Docker/Containers:
 - Most base images like `python:3.12-slim-amd64`, `ubuntu:amd64` are for amd64 systems.
 
 ---
@@ -115,3 +118,11 @@ These operating systems can run on any CPU that supports amd64 (Intel or AMD):
 | Supported OS         | Windows, Linux, macOS (Intel), BSD   |
 | Supported CPUs       | All modern AMD & Intel processors    |
 | Common Label Seen As | `amd64`, `x86_64`, `Intel 64`        |
+
+## Need Help?
+
+### Where can I get help?
+- Join our [Discord community](https://discord.gg/PUxt5bsRej)
+- Contact us at [tec_dev@cometa.rocks](mailto:tec_dev@cometa.rocks)
+
+Happy testing! 🚀
