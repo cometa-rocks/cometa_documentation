@@ -127,6 +127,7 @@ Cometa supports multiple user roles with granular permissions:
 - **ulimit**: Set to 8192 for corporate environments using proxy
 - **Server Time**: Must be synchronized with NTP (max 10-minute deviation)
 - **Operating System**: Linux recommended (native environment)
+- [CPU Architecture: AMD vs amd64 – What does it mean?](AMD_vs_amd64_README.md)
 
 [↑ Back to top](#)
 
