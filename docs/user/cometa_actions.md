@@ -1470,16 +1470,16 @@ Cometa uses [openpyXL library](https://openpyxl.readthedocs.io/en/stable/) for w
             In any step the "#today;<pattern>" will be replaced with the formatted date. Possible formatting and time adding or subtracting is based on python <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes">date function</a>
         </td>
         <td>
-    <strong>Step 1:</strong> Save "Today's date: #today;%d-%m-%Y" to runtime variable "date1"
-    <br><strong>Step 2:</strong> Show me variable "date1" value for "1" seconds
-    <br><strong>Step 3:</strong> Save "Due date: #today;%Y-%m-%d;days=+5" to runtime variable "date2"
-    <br><strong>Step 4:</strong> Show me variable "date2" value for "1" seconds
-    <br><strong>Step 5:</strong> Save "Future time: #today;%Y-%m-%d %H:%M;hours=+3" to runtime variable "date3"
-    <br><strong>Step 6:</strong> Show me variable "date3" value for "1" seconds
-    <br><strong>Step 7:</strong> Save "Break ends at: #today;%H:%M;minutes=+30" to runtime variable "date4"
-    <br><strong>Step 8:</strong> Show me variable "date4" value for "1" seconds
-    <br><strong>Step 9:</strong> Save "Start: #today;%Y-%m-%d;days=-2"
-    <br><strong>Step 10:</strong> Show me variable "date5" value for "1" seconds
+    <strong>Example 1:</strong> Save "#today;%d-%m-%Y" to runtime variable "date1"
+    <br><strong>Output 1:</strong> `02-06-2025`
+    <br><strong>Example 2:</strong> Save "Due date: #today;%Y-%m-%d;days=+5" to runtime variable "date2"
+    <br><strong>Output 2:</strong> `Due date: 2025-06-07`
+    <br><strong>Example 3:</strong> Save "Future time: #today;%Y-%m-%d %H:%M;hours=+3" to runtime variable "date3"
+    <br><strong>Output 3:</strong> `Future time: 2025-06-02 21:32`
+    <br><strong>Example 4:</strong> Save "Break ends at: #today;%H:%M;minutes=+30" to runtime variable "date4"
+    <br><strong>Output 4:</strong> `Break ends at: 19:02`
+    <br><strong>Example 5:</strong> Save "Start: #today;%Y-%m-%d;days=-2End: #today;%Y-%m-%d;days=+5" to runtime variable "date5"
+    <br><strong>Output 5:</strong> `Start: 2025-06-022End: 2025-06-02`
         </td>
     </tr>
 </table>
