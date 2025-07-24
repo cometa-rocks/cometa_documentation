@@ -1,4 +1,3 @@
-# AI Testing Feature
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
@@ -6,10 +5,16 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
+# AI Testing Feature
+
 > [!TIP]
 > - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 
 ## What is the AI Testing Feature?
+[!TIP]
+> Watch the [video tutorial](https://www.loom.com/share/1d5cdb0681ab46308ddf96de0b824e10?sid=5cb1df8b-04ac-4dcd-96e5-47e2a96565b6) to see Testing using AI Agent in action! Also check [video tutorial](https://www.youtube.com/watch?v=QQf6nrAP-Sw) for more on Automation!
+> *(Right-click to open in new tab)*
+
 The AI Testing Feature enables intelligent test automation through computer vision, natural language processing, and machine learning capabilities. This feature allows for robust visual testing, content validation, and dynamic interaction with web and mobile applications. And of course autonomous browsing.
 
 ## Key Capabilities

@@ -6,6 +6,8 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
+# Telegram Notifications Feature
+
 > [!TIP]
 > - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 > - Watch our <a href="https://www.youtube.com/watch?v=j-hTiwg5o30" target="_blank">video tutorial</a> to see Telegram Notifications in action!

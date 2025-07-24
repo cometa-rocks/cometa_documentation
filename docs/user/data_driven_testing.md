@@ -1,4 +1,3 @@
-# Data Driven Testing Feature
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
@@ -6,10 +5,16 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
+# Data Driven Testing Feature
+
 > [!TIP]
 > - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 
 ## What is the Data Driven Testing Feature?
+> [!TIP]
+> Watch the [video tutorial](https://youtu.be/f-3PxxhrIGY) to see Data-Driven Testing in action!
+> *(Right-click to open in new tab)*
+
 The Data Driven Testing Feature enables testing with multiple data sets from various sources, allowing for comprehensive test coverage and efficient test maintenance through data-driven approaches.
 
 ## Key Capabilities
