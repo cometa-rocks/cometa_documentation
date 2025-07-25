@@ -675,13 +675,46 @@ click</td>
     </tr>
     <tr>
         <td>Run feature with id "{feature_id}" before continuing</td>
-        <td>Runs another feature using it's ID in the same context, useful to import common steps in multiple features</td>
-        <td></td>
+        <td>
+            Executes a feature using its unique identifier.<br><br>
+            <strong>Purpose:</strong> Useful when you reference features programmatically or by internal ID.<br><br>
+            <strong>Context Preservation:</strong> The called feature runs in the same context, so variables, data, and state are preserved.<br><br>
+            <strong>Common Use Cases:</strong>
+            <ul>
+                <li>Centralizing setup steps (e.g., login, environment setup)</li>
+                <li>Reusing validations or workflows</li>
+                <li>Reducing duplication across test cases</li>
+            </ul>
+	    <br>
+            ✅ Run a <u>group of steps</u> defined in the referenced feature.<br>
+            ✅ <u>Chain multiple feature calls</u> in sequence.<br>
+            ✅ Each feature runs <u>sequentially</u> in the order defined.
+        </td>
+        <td>
+            <code>Run feature with id "105" before continuing</code>
+        </td>
     </tr>
     <tr>
         <td>Run feature with name "{feature_name}" before continuing</td>
-        <td>Runs another feature using it's name in the same context, useful to import common steps in multiple features</td>
-        <td></td>
+        <td>
+            Executes a feature using its defined name.<br><br>
+            <strong>Purpose:</strong> Useful when referencing by a human-readable identifier.<br><br>
+            <strong>Context Preservation:</strong> The called feature runs in the same context, so variables, data, and state are preserved.<br><br>
+            <strong>Common Use Cases:</strong>
+            <ul>
+                <li>Centralizing setup steps (e.g., login, environment setup)</li>
+                <li>Reusing validations or workflows</li>
+                <li>Structuring logic into reusable components</li>
+            </ul>
+            <br>
+            ✅ Run a <u>group of steps</u> defined in the referenced feature.<br>
+            ✅ <u>Chain multiple feature calls</u> in sequence.<br>
+            ✅ Each feature runs <u>sequentially</u> in the order defined.
+        </td>
+        <td>
+            <code>Run feature with name "FeatureName1" before continuing</code><br>
+            <code>Run feature with name "FeatureName2" before continuing</code>
+        </td>
     </tr>
 </table>
 
