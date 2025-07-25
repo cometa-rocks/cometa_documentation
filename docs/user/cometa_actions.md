@@ -776,29 +776,40 @@ Import below JSON to your feature
     <td><code>On mobile double tap on "//*[@id='button']"</code></td>
 </tr>
 <tr>
-    <td>On mobile swipe right "{selector}" by "{default_200}"px</td>
-    <td>Swipes right a given number of pixels</td>
-    <td><code>On mobile swipe right "//*[@id='slider']" by "300"px</code></td>
+<td>On mobile swipe right "{selector}" by "{default_200}"px</td>
+<td>
+Swipes right on the specified element, starting from its center, by the given number of pixels (default: 200px).
+</td>
+<td>
+<code>On mobile swipe right "//[@id='slider']" by "300"px</code>
+</td>
 </tr>
 <tr>
-    <td>On mobile swipe left "{selector}" by "{default_200}"px</td>
-    <td>Swipes left a given number of pixels</td>
-    <td><code>On mobile swipe left "//*[@id='slider']" by "300"px</code></td>
+<td>On mobile swipe left "{selector}" by "{default_200}"px</td>
+<td>
+Swipes left on the specified element, starting from its center, by the given number of pixels (default: 200px).
+</td>
+<td>
+<code>On mobile swipe left "//[@id='slider']" by "300"px</code>
+</td>
 </tr>
 <tr>
-    <td>On mobile swipe up "{selector}" by "{default_200}"px</td>
-    <td>Swipes up a given number of pixels</td>
-    <td><code>On mobile swipe up "//*[@id='list']" by "400"px</code></td>
+<td>On mobile swipe up "{selector}" by "{default_200}"px</td>
+<td>
+Swipes up on the specified element, starting from its center, by the given number of pixels (default: 200px).
+</td>
+<td>
+<code>On mobile swipe up "//[@id='list']" by "400"px</code>
+</td>
 </tr>
 <tr>
-    <td>On mobile swipe down "{selector}" by "{default_200}"px</td>
-    <td>Swipes down a given number of pixels</td>
-    <td><code>On mobile swipe down "//*[@id='list']" by "400"px</code></td>
-</tr>
-<tr>
-    <td>On mobile swipe from coordinate "{start_x},{start_y}" to "{end_x},{end_y}"</td>
-    <td>Performs a swipe from one coordinate to another</td>
-    <td><code>On mobile swipe from coordinate "100,200" to "300,400"</code></td>
+<td>On mobile swipe down "{selector}" by "{default_200}"px</td>
+<td>
+Swipes down on the specified element, starting from its center, by the given number of pixels (default: 200px).
+</td>
+<td>
+<code>On mobile swipe down "//[@id='list']" by "400"px</code>
+</td>
 </tr>
 <tr>
     <td>On mobile set value "{text}" on "{selector}"</td>
