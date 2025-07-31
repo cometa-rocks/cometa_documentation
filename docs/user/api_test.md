@@ -1,4 +1,3 @@
-# API Testing Guide
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
@@ -6,9 +5,13 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
-## Setting Up API Tests
+# API Testing Guide
 
-### Video Demonstration on API Call Editor: [Video](https://youtu.be/plC8qag08ZQ)
+> [!TIP]
+> Watch the [video tutorial](https://youtu.be/plC8qag08ZQ) to see Testing using API in action!
+> *(Right-click to open in new tab)*
+
+## Setting Up API Tests
 
 1. **Create a New Feature**: Start by creating a new feature in Cometa.
 2. **Add API Step**: In the steps section, start by adding API calling step:

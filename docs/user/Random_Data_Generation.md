@@ -52,10 +52,6 @@ The following information types are supported out of the box:
 - `paragraph`, `sentence`, `word`, `text`
 - `url`, `domain_name`, `file_name`
 - `color_name`, `hex_color`, `rgb_color`
-
-<details>
-<summary>Show all supported types</summary>
-
 - `aba`
 - `address`
 - `administrative_unit`
@@ -315,7 +311,6 @@ The following information types are supported out of the box:
 - `zipcode_in_state`
 - `zipcode_plus4`
 
-</details>
 
 ## Regex-Based Random String Generator for Behave Steps
 

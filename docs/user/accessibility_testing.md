@@ -1,4 +1,3 @@
-# Accessibility Testing Feature
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
@@ -6,10 +5,16 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
+# Accessibility Testing Feature
+
 > [!TIP]
 > - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 
 ## What is the Accessibility Testing Feature?
+> [!TIP]
+> Watch the [video tutorial](https://www.youtube.com/watch?v=04bZhh2188Y) to see Accessibility Testing in action!
+> *(Right-click to open in new tab)*
+
 The Accessibility Testing Feature enables automated testing of web applications for compliance with accessibility standards and guidelines, ensuring your applications are accessible to users with disabilities.
 
 ## Key Capabilities

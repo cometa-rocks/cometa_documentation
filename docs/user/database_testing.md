@@ -1,4 +1,3 @@
-# SQLAlchemy Database Support and Connection Guide
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_W.png">
@@ -6,10 +5,16 @@
   <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://raw.githubusercontent.com/cometa-rocks/cometa_documentation/main/img/logos/COMETAROCKS_LogoEslog_Y_B.png">
 </picture>
 
+# SQLAlchemy Database Support and Connection Guide
+
 > [!TIP]
 > - Use your browser's search (Ctrl+F or Cmd+F) to find specific features
 
 ## What is SQLAlchemy Database Support?
+> [!TIP]
+> Watch the [video tutorial](https://www.youtube.com/watch?v=uGRXoUh3aFA) to see Database Testing in action!
+> *(Right-click to open in new tab)*
+
 SQLAlchemy is a powerful Python library that provides an Object Relational Mapper (ORM) and low-level SQL execution support for various relational databases. It supports SQL-92 as well as newer SQL standards.
 
 ## Key Capabilities

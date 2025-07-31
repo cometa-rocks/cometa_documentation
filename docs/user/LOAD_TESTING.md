@@ -7,6 +7,10 @@
 
 ## Overview
 
+> [!TIP]
+> Watch the [video tutorial](https://www.youtube.com/watch?v=hWAyx6iBbU4) to see Load Testing in action!
+> *(Right-click to open in new tab)*
+
 Welcome to the Browser Concurrency Control feature! This enhancement empowers users to optimize their performance testing by allowing them to dictate the number of times a browser should run concurrently. This README provides a quick guide on how to make the most out of this exciting new functionality.
 
 ## Key Benefits
