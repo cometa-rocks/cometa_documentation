@@ -52,8 +52,6 @@ The Telegram Notifications Feature provides a seamless way to receive test execu
 - Always send notifications
 - Send on error only
 - Maximum error notification limit
-- Custom error thresholds
-- Notification frequency control
 
 ## Integration Points
 
@@ -64,51 +62,111 @@ The Telegram Notifications Feature provides a seamless way to receive test execu
 - Default bot settings
 - Custom bot integration
 
-### Test Execution
-- Real-time status updates
-- Error notifications
-- Result reporting
-- Attachment management
-- Variable substitution
+#### Configure department chat IDs
 
-### Template Management
-- Default templates
-- Custom message creation
-- HTML formatting
-- Variable support
-- Attachment configuration
+You can centrally configure Telegram chat IDs at the department level so all features in that department can send results to the right recipients.
 
-## Setup Instructions
+- The "Modify department" page is available from the administration panel.
+- Add one or more chat IDs (comma-separated). Features with "Send notification on finish → Telegram" enabled will deliver messages to these IDs.
 
-### Basic Configuration
-1. Enable Telegram Notifications
-2. Choose bot type (default/custom)
-3. Configure chat IDs
-4. Set notification conditions
-5. Customize message template
+![Department settings with Telegram chat IDs](./telegram_feature_modify_department.png)
 
-### Advanced Setup
-1. Custom bot integration
-2. Group topic configuration
-3. Department-level settings
-4. Error threshold management
-5. Template customization
+
+## UI: Recording options
+
+Enable Telegram notifications for a specific recording from the Recording Options panel.
+
+![Recording options showing Email and Telegram toggles](./telegram_feature_01.png)
+
+ - **Send notification on finish**: Master switch to enable notifications when the run completes.
+ - **Email**: Sends an email notification if configured.
+ - **Telegram**: Sends a Telegram message using your department/project settings and template.
+
+## Feature-level Telegram options
+
+When editing a feature, you can override department defaults and configure the exact content, recipients, and attachments for Telegram notifications for that feature.
+
+![Feature edit page with Telegram options](./telegram_feature_edit_options.png)
+
+- **Override Telegram Notification Settings**: Enable to set feature-specific values.
+  - **Chatbot Token**: Use a custom bot for this feature (overrides global/department bot).
+  - **Chat IDs**: One or more chat IDs to receive messages (overrides department list).
+  - **Message Thread ID**: Optional; send messages to a specific thread in a group.
+- **Basic Information**: Include department, application, environment, feature name, feature URL.
+- **Execution Details**: Include execution date/time, total time, browser timezone, and browser.
+- **Test Results**: Include overall status, per-step results, pixel differences, and failed step details.
+- **Attachments**: Attach PDF report and up to 10 screenshots.
+- **Custom Message (Optional)**: Free-form leading text; supports variables like `$var_name`.
+- **When to send notification**: Always or only on error.
+- **Set maximum notifications on errors**: Limit error notifications.
+- **Do not use default template**: Bypass the default template when needed.
 
 ## Best Practices
 
 ### Configuration
 - Use custom variables for dynamic content
-- Configure appropriate error thresholds
 - Utilize group topics for better organization
 - Regularly update chat IDs
 - Monitor notification delivery
 
-### Performance
-- Optimize attachment sizes
-- Use appropriate error limits
-- Monitor notification frequency
-- Test templates before deployment
-- Maintain clean chat ID lists
+
+## Administration and Maintenance
+
+### Delete Telegram authentication links (Django management command)
+
+For testing or maintenance, you can remove Telegram authentication links stored in the backend. This is useful when a user re-links their Telegram account, when cleaning up test data, or when revoking access.
+
+- **Command location**: backend service of the main Cometa project
+- **Command name**: `delete_telegram_auth`
+
+Run from the backend project directory where `manage.py` is located.
+
+#### Usage
+
+```bash
+python manage.py delete_telegram_auth <chat_id>
+python manage.py delete_telegram_auth --all
+python manage.py delete_telegram_auth --user-email <email>
+```
+
+#### Options
+
+- **chat_id (positional)**: Delete a single Telegram link by its chat ID.
+- **--all**: Delete all Telegram authentication links. Use with caution.
+- **--user-email <email>**: Delete links for a specific user by email (case-insensitive).
+- **--yes**: Skip confirmation prompts (non-interactive mode). Applies when deleting by `chat_id`.
+
+#### Behavior and notes
+
+- **Delete by chat ID**: Shows link info and prompts for confirmation unless `--yes` is provided. After deletion, any Django sessions containing `telegram_chat_id` matching the deleted chat ID are also cleared.
+- **Delete by user email**: Removes all links tied to the specified user; reports if none found.
+- **Delete all**: Displays how many links were found and asks for confirmation before bulk deletion.
+
+#### Examples
+
+- Delete a single link by chat ID (with confirmation):
+
+```bash
+python manage.py delete_telegram_auth 123456789
+```
+
+- Delete a single link by chat ID (non-interactive):
+
+```bash
+python manage.py delete_telegram_auth 123456789 --yes
+```
+
+- Delete all links (will prompt):
+
+```bash
+python manage.py delete_telegram_auth --all
+```
+
+- Delete links for a specific user by email:
+
+```bash
+python manage.py delete_telegram_auth --user-email alice@example.com
+```
 
 ## Need Help?
 
